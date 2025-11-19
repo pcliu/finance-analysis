@@ -1,0 +1,22 @@
+{
+  "name": "quantitative-trading-skills",
+  "owner": {
+    "name": "Pengcheng Liu",
+    "email": "liupengcheng@example.com"
+  },
+  "metadata": {
+    "description": "Quantitative trading and financial analysis skills marketplace",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "quantitative-trading",
+      "description": "Comprehensive quantitative trading toolkit with stock data analysis, technical indicators, and trading strategies",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./quantitative-trading"
+      ]
+    }
+  ]
+}
