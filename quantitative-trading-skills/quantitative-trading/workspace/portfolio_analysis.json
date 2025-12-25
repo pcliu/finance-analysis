@@ -115,29 +115,60 @@
     {
       "code": "159830",
       "name": "上海金",
-      "error": "No data",
+      "current_price": 10.053,
+      "rsi": 72.93,
+      "rsi_signal": "overbought",
+      "sma_5": 9.8832,
+      "sma_20": 9.6165,
+      "trend": "bullish",
+      "macd": 0.154,
+      "macd_signal_line": 0.108,
+      "macd_signal": "buy",
+      "returns_1m": 7.06,
       "holding_value": 3991.2,
-      "current_pnl": 2.63
+      "current_pnl": 2.63,
+      "recommendation": "持有观望"
     },
     {
       "code": "159980",
       "name": "有色ETF",
-      "error": "No data",
+      "current_price": 1.975,
+      "rsi": 71.16,
+      "rsi_signal": "overbought",
+      "sma_5": 1.9316,
+      "sma_20": 1.8917,
+      "trend": "bullish",
+      "macd": 0.0304,
+      "macd_signal_line": 0.0255,
+      "macd_signal": "buy",
+      "returns_1m": 9.0,
       "holding_value": 1940.0,
-      "current_pnl": 0.49
+      "current_pnl": 0.49,
+      "recommendation": "持有观望"
     },
     {
       "code": "161226",
       "name": "白银基金",
-      "error": "No data",
+      "current_price": 3.116,
+      "rsi": 96.58,
+      "rsi_signal": "overbought",
+      "sma_5": 2.6394,
+      "sma_20": 1.9992,
+      "trend": "bullish",
+      "macd": 0.333,
+      "macd_signal_line": 0.2221,
+      "macd_signal": "buy",
+      "returns_1m": 111.11,
       "holding_value": 9348.0,
-      "current_pnl": 60.93
+      "current_pnl": 60.93,
+      "recommendation": "建议卖出/减仓"
     }
   ],
   "buy_recommendations": [
     "588000"
   ],
   "sell_recommendations": [
-    "513630"
+    "513630",
+    "161226"
   ]
 }

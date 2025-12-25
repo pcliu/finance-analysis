@@ -79,9 +79,11 @@ class DataFetcher:
         else:
             base, suffix = ticker, ''
 
+        # Shanghai codes: 6xxxxx (stocks), 5xxxxx (ETF/funds), 000xxx (indices), 9xxxxx
         if suffix in {'SS', 'SH'} or (not suffix and base.startswith(('6', '5', '9'))):
             return f"{base}.SH"
-        if suffix in {'SZ'} or (not suffix and base.startswith(('0', '2', '3', '4'))):
+        # Shenzhen codes: 0xxxxx, 3xxxxx (stocks), 159xxx, 16xxxx, 18xxxx (ETF/LOF), 399xxx (indices)
+        if suffix in {'SZ'} or (not suffix and base.startswith(('0', '2', '3', '4', '159', '16', '18'))):
             return f"{base}.SZ"
         if suffix in {'BJ'}:
             return f"{base}.BJ"
@@ -200,40 +202,36 @@ class DataFetcher:
         
         # Determine asset type
         asset_type = self._determine_asset_type(ts_code)
-        
-        # Determine adjustment
-        # For stocks and funds, we usually want forward adjusted prices
-        adj = 'qfq' if asset_type in ['E', 'FD'] else None
 
         try:
-            # Use ts.pro_bar which handles various asset types and adjustments
-            # Note: pro_bar requires the 'api' parameter to use our authenticated client instance
-            # or it will try to init its own which might fail if token not set globally
-            raw = ts.pro_bar(
-                ts_code=ts_code,
-                api=pro,
-                start_date=start_dt, 
-                end_date=end_dt,
-                asset=asset_type,
-                adj=adj
-            )
+            # Use different API based on asset type
+            if asset_type == 'FD':
+                # Use fund_daily for ETF/LOF funds - more reliable for fund data
+                raw = pro.fund_daily(
+                    ts_code=ts_code,
+                    start_date=start_dt,
+                    end_date=end_dt,
+                    fields='trade_date,open,high,low,close,pre_close,vol,amount'
+                )
+                volume_multiplier = 1  # fund_daily returns volume in shares already
+            else:
+                # Use pro_bar for stocks, indices, etc.
+                adj = 'qfq' if asset_type == 'E' else None
+                raw = ts.pro_bar(
+                    ts_code=ts_code,
+                    api=pro,
+                    start_date=start_dt, 
+                    end_date=end_dt,
+                    asset=asset_type,
+                    adj=adj
+                )
+                # pro_bar returns vol in lots (100 shares) for stocks/funds
+                volume_multiplier = 100 if asset_type == 'E' else 1
             
             if raw is None or raw.empty:
                 print(f"No tushare data found for {ts_code} (Asset: {asset_type})")
                 return None
                 
-            # pro_bar returns 'vol' and 'amount'
-            # For consistency with yfinance, we want volume in shares, not lots
-            # However, pro_bar documentation says:
-            # vol: 成交量 （手）(Stocks/Funds)
-            # But for indices it might be different. 
-            # Let's standardize: 
-            # If it's stock/fund (E/FD), vol is in lots (100 shares).
-            # If it's index (I), vol is usually in lots or raw.
-            # Let's check the magnitude or just apply standard multiplier for E/FD.
-            
-            volume_multiplier = 100 if asset_type in ['E', 'FD'] else 1
-            
         except Exception as exc:
             print(f"Tushare error for {ts_code}: {exc}")
             return None
@@ -248,7 +246,7 @@ class DataFetcher:
         data['Low'] = raw['low'].astype(float)
         data['Close'] = raw['close'].astype(float)
         
-        # pro_bar returns 'close' as the adjusted close if adj is set
+        # Use close as adjusted close (fund_daily doesn't have adj prices)
         data['Adj Close'] = raw['close'].astype(float)
         
         if 'pre_close' in raw.columns:

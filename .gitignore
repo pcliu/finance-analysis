@@ -1,0 +1,28 @@
+# Workspace output files
+**/workspace/*
+
+# Keep .gitkeep files
+!**/workspace/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test files
+test.py
