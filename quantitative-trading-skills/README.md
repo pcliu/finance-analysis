@@ -1,52 +1,55 @@
-# Quantitative Trading Marketplace
+# Quantitative Trading Skills
 
-A dedicated marketplace for quantitative trading and financial analysis skills.
+量化交易技能包 - 使用 yfinance（全球市场）和 tushare（中国/香港市场）进行股票分析。
 
-## About This Marketplace
+## 功能特性
 
-This marketplace contains specialized skills for:
-- Stock market data analysis
-- Technical indicator calculations
-- Trading strategy development
-- Portfolio optimization
-- Risk management
-- Backtesting frameworks
+- 📊 **数据获取**: 实时和历史股票数据
+- 📈 **技术指标**: RSI、MACD、布林带、移动平均线等
+- 🎯 **交易策略**: 均线交叉、RSI 均值回归、动量策略
+- 💼 **组合分析**: 投资组合优化、有效前沿
+- ⚠️ **风险管理**: VaR、CVaR、最大回撤、夏普比率
+- 🔄 **回测框架**: 历史策略回测
 
-## Available Skills
+## 快速开始
 
-### quantitative-trading
-A comprehensive quantitative trading toolkit using yfinance for global markets and tushare for China/Hong Kong data, covering stock analysis, technical indicators, and trading strategy development.
+```python
+import sys
+sys.path.append('quantitative-trading-skills/quantitative-trading')
 
-**Key Features:**
-- Real-time and historical stock data fetching (yfinance global + tushare for CN/HK)
-- Technical indicators (RSI, MACD, Bollinger Bands, etc.)
-- Trading strategy implementation
-- Portfolio analysis and optimization
-- Risk assessment and management
-- Backtesting capabilities
+from scripts import fetch_stock_data, calculate_rsi
 
-**China & Hong Kong Support:**  
-Set the environment variable `TUSHARE_TOKEN` (available from [tushare](https://tushare.pro/register)) to unlock mainland/HK coverage. The toolkit auto-detects Chinese/HK tickers and routes them through tushare for improved accuracy; override manually with the new `provider` and `market` parameters on each API call if needed.
-
-## Usage
-
-To use skills from this marketplace, simply reference them by name when working with Claude Code:
-
-```
-skill: "quantitative-trading"
+data = fetch_stock_data('AAPL', period='6mo')
+rsi = calculate_rsi(data)
+print(f"Price: ${data['Close'].iloc[-1]:.2f}, RSI: {rsi.iloc[-1]:.2f}")
 ```
 
-## Installation
+## 中国/香港市场
 
-This marketplace is automatically available when using Claude Code with the skills plugin system.
+设置环境变量 `TUSHARE_TOKEN`（从 [tushare.pro](https://tushare.pro/register) 获取）：
 
-## Contributing
+```bash
+export TUSHARE_TOKEN="your-token-here"
+```
 
-To add new skills to this marketplace:
-1. Create a new directory following the skill naming conventions
-2. Include a properly formatted `SKILL.md` file
-3. Follow the Agent Skills Specification guidelines
+```python
+data = fetch_stock_data('000001', provider='tushare', market='cn')
+```
+
+## 目录结构
+
+```
+quantitative-trading/
+├── SKILL.md              # 技能定义
+├── scripts/              # 核心实现
+├── workflows/            # 可复用工作流
+├── references/           # 详细文档
+├── examples/             # 使用示例
+└── workspace/            # 输出目录
+```
+
+详细文档请查看 [quantitative-trading/SKILL.md](quantitative-trading/SKILL.md)
 
 ## License
 
-Each skill in this marketplace may have its own license. Please check the individual skill documentation for specific licensing information.
+MIT

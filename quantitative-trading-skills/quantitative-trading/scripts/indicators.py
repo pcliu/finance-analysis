@@ -8,27 +8,31 @@ import pandas as pd
 import numpy as np
 import argparse
 import sys
-from data_fetcher import DataFetcher
+
+try:
+    from .data_fetcher import DataFetcher
+except ImportError:
+    from data_fetcher import DataFetcher
 
 class TechnicalIndicators:
     def __init__(self):
         pass
 
     # Trend Indicators
-    def calculate_sma(self, data, window=20, column='Close'):
+    def calculate_sma(self, data: pd.DataFrame, window: int = 20, column: str = 'Close') -> pd.Series:
         """Calculate Simple Moving Average"""
         return data[column].rolling(window=window).mean()
 
-    def calculate_ema(self, data, span=20, column='Close'):
+    def calculate_ema(self, data: pd.DataFrame, span: int = 20, column: str = 'Close') -> pd.Series:
         """Calculate Exponential Moving Average"""
         return data[column].ewm(span=span).mean()
 
-    def calculate_wma(self, data, window=20, column='Close'):
+    def calculate_wma(self, data: pd.DataFrame, window: int = 20, column: str = 'Close') -> pd.Series:
         """Calculate Weighted Moving Average"""
         weights = np.arange(1, window + 1)
         return data[column].rolling(window=window).apply(lambda x: np.dot(x, weights) / weights.sum(), raw=True)
 
-    def calculate_bollinger_bands(self, data, window=20, num_std=2, column='Close'):
+    def calculate_bollinger_bands(self, data: pd.DataFrame, window: int = 20, num_std: int = 2, column: str = 'Close') -> dict:
         """Calculate Bollinger Bands"""
         sma = self.calculate_sma(data, window, column)
         std = data[column].rolling(window=window).std()
@@ -44,7 +48,7 @@ class TechnicalIndicators:
             'Percent_B': (data[column] - lower_band) / (upper_band - lower_band)
         }
 
-    def calculate_adx(self, data, window=14):
+    def calculate_adx(self, data: pd.DataFrame, window: int = 14) -> pd.Series:
         """Calculate Average Directional Index"""
         high = data['High']
         low = data['Low']
@@ -75,18 +79,26 @@ class TechnicalIndicators:
         return adx
 
     # Momentum Indicators
-    def calculate_rsi(self, data, window=14, column='Close'):
-        """Calculate Relative Strength Index"""
+    def calculate_rsi(self, data: pd.DataFrame, window: int = 14, column: str = 'Close') -> pd.Series:
+        """
+        Calculate Relative Strength Index using Wilder's Smoothing
+        """
         delta = data[column].diff()
-        gain = (delta.where(delta > 0, 0)).rolling(window=window).mean()
-        loss = (-delta.where(delta < 0, 0)).rolling(window=window).mean()
-
-        rs = gain / loss
+        
+        # Wilder's Smoothing uses EMA with alpha = 1/window (or com = window - 1)
+        # Standard RSI definition
+        gain = delta.where(delta > 0, 0)
+        loss = -delta.where(delta < 0, 0)
+        
+        avg_gain = gain.ewm(com=window - 1, min_periods=window).mean()
+        avg_loss = loss.ewm(com=window - 1, min_periods=window).mean()
+        
+        rs = avg_gain / avg_loss
         rsi = 100 - (100 / (1 + rs))
-
+        
         return rsi
 
-    def calculate_stochastic(self, data, k_window=14, d_window=3):
+    def calculate_stochastic(self, data: pd.DataFrame, k_window: int = 14, d_window: int = 3) -> dict:
         """Calculate Stochastic Oscillator"""
         high_max = data['High'].rolling(window=k_window).max()
         low_min = data['Low'].rolling(window=k_window).min()
@@ -99,7 +111,7 @@ class TechnicalIndicators:
             'D': percent_d
         }
 
-    def calculate_macd(self, data, fast=12, slow=26, signal=9, column='Close'):
+    def calculate_macd(self, data: pd.DataFrame, fast: int = 12, slow: int = 26, signal: int = 9, column: str = 'Close') -> dict:
         """Calculate MACD (Moving Average Convergence Divergence)"""
         ema_fast = data[column].ewm(span=fast).mean()
         ema_slow = data[column].ewm(span=slow).mean()
@@ -114,7 +126,7 @@ class TechnicalIndicators:
             'Histogram': histogram
         }
 
-    def calculate_williams_r(self, data, window=14):
+    def calculate_williams_r(self, data: pd.DataFrame, window: int = 14) -> pd.Series:
         """Calculate Williams %R"""
         high_max = data['High'].rolling(window=window).max()
         low_min = data['Low'].rolling(window=window).min()
@@ -123,7 +135,7 @@ class TechnicalIndicators:
 
         return williams_r
 
-    def calculate_cci(self, data, window=20):
+    def calculate_cci(self, data: pd.DataFrame, window: int = 20) -> pd.Series:
         """Calculate Commodity Channel Index"""
         tp = (data['High'] + data['Low'] + data['Close']) / 3
         sma_tp = tp.rolling(window=window).mean()
@@ -134,7 +146,7 @@ class TechnicalIndicators:
         return cci
 
     # Volatility Indicators
-    def calculate_atr(self, data, window=14):
+    def calculate_atr(self, data: pd.DataFrame, window: int = 14) -> pd.Series:
         """Calculate Average True Range"""
         high = data['High']
         low = data['Low']
@@ -149,7 +161,7 @@ class TechnicalIndicators:
 
         return atr
 
-    def calculate_keltner_channels(self, data, window=20, multiplier=2):
+    def calculate_keltner_channels(self, data: pd.DataFrame, window: int = 20, multiplier: int = 2) -> dict:
         """Calculate Keltner Channels"""
         ema = self.calculate_ema(data, span=window)
         atr = self.calculate_atr(data, window)
@@ -164,17 +176,17 @@ class TechnicalIndicators:
         }
 
     # Volume Indicators
-    def calculate_obv(self, data):
+    def calculate_obv(self, data: pd.DataFrame) -> pd.Series:
         """Calculate On-Balance Volume"""
         obv = np.where(data['Close'] > data['Close'].shift(), data['Volume'],
                       np.where(data['Close'] < data['Close'].shift(), -data['Volume'], 0)).cumsum()
         return pd.Series(obv, index=data.index)
 
-    def calculate_volume_sma(self, data, window=20):
+    def calculate_volume_sma(self, data: pd.DataFrame, window: int = 20) -> pd.Series:
         """Calculate Volume Simple Moving Average"""
         return data['Volume'].rolling(window=window).mean()
 
-    def calculate_volume_profile(self, data, bins=50):
+    def calculate_volume_profile(self, data: pd.DataFrame, bins: int = 50) -> tuple:
         """Calculate Volume Profile"""
         price_range = np.linspace(data['Low'].min(), data['High'].max(), bins)
         volume_profile = []
@@ -187,7 +199,7 @@ class TechnicalIndicators:
         return price_range[:-1], volume_profile
 
     # Support and Resistance Levels
-    def calculate_pivot_points(self, data):
+    def calculate_pivot_points(self, data: pd.DataFrame) -> dict:
         """Calculate Pivot Points"""
         prev_high = data['High'].shift(1)
         prev_low = data['Low'].shift(1)
@@ -207,7 +219,7 @@ class TechnicalIndicators:
             'Resistance2': resistance2
         }
 
-    def calculate_fibonacci_retracements(self, data, trend='up'):
+    def calculate_fibonacci_retracements(self, data: pd.DataFrame, trend: str = 'up') -> dict:
         """Calculate Fibonacci Retracement Levels"""
         if trend == 'up':
             swing_low = data['Low'].min()
@@ -230,7 +242,7 @@ class TechnicalIndicators:
 
         return levels
 
-    def calculate_all_indicators(self, data):
+    def calculate_all_indicators(self, data: pd.DataFrame) -> dict:
         """Calculate all commonly used indicators"""
         indicators = {}
 

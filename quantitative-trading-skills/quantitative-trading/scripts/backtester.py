@@ -8,8 +8,14 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from datetime import datetime
-from data_fetcher import DataFetcher
-from strategies import TradingStrategy
+import argparse
+
+try:
+    from .data_fetcher import DataFetcher
+    from .strategies import TradingStrategy
+except ImportError:
+    from data_fetcher import DataFetcher
+    from strategies import TradingStrategy
 
 class Backtester:
     def __init__(self, initial_capital=100000, commission=0.001, slippage=0.001):
@@ -63,7 +69,7 @@ class Backtester:
             'strategy_params': strategy_params
         }
 
-    def _simulate_trading(self, signals_data, price_data):
+    def _simulate_trading(self, signals_data: pd.DataFrame, price_data: pd.DataFrame) -> dict:
         """
         Simulate trading based on signals
         """
@@ -71,16 +77,29 @@ class Backtester:
         position = 0
         cash = self.initial_capital
         portfolio_value = []
-
-        for i, (date, row) in enumerate(signals_data.iterrows()):
-            current_price = price_data.loc[date, 'Close']
+        
+        # Use itertuples for faster iteration
+        # We assume signals_data contains 'Close' column as it's derived from price_data
+        
+        for row in signals_data.itertuples():
+            date = row.Index
+            
+            # Try to get price from row, otherwise fallback to price_data
+            if hasattr(row, 'Close'):
+                current_price = row.Close
+            else:
+                current_price = price_data.loc[date, 'Close']
 
             # Apply slippage
             buy_price = current_price * (1 + self.slippage)
             sell_price = current_price * (1 - self.slippage)
 
             # Check for buy signal
-            if row.get('Buy_Signal', False) and position <= 0:
+            # Use getattr to safely access attributes that might not exist
+            buy_signal = getattr(row, 'Buy_Signal', False)
+            sell_signal = getattr(row, 'Sell_Signal', False)
+            
+            if buy_signal and position <= 0:
                 # Close existing short position
                 if position < 0:
                     profit = (sell_price - self.entry_price) * abs(position)
@@ -88,6 +107,7 @@ class Backtester:
                     cash += profit - commission_cost
 
                 # Open long position
+                # Calculate max position size based on cash
                 position_size = cash // (buy_price * (1 + self.commission))
                 if position_size > 0:
                     commission_cost = position_size * buy_price * self.commission
@@ -105,7 +125,7 @@ class Backtester:
                     })
 
             # Check for sell signal
-            elif row.get('Sell_Signal', False) and position >= 0:
+            elif sell_signal and position >= 0:
                 # Close existing long position
                 if position > 0:
                     profit = (sell_price - self.entry_price) * position

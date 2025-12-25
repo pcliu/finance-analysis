@@ -9,14 +9,19 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy import stats
 from scipy.optimize import minimize
-from data_fetcher import DataFetcher
+import argparse
+
+try:
+    from .data_fetcher import DataFetcher
+except ImportError:
+    from data_fetcher import DataFetcher
 
 class RiskManager:
     def __init__(self, confidence_level=0.95):
         self.confidence_level = confidence_level
         self.fetcher = DataFetcher()
 
-    def calculate_var(self, returns, method='historical', confidence_level=None):
+    def calculate_var(self, returns: pd.Series, method: str = 'historical', confidence_level: float = None) -> float:
         """
         Calculate Value at Risk (VaR)
 
@@ -56,7 +61,7 @@ class RiskManager:
 
         return var
 
-    def calculate_cvar(self, returns, var=None, confidence_level=None):
+    def calculate_cvar(self, returns: pd.Series, var: float = None, confidence_level: float = None) -> float:
         """
         Calculate Conditional Value at Risk (CVaR) / Expected Shortfall
 
@@ -80,7 +85,7 @@ class RiskManager:
 
         return cvar
 
-    def calculate_drawdown_metrics(self, series, is_returns=True):
+    def calculate_drawdown_metrics(self, series: pd.Series, is_returns: bool = True) -> dict:
         """
         Calculate comprehensive drawdown metrics.
 
@@ -152,7 +157,7 @@ class RiskManager:
             'current_drawdown': drawdown.iloc[-1]
         }
 
-    def calculate_risk_adjusted_metrics(self, returns, benchmark_returns=None, risk_free_rate=0.02):
+    def calculate_risk_adjusted_metrics(self, returns: pd.Series, benchmark_returns: pd.Series = None, risk_free_rate: float = 0.02) -> dict:
         """
         Calculate risk-adjusted performance metrics
 
@@ -215,7 +220,7 @@ class RiskManager:
             'beta': beta if 'beta' in locals() else 0
         }
 
-    def stress_testing(self, returns, stress_scenarios=None):
+    def stress_testing(self, returns: pd.Series, stress_scenarios: dict = None) -> dict:
         """
         Perform stress testing on portfolio
 
@@ -271,7 +276,7 @@ class RiskManager:
 
         return stress_results
 
-    def portfolio_risk_contribution(self, returns, weights):
+    def portfolio_risk_contribution(self, returns: pd.DataFrame, weights: np.array) -> dict:
         """
         Calculate risk contribution of each asset in portfolio
 
@@ -302,7 +307,7 @@ class RiskManager:
             'asset_names': returns.columns.tolist()
         }
 
-    def calculate_risk_budget(self, returns, risk_budget):
+    def calculate_risk_budget(self, returns: pd.DataFrame, risk_budget: np.array) -> np.array:
         """
         Calculate optimal weights based on risk budget
 
@@ -342,7 +347,7 @@ class RiskManager:
         else:
             raise ValueError("Risk budget optimization failed")
 
-    def correlation_analysis(self, returns, window=60):
+    def correlation_analysis(self, returns: pd.DataFrame, window: int = 60) -> dict:
         """
         Analyze correlation dynamics
 
@@ -386,7 +391,7 @@ class RiskManager:
             'historical_correlation_avg': historical_avg
         }
 
-    def position_sizing(self, volatility, max_portfolio_vol=0.15, max_position_size=0.3):
+    def position_sizing(self, volatility: np.array, max_portfolio_vol: float = 0.15, max_position_size: float = 0.3) -> np.array:
         """
         Calculate optimal position sizes based on volatility
 
@@ -417,7 +422,7 @@ class RiskManager:
 
         return final_weights
 
-    def generate_risk_report(self, returns, benchmark_returns=None, weights=None):
+    def generate_risk_report(self, returns: pd.Series, benchmark_returns: pd.Series = None, weights: np.array = None) -> dict:
         """
         Generate comprehensive risk report
 
@@ -478,7 +483,7 @@ class RiskManager:
 
         return report
 
-    def plot_risk_metrics(self, risk_report):
+    def plot_risk_metrics(self, risk_report: dict):
         """
         Plot risk metrics from risk report
         """

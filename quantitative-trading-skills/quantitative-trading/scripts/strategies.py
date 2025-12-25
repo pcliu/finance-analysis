@@ -8,15 +8,20 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import argparse
-from data_fetcher import DataFetcher
-from indicators import TechnicalIndicators
+
+try:
+    from .data_fetcher import DataFetcher
+    from .indicators import TechnicalIndicators
+except ImportError:
+    from data_fetcher import DataFetcher
+    from indicators import TechnicalIndicators
 
 class TradingStrategy:
     def __init__(self, initial_capital=100000):
         self.initial_capital = initial_capital
         self.indicators = TechnicalIndicators()
 
-    def moving_average_crossover(self, data, fast_window=20, slow_window=50):
+    def moving_average_crossover(self, data: pd.DataFrame, fast_window: int = 20, slow_window: int = 50) -> pd.DataFrame:
         """
         Moving Average Crossover Strategy
 
@@ -39,7 +44,7 @@ class TradingStrategy:
 
         return data
 
-    def rsi_mean_reversion(self, data, rsi_window=14, oversold=30, overbought=70):
+    def rsi_mean_reversion(self, data: pd.DataFrame, rsi_window: int = 14, oversold: int = 30, overbought: int = 70) -> pd.DataFrame:
         """
         RSI Mean Reversion Strategy
 
@@ -63,7 +68,7 @@ class TradingStrategy:
 
         return data
 
-    def bollinger_bands_strategy(self, data, window=20, num_std=2):
+    def bollinger_bands_strategy(self, data: pd.DataFrame, window: int = 20, num_std: int = 2) -> pd.DataFrame:
         """
         Bollinger Bands Strategy
 
@@ -87,7 +92,7 @@ class TradingStrategy:
 
         return data
 
-    def macd_strategy(self, data, fast=12, slow=26, signal=9):
+    def macd_strategy(self, data: pd.DataFrame, fast: int = 12, slow: int = 26, signal: int = 9) -> pd.DataFrame:
         """
         MACD Strategy
 
@@ -111,7 +116,7 @@ class TradingStrategy:
 
         return data
 
-    def stochastic_oscillator_strategy(self, data, k_window=14, d_window=3, oversold=20, overbought=80):
+    def stochastic_oscillator_strategy(self, data: pd.DataFrame, k_window: int = 14, d_window: int = 3, oversold: int = 20, overbought: int = 80) -> pd.DataFrame:
         """
         Stochastic Oscillator Strategy
 
@@ -134,7 +139,7 @@ class TradingStrategy:
 
         return data
 
-    def momentum_breakout(self, data, lookback_period=20, volume_threshold=1.5):
+    def momentum_breakout(self, data: pd.DataFrame, lookback_period: int = 20, volume_threshold: float = 1.5) -> pd.DataFrame:
         """
         Momentum Breakout Strategy
 
@@ -155,7 +160,7 @@ class TradingStrategy:
 
         return data
 
-    def mean_reversion_strategy(self, data, lookback_period=20, entry_threshold=2.0, exit_threshold=0.5):
+    def mean_reversion_strategy(self, data: pd.DataFrame, lookback_period: int = 20, entry_threshold: float = 2.0, exit_threshold: float = 0.5) -> pd.DataFrame:
         """
         Mean Reversion Strategy
 
@@ -176,7 +181,7 @@ class TradingStrategy:
 
         return data
 
-    def dual_momentum_strategy(self, data, stock_data_market, lookback_period=12):
+    def dual_momentum_strategy(self, data: pd.DataFrame, stock_data_market: pd.DataFrame, lookback_period: int = 12) -> pd.DataFrame:
         """
         Dual Momentum Strategy
 
@@ -199,7 +204,7 @@ class TradingStrategy:
 
         return data
 
-    def pair_trading_strategy(self, data1, data2, lookback_period=60, entry_threshold=2.0, exit_threshold=0.5):
+    def pair_trading_strategy(self, data1: pd.DataFrame, data2: pd.DataFrame, lookback_period: int = 60, entry_threshold: float = 2.0, exit_threshold: float = 0.5) -> pd.DataFrame:
         """
         Pair Trading Strategy
 
@@ -228,7 +233,7 @@ class TradingStrategy:
 
         return signals
 
-    def volatility_targeting_strategy(self, data, target_volatility=0.15, lookback_period=20):
+    def volatility_targeting_strategy(self, data: pd.DataFrame, target_volatility: float = 0.15, lookback_period: int = 20) -> pd.DataFrame:
         """
         Volatility Targeting Strategy
 
@@ -249,7 +254,7 @@ class TradingStrategy:
 
         return data
 
-    def multi_strategy_signals(self, data, strategies=None):
+    def multi_strategy_signals(self, data: pd.DataFrame, strategies: list = None) -> pd.DataFrame:
         """
         Combine multiple strategies for more robust signals
         """
@@ -286,7 +291,7 @@ class TradingStrategy:
 
         return signals_data
 
-    def get_strategy_signals(self, data, strategy_name, **kwargs):
+    def get_strategy_signals(self, data: pd.DataFrame, strategy_name: str, **kwargs) -> pd.DataFrame:
         """
         Get signals for a specific strategy
         """

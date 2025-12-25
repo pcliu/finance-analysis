@@ -9,7 +9,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import minimize
 import argparse
-from data_fetcher import DataFetcher
+
+try:
+    from .data_fetcher import DataFetcher
+except ImportError:
+    from data_fetcher import DataFetcher
 
 class PortfolioAnalyzer:
     def __init__(self, risk_free_rate=0.02):
