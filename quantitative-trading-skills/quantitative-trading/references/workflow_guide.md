@@ -2,6 +2,12 @@
 
 Advanced usage patterns and workflows for the quantitative-trading skill.
 
+> **⚠️ IMPORTANT: All generated files go to `workspace/`**
+> 
+> - Scripts: `workspace/analyze_*.py`
+> - Output: `workspace/*.json`, `workspace/*.csv`, `workspace/*.png`
+> - **NEVER** create files in `examples/` (read-only reference)
+
 ## Environment Setup
 
 ### Runtime Environment

@@ -24,6 +24,13 @@ dependencies:
 
 A toolkit for quantitative trading analysis using yfinance (global) and tushare (China/HK).
 
+> **⚠️ IMPORTANT: File Generation Rules**
+> 
+> - **ALL generated scripts and output files MUST be saved to `workspace/`**
+> - **NEVER create or modify files in `examples/`** - this directory is READ-ONLY reference
+> - Scripts: `workspace/analyze_*.py`, `workspace/my_script.py`
+> - Output: `workspace/*.json`, `workspace/*.csv`, `workspace/*.png`
+
 ## Quick Start
 
 ```python
@@ -64,7 +71,7 @@ quantitative-trading/
 │   ├── api_reference.md
 │   ├── workflow_guide.md
 │   └── troubleshooting.md
-├── scripts/              # 💻 Core implementation
+├── scripts/              # 💻 Core implementation (import from here)
 │   ├── __init__.py       # Unified exports
 │   ├── data_fetcher.py
 │   ├── indicators.py
@@ -72,9 +79,11 @@ quantitative-trading/
 │   ├── backtester.py
 │   ├── portfolio_analyzer.py
 │   └── risk_manager.py
-├── examples/             # 📝 Usage examples
-└── workspace/            # 📂 Generated scripts & output
+├── examples/             # 📝 READ-ONLY reference examples (do NOT modify)
+└── workspace/            # 📂 ⬅️ ALL generated scripts & output go HERE
 ```
+
+> **Note:** The `workspace/` directory is git-ignored. All intermediate results and generated scripts are stored here.
 
 ## Core Modules
 
