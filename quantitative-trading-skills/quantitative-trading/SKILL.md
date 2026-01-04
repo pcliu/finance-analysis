@@ -97,13 +97,22 @@ info = get_company_info('AAPL')
 ```
 
 ### Technical Indicators
+
+> **⚠️ Return Types:**
+> - `calculate_rsi`, `calculate_sma`, `calculate_ema` → `pd.Series`
+> - `calculate_macd`, `calculate_bollinger_bands`, `calculate_stochastic` → `dict` (NOT DataFrame!)
+
 ```python
 from scripts import calculate_rsi, calculate_sma, calculate_macd, calculate_bollinger_bands
 
-rsi = calculate_rsi(data, period=14)
-sma = calculate_sma(data, window=20)
-macd = calculate_macd(data)
-bb = calculate_bollinger_bands(data)
+rsi = calculate_rsi(data, window=14)        # Returns pd.Series
+sma = calculate_sma(data, window=20)        # Returns pd.Series
+macd = calculate_macd(data)                 # Returns dict: {'MACD': Series, 'Signal': Series, 'Histogram': Series}
+bb = calculate_bollinger_bands(data)        # Returns dict: {'Upper': Series, 'Middle': Series, 'Lower': Series, ...}
+
+# Access MACD values from dict:
+macd_line = macd['MACD'].iloc[-1]
+signal_line = macd['Signal'].iloc[-1]
 ```
 
 ### Trading Strategies
@@ -116,10 +125,16 @@ signals = rsi_mean_reversion(data, oversold=30, overbought=70)
 
 ### Risk Analysis
 ```python
-from scripts import calculate_var, calculate_max_drawdown
+from scripts import RiskManager
 
-var = calculate_var(returns, confidence_level=0.95)
-drawdown = calculate_max_drawdown(data)
+rm = RiskManager()
+var = rm.calculate_var(returns, confidence_level=0.95)
+dd_metrics = rm.calculate_drawdown_metrics(returns, is_returns=True)  # Returns dict
+risk_metrics = rm.calculate_risk_adjusted_metrics(returns)            # Returns dict with sharpe_ratio, etc.
+
+# Access metrics:
+max_drawdown = dd_metrics['max_drawdown']
+sharpe_ratio = risk_metrics['sharpe_ratio']
 ```
 
 ## Usage Guidelines

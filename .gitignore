@@ -1,9 +1,3 @@
-# Workspace output files
-**/workspace/*
-
-# Keep .gitkeep files
-!**/workspace/.gitkeep
-
 # Python
 __pycache__/
 *.py[cod]

@@ -78,21 +78,40 @@ ti = TechnicalIndicators()
 
 ##### Moving Averages
 ```python
-sma = ti.calculate_sma(data, window=20)      # Simple Moving Average
-ema = ti.calculate_ema(data, window=20)      # Exponential Moving Average
+sma = ti.calculate_sma(data, window=20)      # Returns pd.Series
+ema = ti.calculate_ema(data, span=20)        # Note: uses 'span' not 'window'
 ```
 
 ##### Momentum Indicators
+
+> **⚠️ IMPORTANT:** These functions return `dict`, NOT DataFrame!
+
 ```python
-rsi = ti.calculate_rsi(data, period=14)      # Relative Strength Index (0-100)
-macd = ti.calculate_macd(data)               # MACD, Signal, Histogram
-stoch = ti.calculate_stochastic(data)        # %K, %D
+# RSI - Returns pd.Series
+rsi = ti.calculate_rsi(data, window=14)      # ⚠️ Parameter is 'window', NOT 'period'!
+
+# MACD - Returns dict with 'MACD', 'Signal', 'Histogram' keys
+macd = ti.calculate_macd(data)               # Returns dict, NOT DataFrame!
+macd_line = macd['MACD'].iloc[-1]            # Access via dict keys
+signal = macd['Signal'].iloc[-1]
+
+# Stochastic - Returns dict with '%K', '%D' keys  
+stoch = ti.calculate_stochastic(data)        # Returns dict
+k_value = stoch['%K'].iloc[-1]
 ```
 
 ##### Volatility Indicators
+
+> **⚠️ IMPORTANT:** Bollinger Bands returns `dict`, NOT DataFrame!
+
 ```python
-bb = ti.calculate_bollinger_bands(data, window=20, num_std=2)  # Upper, Middle, Lower, Width
-atr = ti.calculate_atr(data, period=14)      # Average True Range
+# Bollinger Bands - Returns dict with 'Upper', 'Middle', 'Lower', 'Bandwidth', 'Percent_B' keys
+bb = ti.calculate_bollinger_bands(data, window=20, num_std=2)
+bb_upper = bb['Upper'].iloc[-1]              # Access via dict keys
+bb_lower = bb['Lower'].iloc[-1]
+
+# ATR - Returns pd.Series
+atr = ti.calculate_atr(data, window=14)      # ⚠️ Parameter is 'window', NOT 'period'!
 ```
 
 ---
@@ -166,17 +185,40 @@ rm = RiskManager()
 
 #### Methods
 
-##### `calculate_var(returns, confidence_level=0.95)`
+##### `calculate_var(returns, method='historical', confidence_level=0.95)`
 Value at Risk calculation.
 
-##### `calculate_cvar(returns, confidence_level=0.95)`
+##### `calculate_cvar(returns, var=None, confidence_level=0.95)`
 Conditional Value at Risk (Expected Shortfall).
 
-##### `calculate_max_drawdown(data)`
-Maximum drawdown from peak.
+##### `calculate_drawdown_metrics(series, is_returns=True)`
 
-##### `calculate_sharpe_ratio(returns, risk_free_rate=0.02)`
-Risk-adjusted return metric.
+> **⚠️ Note:** This replaces `calculate_max_drawdown`. Returns a dict!
+
+```python
+dd_metrics = rm.calculate_drawdown_metrics(returns, is_returns=True)
+# Returns dict with keys:
+# - 'max_drawdown'
+# - 'avg_drawdown'
+# - 'max_drawdown_duration'
+# - 'current_drawdown'
+max_dd = dd_metrics['max_drawdown']
+```
+
+##### `calculate_risk_adjusted_metrics(returns, benchmark_returns=None, risk_free_rate=0.02)`
+
+> **⚠️ Note:** This replaces `calculate_sharpe_ratio`. Returns a dict!
+
+```python
+risk_metrics = rm.calculate_risk_adjusted_metrics(returns)
+# Returns dict with keys:
+# - 'sharpe_ratio'
+# - 'sortino_ratio'
+# - 'calmar_ratio'
+# - 'volatility'
+# - 'downside_volatility'
+sharpe = risk_metrics['sharpe_ratio']
+```
 
 ---
 
