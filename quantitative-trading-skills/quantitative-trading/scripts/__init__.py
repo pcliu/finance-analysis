@@ -83,7 +83,7 @@ def calculate_ema(data, window=20):
 
 def calculate_rsi(data, period=14):
     """Relative Strength Index."""
-    return _indicators.calculate_rsi(data, period)
+    return _indicators.calculate_rsi(data, window=period)
 
 
 def calculate_macd(data, fast=12, slow=26, signal=9):
