@@ -72,11 +72,8 @@ quantitative-trading/
 │   ├── backtester.py
 │   ├── portfolio_analyzer.py
 │   └── risk_manager.py
-├── workflows/            # 🔄 Reusable workflows
-│   ├── analyze_and_save.py
-│   └── compare_stocks.py
 ├── examples/             # 📝 Usage examples
-└── workspace/            # 📂 Output directory
+└── workspace/            # 📂 Generated scripts & output
 ```
 
 ## Core Modules
@@ -116,20 +113,37 @@ var = calculate_var(returns, confidence_level=0.95)
 drawdown = calculate_max_drawdown(data)
 ```
 
-### Workflows
-```python
-from workflows import analyze_and_save, compare_stocks
-
-result = analyze_and_save('AAPL', period='1y')
-comparison = compare_stocks(['AAPL', 'GOOGL', 'MSFT'])
-```
-
 ## Usage Guidelines
 
-1. **Create Python scripts** that import from `scripts` module
-2. **Filter data early** to reduce context size
-3. **Return summaries** not full datasets
-4. **Save results** to `workspace/` directory
+1. **All generated files go to `workspace/`**:
+   - Python scripts: `workspace/analyze_*.py`
+   - Output data: `workspace/*.json`, `workspace/*.csv`
+   - Charts: `workspace/*.png`
+2. **Import from `scripts` module** for core functionality
+3. **Filter data early** to reduce context size
+4. **Return summaries** not full datasets
+
+### Example Script Structure
+
+```python
+#!/usr/bin/env python3
+"""Save this file to: workspace/my_analysis.py"""
+
+import sys
+sys.path.insert(0, 'quantitative-trading-skills/quantitative-trading')
+
+from scripts import fetch_stock_data, calculate_rsi
+import json
+
+# Analysis code here...
+data = fetch_stock_data('AAPL', period='3mo')
+rsi = calculate_rsi(data)
+
+# Save results to workspace/
+result = {'ticker': 'AAPL', 'rsi': float(rsi.iloc[-1])}
+with open('workspace/result.json', 'w') as f:
+    json.dump(result, f, indent=2)
+```
 
 ## Detailed Documentation
 
