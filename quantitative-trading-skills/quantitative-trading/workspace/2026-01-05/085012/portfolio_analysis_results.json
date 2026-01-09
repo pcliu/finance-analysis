@@ -1,0 +1,182 @@
+[
+  {
+    "ticker": "512480.SH",
+    "current_price": 1.464,
+    "shares_held": 5000,
+    "market_value": 7320.0,
+    "analysis_date": "2026-01-05 10:48:36",
+    "rsi": 56.249190180501095,
+    "rsi_signal": "neutral",
+    "rsi_interpretation": "中性区域",
+    "macd": {
+      "macd_line": 0.015301302307977549,
+      "signal_line": 0.008790620114470205,
+      "histogram": 0.006510682193507344
+    },
+    "macd_signal": "bullish",
+    "macd_interpretation": "金叉，看涨信号",
+    "bollinger_bands": {
+      "upper": 1.494194755454888,
+      "middle": 1.43485,
+      "lower": 1.375505244545112,
+      "position_percent": 74.55987877661649
+    },
+    "bb_signal": "neutral",
+    "bb_interpretation": "在轨内运行",
+    "moving_averages": {
+      "sma_20": 1.43485,
+      "sma_50": 1.43316,
+      "ema_12": 1.4512181458507176
+    },
+    "trend": "uptrend",
+    "trend_interpretation": "上升趋势，多头排列",
+    "volatility_annual": 36.77741576661306,
+    "max_drawdown": -18.445404071560787,
+    "return_1m": 5.84112709757818,
+    "score": 75,
+    "recommendation": {
+      "action": "strong_buy",
+      "action_cn": "强烈建议增持",
+      "suggested_change_percent": 30.0,
+      "shares_change": 1500,
+      "value_change": 2196.0,
+      "reason": "综合得分75分，多个技术指标显示强烈的买入信号",
+      "target_shares": 6500
+    }
+  },
+  {
+    "ticker": "518880.SH",
+    "current_price": 9.301,
+    "shares_held": 2000,
+    "market_value": 18602.0,
+    "analysis_date": "2026-01-05 10:48:37",
+    "rsi": 50.78105155735664,
+    "rsi_signal": "neutral",
+    "rsi_interpretation": "中性区域",
+    "macd": {
+      "macd_line": 0.1271708079585423,
+      "signal_line": 0.14170305586486792,
+      "histogram": -0.014532247906325624
+    },
+    "macd_signal": "bearish",
+    "macd_interpretation": "死叉，看跌信号",
+    "bollinger_bands": {
+      "upper": 9.73836077741133,
+      "middle": 9.327749999999998,
+      "lower": 8.917139222588666,
+      "position_percent": 46.74265734467058
+    },
+    "bb_signal": "neutral",
+    "bb_interpretation": "在轨内运行",
+    "moving_averages": {
+      "sma_20": 9.327749999999998,
+      "sma_50": 9.07908,
+      "ema_12": 9.42036176607059
+    },
+    "trend": "sideways",
+    "trend_interpretation": "横盘整理",
+    "volatility_annual": 19.239850332686135,
+    "max_drawdown": -10.148411371237428,
+    "return_1m": 2.330784862897539,
+    "score": 35,
+    "recommendation": {
+      "action": "reduce",
+      "action_cn": "建议减持",
+      "suggested_change_percent": -15.0,
+      "shares_change": -300,
+      "value_change": 2790.3,
+      "reason": "综合得分35分，多个技术指标偏向看跌",
+      "target_shares": 1700
+    }
+  },
+  {
+    "ticker": "161129.SZ",
+    "current_price": 1.096,
+    "shares_held": 4289.82,
+    "market_value": 4701.64272,
+    "analysis_date": "2026-01-05 10:48:37",
+    "rsi": 55.856767331723766,
+    "rsi_signal": "neutral",
+    "rsi_interpretation": "中性区域",
+    "macd": {
+      "macd_line": -0.002001468398369566,
+      "signal_line": -0.00637064528459378,
+      "histogram": 0.0043691768862242145
+    },
+    "macd_signal": "bullish",
+    "macd_interpretation": "金叉，看涨信号",
+    "bollinger_bands": {
+      "upper": 1.1093147924624216,
+      "middle": 1.0807499999999999,
+      "lower": 1.0521852075375782,
+      "position_percent": 76.69369998060073
+    },
+    "bb_signal": "neutral",
+    "bb_interpretation": "在轨内运行",
+    "moving_averages": {
+      "sma_20": 1.0807499999999999,
+      "sma_50": 1.09498,
+      "ema_12": 1.0843079577811718
+    },
+    "trend": "sideways",
+    "trend_interpretation": "横盘整理",
+    "volatility_annual": 13.7403362012782,
+    "max_drawdown": -15.076182838813084,
+    "return_1m": 0.8009258586137324,
+    "score": 65,
+    "recommendation": {
+      "action": "buy",
+      "action_cn": "建议增持",
+      "suggested_change_percent": 15.0,
+      "shares_change": 643,
+      "value_change": 704.7280000000001,
+      "reason": "综合得分65分，多个技术指标偏向看涨",
+      "target_shares": 4932.82
+    }
+  },
+  {
+    "ticker": "161226.SZ",
+    "current_price": 2.251,
+    "shares_held": 0,
+    "market_value": 0.0,
+    "analysis_date": "2026-01-05 10:48:37",
+    "rsi": 53.510049138818346,
+    "rsi_signal": "neutral",
+    "rsi_interpretation": "中性区域",
+    "macd": {
+      "macd_line": 0.2521168929993176,
+      "signal_line": 0.27577057105447456,
+      "histogram": -0.023653678055156946
+    },
+    "macd_signal": "bearish",
+    "macd_interpretation": "死叉，看跌信号",
+    "bollinger_bands": {
+      "upper": 3.0611302965879608,
+      "middle": 2.2286,
+      "lower": 1.3960697034120395,
+      "position_percent": 51.34529638691851
+    },
+    "bb_signal": "neutral",
+    "bb_interpretation": "在轨内运行",
+    "moving_averages": {
+      "sma_20": 2.2286,
+      "sma_50": 1.7257199999999997,
+      "ema_12": 2.4111896669844413
+    },
+    "trend": "uptrend",
+    "trend_interpretation": "上升趋势，多头排列",
+    "volatility_annual": 49.251703086808654,
+    "max_drawdown": -27.759948652118094,
+    "return_1m": 33.22646769911979,
+    "score": 45,
+    "recommendation": {
+      "action": "hold",
+      "action_cn": "继续持有",
+      "suggested_change_percent": 0,
+      "shares_change": 0,
+      "value_change": 0,
+      "reason": "综合得分45分，技术指标显示中性，建议持有观望",
+      "target_shares": 0
+    }
+  }
+]
