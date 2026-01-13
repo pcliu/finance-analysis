@@ -23,9 +23,15 @@ class TechnicalIndicators:
         """Calculate Simple Moving Average"""
         return data[column].rolling(window=window).mean()
 
-    def calculate_ema(self, data: pd.DataFrame, span: int = 20, column: str = 'Close') -> pd.Series:
-        """Calculate Exponential Moving Average"""
-        return data[column].ewm(span=span).mean()
+    def calculate_ema(self, data: pd.DataFrame, window: int = 20, column: str = 'Close') -> pd.Series:
+        """Calculate Exponential Moving Average.
+        
+        Args:
+            data: DataFrame with price data
+            window: EMA period
+            column: Column to calculate EMA on
+        """
+        return data[column].ewm(span=window).mean()
 
     def calculate_wma(self, data: pd.DataFrame, window: int = 20, column: str = 'Close') -> pd.Series:
         """Calculate Weighted Moving Average"""
@@ -163,7 +169,7 @@ class TechnicalIndicators:
 
     def calculate_keltner_channels(self, data: pd.DataFrame, window: int = 20, multiplier: int = 2) -> dict:
         """Calculate Keltner Channels"""
-        ema = self.calculate_ema(data, span=window)
+        ema = self.calculate_ema(data, window=window)
         atr = self.calculate_atr(data, window)
 
         upper_channel = ema + (multiplier * atr)

@@ -78,12 +78,15 @@ def calculate_sma(data, window=20):
 
 def calculate_ema(data, window=20):
     """Exponential Moving Average."""
-    return _indicators.calculate_ema(data, window)
+    return _indicators.calculate_ema(data, window=window)
 
 
-def calculate_rsi(data, period=14):
-    """Relative Strength Index."""
-    return _indicators.calculate_rsi(data, window=period)
+def calculate_rsi(data, window=14):
+    """Relative Strength Index.
+    
+    Note: Uses 'window' parameter to match underlying RSI calculation.
+    """
+    return _indicators.calculate_rsi(data, window=window)
 
 
 def calculate_macd(data, fast=12, slow=26, signal=9):

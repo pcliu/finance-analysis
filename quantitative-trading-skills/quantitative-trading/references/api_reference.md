@@ -79,7 +79,7 @@ ti = TechnicalIndicators()
 ##### Moving Averages
 ```python
 sma = ti.calculate_sma(data, window=20)      # Returns pd.Series
-ema = ti.calculate_ema(data, span=20)        # Note: uses 'span' not 'window'
+ema = ti.calculate_ema(data, window=20)      # Returns pd.Series
 ```
 
 ##### Momentum Indicators
