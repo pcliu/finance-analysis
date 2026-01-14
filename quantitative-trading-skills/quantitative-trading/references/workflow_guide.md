@@ -177,3 +177,71 @@ best = max([(k, v) for k, v in results.items() if 'error' not in v],
           key=lambda x: x[1]['rsi'])
 print(f"Highest RSI: {best[0]} = {best[1]['rsi']:.2f}")
 ```
+
+---
+
+## Portfolio Analysis Pattern
+
+When performing portfolio analysis (diversification and optimization):
+
+1. **Use `PortfolioAnalyzer` class** for correlation and optimization.
+2. **Handle Risky Assets vs Cash**: Always calculate metrics for the risky part (ETFs/Stocks) and separately account for cash holdings to show total portfolio risk.
+3. **Save Multiple Outputs**: Portfolio analysis usually requires a JSON for data and PNGs for visualization (Efficient Frontier, Correlation Matrix).
+
+### Example Pattern
+
+```python
+from scripts import PortfolioAnalyzer
+
+# 1. Fetch data for multiple tickers
+pa = PortfolioAnalyzer()
+tickers = ['510300.SH', '510500.SH', '159830.SZ']
+price_data = pa.create_portfolio_data(tickers, period='1y')
+returns = pa.calculate_returns(price_data)
+
+# 2. Portfolio Optimization (Max Sharpe)
+opt_result = pa.optimize_portfolio(returns, optimization_method='sharpe')
+
+# 3. Correlation Matrix
+corr_matrix = returns.corr()
+
+# 4. Save results to workspace
+# [See example script in SKILL.md for directory structure]
+```
+
+---
+
+## Risk Management Assessment Pattern
+
+For deep risk dives (Stress Testing, VaR, Risk Contribution):
+
+1. **Use `RiskManager` class** for quantitative risk metrics.
+2. **Component Risk Analysis**: Calculate `portfolio_risk_contribution` to identify which individual assets are driving the portfolio's overall volatility.
+3. **Stress Scenarios**: Run `stress_testing` with various scenarios (Market Crash, Volatility Spike) to understand potential losses in tail events.
+4. **Visualizations**: Always generate at least:
+   - `risk_contribution.png`: To visualize where risk is concentrated.
+   - `correlation_matrix.png`: To visualize diversification or lack thereof.
+
+### Example Pattern
+
+```python
+from scripts import RiskManager, DataFetcher
+
+rm = RiskManager()
+fetcher = DataFetcher()
+
+# 1. Prepare Returns (including risky and cash allocation)
+returns_df = fetcher.fetch_multiple_stocks(tickers, period='1y')
+portfolio_returns = (returns_df * weights).sum(axis=1)
+
+# 2. Generate Full Risk Report
+report = rm.generate_risk_report(portfolio_returns, weights=weights, returns=returns_df)
+
+# 3. Component Risk Contribution
+risk_contrib = rm.portfolio_risk_contribution(returns_df, weights)
+
+# 4. Stress Testing
+stress_results = rm.stress_testing(portfolio_returns)
+```
+
+> **👉 Tip:** Use the [Risk Assessment](./report_templates/risk_assessment.md) template for documenting these findings.

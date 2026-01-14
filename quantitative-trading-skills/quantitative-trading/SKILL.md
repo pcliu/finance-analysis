@@ -29,19 +29,25 @@ A toolkit for quantitative trading analysis using yfinance (global) and tushare 
 > - **ALL generated scripts and output files MUST be saved to `workspace/YYYY-MM-DD/HHMMSS/`**
 > - Use current date and time for directory structure (e.g., `workspace/2026-01-06/085012/`)
 > - **NEVER create or modify files in `examples/`** - this directory is READ-ONLY reference
-> - Scripts: `workspace/YYYY-MM-DD/HHMMSS/analyze_*.py`
+> - **Scripts: `workspace/YYYY-MM-DD/HHMMSS/analyze_*.py`** ← 脚本本身也放在此目录！
 > - Output: `workspace/YYYY-MM-DD/HHMMSS/*.json`, `*.csv`, `*.png`
 > - **📋 MUST generate `analysis_report.md`** - 每次分析必须生成分析报告便于回顾
+> 
+> **🚨 注意：创建脚本时，必须先确定 output_dir，再将脚本文件写入该目录！**
 > 
 > ```python
 > from datetime import datetime
 > import os
 > 
-> # Generate date-time based output directory
+> # 1. FIRST: Generate date-time based output directory
 > now = datetime.now()
 > output_dir = f"workspace/{now.strftime('%Y-%m-%d')}/{now.strftime('%H%M%S')}"
 > os.makedirs(output_dir, exist_ok=True)
+> 
+> # 2. Script file should be saved AS: {output_dir}/analyze_xxx.py
+> #    NOT in workspace/ root!
 > ```
+
 
 > **📋 Analysis Report Templates**
 > 
@@ -51,6 +57,10 @@ A toolkit for quantitative trading analysis using yfinance (global) and tushare 
 > 1. **技术分析 (Technical Analysis)**: [`references/report_templates/technical_analysis.md`](references/report_templates/technical_analysis.md)
 > 2. **持仓调整 (Portfolio Adjustment)**: [`references/report_templates/portfolio_adjustment.md`](references/report_templates/portfolio_adjustment.md)
 > 3. **策略信号分析 (Strategy Signal Analysis)**: [`references/report_templates/strategy_signal_analysis.md`](references/report_templates/strategy_signal_analysis.md)
+> 4. **组合分析 (Portfolio Analysis)**: [`references/report_templates/portfolio_analysis.md`](references/report_templates/portfolio_analysis.md)
+> 5. **风险管理评估 (Risk Assessment)**: [`references/report_templates/risk_assessment.md`](references/report_templates/risk_assessment.md)
+> 
+> *注：若任务类型不属于上述任何一类，请根据实际分析内容**自由撰写**结构清晰的分析报告。*
 > 
 > **👉 更多详情与扩展:** [`references/report_templates/README.md`](references/report_templates/README.md)
 
@@ -161,6 +171,21 @@ risk_metrics = rm.calculate_risk_adjusted_metrics(returns)            # Returns 
 # Access metrics:
 max_drawdown = dd_metrics['max_drawdown']
 sharpe_ratio = risk_metrics['sharpe_ratio']
+```
+
+### Portfolio Analysis
+```python
+from scripts import PortfolioAnalyzer
+
+pa = PortfolioAnalyzer()
+# Optimization (Max Sharpe, Min Volatility, etc.)
+opt_result = pa.optimize_portfolio(returns, method='sharpe')
+
+# Efficient Frontier
+ef_data = pa.calculate_efficient_frontier(returns)
+
+# Correlation Matrix
+corr = returns.corr()
 ```
 
 ## Usage Guidelines
