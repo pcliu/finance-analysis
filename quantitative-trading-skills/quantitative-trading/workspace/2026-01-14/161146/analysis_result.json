@@ -1,0 +1,37 @@
+{
+  "Ticker": "510150.SH",
+  "Date": "2026-01-14",
+  "Price": 0.571,
+  "Indicators": {
+    "Trend": {
+      "SMA_20": 0.563,
+      "SMA_50": 0.563,
+      "SMA_200": 0.554,
+      "EMA_12": 0.569,
+      "EMA_26": 0.565,
+      "Bollinger": {
+        "Upper": 0.58,
+        "Middle": 0.563,
+        "Lower": 0.547
+      }
+    },
+    "Momentum": {
+      "RSI": 56.46,
+      "MACD": 0.0035,
+      "MACD_Signal": 0.0018,
+      "MACD_Hist": 0.0017,
+      "Stochastic_K": 56.67,
+      "Stochastic_D": 75.56,
+      "CCI": 95.1,
+      "Williams_R": -43.33
+    },
+    "Volatility": {
+      "ATR": 0.0071
+    },
+    "Volume": {
+      "Volume": 1530319,
+      "Volume_SMA": 1013018,
+      "OBV": 41519433
+    }
+  }
+}

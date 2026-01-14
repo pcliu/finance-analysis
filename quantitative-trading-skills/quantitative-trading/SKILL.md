@@ -43,79 +43,17 @@ A toolkit for quantitative trading analysis using yfinance (global) and tushare 
 > os.makedirs(output_dir, exist_ok=True)
 > ```
 
-> **📋 Analysis Report Template (`analysis_report.md`)**
+> **📋 Analysis Report Templates**
 > 
-> 每次分析完成后，必须在输出目录生成 `analysis_report.md` 报告，格式如下, 如果分析内容不包含某个部分，可以忽略：
+> 每次分析完成后，必须在输出目录生成 `analysis_report.md` 报告。
 > 
-> ```markdown
-> # 投资分析报告
+> 请根据任务类型选择合适的模板：
+> 1. **技术分析 (Technical Analysis)**: [`references/report_templates/technical_analysis.md`](references/report_templates/technical_analysis.md)
+> 2. **持仓调整 (Portfolio Adjustment)**: [`references/report_templates/portfolio_adjustment.md`](references/report_templates/portfolio_adjustment.md)
+> 3. **策略信号分析 (Strategy Signal Analysis)**: [`references/report_templates/strategy_signal_analysis.md`](references/report_templates/strategy_signal_analysis.md)
 > 
-> **生成时间**: YYYY-MM-DD HH:MM:SS
-> 
-> ## 1. 市场概况与持仓分析
-> 
-> [简要描述当前市场环境和持仓整体表现]
-> 
-> **现有持仓诊断：**
-> 
-> *   **标的1 (代码)**：当前价格、RSI、趋势状态、近期表现。**操作建议**。
-> *   **标的2 (代码)**：...
-> 
-> ## 2. 关注标的分析
-> 
-> [如有新关注的标的，分析其技术指标和市场表现]
-> 
-> *   **标的A (代码)**：趋势强度、技术指标、建议。
-> 
-> ## 3. 历史策略复盘（最近5次报告）
-> 
-> [汇总前5次分析报告的核心建议与后续行情拟合度]
-> 
-> ### 复盘汇总表
-> | 日期 | 品种 | 当时建议 | 建议价格 | 当前价格 | 涨跌幅 | 效果评估 |
-> | :--- | :--- | :--- | ---: | ---: | ---: | :--- |
-> | MM-DD | 标的名称 | 买入/卖出/观望 | X.XX | X.XX | +X.X% | ✅正确/⚠️中性/❌错过 |
-> 
-> ### 关键指标对比
-> | 对比项 | 前次数据 | 本次数据 | 变化 |
-> | :--- | ---: | ---: | :--- |
-> | 标的A RSI | XX.XX | XX.XX | ⬆️/⬇️ 变化描述 |
-> | 标的B 价格 | X.XX | X.XX | +X.X% |
-> 
-> > [!IMPORTANT]
-> > **历史建议执行情况**：
-> > - ✅ 正确的决策及其效果
-> > - ⚠️ 需要改进的决策及原因
-> > - 📊 基于复盘调整的风控阈值
-> 
-> ## 4. 具体操作建议
-> 
-> [策略总结，如："去弱留强，积极进攻"]
-> 
-> ### 减仓/卖出：
-> | 代码 | 名称 | 操作 | 建议数量 | 理由 |
-> | :--- | :--- | :--- | :--- | :--- |
-> | **XXXXXX** | 名称 | 减持/清仓 | X 股 | 原因 |
-> 
-> ### 建仓/增持：
-> | 代码 | 名称 | 操作 | 建议价格 | 建议数量 | 预估金额 | 理由 |
-> | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-> | **XXXXXX** | 名称 | 建仓 | X.XX | X 股 | ~X 元 | 原因 |
-> 
-> ## 5. 调整后展望
-> 
-> *   **资金利用率**：调整前后对比
-> *   **风格暴露**：组合风格变化
-> *   **风险提示**：关键风险点和止损建议
-> 
-> ## 6. 生成文件
-> - `analyze_*.py` - 分析脚本
-> - `*.json` - 数据结果  
-> - `*.png` - 图表
-> 
-> ---
-> *注：以上分析基于技术指标与定量策略，仅供参考，不构成投资建议。*
-> ```
+> **👉 更多详情与扩展:** [`references/report_templates/README.md`](references/report_templates/README.md)
+
 
 ## Quick Start
 
@@ -273,4 +211,7 @@ print(f"Results saved to: {output_dir}/")
 
 - [API Reference](references/api_reference.md) - Complete function documentation
 - [Workflow Guide](references/workflow_guide.md) - Advanced usage patterns
+- [Workflow Guide](references/workflow_guide.md) - Advanced usage patterns
+- [Report Templates](references/report_templates/README.md) - 📋 Standard report formats
+- [Troubleshooting](references/troubleshooting.md) - Common issues and solutions
 - [Troubleshooting](references/troubleshooting.md) - Common issues and solutions

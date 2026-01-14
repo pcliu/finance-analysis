@@ -1,0 +1,21 @@
+{
+  "date": "2026-01-13",
+  "close": 0.575,
+  "signals": {
+    "ma_crossover": 0,
+    "rsi": 0,
+    "macd": 0,
+    "bollinger": 0,
+    "stochastic": 0,
+    "momentum": 0,
+    "mean_reversion": 0,
+    "consensus": 0.0,
+    "final": 0
+  },
+  "indicators": {
+    "rsi_value": 61.75086002267939,
+    "macd_value": 0.003571171620870839,
+    "macd_signal": 0.0013272874076450864,
+    "volatility": 0.11900902286271009
+  }
+}

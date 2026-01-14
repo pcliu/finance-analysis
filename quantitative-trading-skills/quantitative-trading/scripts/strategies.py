@@ -259,7 +259,8 @@ class TradingStrategy:
         Combine multiple strategies for more robust signals
         """
         if strategies is None:
-            strategies = ['ma_crossover', 'rsi', 'macd', 'bollinger']
+            # Excludes pair_trading and dual_momentum as they require extra data
+            strategies = ['ma_crossover', 'rsi', 'macd', 'bollinger', 'stochastic', 'momentum', 'mean_reversion']
 
         signals_data = data.copy()
 
@@ -281,6 +282,21 @@ class TradingStrategy:
             bb_data = self.bollinger_bands_strategy(data.copy())
             signals_data['BB_Signal'] = np.where(bb_data['Buy_Signal'], 1,
                                                 np.where(bb_data['Sell_Signal'], -1, 0))
+
+        if 'stochastic' in strategies:
+            stoch_data = self.stochastic_oscillator_strategy(data.copy())
+            signals_data['Stoch_Signal'] = np.where(stoch_data['Buy_Signal'], 1,
+                                                   np.where(stoch_data['Sell_Signal'], -1, 0))
+
+        if 'momentum' in strategies:
+            mom_data = self.momentum_breakout(data.copy())
+            signals_data['Momentum_Signal'] = np.where(mom_data['Buy_Signal'], 1,
+                                                      np.where(mom_data['Sell_Signal'], -1, 0))
+
+        if 'mean_reversion' in strategies:
+            mr_data = self.mean_reversion_strategy(data.copy())
+            signals_data['MeanRev_Signal'] = np.where(mr_data['Buy_Signal'], 1,
+                                                     np.where(mr_data['Sell_Signal'], -1, 0))
 
         # Calculate consensus signal
         signal_columns = [col for col in signals_data.columns if col.endswith('_Signal')]
