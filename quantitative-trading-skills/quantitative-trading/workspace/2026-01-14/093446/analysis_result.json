@@ -1,0 +1,220 @@
+{
+  "analysis_time": "2026-01-14T09:37:45.962965",
+  "analysis_date": "2026-01-14",
+  "account_info": {
+    "total_assets": 94376.52,
+    "market_value": 19460.6,
+    "available_cash": 74915.92,
+    "total_pnl": 1737.39
+  },
+  "holdings_analysis": {},
+  "candidates_analysis": {},
+  "backtest_results": [
+    {
+      "ticker": "513180.SS",
+      "rec_date": "2026-01-05",
+      "action": "SELL_ALL",
+      "description": "建议清仓恒指科技",
+      "rec_price": 0.75,
+      "current_price": 0.772,
+      "price_change_pct": 2.93,
+      "effectiveness": "NEUTRAL",
+      "emoji": "⚪"
+    },
+    {
+      "ticker": "513630.SS",
+      "rec_date": "2026-01-05",
+      "action": "SELL_ALL",
+      "description": "建议清仓香港红利",
+      "rec_price": 1.62,
+      "current_price": 1.624,
+      "price_change_pct": 0.25,
+      "effectiveness": "NEUTRAL",
+      "emoji": "⚪"
+    },
+    {
+      "ticker": "161226.SZ",
+      "rec_date": "2026-01-05",
+      "action": "BUY",
+      "description": "建议买入白银",
+      "rec_price": 2.0,
+      "current_price": 2.748,
+      "price_change_pct": 37.4,
+      "effectiveness": "CORRECT",
+      "emoji": "✅"
+    },
+    {
+      "ticker": "515070.SS",
+      "rec_date": "2026-01-05",
+      "action": "BUY",
+      "description": "建议买入AI智能",
+      "rec_price": 1.95,
+      "current_price": 2.096,
+      "price_change_pct": 7.49,
+      "effectiveness": "CORRECT",
+      "emoji": "✅"
+    },
+    {
+      "ticker": "159770.SZ",
+      "rec_date": "2026-01-05",
+      "action": "BUY",
+      "description": "建议买入机器人",
+      "rec_price": 1.06,
+      "current_price": 1.116,
+      "price_change_pct": 5.28,
+      "effectiveness": "CORRECT",
+      "emoji": "✅"
+    },
+    {
+      "ticker": "159241.SZ",
+      "rec_date": "2026-01-07",
+      "action": "AVOID",
+      "description": "建议观望航空航天",
+      "rec_price": 1.46,
+      "current_price": 1.578,
+      "price_change_pct": 8.08,
+      "effectiveness": "MISSED_GAIN",
+      "emoji": "⚠️"
+    },
+    {
+      "ticker": "159516.SZ",
+      "rec_date": "2026-01-07",
+      "action": "REDUCE",
+      "description": "建议减持半导体设备",
+      "rec_price": 1.68,
+      "current_price": 1.765,
+      "price_change_pct": 5.06,
+      "effectiveness": "MISSED_GAIN",
+      "emoji": "⚠️"
+    },
+    {
+      "ticker": "161226.SZ",
+      "rec_date": "2026-01-07",
+      "action": "REDUCE",
+      "description": "建议减持白银",
+      "rec_price": 2.55,
+      "current_price": 2.748,
+      "price_change_pct": 7.76,
+      "effectiveness": "MISSED_GAIN",
+      "emoji": "⚠️"
+    },
+    {
+      "ticker": "159516.SZ",
+      "rec_date": "2026-01-09",
+      "action": "SELL_ALL",
+      "description": "建议清仓半导体设备",
+      "rec_price": 1.8,
+      "current_price": 1.765,
+      "price_change_pct": -1.94,
+      "effectiveness": "NEUTRAL",
+      "emoji": "⚪"
+    },
+    {
+      "ticker": "588000.SS",
+      "rec_date": "2026-01-09",
+      "action": "REDUCE",
+      "description": "建议减持科创50",
+      "rec_price": 1.55,
+      "current_price": 1.549,
+      "price_change_pct": -0.06,
+      "effectiveness": "NEUTRAL",
+      "emoji": "⚪"
+    },
+    {
+      "ticker": "159241.SZ",
+      "rec_date": "2026-01-09",
+      "action": "AVOID",
+      "description": "建议继续观望航空航天",
+      "rec_price": 1.53,
+      "current_price": 1.578,
+      "price_change_pct": 3.14,
+      "effectiveness": "NEUTRAL",
+      "emoji": "⚪"
+    },
+    {
+      "ticker": "510150.SS",
+      "rec_date": "2026-01-12",
+      "action": "BUY",
+      "description": "建议买入消费ETF",
+      "rec_price": 0.575,
+      "current_price": 0.575,
+      "price_change_pct": 0.0,
+      "effectiveness": "NEUTRAL",
+      "emoji": "⚪"
+    },
+    {
+      "ticker": "512400.SS",
+      "rec_date": "2026-01-12",
+      "action": "SELL_ALL",
+      "description": "建议清仓有色ETF",
+      "rec_price": 2.1,
+      "current_price": 2.141,
+      "price_change_pct": 1.95,
+      "effectiveness": "NEUTRAL",
+      "emoji": "⚪"
+    },
+    {
+      "ticker": "588000.SS",
+      "rec_date": "2026-01-12",
+      "action": "REDUCE",
+      "description": "建议减持科创50",
+      "rec_price": 1.55,
+      "current_price": 1.549,
+      "price_change_pct": -0.06,
+      "effectiveness": "NEUTRAL",
+      "emoji": "⚪"
+    },
+    {
+      "ticker": "515070.SS",
+      "rec_date": "2026-01-13",
+      "action": "REDUCE",
+      "description": "建议减持AI智能",
+      "rec_price": 2.16,
+      "current_price": 2.096,
+      "price_change_pct": -2.96,
+      "effectiveness": "CORRECT",
+      "emoji": "✅"
+    },
+    {
+      "ticker": "588000.SS",
+      "rec_date": "2026-01-13",
+      "action": "REDUCE",
+      "description": "建议减持科创50",
+      "rec_price": 1.59,
+      "current_price": 1.549,
+      "price_change_pct": -2.58,
+      "effectiveness": "CORRECT",
+      "emoji": "✅"
+    },
+    {
+      "ticker": "159770.SZ",
+      "rec_date": "2026-01-13",
+      "action": "REDUCE",
+      "description": "建议减持机器人",
+      "rec_price": 1.13,
+      "current_price": 1.116,
+      "price_change_pct": -1.24,
+      "effectiveness": "NEUTRAL",
+      "emoji": "⚪"
+    }
+  ],
+  "risk_thresholds": {
+    "rsi_overbought": 68,
+    "rsi_severe_overbought": 78,
+    "rsi_oversold": 30,
+    "stop_loss_pct": -8.0,
+    "new_position_rsi_max": 63,
+    "take_profit_pct": 25,
+    "max_single_position_pct": 30,
+    "backtest_accuracy": 0.29411764705882354
+  },
+  "recommendations": {
+    "sell": [],
+    "buy": [],
+    "hold": [],
+    "total_sell_amount": 0,
+    "total_buy_amount": 0,
+    "net_investment": 0
+  },
+  "budget_limit": 10000
+}
