@@ -45,7 +45,7 @@ A toolkit for quantitative trading analysis using yfinance (global) and tushare 
 
 > **📋 Analysis Report Template (`analysis_report.md`)**
 > 
-> 每次分析完成后，必须在输出目录生成 `analysis_report.md` 报告，格式如下：
+> 每次分析完成后，必须在输出目录生成 `analysis_report.md` 报告，格式如下, 如果分析内容不包含某个部分，可以忽略：
 > 
 > ```markdown
 > # 投资分析报告
