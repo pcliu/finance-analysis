@@ -188,6 +188,32 @@ ef_data = pa.calculate_efficient_frontier(returns)
 corr = returns.corr()
 ```
 
+### Portfolio Adjustment (持仓调整)
+
+持仓调整分析的完整流程：
+
+**流程步骤：**
+
+1. **获取技术指标** - 对持仓和候选品种计算 RSI、MACD、SMA、布林带等
+2. **历史复盘**（可选）- 对比历史建议与实际走势，计算准确率
+3. **动态调整阈值** - 根据复盘准确率调整 RSI 超买/超卖阈值
+4. **生成操作建议** - 基于技术指标生成减持/持有/建仓建议
+
+**决策逻辑：**
+- RSI ≥ 80：严重超买 → 建议减持
+- RSI ≥ 70：超买 → 观察持有
+- RSI < 40：超卖 → 可左侧建仓
+- 按 RSI 升序排列候选品种（优先低估值）
+
+**输出结构：**
+```python
+recommendations = {
+    'sell': [{'ticker': 'xxx', 'action': '减持', 'reason': '...'}],
+    'buy': [{'ticker': 'xxx', 'action': '可建仓', 'feasibility': '✅', 'reason': '...'}],
+    'hold': [{'ticker': 'xxx', 'action': '持有', 'reason': '...'}],
+}
+```
+
 ## Usage Guidelines
 
 1. **All generated files go to `workspace/YYYY-MM-DD/HHMMSS/`**:
