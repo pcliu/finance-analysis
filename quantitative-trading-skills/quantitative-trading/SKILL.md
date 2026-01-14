@@ -127,11 +127,12 @@ from scripts import fetch_stock_data, calculate_rsi, calculate_sma
 
 # Fetch and analyze stock
 data = fetch_stock_data('AAPL', period='6mo')
-rsi = calculate_rsi(data)
-sma_20 = calculate_sma(data, window=20)
+rsi = calculate_rsi(data)['RSI']
+sma_20 = calculate_sma(data, window=20)['SMA']
 
 print(f"Price: ${data['Close'].iloc[-1]:.2f}")
 print(f"RSI: {rsi.iloc[-1]:.2f}")
+
 ```
 
 ## Environment Setup
@@ -185,20 +186,21 @@ info = get_company_info('AAPL')
 ### Technical Indicators
 
 > **⚠️ Return Types:**
-> - `calculate_rsi`, `calculate_sma`, `calculate_ema` → `pd.Series`
-> - `calculate_macd`, `calculate_bollinger_bands`, `calculate_stochastic` → `dict` (NOT DataFrame!)
+> - **ALL** indicator functions return `pd.DataFrame`.
+> - Single-value indicators (RSI, SMA) return a DataFrame with a single column (e.g., `'RSI'`, `'SMA'`).
+> - Multi-value indicators (MACD, Bollinger Bands) return a DataFrame with multiple columns.
 
 ```python
 from scripts import calculate_rsi, calculate_sma, calculate_macd, calculate_bollinger_bands
 
-rsi = calculate_rsi(data, window=14)        # Returns pd.Series
-sma = calculate_sma(data, window=20)        # Returns pd.Series
-macd = calculate_macd(data)                 # Returns dict: {'MACD': Series, 'Signal': Series, 'Histogram': Series}
-bb = calculate_bollinger_bands(data)        # Returns dict: {'Upper': Series, 'Middle': Series, 'Lower': Series, ...}
+rsi = calculate_rsi(data, window=14)        # Returns DataFrame with column 'RSI'
+sma = calculate_sma(data, window=20)        # Returns DataFrame with column 'SMA'
+macd = calculate_macd(data)                 # Returns DataFrame with columns 'MACD', 'Signal', 'Histogram'
+bb = calculate_bollinger_bands(data)        # Returns DataFrame with columns 'Upper', 'Middle', 'Lower', ...
 
-# Access MACD values from dict:
+# Access values:
+current_rsi = rsi['RSI'].iloc[-1]
 macd_line = macd['MACD'].iloc[-1]
-signal_line = macd['Signal'].iloc[-1]
 ```
 
 ### Trading Strategies
@@ -259,7 +261,8 @@ data = fetch_stock_data('AAPL', period='3mo')
 rsi = calculate_rsi(data)
 
 # Save results to date-time directory
-result = {'ticker': 'AAPL', 'rsi': float(rsi.iloc[-1])}
+result = {'ticker': 'AAPL', 'rsi': float(rsi['RSI'].iloc[-1])}
+
 with open(f'{output_dir}/result.json', 'w') as f:
     json.dump(result, f, indent=2)
 

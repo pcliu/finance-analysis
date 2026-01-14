@@ -76,6 +76,7 @@ def calculate_sma(data, window=20):
     return _indicators.calculate_sma(data, window)
 
 
+
 def calculate_ema(data, window=20):
     """Exponential Moving Average."""
     return _indicators.calculate_ema(data, window=window)

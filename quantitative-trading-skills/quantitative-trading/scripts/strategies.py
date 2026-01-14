@@ -29,8 +29,8 @@ class TradingStrategy:
         Sell when fast MA crosses below slow MA
         """
         # Calculate moving averages
-        data['MA_Fast'] = self.indicators.calculate_sma(data, fast_window)
-        data['MA_Slow'] = self.indicators.calculate_sma(data, slow_window)
+        data['MA_Fast'] = self.indicators.calculate_sma(data, fast_window)['SMA']
+        data['MA_Slow'] = self.indicators.calculate_sma(data, slow_window)['SMA']
 
         # Generate signals
         data['Signal'] = 0
@@ -52,7 +52,7 @@ class TradingStrategy:
         Sell when RSI crosses below overbought level
         """
         # Calculate RSI
-        data['RSI'] = self.indicators.calculate_rsi(data, rsi_window)
+        data['RSI'] = self.indicators.calculate_rsi(data, rsi_window)['RSI']
 
         # Generate signals
         data['Signal'] = 0
