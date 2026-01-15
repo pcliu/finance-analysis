@@ -1,0 +1,15 @@
+{
+    "ticker": "SLV",
+    "last_price": 84.55999755859375,
+    "signals": {
+        "ma": "NONE",
+        "macd": "NONE",
+        "rsi": "NONE",
+        "bb": "SELL",
+        "momentum": "BUY",
+        "consensus_score": -0.14285714285714285,
+        "final_rating": "HOLD"
+    },
+    "analysis_date": "2026-01-15",
+    "data_cutoff": "2026-01-14"
+}
