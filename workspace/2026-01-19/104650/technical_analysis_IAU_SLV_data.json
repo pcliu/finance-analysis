@@ -1,0 +1,42 @@
+{
+    "IAU": {
+        "ticker": "IAU",
+        "date": "2026-01-16",
+        "px_close": 86.2699966430664,
+        "rsi": 64.69805403174067,
+        "rsi_signal": "Neutral",
+        "sma_20": 84.08549880981445,
+        "sma_50": 80.67019989013671,
+        "sma_200": 69.49599988937378,
+        "macd": 1.706551751221241,
+        "macd_signal_line": 1.541236503744869,
+        "macd_hist": 0.16531524747637194,
+        "macd_interpretation": "Bullish (MACD > Signal)",
+        "bb_upper": 88.03917605269824,
+        "bb_middle": 84.08549880981445,
+        "bb_lower": 80.13182156693067,
+        "atr": 1.4900000435965401,
+        "trend": "Bullish",
+        "ma_cross_signal": 1
+    },
+    "SLV": {
+        "ticker": "SLV",
+        "date": "2026-01-16",
+        "px_close": 81.0199966430664,
+        "rsi": 69.06533631080183,
+        "rsi_signal": "Neutral",
+        "sma_20": 70.4814998626709,
+        "sma_50": 58.2779997253418,
+        "sma_200": 40.97104990959168,
+        "macd": 6.708345669678465,
+        "macd_signal_line": 5.787901602968646,
+        "macd_hist": 0.9204440667098188,
+        "macd_interpretation": "Bullish (MACD > Signal)",
+        "bb_upper": 85.16158959193515,
+        "bb_middle": 70.4814998626709,
+        "bb_lower": 55.801410133406655,
+        "atr": 4.7071429661342075,
+        "trend": "Bullish",
+        "ma_cross_signal": 1
+    }
+}

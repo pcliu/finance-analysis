@@ -59,7 +59,23 @@ A toolkit for quantitative trading analysis using yfinance (global) and tushare 
 > # 所有输出保存到 SCRIPT_DIR，不再调用 datetime.now()
 > ```
 > 
-> ❌ **禁止**：脚本内部用 `datetime.now()` 生成新目录 → 导致脚本和输出分离
+> **💾 数据序列化 (JSON)**
+> 
+> `numpy` 类型 (int64, float64 等) 无法直接被 `json.dump` 序列化。
+> **必须** 引入 `scripts.utils` 并使用 `make_serializable` 工具：
+> 
+> ```python
+> from scripts.utils import make_serializable
+> 
+> # ... 计算结果 ...
+> results = { ... }
+> 
+> # 序列化处理
+> clean_results = make_serializable(results)
+> 
+> with open(os.path.join(SCRIPT_DIR, 'output.json'), 'w') as f:
+>     json.dump(clean_results, f, indent=4)
+> ```
 
 
 > **📋 Analysis Report Templates**
@@ -82,18 +98,28 @@ A toolkit for quantitative trading analysis using yfinance (global) and tushare 
 
 ```python
 import sys
-sys.path.append('.agent/skills/quantitative-trading')
+import os
 
-from scripts import fetch_stock_data, calculate_rsi, calculate_sma
+# Robust Import: Use absolute path relative to this script
+# Assuming script is in workspace/YYYY-MM-DD/HHMMSS/
+SKILL_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../.agent/skills/quantitative-trading'))
+sys.path.append(SKILL_DIR)
+
+from scripts import fetch_stock_data, calculate_rsi, calculate_sma, calculate_atr
+from scripts.utils import make_serializable
 
 # Fetch and analyze stock
 data = fetch_stock_data('AAPL', period='6mo')
 rsi = calculate_rsi(data)['RSI']
-sma_20 = calculate_sma(data, window=20)['SMA']
+atr = calculate_atr(data)['ATR']
 
-print(f"Price: ${data['Close'].iloc[-1]:.2f}")
-print(f"RSI: {rsi.iloc[-1]:.2f}")
-
+# Prepare results safe for JSON
+results = {
+    "price": data['Close'].iloc[-1],
+    "rsi": rsi.iloc[-1],
+    "atr": atr.iloc[-1]
+}
+print(make_serializable(results))
 ```
 
 ## Environment Setup
@@ -121,6 +147,7 @@ $ENV_PYTHON your_script.py
 │   └── troubleshooting.md
 ├── scripts/              # 💻 Core implementation (import from here)
 │   ├── __init__.py       # Unified exports
+│   ├── utils.py          # 🛠 Utilities (serialization, etc.)
 │   ├── data_fetcher.py
 │   ├── indicators.py
 │   ├── strategies.py
@@ -148,16 +175,21 @@ info = get_company_info('AAPL')
 
 > **⚠️ Return Types:**
 > - **ALL** indicator functions return `pd.DataFrame`.
-> - Single-value indicators (RSI, SMA) return a DataFrame with a single column (e.g., `'RSI'`, `'SMA'`).
+> - Single-value indicators (RSI, SMA, ATR) return a DataFrame with a single column.
 > - Multi-value indicators (MACD, Bollinger Bands) return a DataFrame with multiple columns.
 
 ```python
-from scripts import calculate_rsi, calculate_sma, calculate_macd, calculate_bollinger_bands
+from scripts import (
+    calculate_rsi, calculate_sma, calculate_macd, calculate_bollinger_bands,
+    calculate_atr, calculate_adx, calculate_stochastic, calculate_williams_r
+)
 
 rsi = calculate_rsi(data, window=14)        # Returns DataFrame with column 'RSI'
 sma = calculate_sma(data, window=20)        # Returns DataFrame with column 'SMA'
+atr = calculate_atr(data, window=14)        # Returns DataFrame with column 'ATR'
 macd = calculate_macd(data)                 # Returns DataFrame with columns 'MACD', 'Signal', 'Histogram'
 bb = calculate_bollinger_bands(data)        # Returns DataFrame with columns 'Upper', 'Middle', 'Lower', ...
+stoch = calculate_stochastic(data)          # Returns DataFrame with columns 'K', 'D'
 
 # Access values:
 current_rsi = rsi['RSI'].iloc[-1]

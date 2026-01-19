@@ -100,6 +100,36 @@ def calculate_bollinger_bands(data, window=20, num_std=2):
     return _indicators.calculate_bollinger_bands(data, window, num_std)
 
 
+def calculate_atr(data, window=14):
+    """Average True Range."""
+    return _indicators.calculate_atr(data, window=window)
+
+
+def calculate_adx(data, window=14):
+    """Average Directional Index."""
+    return _indicators.calculate_adx(data, window=window)
+
+
+def calculate_stochastic(data, k_window=14, d_window=3):
+    """Stochastic Oscillator."""
+    return _indicators.calculate_stochastic(data, k_window, d_window)
+
+
+def calculate_williams_r(data, window=14):
+    """Williams %R."""
+    return _indicators.calculate_williams_r(data, window=window)
+
+
+def calculate_cci(data, window=20):
+    """Commodity Channel Index."""
+    return _indicators.calculate_cci(data, window=window)
+
+
+def calculate_obv(data):
+    """On-Balance Volume."""
+    return _indicators.calculate_obv(data)
+
+
 # ============================================================
 # Convenience Functions - Strategies
 # ============================================================
@@ -120,12 +150,30 @@ def rsi_mean_reversion(data, oversold=30, overbought=70):
 
 def calculate_var(returns, confidence_level=0.95):
     """Value at Risk."""
-    return _risk_manager.calculate_var(returns, confidence_level)
+    return _risk_manager.calculate_var(returns, method='historical', confidence_level=confidence_level)
+
+
+def calculate_cvar(returns, confidence_level=0.95):
+    """Conditional Value at Risk (Expected Shortfall)."""
+    return _risk_manager.calculate_cvar(returns, confidence_level=confidence_level)
 
 
 def calculate_max_drawdown(data):
     """Maximum drawdown."""
-    return _risk_manager.calculate_max_drawdown(data)
+    metrics = _risk_manager.calculate_drawdown_metrics(data, is_returns=False)
+    return metrics['max_drawdown']
+
+
+def calculate_sharpe_ratio(returns, risk_free_rate=0.02):
+    """Calculate Sharpe Ratio."""
+    metrics = _risk_manager.calculate_risk_adjusted_metrics(returns, risk_free_rate=risk_free_rate)
+    return metrics['sharpe_ratio']
+
+
+def calculate_sortino_ratio(returns, risk_free_rate=0.02):
+    """Calculate Sortino Ratio."""
+    metrics = _risk_manager.calculate_risk_adjusted_metrics(returns, risk_free_rate=risk_free_rate)
+    return metrics['sortino_ratio']
 
 
 # ============================================================
@@ -151,10 +199,19 @@ __all__ = [
     'calculate_rsi',
     'calculate_macd',
     'calculate_bollinger_bands',
+    'calculate_atr',
+    'calculate_adx',
+    'calculate_stochastic',
+    'calculate_williams_r',
+    'calculate_cci',
+    'calculate_obv',
     # Strategy functions
     'moving_average_crossover',
     'rsi_mean_reversion',
     # Risk functions
     'calculate_var',
+    'calculate_cvar',
     'calculate_max_drawdown',
+    'calculate_sharpe_ratio',
+    'calculate_sortino_ratio',
 ]
