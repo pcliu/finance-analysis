@@ -37,7 +37,7 @@ A toolkit for quantitative trading analysis using yfinance (global) and tushare 
 > | 持仓调整/再平衡 | `portfolio_adjustment.py` | `portfolio_adjustment_report.md` | `portfolio_adjustment_data.json` |
 > | 技术分析 | `technical_analysis_{ticker}.py` | `technical_analysis_{ticker}_report.md` | `technical_analysis_{ticker}_data.json` |
 > | 策略信号分析 | `strategy_signal_{ticker}.py` | `strategy_signal_{ticker}_report.md` | `strategy_signal_{ticker}_data.json` |
-> | 组合优化 | `portfolio_optimization.py` | `portfolio_optimization_report.md` | `portfolio_optimization_data.json` |
+> | 组合优化 (Portfolio Optimization) | `portfolio_optimization.py` | `portfolio_optimization_report.md` | `portfolio_optimization_data.json` |
 > | 风险管理评估 | `risk_assessment.py` | `risk_assessment_report.md` | `risk_assessment_data.json` |
 > | 复盘/回测 | `backtest_review.py` | `backtest_review_report.md` | `backtest_review_data.json` |
 > | **自定义任务** | `{task_name}.py` | `{task_name}_report.md` | `{task_name}_data.json` |
@@ -84,10 +84,9 @@ A toolkit for quantitative trading analysis using yfinance (global) and tushare 
 > 
 > 请根据任务类型选择合适的模板：
 > 1. **技术分析 (Technical Analysis)**: [`references/report_templates/technical_analysis.md`](references/report_templates/technical_analysis.md)
-> 2. **持仓调整 (Portfolio Adjustment)**: [`references/report_templates/portfolio_adjustment.md`](references/report_templates/portfolio_adjustment.md)
-> 3. **策略信号分析 (Strategy Signal Analysis)**: [`references/report_templates/strategy_signal_analysis.md`](references/report_templates/strategy_signal_analysis.md)
-> 4. **组合分析 (Portfolio Analysis)**: [`references/report_templates/portfolio_analysis.md`](references/report_templates/portfolio_analysis.md)
-> 5. **风险管理评估 (Risk Assessment)**: [`references/report_templates/risk_assessment.md`](references/report_templates/risk_assessment.md)
+> 2. **策略信号分析 (Strategy Signal Analysis)**: [`references/report_templates/strategy_signal_analysis.md`](references/report_templates/strategy_signal_analysis.md)
+> 3. **组合优化 (Portfolio Optimization)**: [`references/report_templates/portfolio_optimization.md`](references/report_templates/portfolio_optimization.md)
+> 4. **风险管理评估 (Risk Assessment)**: [`references/report_templates/risk_assessment.md`](references/report_templates/risk_assessment.md)
 > 
 > *注：若任务类型不属于上述任何一类，请根据实际分析内容**自由撰写**结构清晰的分析报告。*
 > 
@@ -218,7 +217,7 @@ max_drawdown = dd_metrics['max_drawdown']
 sharpe_ratio = risk_metrics['sharpe_ratio']
 ```
 
-### Portfolio Analysis
+### Portfolio Optimization (组合优化)
 ```python
 from scripts import PortfolioAnalyzer
 
@@ -235,29 +234,15 @@ corr = returns.corr()
 
 ### Portfolio Adjustment (持仓调整)
 
-持仓调整分析的完整流程：
+**核心原则：**
+- **数据驱动**：必须计算并引用 RSI、布林带 (%B)、MACD、成交量等核心指标。
+- **自由推理**：不要使用硬编码的阈值（如 >80）。请利用你的金融知识，结合当前市场环境（震荡/趋势）、个股特性（蓝筹/妖股）进行综合判断。
+- **报告自由度**：**不使用预定义模板**。请根据分析结果的丰富程度，自由构建结构清晰、逻辑严密的 Markdown 报告。
 
-**流程步骤：**
-
-1. **获取技术指标** - 对持仓和候选品种计算 RSI、MACD、SMA、布林带等
-2. **历史复盘**（可选）- 对比历史建议与实际走势，计算准确率
-3. **动态调整阈值** - 根据复盘准确率调整 RSI 超买/超卖阈值
-4. **生成操作建议** - 基于技术指标生成减持/持有/建仓建议
-
-**决策逻辑：**
-- RSI ≥ 80：严重超买 → 建议减持
-- RSI ≥ 70：超买 → 观察持有
-- RSI < 40：超卖 → 可左侧建仓
-- 按 RSI 升序排列候选品种（优先低估值）
-
-**输出结构：**
-```python
-recommendations = {
-    'sell': [{'ticker': 'xxx', 'action': '减持', 'reason': '...'}],
-    'buy': [{'ticker': 'xxx', 'action': '可建仓', 'feasibility': '✅', 'reason': '...'}],
-    'hold': [{'ticker': 'xxx', 'action': '持有', 'reason': '...'}],
-}
-```
+**建议分析维度：**
+1. **持仓诊断**：识别高风险（超买/背离）和低风险（稳健/超卖）品种。
+2. **机会扫描**：评估非持仓品种的建仓性价比。
+3. **资金规划**：给出明确的买卖数量和资金变动建议。
 
 ## Usage Guidelines
 
