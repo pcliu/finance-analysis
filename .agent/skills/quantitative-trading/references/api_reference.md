@@ -224,12 +224,12 @@ sharpe = risk_metrics['sharpe_ratio']
 
 ## Portfolio Module
 
-### `scripts.portfolio_analyzer.PortfolioAnalyzer`
+### `scripts.portfolio_optimization.PortfolioAnalyzer`
 
 Portfolio optimization and analysis.
 
 ```python
-from scripts.portfolio_analyzer import PortfolioAnalyzer
+from scripts.portfolio_optimization import PortfolioAnalyzer
 
 pa = PortfolioAnalyzer()
 ```

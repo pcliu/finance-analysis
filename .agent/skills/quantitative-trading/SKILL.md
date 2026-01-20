@@ -160,7 +160,7 @@ $ENV_PYTHON your_script.py
 │   ├── indicators.py
 │   ├── strategies.py
 │   ├── backtester.py
-│   ├── portfolio_analyzer.py
+│   ├── portfolio_optimization.py
 │   └── risk_manager.py
 └── examples/             # 📝 READ-ONLY reference examples (do NOT modify)
 workspace/                # 📂 ⬅️ ALL generated scripts & output go HERE (Project Root)
@@ -240,6 +240,8 @@ ef_data = pa.calculate_efficient_frontier(returns)
 # Correlation Matrix
 corr = returns.corr()
 ```
+
+## Common Task Workflows
 
 ### Portfolio Adjustment (持仓调整)
 

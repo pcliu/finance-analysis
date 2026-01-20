@@ -10,7 +10,7 @@ from .data_fetcher import DataFetcher
 from .indicators import TechnicalIndicators
 from .strategies import TradingStrategy
 from .backtester import Backtester
-from .portfolio_analyzer import PortfolioAnalyzer
+from .portfolio_optimization import PortfolioAnalyzer
 from .risk_manager import RiskManager
 
 # Aliases for backward compatibility
