@@ -70,6 +70,10 @@ class DataFetcher:
         if suffix in {'SS', 'SZ', 'SH', 'BJ', 'HK'}:
             return 'tushare'
 
+        # Auto-detect Chinese/HK numeric codes (6 digits for A-share/Index, 5 digits for HK)
+        if ticker.isdigit() and len(ticker) in (5, 6):
+            return 'tushare'
+
         return 'yfinance'
 
     def _normalize_ts_code(self, ticker: str, market: Optional[str]) -> Optional[str]:

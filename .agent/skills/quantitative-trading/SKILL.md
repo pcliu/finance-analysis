@@ -59,7 +59,16 @@ A toolkit for quantitative trading analysis using yfinance (global) and tushare 
 > # 所有输出保存到 SCRIPT_DIR，不再调用 datetime.now()
 > ```
 > 
-> **💾 数据序列化 (JSON)**
+> **� 数据源自动路由 (Data Source Routing)**
+> 
+> *   **Tushare (CN/HK)**:
+>     *   **纯数字代码** (如 `510150`, `600519`, `00700`) 会自动路由到 Tushare。
+>     *   **带后缀代码** (如 `600519.SH`, `00700.HK`) 也会路由到 Tushare。
+>     *   *建议优先使用 Tushare 获取中国/香港市场数据，数据更全更准。*
+> *   **YFinance (Global)**:
+>     *   **字母代码** (如 `AAPL`, `TSLA`) 或其他带 `.SS/.SZ` 需要走 Yahoo 的情况(不推荐)，默认走 YFinance。
+> 
+> **�💾 数据序列化 (JSON)**
 > 
 > `numpy` 类型 (int64, float64 等) 无法直接被 `json.dump` 序列化。
 > **必须** 引入 `scripts.utils` 并使用 `make_serializable` 工具：
