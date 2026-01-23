@@ -1,0 +1,60 @@
+{
+    "GC=F": {
+        "ticker": "GC=F",
+        "name": "Gold Futures",
+        "date": "2026-01-22",
+        "volume_analysis": {
+            "current_volume": 31207,
+            "avg_volume_20d": 2546.35,
+            "volume_ratio": 12.255581518644334,
+            "is_high_volume": true,
+            "volume_trend_comment": "Significant Volume"
+        },
+        "divergence_analysis": {
+            "divergence_detected": 0,
+            "current_price": 4956.2001953125,
+            "current_rsi": 79.79146593886269,
+            "past_peak_price": 4831.7998046875,
+            "past_peak_rsi": 76.09093201564437,
+            "peak_date": "2026-01-21"
+        },
+        "candle_analysis": {
+            "close_position": 0.6329848711122654,
+            "body_pct": 0.43085513927667035,
+            "is_strong_close": false
+        },
+        "volatility_analysis": {
+            "bandwidth_expanding": 1,
+            "comment": "Volatility Expanding"
+        }
+    },
+    "SI=F": {
+        "ticker": "SI=F",
+        "name": "Silver Futures",
+        "date": "2026-01-22",
+        "volume_analysis": {
+            "current_volume": 16354,
+            "avg_volume_20d": 1430.3,
+            "volume_ratio": 11.433964902468015,
+            "is_high_volume": true,
+            "volume_trend_comment": "Significant Volume"
+        },
+        "divergence_analysis": {
+            "divergence_detected": 0,
+            "current_price": 98.69499969482422,
+            "current_rsi": 72.13861237629007,
+            "past_peak_price": 94.20600128173828,
+            "past_peak_rsi": 70.9742746211239,
+            "peak_date": "2026-01-20"
+        },
+        "candle_analysis": {
+            "close_position": 0.8951171864221581,
+            "body_pct": 0.8589513650134929,
+            "is_strong_close": true
+        },
+        "volatility_analysis": {
+            "bandwidth_expanding": 1,
+            "comment": "Volatility Expanding"
+        }
+    }
+}
