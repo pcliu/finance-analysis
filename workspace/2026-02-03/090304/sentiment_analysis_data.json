@@ -1,0 +1,232 @@
+{
+  "timestamp": "2026-02-03T09:12:58.244529",
+  "news_summary": [
+    {
+      "source": "百度财经",
+      "title": "",
+      "time": "",
+      "sentiment": "neutral"
+    },
+    {
+      "source": "百度财经",
+      "title": "",
+      "time": "",
+      "sentiment": "neutral"
+    },
+    {
+      "source": "百度财经",
+      "title": "",
+      "time": "",
+      "sentiment": "neutral"
+    },
+    {
+      "source": "百度财经",
+      "title": "",
+      "time": "",
+      "sentiment": "neutral"
+    },
+    {
+      "source": "百度财经",
+      "title": "",
+      "time": "",
+      "sentiment": "neutral"
+    },
+    {
+      "source": "百度财经",
+      "title": "",
+      "time": "",
+      "sentiment": "neutral"
+    },
+    {
+      "source": "百度财经",
+      "title": "",
+      "time": "",
+      "sentiment": "neutral"
+    },
+    {
+      "source": "百度财经",
+      "title": "",
+      "time": "",
+      "sentiment": "neutral"
+    },
+    {
+      "source": "百度财经",
+      "title": "",
+      "time": "",
+      "sentiment": "neutral"
+    },
+    {
+      "source": "百度财经",
+      "title": "",
+      "time": "",
+      "sentiment": "neutral"
+    },
+    {
+      "source": "央视新闻",
+      "title": "习近平在重庆考察时强调 进一步全面深化改革开放 不断谱写中国式现代化重庆篇章",
+      "time": "",
+      "sentiment": "positive"
+    },
+    {
+      "source": "央视新闻",
+      "title": "【央视快评】奋力谱写西部大开发新篇章",
+      "time": "",
+      "sentiment": "neutral"
+    },
+    {
+      "source": "央视新闻",
+      "title": "习近平向首届“中国－拉美和加勒比国家航天合作论坛”致贺信",
+      "time": "",
+      "sentiment": "neutral"
+    },
+    {
+      "source": "央视新闻",
+      "title": "李强在贵州调研",
+      "time": "",
+      "sentiment": "neutral"
+    },
+    {
+      "source": "央视新闻",
+      "title": "十四届全国人大常委会举行第二十四次委员长会议 听取有关草案和议案审议情况汇报 赵乐际主持",
+      "time": "",
+      "sentiment": "neutral"
+    }
+  ],
+  "hot_topics": [
+    {
+      "keyword": "消费",
+      "title": "消费需求有望加速释放，恒生消费ETF嘉实(520620)全方位囊括港股日常消费各领域",
+      "time": "2026-02-02 10:53:36",
+      "sentiment": "neutral"
+    },
+    {
+      "keyword": "消费",
+      "title": "统筹推动提振消费和投资于人",
+      "time": "2026-02-03 06:04:15",
+      "sentiment": "neutral"
+    },
+    {
+      "keyword": "消费",
+      "title": "人民财评：紧跟消费升级步伐，文化消费彰显强劲动力",
+      "time": "2026-02-02 13:10:07",
+      "sentiment": "neutral"
+    },
+    {
+      "keyword": "军工",
+      "title": "航天强国“关键十年”把握军工机遇，军工ETF（512660）早盘涨超1.3%",
+      "time": "2026-02-02 14:12:00",
+      "sentiment": "neutral"
+    },
+    {
+      "keyword": "军工",
+      "title": "布局“商业航天”？国科军工被监管警示",
+      "time": "2026-02-03 00:06:57",
+      "sentiment": "neutral"
+    },
+    {
+      "keyword": "军工",
+      "title": "上交所：对国科军工及时任董秘邓卫勇予以监管警示",
+      "time": "2026-02-02 18:02:00",
+      "sentiment": "neutral"
+    },
+    {
+      "keyword": "医疗",
+      "title": "华为云加码医疗AI 力推智慧医疗专区",
+      "time": "2026-02-02 20:03:49",
+      "sentiment": "neutral"
+    },
+    {
+      "keyword": "医疗",
+      "title": "华为云发布“行业AI梦工厂”智慧医疗专区 加速医疗AI普惠",
+      "time": "2026-02-02 09:40:50",
+      "sentiment": "neutral"
+    },
+    {
+      "keyword": "医疗",
+      "title": "华为云智慧医疗专区开放公测，医疗创新ETF(516820)连续11天净流入",
+      "time": "2026-02-02 11:00:44",
+      "sentiment": "neutral"
+    },
+    {
+      "keyword": "芯片",
+      "title": "北京君正：公司存储芯片、计算芯片部分产品陆续调价",
+      "time": "2026-02-02 21:37:48",
+      "sentiment": "neutral"
+    },
+    {
+      "keyword": "芯片",
+      "title": "欧股芯片板块开盘走低",
+      "time": "2026-02-02 16:04:03",
+      "sentiment": "negative"
+    },
+    {
+      "keyword": "芯片",
+      "title": "利扬芯片：拟定增9.7亿元加码芯片测试与先进工艺利扬芯片 2025年前三季度净利润75.47万元",
+      "time": "2026-02-02 11:26:16",
+      "sentiment": "neutral"
+    },
+    {
+      "keyword": "新能源",
+      "title": "新能源供给圈持续扩大",
+      "time": "2026-02-03 06:04:30",
+      "sentiment": "neutral"
+    },
+    {
+      "keyword": "新能源",
+      "title": "越秀资本：公司新能源业务经营情况良好",
+      "time": "2026-02-02 19:38:37",
+      "sentiment": "neutral"
+    },
+    {
+      "keyword": "新能源",
+      "title": "山西新能源和清洁能源装机占比首超煤电",
+      "time": "2026-02-02 17:03:44",
+      "sentiment": "neutral"
+    },
+    {
+      "keyword": "黄金",
+      "title": "A股黄金板块大跌，四川黄金等多股跌停",
+      "time": "2026-02-02 10:11:19",
+      "sentiment": "neutral"
+    },
+    {
+      "keyword": "黄金",
+      "title": "现货黄金向上触及4750美元",
+      "time": "2026-02-03 07:26:10",
+      "sentiment": "positive"
+    },
+    {
+      "keyword": "黄金",
+      "title": "刚刚！现货黄金重回4800美元",
+      "time": "2026-02-03 08:36:56",
+      "sentiment": "neutral"
+    },
+    {
+      "keyword": "白银",
+      "title": "现货白银日内上涨4%",
+      "time": "2026-02-03 08:06:58",
+      "sentiment": "positive"
+    },
+    {
+      "keyword": "白银",
+      "title": "现货白银涨幅扩大至6%",
+      "time": "2026-02-03 08:27:23",
+      "sentiment": "positive"
+    },
+    {
+      "keyword": "白银",
+      "title": "国投白银LOF复牌跌停",
+      "time": "2026-02-02 11:26:23",
+      "sentiment": "neutral"
+    }
+  ],
+  "sentiment_overview": {
+    "positive": 4,
+    "negative": 1,
+    "neutral": 31,
+    "total": 36,
+    "positive_pct": 11.1,
+    "negative_pct": 2.8,
+    "neutral_pct": 86.1
+  }
+}
