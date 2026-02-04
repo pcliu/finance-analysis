@@ -41,3 +41,15 @@ except Exception as e:
 
 print("\n" + "=" * 50)
 print("✅ Economic Sentiment Skill 测试完成！")
+
+
+import akshare as ak
+
+stock_zh_a_hist_df = ak.stock_zh_a_hist(
+    symbol="600734",
+    period="daily",
+    start_date="20260203",
+    end_date="20260203",
+    adjust="hfq"
+)
+print(stock_zh_a_hist_df)
