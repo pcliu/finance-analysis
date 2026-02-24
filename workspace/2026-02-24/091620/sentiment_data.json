@@ -1,0 +1,969 @@
+{
+  "analysis_date": "2026-02-24",
+  "keywords": {
+    "消费": {
+      "keyword": "消费",
+      "overall": "positive",
+      "positive_count": 4,
+      "negative_count": 0,
+      "neutral_count": 1,
+      "total": 5,
+      "news": [
+        {
+          "title": "产品创新锚定消费需求升级 深市消费公司发力春节消费市场",
+          "time": "2026-02-23 22:24:18",
+          "sentiment": "positive",
+          "source": "东方财富"
+        },
+        {
+          "title": "春节假期海口免税消费热：“游客消费”与“本地消费”双增长",
+          "time": "2026-02-23 13:23:38",
+          "sentiment": "positive",
+          "source": "东方财富"
+        },
+        {
+          "title": "政策精准落地 春节消费活力释放",
+          "time": "2026-02-24 07:19:00",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "服务消费将成关键增长领域",
+          "time": "2026-02-24 01:36:08",
+          "sentiment": "positive",
+          "source": "东方财富"
+        },
+        {
+          "title": "产品创新+场景深耕 深市消费类上市公司发力春节消费市场",
+          "time": "2026-02-23 19:08:24",
+          "sentiment": "positive",
+          "source": "东方财富"
+        }
+      ],
+      "top_titles": [
+        "产品创新锚定消费需求升级 深市消费公司发力春节消费市场",
+        "春节假期海口免税消费热：“游客消费”与“本地消费”双增长",
+        "政策精准落地 春节消费活力释放"
+      ]
+    },
+    "医疗": {
+      "keyword": "医疗",
+      "overall": "neutral",
+      "positive_count": 0,
+      "negative_count": 0,
+      "neutral_count": 5,
+      "total": 5,
+      "news": [
+        {
+          "title": "以媒：以色列医疗系统为与伊朗“长期战争”做准备",
+          "time": "2026-02-24 08:21:08",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "通策医疗董事、高管拟以600万元至1200万元增持公司股份",
+          "time": "2026-02-23 17:51:20",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "通策医疗：董事长等拟600万元至1200万元增持公司股份",
+          "time": "2026-02-23 15:51:34",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "通策医疗：董事长等拟600万元至1200万元增持公司股份",
+          "time": "2026-02-23 15:48:07",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "通策医疗：董事长等拟600万元至1200万元增持公司股份",
+          "time": "2026-02-23 15:40:43",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        }
+      ],
+      "top_titles": [
+        "以媒：以色列医疗系统为与伊朗“长期战争”做准备",
+        "通策医疗董事、高管拟以600万元至1200万元增持公司股份",
+        "通策医疗：董事长等拟600万元至1200万元增持公司股份"
+      ]
+    },
+    "军工": {
+      "keyword": "军工",
+      "overall": "positive",
+      "positive_count": 2,
+      "negative_count": 0,
+      "neutral_count": 3,
+      "total": 5,
+      "news": [
+        {
+          "title": "乌军袭击一生产弹道导弹的俄军工厂 俄称打击乌导弹发射装置",
+          "time": "2026-02-22 01:26:01",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "乌军袭击一生产弹道导弹的俄军工厂！波兰总理指责匈牙利阻挠援乌，匈总理：除非乌恢复供油！泽连斯基发声",
+          "time": "2026-02-22 11:26:44",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "美国军工巨头雷神技术表示 美国海军批准其“风暴破坏者”智能武器在“超级大黄蜂”机队上使用",
+          "time": "2026-02-20 22:20:10",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "600893尾盘涨停！军工股拉升",
+          "time": "2026-02-13 17:45:55",
+          "sentiment": "positive",
+          "source": "东方财富"
+        },
+        {
+          "title": "继续看好中盘蓝筹 军工板块逆势走强 | 权益市场日报",
+          "time": "2026-02-14 09:59:59",
+          "sentiment": "positive",
+          "source": "东方财富"
+        }
+      ],
+      "top_titles": [
+        "乌军袭击一生产弹道导弹的俄军工厂 俄称打击乌导弹发射装置",
+        "乌军袭击一生产弹道导弹的俄军工厂！波兰总理指责匈牙利阻挠援乌，匈总理：除非乌恢复供油！泽连斯基发声",
+        "美国军工巨头雷神技术表示 美国海军批准其“风暴破坏者”智能武器在“超级大黄蜂”机队上使用"
+      ]
+    },
+    "科技": {
+      "keyword": "科技",
+      "overall": "negative",
+      "positive_count": 0,
+      "negative_count": 1,
+      "neutral_count": 4,
+      "total": 5,
+      "news": [
+        {
+          "title": "科技日报：“文化+科技”不要陷入炫技误区",
+          "time": "2026-02-24 08:30:14",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "科技演进脉络清晰 春晚“科技秀”呈现三大变革",
+          "time": "2026-02-24 00:33:54",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "美股大跌，科技巨头重挫！",
+          "time": "2026-02-24 08:37:55",
+          "sentiment": "negative",
+          "source": "东方财富"
+        },
+        {
+          "title": "春晚“科技味”驱动市场情绪，马年开市关注“科技+顺周期”",
+          "time": "2026-02-23 19:17:26",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "美股知名科技股走势分化",
+          "time": "2026-02-24 01:58:54",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        }
+      ],
+      "top_titles": [
+        "科技日报：“文化+科技”不要陷入炫技误区",
+        "科技演进脉络清晰 春晚“科技秀”呈现三大变革",
+        "美股大跌，科技巨头重挫！"
+      ]
+    },
+    "光伏": {
+      "keyword": "光伏",
+      "overall": "positive",
+      "positive_count": 5,
+      "negative_count": 0,
+      "neutral_count": 0,
+      "total": 5,
+      "news": [
+        {
+          "title": "港股光伏股多数回暖 信义光能涨5.38%",
+          "time": "2026-02-23 14:59:34",
+          "sentiment": "positive",
+          "source": "东方财富"
+        },
+        {
+          "title": "2025年全国光伏新增装机同比增长14%",
+          "time": "2026-02-21 11:39:58",
+          "sentiment": "positive",
+          "source": "东方财富"
+        },
+        {
+          "title": "2025年全国光伏新增装机同比增长14%",
+          "time": "2026-02-21 11:35:09",
+          "sentiment": "positive",
+          "source": "东方财富"
+        },
+        {
+          "title": "2025年全国光伏新增装机同比增长14%",
+          "time": "2026-02-21 11:00:39",
+          "sentiment": "positive",
+          "source": "东方财富"
+        },
+        {
+          "title": "2025年全国光伏新增装机同比增长14%",
+          "time": "2026-02-21 10:58:16",
+          "sentiment": "positive",
+          "source": "东方财富"
+        }
+      ],
+      "top_titles": [
+        "港股光伏股多数回暖 信义光能涨5.38%",
+        "2025年全国光伏新增装机同比增长14%",
+        "2025年全国光伏新增装机同比增长14%"
+      ]
+    },
+    "AI": {
+      "keyword": "AI",
+      "overall": "neutral",
+      "positive_count": 0,
+      "negative_count": 0,
+      "neutral_count": 5,
+      "total": 5,
+      "news": [
+        {
+          "title": "AI走进千家万户 80亿元红包之后AI应用迎“留量”大考",
+          "time": "2026-02-24 00:33:41",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "AI闹新春 燃动中国年",
+          "time": "2026-02-24 05:21:33",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "AI科技巨头发债难掩盈利焦虑",
+          "time": "2026-02-24 06:00:34",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "湘西南小城银发族初触AI",
+          "time": "2026-02-24 05:21:26",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "马年春节AI应用集体上场 A股相关板块如何演绎",
+          "time": "2026-02-24 07:24:47",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        }
+      ],
+      "top_titles": [
+        "AI走进千家万户 80亿元红包之后AI应用迎“留量”大考",
+        "AI闹新春 燃动中国年",
+        "AI科技巨头发债难掩盈利焦虑"
+      ]
+    },
+    "半导体": {
+      "keyword": "半导体",
+      "overall": "positive",
+      "positive_count": 1,
+      "negative_count": 0,
+      "neutral_count": 4,
+      "total": 5,
+      "news": [
+        {
+          "title": "半导体产业重磅事件密集落地，把握半导体设备ETF（159516）布局机遇",
+          "time": "2026-02-24 08:49:16",
+          "sentiment": "positive",
+          "source": "东方财富"
+        },
+        {
+          "title": "半导体概念港股走强 中芯国际和华虹半导体涨4%",
+          "time": "2026-02-23 10:01:39",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "半导体概念港股走强 中芯国际和华虹半导体涨4%",
+          "time": "2026-02-23 09:54:19",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "港股半导体股午后再度走强",
+          "time": "2026-02-23 14:13:52",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "美股芯片半导体板块盘前走低",
+          "time": "2026-02-23 17:20:05",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        }
+      ],
+      "top_titles": [
+        "半导体产业重磅事件密集落地，把握半导体设备ETF（159516）布局机遇",
+        "半导体概念港股走强 中芯国际和华虹半导体涨4%",
+        "半导体概念港股走强 中芯国际和华虹半导体涨4%"
+      ]
+    },
+    "稀土": {
+      "keyword": "稀土",
+      "overall": "neutral",
+      "positive_count": 0,
+      "negative_count": 0,
+      "neutral_count": 5,
+      "total": 5,
+      "news": [
+        {
+          "title": "关于深海稀土 我国科学家新发现",
+          "time": "2026-02-19 21:36:35",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "印度与巴西深化铁矿石、稀土等矿产合作，承诺五年内双边贸易额再提升",
+          "time": "2026-02-22 19:59:17",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "日政府被指“出于选举考量”夸大稀土试采成果",
+          "time": "2026-02-19 19:57:21",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "我国科学家发现深海稀土循环与富集新机制",
+          "time": "2026-02-19 20:43:04",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "我国科学家发现深海稀土循环与富集新机制",
+          "time": "2026-02-19 20:35:18",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        }
+      ],
+      "top_titles": [
+        "关于深海稀土 我国科学家新发现",
+        "印度与巴西深化铁矿石、稀土等矿产合作，承诺五年内双边贸易额再提升",
+        "日政府被指“出于选举考量”夸大稀土试采成果"
+      ]
+    },
+    "黄金": {
+      "keyword": "黄金",
+      "overall": "positive",
+      "positive_count": 1,
+      "negative_count": 0,
+      "neutral_count": 4,
+      "total": 5,
+      "news": [
+        {
+          "title": "港股黄金概念股走强 灵宝黄金、中国黄金国际涨超5%",
+          "time": "2026-02-23 09:33:54",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "港股黄金股盘初走高 灵宝黄金涨超6%",
+          "time": "2026-02-23 09:50:21",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "港股黄金股盘初走高 灵宝黄金涨超6%",
+          "time": "2026-02-23 09:39:57",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "港股黄金股走强 中国黄金国际涨近7% 山东黄金涨逾5%",
+          "time": "2026-02-23 09:52:53",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "黄金白银 直线拉升",
+          "time": "2026-02-23 11:17:39",
+          "sentiment": "positive",
+          "source": "东方财富"
+        }
+      ],
+      "top_titles": [
+        "港股黄金概念股走强 灵宝黄金、中国黄金国际涨超5%",
+        "港股黄金股盘初走高 灵宝黄金涨超6%",
+        "港股黄金股盘初走高 灵宝黄金涨超6%"
+      ]
+    },
+    "航天": {
+      "keyword": "航天",
+      "overall": "positive",
+      "positive_count": 1,
+      "negative_count": 0,
+      "neutral_count": 4,
+      "total": 5,
+      "news": [
+        {
+          "title": "商业航天单笔融资金额走高背后：投资人开始抢额度",
+          "time": "2026-02-24 07:40:16",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "重回资本市场视野 可控核聚变能复制商业航天的奇迹吗？",
+          "time": "2026-02-24 00:06:31",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "商业航天单笔融资金额走高背后：投资人开始抢额度 多家企业推进IPO",
+          "time": "2026-02-24 08:04:38",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "向“一年60发”目标冲刺 海南商业航天发射场迎新进展",
+          "time": "2026-02-23 11:52:21",
+          "sentiment": "positive",
+          "source": "东方财富"
+        },
+        {
+          "title": "现实版《惊蛰无声》！赵学军搜集我航天领域核心要害情报卖钱，被判刑",
+          "time": "2026-02-23 16:46:02",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        }
+      ],
+      "top_titles": [
+        "商业航天单笔融资金额走高背后：投资人开始抢额度",
+        "重回资本市场视野 可控核聚变能复制商业航天的奇迹吗？",
+        "商业航天单笔融资金额走高背后：投资人开始抢额度 多家企业推进IPO"
+      ]
+    },
+    "科创": {
+      "keyword": "科创",
+      "overall": "positive",
+      "positive_count": 2,
+      "negative_count": 0,
+      "neutral_count": 3,
+      "total": 5,
+      "news": [
+        {
+          "title": "马年首家上会企业来了！盛合晶微科创板IPO迎考",
+          "time": "2026-02-23 18:41:18",
+          "sentiment": "positive",
+          "source": "东方财富"
+        },
+        {
+          "title": "不漏掉任何有价值的硬科技火种 合肥“研发专项贷”破解科创企业融资难",
+          "time": "2026-02-24 08:58:46",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "A股明天开市了！上海现有超100家企业IPO辅导备案，近半数申报科创板",
+          "time": "2026-02-23 20:40:27",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "服务高端算力芯片全流程封测需求 盛合晶微科创板IPO上会在即 持续加码创新研发",
+          "time": "2026-02-23 19:04:44",
+          "sentiment": "positive",
+          "source": "东方财富"
+        },
+        {
+          "title": "（新春走基层）广州南沙产发科创谷二期项目率先按下复工复产“启动键”",
+          "time": "2026-02-22 09:42:51",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        }
+      ],
+      "top_titles": [
+        "马年首家上会企业来了！盛合晶微科创板IPO迎考",
+        "不漏掉任何有价值的硬科技火种 合肥“研发专项贷”破解科创企业融资难",
+        "A股明天开市了！上海现有超100家企业IPO辅导备案，近半数申报科创板"
+      ]
+    },
+    "通信": {
+      "keyword": "通信",
+      "overall": "positive",
+      "positive_count": 2,
+      "negative_count": 0,
+      "neutral_count": 3,
+      "total": 5,
+      "news": [
+        {
+          "title": "盛路通信：公司手机直连卫星天线技术尚未实现商业化落地",
+          "time": "2026-02-24 09:15:09",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "新春产线不停歇，程星通信以“3D 微波”技术领跑卫星通信赛道",
+          "time": "2026-02-21 08:46:16",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "6G通信重大突破！我国科学家在光通信及6G领域取得新进展",
+          "time": "2026-02-20 00:19:36",
+          "sentiment": "positive",
+          "source": "东方财富"
+        },
+        {
+          "title": "6G通信 有重大突破！",
+          "time": "2026-02-19 21:15:27",
+          "sentiment": "positive",
+          "source": "东方财富"
+        },
+        {
+          "title": "美股光通信概念逆市走高",
+          "time": "2026-02-20 02:24:18",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        }
+      ],
+      "top_titles": [
+        "盛路通信：公司手机直连卫星天线技术尚未实现商业化落地",
+        "新春产线不停歇，程星通信以“3D 微波”技术领跑卫星通信赛道",
+        "6G通信重大突破！我国科学家在光通信及6G领域取得新进展"
+      ]
+    },
+    "机器人": {
+      "keyword": "机器人",
+      "overall": "neutral",
+      "positive_count": 0,
+      "negative_count": 0,
+      "neutral_count": 5,
+      "total": 5,
+      "news": [
+        {
+          "title": "荣耀将推出首款人形机器人",
+          "time": "2026-02-23 22:33:28",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "荣耀将推出首款人形机器人",
+          "time": "2026-02-23 21:28:35",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "荣耀将推出首款人形机器人",
+          "time": "2026-02-23 19:31:56",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "荣耀将推出首款人形机器人",
+          "time": "2026-02-23 19:09:36",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "荣耀将推出首款人形机器人",
+          "time": "2026-02-23 19:05:31",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        }
+      ],
+      "top_titles": [
+        "荣耀将推出首款人形机器人",
+        "荣耀将推出首款人形机器人",
+        "荣耀将推出首款人形机器人"
+      ]
+    },
+    "港股": {
+      "keyword": "港股",
+      "overall": "positive",
+      "positive_count": 4,
+      "negative_count": 0,
+      "neutral_count": 1,
+      "total": 5,
+      "news": [
+        {
+          "title": "港股大涨！",
+          "time": "2026-02-23 13:36:26",
+          "sentiment": "positive",
+          "source": "东方财富"
+        },
+        {
+          "title": "港股 大涨！",
+          "time": "2026-02-23 12:54:09",
+          "sentiment": "positive",
+          "source": "东方财富"
+        },
+        {
+          "title": "港股全线暴涨！",
+          "time": "2026-02-23 10:48:43",
+          "sentiment": "positive",
+          "source": "东方财富"
+        },
+        {
+          "title": "港股异动｜港股科技股回暖 美团-W盘中涨超8%",
+          "time": "2026-02-23 11:45:37",
+          "sentiment": "positive",
+          "source": "东方财富"
+        },
+        {
+          "title": "港股异动｜港股大模型概念股走弱 智谱一度跌超20%",
+          "time": "2026-02-23 11:45:31",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        }
+      ],
+      "top_titles": [
+        "港股大涨！",
+        "港股 大涨！",
+        "港股全线暴涨！"
+      ]
+    },
+    "红利": {
+      "keyword": "红利",
+      "overall": "positive",
+      "positive_count": 1,
+      "negative_count": 0,
+      "neutral_count": 4,
+      "total": 5,
+      "news": [
+        {
+          "title": "机构论后市丨节后春季行情有望延续；传媒有望承接AI应用新红利",
+          "time": "2026-02-23 17:51:39",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "政策红利持续加码！中指研究院：2026年房地产相关政策将继续靠前发力",
+          "time": "2026-02-22 11:03:07",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "免签红利持续释放 上海口岸出入境客流尽显新春热度",
+          "time": "2026-02-21 16:22:06",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "免签红利持续释放，上海口岸出入境客流尽显新春热度",
+          "time": "2026-02-21 13:42:13",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "恒生科技估值跌至低位，汇添富恒生科技ETF联接发起式(QDII)C(013128)捕捉AI叙事加持下估值修复红利",
+          "time": "2026-02-22 14:16:25",
+          "sentiment": "positive",
+          "source": "东方财富"
+        }
+      ],
+      "top_titles": [
+        "机构论后市丨节后春季行情有望延续；传媒有望承接AI应用新红利",
+        "政策红利持续加码！中指研究院：2026年房地产相关政策将继续靠前发力",
+        "免签红利持续释放 上海口岸出入境客流尽显新春热度"
+      ]
+    },
+    "白银": {
+      "keyword": "白银",
+      "overall": "positive",
+      "positive_count": 4,
+      "negative_count": 0,
+      "neutral_count": 1,
+      "total": 5,
+      "news": [
+        {
+          "title": "黄金白银早盘拉升 现货白银涨幅扩大至2%",
+          "time": "2026-02-23 07:16:21",
+          "sentiment": "positive",
+          "source": "东方财富"
+        },
+        {
+          "title": "黄金白银 直线拉升",
+          "time": "2026-02-23 11:17:39",
+          "sentiment": "positive",
+          "source": "东方财富"
+        },
+        {
+          "title": "刚刚 黄金白银 直线拉升",
+          "time": "2026-02-23 09:20:12",
+          "sentiment": "positive",
+          "source": "东方财富"
+        },
+        {
+          "title": "黄金、白银 直线拉升",
+          "time": "2026-02-23 09:00:16",
+          "sentiment": "positive",
+          "source": "东方财富"
+        },
+        {
+          "title": "现货白银向上触及89美元/盎司",
+          "time": "2026-02-24 04:55:58",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        }
+      ],
+      "top_titles": [
+        "黄金白银早盘拉升 现货白银涨幅扩大至2%",
+        "黄金白银 直线拉升",
+        "刚刚 黄金白银 直线拉升"
+      ]
+    },
+    "有色": {
+      "keyword": "有色",
+      "overall": "positive",
+      "positive_count": 3,
+      "negative_count": 0,
+      "neutral_count": 2,
+      "total": 5,
+      "news": [
+        {
+          "title": "港股大涨！科技、有色爆发",
+          "time": "2026-02-23 17:29:29",
+          "sentiment": "positive",
+          "source": "东方财富"
+        },
+        {
+          "title": "有色/贵金属 | 全球显性库存不断增加 沪铜预计震荡",
+          "time": "2026-02-24 08:57:43",
+          "sentiment": "positive",
+          "source": "东方财富"
+        },
+        {
+          "title": "有色金属港股全线走强 机构看多金价长期上行",
+          "time": "2026-02-23 13:21:37",
+          "sentiment": "positive",
+          "source": "东方财富"
+        },
+        {
+          "title": "港股有色金属概念走强 五矿资源涨超8%",
+          "time": "2026-02-23 10:07:26",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "港股有色金属概念走强 五矿资源涨超8%",
+          "time": "2026-02-23 10:00:36",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        }
+      ],
+      "top_titles": [
+        "港股大涨！科技、有色爆发",
+        "有色/贵金属 | 全球显性库存不断增加 沪铜预计震荡",
+        "有色金属港股全线走强 机构看多金价长期上行"
+      ]
+    },
+    "豆粕": {
+      "keyword": "豆粕",
+      "overall": "positive",
+      "positive_count": 1,
+      "negative_count": 0,
+      "neutral_count": 4,
+      "total": 5,
+      "news": [
+        {
+          "title": "农产品 | 节前备货一定程度提振需求 豆粕供应整体宽松",
+          "time": "2026-02-09 08:43:33",
+          "sentiment": "positive",
+          "source": "东方财富"
+        },
+        {
+          "title": "大商所：2026年春节假期调整铁矿石、焦炭、焦煤、黄大豆1号、黄大豆2号、豆粕等相关品种期货合约涨跌停板幅度和交易保证金水平",
+          "time": "2026-02-13 09:59:05",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "豆粕菜粕“4连阴”！市场趋势已经转向？",
+          "time": "2026-02-05 08:09:13",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "美豆粕期货涨幅扩大至2% 报297.8美元/短吨",
+          "time": "2026-02-05 00:02:21",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "美豆粕期货涨幅扩大至2%，报297.8美元/短吨",
+          "time": "2026-02-05 00:01:59",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        }
+      ],
+      "top_titles": [
+        "农产品 | 节前备货一定程度提振需求 豆粕供应整体宽松",
+        "大商所：2026年春节假期调整铁矿石、焦炭、焦煤、黄大豆1号、黄大豆2号、豆粕等相关品种期货合约涨跌停板幅度和交易保证金水平",
+        "豆粕菜粕“4连阴”！市场趋势已经转向？"
+      ]
+    },
+    "电力": {
+      "keyword": "电力",
+      "overall": "neutral",
+      "positive_count": 0,
+      "negative_count": 0,
+      "neutral_count": 5,
+      "total": 5,
+      "news": [
+        {
+          "title": "斯洛伐克停止向乌克兰提供紧急电力",
+          "time": "2026-02-24 01:04:42",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "电力护航“不打烊”",
+          "time": "2026-02-23 09:24:09",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "国家能源局：构建适配高比例新能源的新型电力系统",
+          "time": "2026-02-23 21:12:15",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "国家能源局：构建适配高比例新能源的新型电力系统",
+          "time": "2026-02-23 21:00:01",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "【硬科技头条】算力中心加剧全球电力短缺，巨额储能订单涌入深圳供应链",
+          "time": "2026-02-24 09:07:41",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        }
+      ],
+      "top_titles": [
+        "斯洛伐克停止向乌克兰提供紧急电力",
+        "电力护航“不打烊”",
+        "国家能源局：构建适配高比例新能源的新型电力系统"
+      ]
+    },
+    "电网": {
+      "keyword": "电网",
+      "overall": "positive",
+      "positive_count": 3,
+      "negative_count": 0,
+      "neutral_count": 2,
+      "total": 5,
+      "news": [
+        {
+          "title": "5万亿元电网投资要用在刀刃上",
+          "time": "2026-02-20 05:54:04",
+          "sentiment": "positive",
+          "source": "东方财富"
+        },
+        {
+          "title": "（新春走基层）南方电网九项重大工程建设春节“不打烊”",
+          "time": "2026-02-19 18:23:41",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        },
+        {
+          "title": "电网板块受政策利好刺激，关注电网ETF（561380）",
+          "time": "2026-02-13 09:26:54",
+          "sentiment": "positive",
+          "source": "东方财富"
+        },
+        {
+          "title": "盘中触底拉升，电网设备ETF（159326）跌幅收窄，全市场电网设备含量最高",
+          "time": "2026-02-13 10:46:03",
+          "sentiment": "positive",
+          "source": "东方财富"
+        },
+        {
+          "title": "明星电力：公司在智能电网方面的投资，主要聚焦于电网数字化建设与配电网智能化升级等",
+          "time": "2026-02-12 18:22:02",
+          "sentiment": "neutral",
+          "source": "东方财富"
+        }
+      ],
+      "top_titles": [
+        "5万亿元电网投资要用在刀刃上",
+        "（新春走基层）南方电网九项重大工程建设春节“不打烊”",
+        "电网板块受政策利好刺激，关注电网ETF（561380）"
+      ]
+    }
+  },
+  "macro_news_baidu": [
+    {
+      "title": "",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "",
+      "sentiment": "neutral"
+    }
+  ],
+  "cctv_news": [
+    {
+      "title": "习近平致电祝贺金正恩被推举为朝鲜劳动党总书记",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "【新思想引领新征程】跃马扬鞭开新局 实干奋斗向未来",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "中共中央 国务院致第25届冬奥会中国体育代表团的贺电",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "中国体育代表团创境外参加冬奥会历史最好成绩 展现我国冰雪运动蓬勃发展新气象",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "春节假期最后一天 返程出行平稳有序",
+      "sentiment": "neutral"
+    }
+  ]
+}

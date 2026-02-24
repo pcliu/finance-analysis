@@ -1,0 +1,337 @@
+{
+  "baidu_news": [],
+  "stock_news": {
+    "消费": [
+      {
+        "title": "春节消费旺季大幕拉开 机构称消费市场或迎强劲复苏",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "从能消费到敢消费，浙江小城跑出社零增速黑马",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "消费领涨，易方达消费ETF矩阵把握复苏机会",
+        "sentiment": "positive"
+      },
+      {
+        "title": "让消费可感可及 市场监管部门将出台放心消费标准",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "春节消费旺季大幕拉开，各地促消费政策密集出台，为全年消费市场“开门红”注入强劲动力",
+        "sentiment": "neutral"
+      }
+    ],
+    "医疗": [
+      {
+        "title": "戴维医疗：关于变更医疗器械生产许可证的公告",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "可孚人工智能研究院揭牌 可孚医疗推动“AI+医疗”深度融合",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "稳健医疗接受机构调研 “稳健医疗+全棉时代”双品牌相互赋能协同发展",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "三鑫医疗：关于控股子公司变更医疗器械生产许可证的公告",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "新股暗盘丨“私立医疗服务机构”卓正医疗一度涨超90%",
+        "sentiment": "neutral"
+      }
+    ],
+    "军工": [
+      {
+        "title": "军工板块回调，军工ETF（512660）收跌超1.2%，把握建设航天强国趋势",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "军工ETF（512660）盘中涨超1%，关注军工板块行情",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "泰胜风能：公司当前主营业务不涉及军工领域",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "深耕军工特色赛道 以高质量发展助力金融强国建设",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "马斯克太空AI大动作，航天军工强势拉升，军工龙头ETF（512710）盘中涨幅达4.15%",
+        "sentiment": "positive"
+      }
+    ],
+    "科技": [
+      {
+        "title": "润泽科技：筹划购买润惠科技少数股权，明起停牌",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "万兴科技战略投资生数科技Vidu  加码AI漫剧赛道",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "润泽科技：筹划发行可转债购买润惠科技少数股权 明起停牌",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "润泽科技：筹划发行可转债购买润惠科技少数股权 明起停牌",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "资金逆势布局恒生科技，南方基金旗下恒生科技ETF南方(520570)聚焦港股科技企业龙头，备受市场关注",
+        "sentiment": "positive"
+      }
+    ],
+    "光伏": [
+      {
+        "title": "光伏和商业航天股下跌，太空光伏技术引争议",
+        "sentiment": "negative"
+      },
+      {
+        "title": "光伏深度回调，光伏ETF国泰（159864）跌近6%，太空光伏有望打开光伏需求成长空间，回调或可布局",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "华泰证券：看好2026年风电光伏盈利修复 太空光伏或打造新业态",
+        "sentiment": "negative"
+      },
+      {
+        "title": "联赢激光：公司光伏子公司主要从事光伏领域设备研发和生产",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "事关太空光伏 中国光伏行业协会发声！",
+        "sentiment": "neutral"
+      }
+    ],
+    "AI": [
+      {
+        "title": "千问30亿元免单引爆春节“AI大战” 奶茶免单开启AI购物时代",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "OpenAI推出新平台 助力企业部署“AI同事”",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "腾讯推出“火龙漫剧”平台 AI漫剧有望成为AI应用最佳商业化落点",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "谷歌翻倍烧钱猛攻AI",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "AI时代，科学何以永恒",
+        "sentiment": "neutral"
+      }
+    ],
+    "半导体": [
+      {
+        "title": "利和兴：入股赛伯宸半导体是公司加码半导体行业的重要举措",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "华测检测：半导体检测及分析中心聚焦消费品级、工业品级及车规级半导体领域",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "半导体主线回调，资金逢回调布局半导体设备ETF（159516），近20日净流入近100亿元",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "硬科技反弹，半导体材料设备指数率先翻红，半导体设备ETF易方达（159558）盘中获资金加码",
+        "sentiment": "positive"
+      },
+      {
+        "title": "华测检测：公司半导体检测及分析中心聚焦消费品级、工业品级及车规级半导体领域",
+        "sentiment": "neutral"
+      }
+    ],
+    "稀土": [
+      {
+        "title": "新研究揭示稀土成矿关键因素",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "关键矿产“金库计划”启动，稀土ETF嘉实(516150)聚焦稀土产业链投资机遇",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "稀土指数盘中下跌2%",
+        "sentiment": "negative"
+      },
+      {
+        "title": "北方稀土最新筹码趋于集中",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "稀土概念股走强，稀土ETF涨近4%",
+        "sentiment": "neutral"
+      }
+    ],
+    "黄金": [
+      {
+        "title": "中国黄金协会：2025年我国黄金产量同比上升1.09% 黄金ETF全年增仓133.118吨",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "现货黄金下跌4%",
+        "sentiment": "negative"
+      },
+      {
+        "title": "现货黄金跌破4700美元关口",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "现货黄金日内下跌50美元",
+        "sentiment": "negative"
+      },
+      {
+        "title": "挂钩黄金结构性存款走俏",
+        "sentiment": "neutral"
+      }
+    ],
+    "航天": [
+      {
+        "title": "千亿航天与卡倍亿达成战略合作 首批航天级线缆订单落地",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "千亿航天与卡倍亿战略合作落地 双方签订首批航天级线缆订单",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "商业航天产业规模化提速",
+        "sentiment": "positive"
+      },
+      {
+        "title": "航天科技：公司部分航天应用产品配套于固体火箭",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "航天电器：防务、航天等领域的业务是公司核心业务",
+        "sentiment": "neutral"
+      }
+    ],
+    "科创": [
+      {
+        "title": "科创板收盘播报：科创综指跌1.44% 北芯生命较发行价上涨183.33%",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "脑机接口企业博睿康启动科创板IPO辅导",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "89只科创板股票跻身百元股阵营",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "上海科创基金投资组合IPO数量增至185家",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "科创板收盘播报：科创50指数跌1.20% 电气设备类个股表现活跃",
+        "sentiment": "neutral"
+      }
+    ]
+  },
+  "cctv_news": [
+    {
+      "title": "习近平在重庆考察时强调 进一步全面深化改革开放 不断谱写中国式现代化重庆篇章",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "【央视快评】奋力谱写西部大开发新篇章",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "习近平向首届“中国－拉美和加勒比国家航天合作论坛”致贺信",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "李强在贵州调研",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "十四届全国人大常委会举行第二十四次委员长会议 听取有关草案和议案审议情况汇报 赵乐际主持",
+      "sentiment": "neutral"
+    }
+  ],
+  "keyword_sentiment": {
+    "消费": {
+      "positive": 1,
+      "negative": 0,
+      "neutral": 4,
+      "overall": "偏多"
+    },
+    "医疗": {
+      "positive": 0,
+      "negative": 0,
+      "neutral": 5,
+      "overall": "中性"
+    },
+    "军工": {
+      "positive": 1,
+      "negative": 0,
+      "neutral": 4,
+      "overall": "偏多"
+    },
+    "科技": {
+      "positive": 1,
+      "negative": 0,
+      "neutral": 4,
+      "overall": "偏多"
+    },
+    "光伏": {
+      "positive": 0,
+      "negative": 2,
+      "neutral": 3,
+      "overall": "偏空"
+    },
+    "AI": {
+      "positive": 0,
+      "negative": 0,
+      "neutral": 5,
+      "overall": "中性"
+    },
+    "半导体": {
+      "positive": 1,
+      "negative": 0,
+      "neutral": 4,
+      "overall": "偏多"
+    },
+    "稀土": {
+      "positive": 0,
+      "negative": 1,
+      "neutral": 4,
+      "overall": "偏空"
+    },
+    "黄金": {
+      "positive": 0,
+      "negative": 2,
+      "neutral": 3,
+      "overall": "偏空"
+    },
+    "航天": {
+      "positive": 1,
+      "negative": 0,
+      "neutral": 4,
+      "overall": "偏多"
+    },
+    "科创": {
+      "positive": 0,
+      "negative": 0,
+      "neutral": 5,
+      "overall": "中性"
+    }
+  }
+}
