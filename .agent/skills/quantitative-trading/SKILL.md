@@ -1,9 +1,10 @@
 ---
 name: quantitative-trading
 description: >
-  Quantitative trading toolkit for stock analysis with yfinance (global) and tushare (China/HK).
+  Quantitative trading toolkit for stock analysis with yfinance (global), tushare (China/HK) and akshare (real-time).
   Use when users request:
-  - Stock data fetching (historical/real-time prices, volume, dividends)
+  - Stock data fetching (historical prices, volume, dividends)
+  - Real-time quotes for A-share, ETF, and Index (via AKShare/Sina Finance)
   - Technical indicators (RSI, MACD, SMA, EMA, Bollinger Bands, ATR, Stochastic)
   - Trading strategies (moving average crossover, mean reversion, momentum)
   - Portfolio optimization, correlation analysis, and efficient frontier
@@ -14,6 +15,7 @@ dependencies:
   - python>=3.8
   - yfinance
   - tushare
+  - akshare>=1.12.0
   - pandas>=1.5.0
   - numpy>=1.20.0
   - matplotlib>=3.5.0
@@ -59,16 +61,19 @@ A toolkit for quantitative trading analysis using yfinance (global) and tushare 
 > # 所有输出保存到 SCRIPT_DIR，不再调用 datetime.now()
 > ```
 > 
-> **� 数据源自动路由 (Data Source Routing)**
+> **🔀 数据源自动路由 (Data Source Routing)**
 > 
-> *   **Tushare (CN/HK)**:
+> *   **Tushare (CN/HK) — 历史行情**:
 >     *   **纯数字代码** (如 `510150`, `600519`, `00700`) 会自动路由到 Tushare。
 >     *   **带后缀代码** (如 `600519.SH`, `00700.HK`) 也会路由到 Tushare。
->     *   *建议优先使用 Tushare 获取中国/香港市场数据，数据更全更准。*
+>     *   *建议优先使用 Tushare 获取中国/香港市场历史数据，数据更全更准。*
+> *   **AKShare/新浪财经 — 实时行情**:
+>     *   使用 `fetch_realtime_quote()` 获取 A 股、ETF、指数的**实时行情**（无需 Tushare 高级权限）。
+>     *   数据来源：新浪财经（Sina Finance），免费无限制。
 > *   **YFinance (Global)**:
 >     *   **字母代码** (如 `AAPL`, `TSLA`) 或其他带 `.SS/.SZ` 需要走 Yahoo 的情况(不推荐)，默认走 YFinance。
 > 
-> **�💾 数据序列化 (JSON)**
+> **💾 数据序列化 (JSON)**
 > 
 > `numpy` 类型 (int64, float64 等) 无法直接被 `json.dump` 序列化。
 > **必须** 引入 `scripts.utils` 并使用 `make_serializable` 工具：
@@ -172,11 +177,17 @@ workspace/                # 📂 ⬅️ ALL generated scripts & output go HERE (
 
 ### Data Fetching
 ```python
-from scripts import fetch_stock_data, fetch_multiple_stocks, get_company_info
+from scripts import fetch_stock_data, fetch_multiple_stocks, get_company_info, fetch_realtime_quote
 
+# Historical data (Tushare / YFinance)
 data = fetch_stock_data('AAPL', period='1y')
 data_dict = fetch_multiple_stocks(['AAPL', 'GOOGL'], period='1y')
 info = get_company_info('AAPL')
+
+# Real-time quotes (AKShare / Sina Finance, no Tushare permission needed)
+quote = fetch_realtime_quote('510150')                     # Single ETF
+quotes = fetch_realtime_quote(['510150', '510880', '512660'])  # Multiple
+# Returns: 代码, 名称, 最新价, 涨跌额, 涨跌幅, 昨收, 今开, 最高, 最低, 成交量, 成交额
 ```
 
 ### Technical Indicators

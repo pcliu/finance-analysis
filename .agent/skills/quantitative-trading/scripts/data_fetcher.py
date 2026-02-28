@@ -27,6 +27,11 @@ except ImportError:
     ts = None
 
 try:
+    import akshare as ak
+except ImportError:
+    ak = None
+
+try:
     from tushare_config import TUSHARE_TOKEN as _CONFIG_TUSHARE_TOKEN
 except ImportError:
     _CONFIG_TUSHARE_TOKEN = None
@@ -52,6 +57,7 @@ class DataFetcher:
         self.default_provider = default_provider
         self._tushare_token = tushare_token or os.getenv('TUSHARE_TOKEN') or _CONFIG_TUSHARE_TOKEN or '602a0859f5c2f2cf0c5382dd3035f016b8b0dc18fd10cdd3e912f3c5'
         self._tushare_client = None
+        self._realtime_cache = {}  # {source_key: (timestamp, DataFrame)}
 
     # ------------------------------------------------------------------
     # Provider helpers
@@ -208,29 +214,18 @@ class DataFetcher:
         asset_type = self._determine_asset_type(ts_code)
 
         try:
-            # Use different API based on asset type
-            if asset_type == 'FD':
-                # Use fund_daily for ETF/LOF funds - more reliable for fund data
-                raw = pro.fund_daily(
-                    ts_code=ts_code,
-                    start_date=start_dt,
-                    end_date=end_dt,
-                    fields='trade_date,open,high,low,close,pre_close,vol,amount'
-                )
-                volume_multiplier = 1  # fund_daily returns volume in shares already
-            else:
-                # Use pro_bar for stocks, indices, etc.
-                adj = 'qfq' if asset_type == 'E' else None
-                raw = ts.pro_bar(
-                    ts_code=ts_code,
-                    api=pro,
-                    start_date=start_dt, 
-                    end_date=end_dt,
-                    asset=asset_type,
-                    adj=adj
-                )
-                # pro_bar returns vol in lots (100 shares) for stocks/funds
-                volume_multiplier = 100 if asset_type == 'E' else 1
+            adj = 'qfq' if asset_type == 'E' else None
+            # Use pro_bar uniformly for all asset types (E, I, FD, etc.)
+            raw = ts.pro_bar(
+                ts_code=ts_code,
+                api=pro,
+                start_date=start_dt, 
+                end_date=end_dt,
+                asset=asset_type,
+                adj=adj
+            )
+            # pro_bar returns vol in lots (100 units) for stocks and funds
+            volume_multiplier = 100 if asset_type in ('E', 'FD') else 1
             
             if raw is None or raw.empty:
                 print(f"No tushare data found for {ts_code} (Asset: {asset_type})")
@@ -500,6 +495,117 @@ class DataFetcher:
         }
 
         return summary
+
+    # ------------------------------------------------------------------
+    # Real-time quotes via AKShare (Sina Finance)
+    # ------------------------------------------------------------------
+    def _get_cached_realtime(self, source_key: str, fetch_fn, cache_ttl: int = 60) -> Optional[pd.DataFrame]:
+        """Fetch real-time data with caching to avoid repeated full pulls."""
+        import time
+        now = time.time()
+        if source_key in self._realtime_cache:
+            ts_cached, df_cached = self._realtime_cache[source_key]
+            if now - ts_cached < cache_ttl:
+                return df_cached
+        try:
+            df = fetch_fn()
+            if df is not None and not df.empty:
+                self._realtime_cache[source_key] = (now, df)
+                return df
+        except Exception as e:
+            print(f"Error fetching real-time data ({source_key}): {e}")
+        return None
+
+    def fetch_realtime_quote(self, tickers, market: Optional[str] = None) -> Optional[pd.DataFrame]:
+        """
+        Fetch real-time quotes for one or more tickers via AKShare (Sina Finance).
+
+        Args:
+            tickers: Single ticker string or list of tickers (e.g., '510150', ['510150', '510880'])
+            market: Market hint ('cn', 'hk'). Currently only CN A-share / ETF / Index supported.
+
+        Returns:
+            pd.DataFrame with columns: 代码, 名称, 最新价, 涨跌额, 涨跌幅, 昨收, 今开, 最高, 最低, 成交量, 成交额
+            Returns None if akshare is not installed or data is unavailable.
+        """
+        if ak is None:
+            print("akshare is not installed. Run `pip install akshare` to enable real-time quotes.")
+            return None
+
+        if isinstance(tickers, str):
+            tickers = [tickers]
+
+        # Normalize tickers: strip exchange suffixes, keep pure 6-digit codes
+        clean_codes = []
+        for t in tickers:
+            code = t.upper().split('.')[0]
+            clean_codes.append(code)
+
+        # Determine asset types and group tickers by source
+        etf_codes = []
+        index_codes = []
+        stock_codes = []
+
+        for code in clean_codes:
+            ts_code = self._normalize_ts_code(code, market)
+            if ts_code:
+                asset_type = self._determine_asset_type(ts_code)
+            else:
+                asset_type = 'E'
+
+            if asset_type == 'FD':
+                etf_codes.append(code)
+            elif asset_type == 'I':
+                index_codes.append(code)
+            else:
+                stock_codes.append(code)
+
+        results = []
+
+        # Fetch ETF real-time data
+        if etf_codes:
+            df_etf = self._get_cached_realtime(
+                'sina_etf', lambda: ak.fund_etf_category_sina(symbol='ETF基金'))
+            if df_etf is not None:
+                # Sina ETF codes have exchange prefix like 'sh510150'
+                for code in etf_codes:
+                    matched = df_etf[df_etf['代码'].str.contains(code)]
+                    if not matched.empty:
+                        results.append(matched)
+
+        # Fetch Index real-time data
+        if index_codes:
+            df_idx = self._get_cached_realtime(
+                'sina_index', lambda: ak.stock_zh_index_spot_sina())
+            if df_idx is not None:
+                for code in index_codes:
+                    matched = df_idx[df_idx['代码'].str.contains(code)]
+                    if not matched.empty:
+                        results.append(matched)
+
+        # Fetch Stock real-time data
+        if stock_codes:
+            df_stock = self._get_cached_realtime(
+                'sina_stock', lambda: ak.stock_zh_a_spot())
+            if df_stock is not None:
+                for code in stock_codes:
+                    matched = df_stock[df_stock['代码'].str.contains(code)]
+                    if not matched.empty:
+                        results.append(matched)
+
+        if not results:
+            print(f"No real-time data found for {tickers}")
+            return None
+
+        # Unify columns across sources
+        common_cols = ['代码', '名称', '最新价', '涨跌额', '涨跌幅', '昨收', '今开', '最高', '最低', '成交量', '成交额']
+        unified = []
+        for df in results:
+            available = [c for c in common_cols if c in df.columns]
+            unified.append(df[available])
+
+        combined = pd.concat(unified, ignore_index=True)
+        return combined
 
 
 def main():

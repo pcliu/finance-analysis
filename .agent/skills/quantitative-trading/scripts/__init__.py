@@ -67,6 +67,19 @@ def calculate_correlation_matrix(tickers, period='1y', provider=None, market=Non
                                                       provider=provider, market=market)
 
 
+def fetch_realtime_quote(tickers, market=None):
+    """Fetch real-time quotes via AKShare (Sina Finance).
+    
+    Args:
+        tickers: Single ticker or list (e.g., '510150', ['510150', '510880'])
+        market: Market hint ('cn', 'hk')
+    
+    Returns:
+        pd.DataFrame with columns: 代码, 名称, 最新价, 涨跌额, 涨跌幅, etc.
+    """
+    return _data_fetcher.fetch_realtime_quote(tickers, market=market)
+
+
 # ============================================================
 # Convenience Functions - Indicators
 # ============================================================
@@ -193,6 +206,7 @@ __all__ = [
     'fetch_multiple_stocks',
     'get_company_info',
     'calculate_correlation_matrix',
+    'fetch_realtime_quote',
     # Indicator functions
     'calculate_sma',
     'calculate_ema',

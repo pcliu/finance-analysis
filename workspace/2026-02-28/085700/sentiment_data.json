@@ -1,0 +1,131 @@
+{
+    "date": "2026-02-28",
+    "analysis_time": "08:57",
+    "source": "akshare + search_web",
+    "keywords_sentiment": {
+        "消费": {
+            "overall": "偏多",
+            "positive": 2,
+            "negative": 0,
+            "neutral": 3,
+            "key_driver": "两会扩内需预期+十五五改善民生"
+        },
+        "医疗": {
+            "overall": "中性",
+            "positive": 0,
+            "negative": 0,
+            "neutral": 5,
+            "key_driver": "无重大催化"
+        },
+        "军工": {
+            "overall": "强势偏多",
+            "positive": 5,
+            "negative": 0,
+            "neutral": 0,
+            "key_driver": "军贸份额提升+两会国防预算+商业航天爆发+C919"
+        },
+        "科技": {
+            "overall": "偏多",
+            "positive": 1,
+            "negative": 0,
+            "neutral": 4,
+            "key_driver": "十五五科技创新主线+富时罗素科技股晋升"
+        },
+        "光伏": {
+            "overall": "强势偏多",
+            "positive": 3,
+            "negative": 0,
+            "neutral": 2,
+            "key_driver": "新型能源体系+出口复苏"
+        },
+        "AI": {
+            "overall": "中性",
+            "positive": 0,
+            "negative": 0,
+            "neutral": 5,
+            "key_driver": "英伟达暴跌抑制情绪但长期逻辑未变"
+        },
+        "半导体": {
+            "overall": "偏多",
+            "positive": 2,
+            "negative": 1,
+            "neutral": 2,
+            "key_driver": "半导体设备ETF金叉+芯片自主可控"
+        },
+        "稀土": {
+            "overall": "强势偏多",
+            "positive": 4,
+            "negative": 0,
+            "neutral": 1,
+            "key_driver": "重稀土价格8年新高+管理条例供给收紧+人形机器人需求"
+        },
+        "黄金": {
+            "overall": "强势偏多",
+            "positive": 4,
+            "negative": 0,
+            "neutral": 1,
+            "key_driver": "央行购金+地缘风险+美元弱化"
+        },
+        "航天": {
+            "overall": "强势偏多",
+            "positive": 3,
+            "negative": 0,
+            "neutral": 2,
+            "key_driver": "商业航天爆发+C919超千架订单"
+        }
+    },
+    "macro_events": [
+        {
+            "event": "两会开幕",
+            "date": "2026-03-04/05",
+            "impact": "positive",
+            "detail": "十五五开局年，聚焦科技创新+扩内需+绿色转型"
+        },
+        {
+            "event": "MSCI季度调整生效",
+            "date": "2026-02-27收盘后",
+            "impact": "positive",
+            "detail": "新纳入37只股票(近三年最大规模)，含商汤、小马智行等港股AI股"
+        },
+        {
+            "event": "富时罗素调整",
+            "date": "2026-02-27",
+            "impact": "positive",
+            "detail": "多只科技股晋升大盘股(淳中科技、佰维存储等)"
+        },
+        {
+            "event": "英伟达暴跌",
+            "date": "2026-02-27(隔夜)",
+            "impact": "negative",
+            "detail": "拖累A股科技板块回调"
+        },
+        {
+            "event": "南向资金抄底",
+            "date": "2026-02-27",
+            "impact": "positive",
+            "detail": "净买入港股近150亿港元，创年内新高"
+        },
+        {
+            "event": "国网十五五投资计划",
+            "date": "2026",
+            "impact": "positive",
+            "detail": "5年4万亿，年均8000亿(+40%)"
+        },
+        {
+            "event": "稀土管理条例",
+            "date": "2026-01实施",
+            "impact": "positive",
+            "detail": "灰色产能退出，供给缩减5-10%"
+        }
+    ],
+    "market_summary": {
+        "date": "2026-02-27",
+        "shanghai_composite": "+0.39% (4162.88点，月线三连阳)",
+        "shenzhen_component": "-0.06%",
+        "chinext": "-1.04%",
+        "turnover": "2.51万亿",
+        "advancing_stocks": "3200+",
+        "hot_sectors": "小金属、稀有金属、有色金属、煤炭、电力、黄金",
+        "weak_sectors": "AI应用、影视院线、CPO、光通信模块、PCB、通信设备、半导体"
+    }
+}

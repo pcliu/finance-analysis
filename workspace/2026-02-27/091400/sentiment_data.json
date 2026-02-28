@@ -1,0 +1,294 @@
+{
+    "date": "2026-02-27",
+    "total_news": 55,
+    "keyword_analysis": {
+        "消费": {
+            "total": 1,
+            "positive": 0,
+            "negative": 0,
+            "neutral": 1,
+            "overall": "中性",
+            "top_titles": [
+                "网络股指数ETF收涨约2.3%，领跑美股行业ETF"
+            ]
+        },
+        "医疗": {
+            "total": 1,
+            "positive": 0,
+            "negative": 0,
+            "neutral": 1,
+            "overall": "中性",
+            "top_titles": [
+                "国内联播快讯"
+            ]
+        },
+        "恒生科技": {
+            "total": 4,
+            "positive": 2,
+            "negative": 0,
+            "neutral": 2,
+            "overall": "强势偏多",
+            "top_titles": [
+                "A股小型指数行情值得期待",
+                "冰火两重天！A股算力狂飙 恒生科技“技术熊”",
+                "两市ETF两融余额增加9.98亿元丨ETF融资融券日报",
+                "通信板块ETF走高；恒生科技ETF近半年吸金超千亿丨ETF晚报"
+            ]
+        },
+        "港股": {
+            "total": 7,
+            "positive": 2,
+            "negative": 1,
+            "neutral": 4,
+            "overall": "偏多",
+            "top_titles": [
+                "A股小型指数行情值得期待",
+                "冰火两重天！A股算力狂飙 恒生科技“技术熊”",
+                "超20只基金提示溢价风险；QDII基金密集限购",
+                "两市ETF两融余额增加9.98亿元丨ETF融资融券日报",
+                "ETF市场“冷热不均” 港股主题ETF受青睐"
+            ]
+        },
+        "通信": {
+            "total": 3,
+            "positive": 2,
+            "negative": 0,
+            "neutral": 1,
+            "overall": "强势偏多",
+            "top_titles": [
+                "千亿级龙头股大涨！A股前三",
+                "ETF龙虎榜 | 大幅溢价！这只ETF逼近涨停",
+                "通信板块ETF走高；恒生科技ETF近半年吸金超千亿丨ETF晚报"
+            ]
+        },
+        "AI": {
+            "total": 5,
+            "positive": 1,
+            "negative": 0,
+            "neutral": 4,
+            "overall": "强势偏多",
+            "top_titles": [
+                "A股三大指数涨跌不一 AI硬件股多点开花",
+                "A股复牌提示：2股今日复牌",
+                "A股定增一览：14家公司披露定增进展",
+                "网络股指数ETF收涨约2.3%，领跑美股行业ETF",
+                "ETF今日收评 | 中韩半导体ETF涨超9% 港股医药相关ETF跌超3%"
+            ]
+        },
+        "人工智能": {
+            "total": 2,
+            "positive": 1,
+            "negative": 0,
+            "neutral": 1,
+            "overall": "强势偏多",
+            "top_titles": [
+                "冰火两重天！A股算力狂飙 恒生科技“技术熊”",
+                "【新春走基层】青春逐梦 智创未来"
+            ]
+        },
+        "科创": {
+            "total": 2,
+            "positive": 1,
+            "negative": 0,
+            "neutral": 1,
+            "overall": "强势偏多",
+            "top_titles": [
+                "板块异动 | A股超导概念连涨三天",
+                "【新春走基层】青春逐梦 智创未来"
+            ]
+        },
+        "半导体": {
+            "total": 3,
+            "positive": 1,
+            "negative": 0,
+            "neutral": 2,
+            "overall": "强势偏多",
+            "top_titles": [
+                "ETF龙虎榜 | 大幅溢价！这只ETF逼近涨停",
+                "网络股指数ETF收涨约2.3%，领跑美股行业ETF",
+                "ETF今日收评 | 中韩半导体ETF涨超9% 港股医药相关ETF跌超3%"
+            ]
+        },
+        "稀土": {
+            "total": 1,
+            "positive": 0,
+            "negative": 1,
+            "neutral": 0,
+            "overall": "强势偏空",
+            "top_titles": [
+                "ETF今日收评 | 多只稀土相关ETF涨超6% 标普油气相关ETF跌幅居前"
+            ]
+        },
+        "化工": {
+            "total": 1,
+            "positive": 0,
+            "negative": 0,
+            "neutral": 1,
+            "overall": "中性",
+            "top_titles": [
+                "A股三大指数集体高开"
+            ]
+        },
+        "电力": {
+            "total": 2,
+            "positive": 2,
+            "negative": 0,
+            "neutral": 0,
+            "overall": "强势偏多",
+            "top_titles": [
+                "冰火两重天！A股算力狂飙 恒生科技“技术熊”",
+                "ETF龙虎榜 | 大幅溢价！这只ETF逼近涨停"
+            ]
+        },
+        "电网": {
+            "total": 3,
+            "positive": 2,
+            "negative": 0,
+            "neutral": 1,
+            "overall": "强势偏多",
+            "top_titles": [
+                "冰火两重天！A股算力狂飙 恒生科技“技术熊”",
+                "ETF龙虎榜 | 大幅溢价！这只ETF逼近涨停",
+                "ETF今日收评 | 中韩半导体ETF涨超9% 港股医药相关ETF跌超3%"
+            ]
+        },
+        "机器人": {
+            "total": 1,
+            "positive": 0,
+            "negative": 0,
+            "neutral": 1,
+            "overall": "中性",
+            "top_titles": [
+                "【新春走基层】青春逐梦 智创未来"
+            ]
+        },
+        "白银": {
+            "total": 1,
+            "positive": 0,
+            "negative": 0,
+            "neutral": 1,
+            "overall": "中性",
+            "top_titles": [
+                "白银基金，最新消息"
+            ]
+        },
+        "有色": {
+            "total": 1,
+            "positive": 0,
+            "negative": 0,
+            "neutral": 1,
+            "overall": "中性",
+            "top_titles": [
+                "ETF主力榜 | 有色金属ETF基金(516650)主力资金净流入1.32亿元，居可比基金首位-20260226"
+            ]
+        },
+        "政策": {
+            "total": 1,
+            "positive": 1,
+            "negative": 0,
+            "neutral": 0,
+            "overall": "强势偏多",
+            "top_titles": [
+                "A股三大指数涨跌不一 AI硬件股多点开花"
+            ]
+        }
+    },
+    "important_news": [
+        {
+            "title": "加速出海！证券基金业推进国际化布局",
+            "source": "东方财富",
+            "sentiment": "positive",
+            "score": 3
+        },
+        {
+            "title": "ETF龙虎榜 | 大幅溢价！这只ETF逼近涨停",
+            "source": "东方财富",
+            "sentiment": "positive",
+            "score": 3
+        },
+        {
+            "title": "A股小型指数行情值得期待",
+            "source": "东方财富",
+            "sentiment": "positive",
+            "score": 2
+        },
+        {
+            "title": "板块异动 | A股超导概念连涨三天",
+            "source": "东方财富",
+            "sentiment": "positive",
+            "score": 2
+        },
+        {
+            "title": "冰火两重天！A股算力狂飙 恒生科技“技术熊”",
+            "source": "东方财富",
+            "sentiment": "positive",
+            "score": 2
+        },
+        {
+            "title": "A股三大指数涨跌不一 AI硬件股多点开花",
+            "source": "东方财富",
+            "sentiment": "positive",
+            "score": 1
+        },
+        {
+            "title": "千亿级龙头股大涨！A股前三",
+            "source": "东方财富",
+            "sentiment": "positive",
+            "score": 1
+        },
+        {
+            "title": "超20只基金提示溢价风险；QDII基金密集限购",
+            "source": "东方财富",
+            "sentiment": "negative",
+            "score": -1
+        },
+        {
+            "title": "华泰发力资管国际化业务，旗下基金获标普基金评级",
+            "source": "东方财富",
+            "sentiment": "negative",
+            "score": -1
+        },
+        {
+            "title": "石油基金LOF（160416）发布溢价风险提示",
+            "source": "东方财富",
+            "sentiment": "negative",
+            "score": -1
+        },
+        {
+            "title": "【ETF龙虎榜】换手率高达125.76%，这只ETF逼近涨停",
+            "source": "东方财富",
+            "sentiment": "positive",
+            "score": 1
+        },
+        {
+            "title": "ETF今日收评 | 多只稀土相关ETF涨超6% 标普油气相关ETF跌幅居前",
+            "source": "东方财富",
+            "sentiment": "negative",
+            "score": -1
+        },
+        {
+            "title": "310只ETF获融资净买入 博时中证可转债及可交换债券ETF居首",
+            "source": "东方财富",
+            "sentiment": "negative",
+            "score": -1
+        },
+        {
+            "title": "李强出席中德经济顾问委员会座谈会",
+            "source": "CCTV",
+            "sentiment": "negative",
+            "score": -1
+        },
+        {
+            "title": "2025年我国中小企业经济运行总体平稳",
+            "source": "CCTV",
+            "sentiment": "positive",
+            "score": 1
+        },
+        {
+            "title": "【代表委员履职故事】李丰：加强新就业形态劳动者权益保障",
+            "source": "CCTV",
+            "sentiment": "positive",
+            "score": 1
+        }
+    ]
+}

@@ -60,6 +60,31 @@ Calculate return correlation between stocks.
 corr = fetcher.calculate_correlation_matrix(['AAPL', 'GOOGL', 'MSFT'])
 ```
 
+##### `fetch_realtime_quote(tickers, market=None)`
+
+Fetch real-time quotes via AKShare (Sina Finance). No Tushare permission needed.
+
+**Parameters:**
+- `tickers` (str or list): Single ticker or list (e.g., `'510150'`, `['510150', '510880']`)
+- `market` (str): Market hint (`'cn'`, `'hk'`)
+
+**Returns:** `pd.DataFrame` with columns: 代码, 名称, 最新价, 涨跌额, 涨跌幅, 昨收, 今开, 最高, 最低, 成交量, 成交额
+
+**Data Sources (Sina Finance via AKShare):**
+- ETF → `ak.fund_etf_category_sina()`
+- Index → `ak.stock_zh_index_spot_sina()`
+- A-share → `ak.stock_zh_a_spot()`
+
+```python
+# Single ETF
+quote = fetcher.fetch_realtime_quote('510150')
+print(f"Latest: {quote['最新价'].iloc[0]}")
+
+# Multiple tickers
+quotes = fetcher.fetch_realtime_quote(['510150', '510880', '512660'])
+print(quotes)
+```
+
 ---
 
 ## Indicators Module
