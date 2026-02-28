@@ -68,11 +68,11 @@ def calculate_correlation_matrix(tickers, period='1y', provider=None, market=Non
 
 
 def fetch_realtime_quote(tickers, market=None):
-    """Fetch real-time quotes via AKShare (Sina Finance).
+    """Unified real-time quotes: CN (AKShare/Sina) + US/Global (yfinance).
     
     Args:
-        tickers: Single ticker or list (e.g., '510150', ['510150', '510880'])
-        market: Market hint ('cn', 'hk')
+        tickers: Single ticker or list (e.g., '510150', 'AAPL', ['510150', 'AAPL'])
+        market: Market hint ('cn', 'hk', 'us'). Auto-detect if None.
     
     Returns:
         pd.DataFrame with columns: 代码, 名称, 最新价, 涨跌额, 涨跌幅, etc.

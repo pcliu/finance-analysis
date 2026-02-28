@@ -518,80 +518,116 @@ class DataFetcher:
 
     def fetch_realtime_quote(self, tickers, market: Optional[str] = None) -> Optional[pd.DataFrame]:
         """
-        Fetch real-time quotes for one or more tickers via AKShare (Sina Finance).
+        Unified real-time quote entry point for all markets.
+
+        - CN A-share / ETF / Index → AKShare (Sina Finance), free, no permission needed.
+        - US / Global stocks → yfinance (fast_info), ~15-min delay.
 
         Args:
-            tickers: Single ticker string or list of tickers (e.g., '510150', ['510150', '510880'])
-            market: Market hint ('cn', 'hk'). Currently only CN A-share / ETF / Index supported.
+            tickers: Single ticker string or list of tickers
+                     (e.g., '510150', 'AAPL', ['510150', 'AAPL', '510880'])
+            market: Market hint ('cn', 'hk', 'us'). If None, auto-detect.
 
         Returns:
-            pd.DataFrame with columns: 代码, 名称, 最新价, 涨跌额, 涨跌幅, 昨收, 今开, 最高, 最低, 成交量, 成交额
-            Returns None if akshare is not installed or data is unavailable.
+            pd.DataFrame with columns:
+                代码, 名称, 最新价, 涨跌额, 涨跌幅, 昨收, 今开, 最高, 最低, 成交量, 成交额
+            Returns None if data is unavailable.
         """
-        if ak is None:
-            print("akshare is not installed. Run `pip install akshare` to enable real-time quotes.")
-            return None
-
         if isinstance(tickers, str):
             tickers = [tickers]
 
-        # Normalize tickers: strip exchange suffixes, keep pure 6-digit codes
-        clean_codes = []
+        # --- Classify tickers into CN vs Global ---
+        cn_etf_codes = []
+        cn_index_codes = []
+        cn_stock_codes = []
+        global_tickers = []
+
         for t in tickers:
+            original = t
             code = t.upper().split('.')[0]
-            clean_codes.append(code)
 
-        # Determine asset types and group tickers by source
-        etf_codes = []
-        index_codes = []
-        stock_codes = []
+            # Use provider resolution to decide CN vs Global
+            provider = self._resolve_provider(original, None, market)
+            if provider == 'tushare':
+                ts_code = self._normalize_ts_code(code, market)
+                if ts_code:
+                    asset_type = self._determine_asset_type(ts_code)
+                else:
+                    asset_type = 'E'
 
-        for code in clean_codes:
-            ts_code = self._normalize_ts_code(code, market)
-            if ts_code:
-                asset_type = self._determine_asset_type(ts_code)
+                if asset_type == 'FD':
+                    cn_etf_codes.append(code)
+                elif asset_type == 'I':
+                    cn_index_codes.append(code)
+                else:
+                    cn_stock_codes.append(code)
             else:
-                asset_type = 'E'
-
-            if asset_type == 'FD':
-                etf_codes.append(code)
-            elif asset_type == 'I':
-                index_codes.append(code)
-            else:
-                stock_codes.append(code)
+                global_tickers.append(original)
 
         results = []
 
-        # Fetch ETF real-time data
-        if etf_codes:
-            df_etf = self._get_cached_realtime(
-                'sina_etf', lambda: ak.fund_etf_category_sina(symbol='ETF基金'))
-            if df_etf is not None:
-                # Sina ETF codes have exchange prefix like 'sh510150'
-                for code in etf_codes:
-                    matched = df_etf[df_etf['代码'].str.contains(code)]
-                    if not matched.empty:
-                        results.append(matched)
+        # --- CN: AKShare / Sina Finance ---
+        has_cn = cn_etf_codes or cn_index_codes or cn_stock_codes
+        if has_cn and ak is None:
+            print("akshare is not installed. Run `pip install akshare` to enable CN real-time quotes.")
+        elif has_cn:
+            # Fetch ETF real-time data
+            if cn_etf_codes:
+                df_etf = self._get_cached_realtime(
+                    'sina_etf', lambda: ak.fund_etf_category_sina(symbol='ETF基金'))
+                if df_etf is not None:
+                    for code in cn_etf_codes:
+                        matched = df_etf[df_etf['代码'].str.contains(code)]
+                        if not matched.empty:
+                            results.append(matched)
 
-        # Fetch Index real-time data
-        if index_codes:
-            df_idx = self._get_cached_realtime(
-                'sina_index', lambda: ak.stock_zh_index_spot_sina())
-            if df_idx is not None:
-                for code in index_codes:
-                    matched = df_idx[df_idx['代码'].str.contains(code)]
-                    if not matched.empty:
-                        results.append(matched)
+            # Fetch Index real-time data
+            if cn_index_codes:
+                df_idx = self._get_cached_realtime(
+                    'sina_index', lambda: ak.stock_zh_index_spot_sina())
+                if df_idx is not None:
+                    for code in cn_index_codes:
+                        matched = df_idx[df_idx['代码'].str.contains(code)]
+                        if not matched.empty:
+                            results.append(matched)
 
-        # Fetch Stock real-time data
-        if stock_codes:
-            df_stock = self._get_cached_realtime(
-                'sina_stock', lambda: ak.stock_zh_a_spot())
-            if df_stock is not None:
-                for code in stock_codes:
-                    matched = df_stock[df_stock['代码'].str.contains(code)]
-                    if not matched.empty:
-                        results.append(matched)
+            # Fetch A-share stock real-time data
+            if cn_stock_codes:
+                df_stock = self._get_cached_realtime(
+                    'sina_stock', lambda: ak.stock_zh_a_spot())
+                if df_stock is not None:
+                    for code in cn_stock_codes:
+                        matched = df_stock[df_stock['代码'].str.contains(code)]
+                        if not matched.empty:
+                            results.append(matched)
+
+        # --- Global: yfinance fast_info ---
+        if global_tickers:
+            for ticker_str in global_tickers:
+                try:
+                    stock = yf.Ticker(ticker_str)
+                    fi = stock.fast_info
+                    last_price = fi.last_price
+                    prev_close = fi.previous_close
+                    change = round(last_price - prev_close, 4) if last_price and prev_close else None
+                    change_pct = round(change / prev_close * 100, 2) if change and prev_close else None
+
+                    row = pd.DataFrame([{
+                        '代码': ticker_str.upper(),
+                        '名称': ticker_str.upper(),
+                        '最新价': last_price,
+                        '涨跌额': change,
+                        '涨跌幅': change_pct,
+                        '昨收': prev_close,
+                        '今开': fi.open,
+                        '最高': fi.day_high,
+                        '最低': fi.day_low,
+                        '成交量': fi.last_volume,
+                        '成交额': None,  # yfinance doesn't provide turnover directly
+                    }])
+                    results.append(row)
+                except Exception as e:
+                    print(f"Error fetching real-time data for {ticker_str} via yfinance: {e}")
 
         if not results:
             print(f"No real-time data found for {tickers}")
