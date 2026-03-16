@@ -1,0 +1,1374 @@
+{
+    "keywords": {
+        "消费": {
+            "overall_sentiment": "positive",
+            "positive": 1,
+            "negative": 0,
+            "neutral": 4,
+            "articles": [
+                {
+                    "title": "【西街观察】提振消费，首先要保护消费",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-15 23:30:01",
+                    "source": "北京商报"
+                },
+                {
+                    "title": "以旧换新激发乡村消费活力",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 07:34:31",
+                    "source": "经济日报"
+                },
+                {
+                    "title": "开年重要数据出炉！生产、消费回暖",
+                    "sentiment": "positive",
+                    "pos_count": 1,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 10:32:03",
+                    "source": "中国证券报"
+                },
+                {
+                    "title": "侵害消费者权益八大热点事件，专家支招如何避坑｜消费案例库",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-15 12:15:40",
+                    "source": "新京报"
+                },
+                {
+                    "title": "做好“加减乘除” 精准施策提振消费",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 07:04:47",
+                    "source": "中国证券报"
+                }
+            ]
+        },
+        "医疗": {
+            "overall_sentiment": "positive",
+            "positive": 5,
+            "negative": 0,
+            "neutral": 0,
+            "articles": [
+                {
+                    "title": "佰特微医疗完成近亿元B轮融资",
+                    "sentiment": "positive",
+                    "pos_count": 1,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 09:10:12",
+                    "source": "界面新闻"
+                },
+                {
+                    "title": "医疗耗材股持续走高 中红医疗、英科医疗逼近20cm涨停",
+                    "sentiment": "positive",
+                    "pos_count": 1,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-13 13:50:32",
+                    "source": "每日经济新闻"
+                },
+                {
+                    "title": "医疗耗材股持续走高 中红医疗、英科医疗逼近20cm涨停",
+                    "sentiment": "positive",
+                    "pos_count": 1,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-13 13:46:35",
+                    "source": "南方财经网"
+                },
+                {
+                    "title": "医疗耗材股持续走高 中红医疗、英科医疗逼近20cm涨停",
+                    "sentiment": "positive",
+                    "pos_count": 1,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-13 13:43:37",
+                    "source": "东方财富Choice数据"
+                },
+                {
+                    "title": "医疗耗材概念局部活跃 蓝帆医疗涨停",
+                    "sentiment": "positive",
+                    "pos_count": 2,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-13 10:03:21",
+                    "source": "上海证券报·中国证券网"
+                }
+            ]
+        },
+        "军工": {
+            "overall_sentiment": "neutral",
+            "positive": 1,
+            "negative": 1,
+            "neutral": 3,
+            "articles": [
+                {
+                    "title": "中东冲突“火上浇油”！军工金属钨价格一年狂飙逾500%",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 10:24:11",
+                    "source": "财联社"
+                },
+                {
+                    "title": "全球安全格局深刻重构，把握国防军工行业长期需求支撑，军工ETF（512660）近20日净流入超18亿元",
+                    "sentiment": "positive",
+                    "pos_count": 1,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-13 14:34:05",
+                    "source": "每日经济新闻"
+                },
+                {
+                    "title": "中科三环：目前公司产品主要用于汽车等民用领域，不涉及军工领域",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-13 17:39:39",
+                    "source": "证券日报"
+                },
+                {
+                    "title": "长城军工：目前尚未有涉及公司重大资产重组、资产注入等事项",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-13 19:37:23",
+                    "source": "证券日报"
+                },
+                {
+                    "title": "军工、6G等热门题材熄火 *ST精伦拉响退市警报",
+                    "sentiment": "negative",
+                    "pos_count": 1,
+                    "neg_count": 4,
+                    "pub_date": "2026-03-12 16:43:51",
+                    "source": "上游新闻"
+                }
+            ]
+        },
+        "科技": {
+            "overall_sentiment": "positive",
+            "positive": 1,
+            "negative": 0,
+            "neutral": 4,
+            "articles": [
+                {
+                    "title": "存储芯片概念震荡反弹 朗科科技、盛视科技涨停",
+                    "sentiment": "positive",
+                    "pos_count": 2,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 10:26:49",
+                    "source": "人民财讯"
+                },
+                {
+                    "title": "顺网科技：公司暂未参与和宇树科技机器人边缘算力的合作",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 09:40:01",
+                    "source": "每日经济新闻"
+                },
+                {
+                    "title": "崔斌：聚焦量子科技 深耕硬科技、探索新路径",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-15 15:45:34",
+                    "source": "上海证券报·中国证券网"
+                },
+                {
+                    "title": "新股提示：宏明电子、视涯科技、北交所悦龙科技今日申购",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 08:01:05",
+                    "source": "人民财讯"
+                },
+                {
+                    "title": "港股声通科技涨超6%",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 10:49:24",
+                    "source": "每日经济新闻"
+                }
+            ]
+        },
+        "光伏": {
+            "overall_sentiment": "positive",
+            "positive": 3,
+            "negative": 0,
+            "neutral": 2,
+            "articles": [
+                {
+                    "title": "意华股份：光伏支架业务暂无跟华为合作",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 09:49:14",
+                    "source": "每日经济新闻"
+                },
+                {
+                    "title": "今日资本徐新，看中光伏安装机器人",
+                    "sentiment": "positive",
+                    "pos_count": 1,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-15 14:33:27",
+                    "source": "上海证券报"
+                },
+                {
+                    "title": "*ST海源：公司光伏业务主要围绕光伏组件的研发、生产、销售开展",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-12 12:30:33",
+                    "source": "每日经济新闻"
+                },
+                {
+                    "title": "太空光伏需求有望迎指数级增长 中国光伏厂商打开全新成长空间",
+                    "sentiment": "positive",
+                    "pos_count": 2,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-12 07:57:44",
+                    "source": "财联社"
+                },
+                {
+                    "title": "光伏设备板块震荡上扬，横店东磁涨停",
+                    "sentiment": "positive",
+                    "pos_count": 1,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-13 10:15:53",
+                    "source": "南方财经网"
+                }
+            ]
+        },
+        "AI": {
+            "overall_sentiment": "neutral",
+            "positive": 0,
+            "negative": 0,
+            "neutral": 5,
+            "articles": [
+                {
+                    "title": "AI与机器人盘前速递丨315曝光AI大模型“投毒”乱象，特斯拉AI芯片制造项目将启动",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 09:24:26",
+                    "source": "每日经济新闻"
+                },
+                {
+                    "title": "千问AI眼镜国内首次公开亮相 “AI办事”打开AI眼镜赛道天花板",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-15 12:31:19",
+                    "source": "财联社"
+                },
+                {
+                    "title": "315晚会曝光AI大模型被投毒 给AI投毒已成产业链",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-15 21:32:36",
+                    "source": "央视财经"
+                },
+                {
+                    "title": "315晚会曝光AI大模型被投毒，给AI投毒已成产业链",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-15 21:32:24",
+                    "source": "界面新闻"
+                },
+                {
+                    "title": "构建AI微短剧产业生态 AI影视创制工场揭牌",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-14 13:43:43",
+                    "source": "上海证券报·中国证券网"
+                }
+            ]
+        },
+        "半导体": {
+            "overall_sentiment": "positive",
+            "positive": 2,
+            "negative": 0,
+            "neutral": 3,
+            "articles": [
+                {
+                    "title": "傅里叶半导体赴港IPO获备案",
+                    "sentiment": "positive",
+                    "pos_count": 1,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 09:01:30",
+                    "source": "证券时报网"
+                },
+                {
+                    "title": "光力科技：公司国产半导体设备持续满产",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-15 16:25:15",
+                    "source": "南方财经网"
+                },
+                {
+                    "title": "长安汽车：深蓝汽车与斯达半导体合资组建重庆安达半导体",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-13 23:13:14",
+                    "source": "证券日报"
+                },
+                {
+                    "title": "锴威特拟收购晶艺半导体 3月16日起停牌",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-15 16:19:15",
+                    "source": "财中社"
+                },
+                {
+                    "title": "港股半导体股走强 华虹半导体涨超6%",
+                    "sentiment": "positive",
+                    "pos_count": 1,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-12 09:58:30",
+                    "source": "每日经济新闻"
+                }
+            ]
+        },
+        "稀土": {
+            "overall_sentiment": "negative",
+            "positive": 0,
+            "negative": 1,
+            "neutral": 4,
+            "articles": [
+                {
+                    "title": "北方稀土：拟出资1.12亿元设控股公司 投建稀土金属合金生产线",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-13 22:01:36",
+                    "source": "中国证券报·中证网"
+                },
+                {
+                    "title": "北方稀土：拟斥资1.12亿元设立合资公司 建设年产10000吨稀土金属合金生产线项目",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-13 23:09:26",
+                    "source": "上海证券报·中国证券网"
+                },
+                {
+                    "title": "北方稀土：拟出资1.12亿元合资成立新公司建设稀土金属合金生产线项目",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-13 19:32:57",
+                    "source": "界面新闻"
+                },
+                {
+                    "title": "总投资超2.2亿元！稀土龙头大动作",
+                    "sentiment": "negative",
+                    "pos_count": 0,
+                    "neg_count": 1,
+                    "pub_date": "2026-03-14 13:54:32",
+                    "source": "上海证券报"
+                },
+                {
+                    "title": "600111，稀土龙头大动作！逾50亿港元爆买油气龙头股",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-15 12:31:29",
+                    "source": "数据宝"
+                }
+            ]
+        },
+        "黄金": {
+            "overall_sentiment": "negative",
+            "positive": 0,
+            "negative": 4,
+            "neutral": 1,
+            "articles": [
+                {
+                    "title": "港股黄金股走低 紫金黄金国际跌超6%",
+                    "sentiment": "negative",
+                    "pos_count": 0,
+                    "neg_count": 1,
+                    "pub_date": "2026-03-16 09:51:13",
+                    "source": "人民财讯"
+                },
+                {
+                    "title": "港股黄金股走低 紫金黄金国际跌超6%",
+                    "sentiment": "negative",
+                    "pos_count": 0,
+                    "neg_count": 1,
+                    "pub_date": "2026-03-16 09:49:13",
+                    "source": "每日经济新闻"
+                },
+                {
+                    "title": "港股黄金股走低、紫金黄金国际一度跌超6%",
+                    "sentiment": "negative",
+                    "pos_count": 0,
+                    "neg_count": 1,
+                    "pub_date": "2026-03-16 09:51:14",
+                    "source": "界面新闻"
+                },
+                {
+                    "title": "贵金属板块低开，盛达资源、中金黄金、西部黄金等多股跌超2%",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 09:49:18",
+                    "source": "每日经济新闻"
+                },
+                {
+                    "title": "现货黄金向下跌破5000美元",
+                    "sentiment": "negative",
+                    "pos_count": 0,
+                    "neg_count": 1,
+                    "pub_date": "2026-03-16 07:21:39",
+                    "source": "东方财富Choice数据"
+                }
+            ]
+        },
+        "航天": {
+            "overall_sentiment": "negative",
+            "positive": 1,
+            "negative": 2,
+            "neutral": 2,
+            "articles": [
+                {
+                    "title": "近300家企业汇聚商业航天展 上海加速打造商业航天产业新高地",
+                    "sentiment": "positive",
+                    "pos_count": 2,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-14 16:37:23",
+                    "source": "中国经营报"
+                },
+                {
+                    "title": "商业航天抢滩2026 |可回收火箭的“闯关”时刻",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 10:19:54",
+                    "source": "财联社"
+                },
+                {
+                    "title": "宇环数控：2025年度公司产品未应用于商业航天领域 间接用于航空航天领域的业务收入占比不足5%",
+                    "sentiment": "negative",
+                    "pos_count": 0,
+                    "neg_count": 1,
+                    "pub_date": "2026-03-15 19:27:11",
+                    "source": "每日经济新闻"
+                },
+                {
+                    "title": "宇环数控：2025年度公司产品未应用于商业航天领域 间接用于航空航天领域的业务收入占比不足5%",
+                    "sentiment": "negative",
+                    "pos_count": 0,
+                    "neg_count": 1,
+                    "pub_date": "2026-03-15 19:17:58",
+                    "source": "财联社"
+                },
+                {
+                    "title": "商业航天保险迎黄金期！险企发力破解难题",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 09:41:15",
+                    "source": "券商中国"
+                }
+            ]
+        },
+        "科创": {
+            "overall_sentiment": "neutral",
+            "positive": 0,
+            "negative": 0,
+            "neutral": 5,
+            "articles": [
+                {
+                    "title": "鑫华科技科创板IPO进入问询阶段",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-15 22:18:57",
+                    "source": "北京商报"
+                },
+                {
+                    "title": "2只科创板新股即将发行（附股）",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 09:43:13",
+                    "source": "证券时报网"
+                },
+                {
+                    "title": "277只科创板股融资余额环比增加",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 09:35:57",
+                    "source": "证券时报网"
+                },
+                {
+                    "title": "前海开源上证科创板100ETF开启认购",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 09:29:28",
+                    "source": "证券时报网"
+                },
+                {
+                    "title": "科创板打新来了：视涯科技今日申购",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 09:36:07",
+                    "source": "证券时报网"
+                }
+            ]
+        },
+        "通信": {
+            "overall_sentiment": "positive",
+            "positive": 1,
+            "negative": 0,
+            "neutral": 4,
+            "articles": [
+                {
+                    "title": "信维通信：拟60亿元定增加码卫星通信与射频器件 近三年净利润稳在5-6亿元",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 10:28:46",
+                    "source": "南方财经网"
+                },
+                {
+                    "title": "华夏中证港股通信息技术综合ETF今日起发售",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 09:29:28",
+                    "source": "证券时报网"
+                },
+                {
+                    "title": "吉大通信：将持续深耕能源数智与通信领域",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-13 23:13:32",
+                    "source": "证券日报"
+                },
+                {
+                    "title": "浦银安盛基金李凡：锤炼产业研究功力 聚焦光通信投资机遇",
+                    "sentiment": "positive",
+                    "pos_count": 1,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 10:31:47",
+                    "source": "中国证券报"
+                },
+                {
+                    "title": "仕佳光子：公司深耕光通信领域，围绕主业在光通信多场景应用领域持续投入研发资源",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-13 23:12:59",
+                    "source": "证券日报"
+                }
+            ]
+        },
+        "5G": {
+            "overall_sentiment": "neutral",
+            "positive": 0,
+            "negative": 0,
+            "neutral": 5,
+            "articles": [
+                {
+                    "title": "达利凯普：公司产品应用场景为5G基站领域",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-12 12:30:34",
+                    "source": "每日经济新闻"
+                },
+                {
+                    "title": "万丰股份拟8.5亿元投建新材料项目 将应用于柔性显示、5G基建等新兴领域",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-13 19:40:12",
+                    "source": "证券时报网"
+                },
+                {
+                    "title": "广西：推动“万兆光网”建设和5G-A网络规模部署 构建全区一体化算力网络",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-12 20:36:23",
+                    "source": "人民财讯"
+                },
+                {
+                    "title": "徐福记火到意大利米兰？5G+AI助力中国糖果甜遍世界",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-11 11:34:45",
+                    "source": "广州日报"
+                },
+                {
+                    "title": "兆驰股份光通信项目进入兑现期：200G光模块量产+25G芯片试产",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-12 16:14:30",
+                    "source": "财中社"
+                }
+            ]
+        },
+        "红利": {
+            "overall_sentiment": "positive",
+            "positive": 1,
+            "negative": 0,
+            "neutral": 4,
+            "articles": [
+                {
+                    "title": "景顺长城标普中国A股红利100ETF今日起发售",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 09:36:13",
+                    "source": "证券时报网"
+                },
+                {
+                    "title": "首张证书发放 平陆运河加速释放通道红利",
+                    "sentiment": "positive",
+                    "pos_count": 1,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-15 09:24:41",
+                    "source": "人民网"
+                },
+                {
+                    "title": "贝仕达克拟每10股派现金红利0.3元",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-15 16:59:33",
+                    "source": "财中社"
+                },
+                {
+                    "title": "芯朋微拟每10股派发现金红利4.5元",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-15 16:19:14",
+                    "source": "财中社"
+                },
+                {
+                    "title": "多重政策红利释放 大湾区航空市场迎来发展新机遇",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-15 09:24:39",
+                    "source": "人民网"
+                }
+            ]
+        },
+        "化工": {
+            "overall_sentiment": "neutral",
+            "positive": 2,
+            "negative": 2,
+            "neutral": 1,
+            "articles": [
+                {
+                    "title": "化工板块持续回落 鲁西化工触及跌停",
+                    "sentiment": "negative",
+                    "pos_count": 0,
+                    "neg_count": 2,
+                    "pub_date": "2026-03-16 11:02:20",
+                    "source": "南方财经网"
+                },
+                {
+                    "title": "化工板块持续回落 鲁西化工触及跌停",
+                    "sentiment": "negative",
+                    "pos_count": 0,
+                    "neg_count": 2,
+                    "pub_date": "2026-03-16 10:57:21",
+                    "source": "每日经济新闻"
+                },
+                {
+                    "title": "盘中线索丨油价飙升冲击化工市场，多只化工股盘初冲高",
+                    "sentiment": "positive",
+                    "pos_count": 2,
+                    "neg_count": 1,
+                    "pub_date": "2026-03-16 09:53:39",
+                    "source": "南方财经网"
+                },
+                {
+                    "title": "金牛化工录得11天7板",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 09:55:15",
+                    "source": "证券时报网"
+                },
+                {
+                    "title": "化工板块延续强势 赤天化等多股涨停",
+                    "sentiment": "positive",
+                    "pos_count": 2,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 09:49:15",
+                    "source": "每日经济新闻"
+                }
+            ]
+        },
+        "电力": {
+            "overall_sentiment": "negative",
+            "positive": 1,
+            "negative": 2,
+            "neutral": 2,
+            "articles": [
+                {
+                    "title": "绿色电力板块震荡走弱，豫能控股触及跌停",
+                    "sentiment": "negative",
+                    "pos_count": 0,
+                    "neg_count": 2,
+                    "pub_date": "2026-03-16 10:10:54",
+                    "source": "南方财经网"
+                },
+                {
+                    "title": "浙江绿色电力数据服务中心揭牌成立",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 09:59:42",
+                    "source": "新华财经"
+                },
+                {
+                    "title": "绿色电力板块震荡走弱，豫能控股触及跌停",
+                    "sentiment": "negative",
+                    "pos_count": 0,
+                    "neg_count": 2,
+                    "pub_date": "2026-03-16 09:55:52",
+                    "source": "界面新闻"
+                },
+                {
+                    "title": "事关绿色电力、CPO概念！多只核心标的透露最新业务进展",
+                    "sentiment": "positive",
+                    "pos_count": 1,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 07:58:32",
+                    "source": "东方财富研究中心"
+                },
+                {
+                    "title": "内蒙古电力集团召开产业金融对接会 共商融合发展",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 10:50:43",
+                    "source": "新华财经"
+                }
+            ]
+        },
+        "机器人": {
+            "overall_sentiment": "neutral",
+            "positive": 0,
+            "negative": 0,
+            "neutral": 5,
+            "articles": [
+                {
+                    "title": "碧桂园等成立机器人公司",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 10:54:41",
+                    "source": "人民财讯"
+                },
+                {
+                    "title": "泳池机器人、割草机器人……这家脱胎于斯坦福大学实验室的公司发力机器人赛道",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-15 14:06:24",
+                    "source": "上观新闻"
+                },
+                {
+                    "title": "双足陪伴机器人亮相AWE，这个毛绒绒的机器人能够“情绪同频”",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-15 21:30:13",
+                    "source": "上观新闻"
+                },
+                {
+                    "title": "华沿机器人通过港交所聆讯",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-15 20:33:46",
+                    "source": "每日经济新闻"
+                },
+                {
+                    "title": "家用服务机器人产业发展论坛暨家用服务机器人专委会成立大会召开",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-15 21:04:28",
+                    "source": "证券日报"
+                }
+            ]
+        },
+        "有色金属": {
+            "overall_sentiment": "neutral",
+            "positive": 1,
+            "negative": 1,
+            "neutral": 3,
+            "articles": [
+                {
+                    "title": "有色金属ETF天弘（159157）上一交易日获净申购近3亿份居深市同标的第一，有有色金属迎价值重估",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 09:21:03",
+                    "source": "21世纪经济报道"
+                },
+                {
+                    "title": "【盘中播报】6只A股跌停 有色金属行业跌幅最大",
+                    "sentiment": "negative",
+                    "pos_count": 0,
+                    "neg_count": 1,
+                    "pub_date": "2026-03-16 10:54:56",
+                    "source": "证券时报网"
+                },
+                {
+                    "title": "上期所有色金属期货收盘普跌",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-14 02:24:31",
+                    "source": "财联社"
+                },
+                {
+                    "title": "3月13日计算机、电力设备、有色金属等行业融资净卖出额居前",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 09:43:24",
+                    "source": "证券时报网"
+                },
+                {
+                    "title": "有色金属近期利好有哪些？有色金属ETF天弘（159157）盘中净申购超1.3亿份深市同标的第一",
+                    "sentiment": "positive",
+                    "pos_count": 2,
+                    "neg_count": 1,
+                    "pub_date": "2026-03-13 11:20:04",
+                    "source": "每日经济新闻"
+                }
+            ]
+        },
+        "白银": {
+            "overall_sentiment": "positive",
+            "positive": 2,
+            "negative": 0,
+            "neutral": 3,
+            "articles": [
+                {
+                    "title": "现货白银日内跌超2%",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 09:26:33",
+                    "source": "人民财讯"
+                },
+                {
+                    "title": "现货白银向上触及80美元/盎司",
+                    "sentiment": "positive",
+                    "pos_count": 1,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 06:59:50",
+                    "source": "东方财富Choice数据"
+                },
+                {
+                    "title": "现货白银向上触及80美元/盎司，日内上涨0.04%",
+                    "sentiment": "positive",
+                    "pos_count": 1,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 07:12:06",
+                    "source": "每日经济新闻"
+                },
+                {
+                    "title": "现货白银日内跌1%，现报79.63美元/盎司",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 06:32:16",
+                    "source": "每日经济新闻"
+                },
+                {
+                    "title": "现货白银日内跌超4%",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-13 23:51:27",
+                    "source": "界面新闻"
+                }
+            ]
+        },
+        "航空": {
+            "overall_sentiment": "neutral",
+            "positive": 0,
+            "negative": 0,
+            "neutral": 5,
+            "articles": [
+                {
+                    "title": "深圳航空通报！",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-14 20:36:26",
+                    "source": "券商中国"
+                },
+                {
+                    "title": "央视曝光外泌体乱象，郑州航空港区依法查封涉案产品",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 09:13:28",
+                    "source": "大河财立方"
+                },
+                {
+                    "title": "中东战事致逾600万航空旅客受影响",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-14 20:53:25",
+                    "source": "新华社"
+                },
+                {
+                    "title": "中东战事致逾600万航空旅客受影响",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-14 20:44:41",
+                    "source": "界面新闻"
+                },
+                {
+                    "title": "中东战事致逾600万航空旅客受影响",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-14 20:36:15",
+                    "source": "财联社"
+                }
+            ]
+        },
+        "国防": {
+            "overall_sentiment": "negative",
+            "positive": 0,
+            "negative": 1,
+            "neutral": 4,
+            "articles": [
+                {
+                    "title": "中越将举行第十次边境国防友好交流活动",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-15 08:24:41",
+                    "source": "人民财讯"
+                },
+                {
+                    "title": "印度国防指数下跌3.03%",
+                    "sentiment": "negative",
+                    "pos_count": 0,
+                    "neg_count": 2,
+                    "pub_date": "2026-03-13 13:09:06",
+                    "source": "每日经济新闻"
+                },
+                {
+                    "title": "加拿大宣布拨款350亿加元用于北部地区国防和基础设施建设",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-13 09:32:59",
+                    "source": "央视新闻"
+                },
+                {
+                    "title": "土国防部称拦截一枚自伊朗发射进入土领空的导弹",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-13 18:40:31",
+                    "source": "南方财经网"
+                },
+                {
+                    "title": "土国防部称拦截一枚自伊朗发射进入土领空的导弹",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-13 18:36:11",
+                    "source": "央视新闻"
+                }
+            ]
+        },
+        "恒生科技": {
+            "overall_sentiment": "neutral",
+            "positive": 1,
+            "negative": 1,
+            "neutral": 3,
+            "articles": [
+                {
+                    "title": "恒生指数开盘跌0.12% 恒生科技指数涨0.21%",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 09:36:20",
+                    "source": "上海证券报·中国证券网"
+                },
+                {
+                    "title": "港股开盘：恒生指数低开0.12% 恒生科技指数高开0.21%",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 09:21:10",
+                    "source": "东方财富Choice数据"
+                },
+                {
+                    "title": "恒生科技指数涨超1%",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 10:27:02",
+                    "source": "人民财讯"
+                },
+                {
+                    "title": "恒生指数收跌0.98% 恒生科技指数跌0.99%",
+                    "sentiment": "negative",
+                    "pos_count": 0,
+                    "neg_count": 1,
+                    "pub_date": "2026-03-13 16:21:20",
+                    "source": "人民财讯"
+                },
+                {
+                    "title": "华尔街“大空头”看好恒生科技！资金涌入港股科技主题ETF",
+                    "sentiment": "positive",
+                    "pos_count": 2,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-15 09:10:17",
+                    "source": "上海证券报"
+                }
+            ]
+        },
+        "港股": {
+            "overall_sentiment": "positive",
+            "positive": 1,
+            "negative": 0,
+            "neutral": 4,
+            "articles": [
+                {
+                    "title": "港股OpenClaw板块走强",
+                    "sentiment": "positive",
+                    "pos_count": 1,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 09:31:55",
+                    "source": "每日经济新闻"
+                },
+                {
+                    "title": "港股铜业股跌幅居前",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 09:57:33",
+                    "source": "每日经济新闻"
+                },
+                {
+                    "title": "港股智谱涨超11%",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 10:39:50",
+                    "source": "每日经济新闻"
+                },
+                {
+                    "title": "港股林清轩涨超13%",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 09:57:30",
+                    "source": "每日经济新闻"
+                },
+                {
+                    "title": "港股智谱早盘涨超15%",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 10:15:04",
+                    "source": "每日经济新闻"
+                }
+            ]
+        },
+        "特朗普": {
+            "overall_sentiment": "positive",
+            "positive": 1,
+            "negative": 0,
+            "neutral": 4,
+            "articles": [
+                {
+                    "title": "特朗普最新发声",
+                    "sentiment": "positive",
+                    "pos_count": 1,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-15 07:28:33",
+                    "source": "券商中国"
+                },
+                {
+                    "title": "特朗普称美国可能很快与古巴达成协议",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 09:10:10",
+                    "source": "界面新闻"
+                },
+                {
+                    "title": "特朗普称美国可能很快与古巴达成协议",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 08:54:50",
+                    "source": "南方财经网"
+                },
+                {
+                    "title": "特朗普称美国可能很快与古巴达成协议",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-16 08:44:09",
+                    "source": "央视新闻"
+                },
+                {
+                    "title": "特朗普称已彻底击溃伊朗",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-15 09:12:26",
+                    "source": "21世纪经济报道"
+                }
+            ]
+        },
+        "关税": {
+            "overall_sentiment": "negative",
+            "positive": 0,
+            "negative": 4,
+            "neutral": 1,
+            "articles": [
+                {
+                    "title": "大金重工股价异动 澄清英国关税调整影响",
+                    "sentiment": "negative",
+                    "pos_count": 0,
+                    "neg_count": 1,
+                    "pub_date": "2026-03-16 07:02:09",
+                    "source": "证券时报网"
+                },
+                {
+                    "title": "大金重工：英国政府关税调整政策对公司相关出口产品的关税税率无影响",
+                    "sentiment": "negative",
+                    "pos_count": 0,
+                    "neg_count": 1,
+                    "pub_date": "2026-03-15 16:38:17",
+                    "source": "界面新闻"
+                },
+                {
+                    "title": "大金重工：英国政府日前宣布的关税调整政策对公司相关出口产品关税税率无影响",
+                    "sentiment": "negative",
+                    "pos_count": 0,
+                    "neg_count": 1,
+                    "pub_date": "2026-03-15 16:46:01",
+                    "source": "人民财讯"
+                },
+                {
+                    "title": "大反转！美国放弃对华负极材料征收双反关税",
+                    "sentiment": "negative",
+                    "pos_count": 0,
+                    "neg_count": 1,
+                    "pub_date": "2026-03-15 19:09:26",
+                    "source": "界面新闻"
+                },
+                {
+                    "title": "大金重工：英国宣布自4月1日起取消33项风电组件进口关税 公司此前已出口至英国的风电塔筒、管桩类产品无需缴纳关税",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-15 16:38:17",
+                    "source": "每日经济新闻"
+                }
+            ]
+        },
+        "贸易战": {
+            "overall_sentiment": "negative",
+            "positive": 0,
+            "negative": 1,
+            "neutral": 4,
+            "articles": [
+                {
+                    "title": "外交部：关税战、贸易战不符合任何一方的利益",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-12 15:33:34",
+                    "source": "央视新闻"
+                },
+                {
+                    "title": "或针对大型电池等行业，特朗普拟以“国家安全”为由再掀贸易战",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-02-24 09:41:10",
+                    "source": "界面新闻"
+                },
+                {
+                    "title": "特朗普私下考虑“退群”、威胁“反叛”共和党人，北美贸易战狼烟四起？",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-02-12 18:10:48",
+                    "source": "第一财经"
+                },
+                {
+                    "title": "欧洲能源专家：中东局势推高油气价格 欧洲经济承压",
+                    "sentiment": "negative",
+                    "pos_count": 0,
+                    "neg_count": 2,
+                    "pub_date": "2026-03-15 04:05:38",
+                    "source": "央视新闻"
+                },
+                {
+                    "title": "再挥“301调查”大棒！美国突袭中国、欧盟等16个贸易伙伴，外交部回应",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-12 15:56:00",
+                    "source": "华夏时报"
+                }
+            ]
+        },
+        "两会": {
+            "overall_sentiment": "neutral",
+            "positive": 0,
+            "negative": 0,
+            "neutral": 5,
+            "articles": [
+                {
+                    "title": "两会侧记 |沿着一辆车的两会足迹 解码中国客车的高端化发展路径",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-14 11:22:34",
+                    "source": "中国经营报"
+                },
+                {
+                    "title": "两会中的“汽车声音”",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-14 03:42:15",
+                    "source": "中国经营网"
+                },
+                {
+                    "title": "两会受权发布｜政府工作报告",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-13 21:04:14",
+                    "source": "新华社"
+                },
+                {
+                    "title": "国产装备“潮”起两会 科技创新成最强底色",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-13 22:10:21",
+                    "source": "中国政府采购报"
+                },
+                {
+                    "title": "2026年全国两会残疾人议题聚焦：有关民生兜底、科技赋能与文化普惠的建议与回响｜两会观察",
+                    "sentiment": "neutral",
+                    "pos_count": 0,
+                    "neg_count": 0,
+                    "pub_date": "2026-03-13 16:43:59",
+                    "source": "华夏时报网"
+                }
+            ]
+        }
+    },
+    "cctv_news": [
+        {
+            "title": "习近平在重庆考察时强调 进一步全面深化改革开放 不断谱写中国式现代化重庆篇章"
+        },
+        {
+            "title": "【央视快评】奋力谱写西部大开发新篇章"
+        },
+        {
+            "title": "习近平向首届“中国－拉美和加勒比国家航天合作论坛”致贺信"
+        },
+        {
+            "title": "李强在贵州调研"
+        },
+        {
+            "title": "十四届全国人大常委会举行第二十四次委员长会议 听取有关草案和议案审议情况汇报 赵乐际主持"
+        },
+        {
+            "title": "赵乐际在墨西哥参议院成立200周年庆祝活动上发表视频致辞"
+        },
+        {
+            "title": "王沪宁会见哈萨克斯坦议会下院议长"
+        },
+        {
+            "title": "韩正会见哈萨克斯坦议会下院议长"
+        },
+        {
+            "title": "神舟十八号载人飞船发射窗口确定 航天员乘组亮相"
+        },
+        {
+            "title": "中央纪委国家监委公开通报八起违规吃喝典型问题"
+        }
+    ],
+    "economic_news": [
+        {
+            "title": "",
+            "sentiment": "neutral"
+        },
+        {
+            "title": "",
+            "sentiment": "neutral"
+        },
+        {
+            "title": "",
+            "sentiment": "neutral"
+        },
+        {
+            "title": "",
+            "sentiment": "neutral"
+        },
+        {
+            "title": "",
+            "sentiment": "neutral"
+        },
+        {
+            "title": "",
+            "sentiment": "neutral"
+        },
+        {
+            "title": "",
+            "sentiment": "neutral"
+        },
+        {
+            "title": "",
+            "sentiment": "neutral"
+        },
+        {
+            "title": "",
+            "sentiment": "neutral"
+        },
+        {
+            "title": "",
+            "sentiment": "neutral"
+        }
+    ]
+}

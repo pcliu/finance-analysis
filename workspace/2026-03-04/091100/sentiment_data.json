@@ -1,0 +1,1571 @@
+{
+    "date": "2026-03-04",
+    "keywords": {
+        "消费": [
+            {
+                "title": "2026年全国消费促进月暨京津冀消费季启动",
+                "source": "证券日报",
+                "time": "2026-03-04 00:38:09",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "“2026年全国消费促进月暨京津冀消费季”启动 消费品以旧换新政策实施将进一步优化",
+                "source": "中国证券报",
+                "time": "2026-03-04 04:44:33",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "HALO交易席卷全球，关注消费回升！消费ETF(159928)冲高回落！春节出行消费两旺，内需修复仍在进行中！",
+                "source": "界面新闻",
+                "time": "2026-03-03 14:43:46",
+                "sentiment": "positive",
+                "pos_count": 1,
+                "neg_count": 0
+            },
+            {
+                "title": "成都青羊区4大消费项目入选市级试点 助力国际消费中心城市建设",
+                "source": "每日经济新闻",
+                "time": "2026-03-03 16:21:57",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "2026年“京津冀消费季”在津启幕 多元场景联动促消费",
+                "source": "中国新闻网",
+                "time": "2026-03-03 09:37:38",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            }
+        ],
+        "医疗": [
+            {
+                "title": "AI医疗迈入规模化落地期",
+                "source": "经济日报",
+                "time": "2026-03-04 06:01:21",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "新华医疗：子公司收到医疗器械注册证",
+                "source": "证券日报",
+                "time": "2026-03-02 21:10:22",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "陈树波代表——基层医疗能力增强",
+                "source": "经济日报",
+                "time": "2026-03-04 06:00:22",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "爱朋医疗：股东章泓基金完成减持1258000股",
+                "source": "证券日报",
+                "time": "2026-03-03 21:41:09",
+                "sentiment": "negative",
+                "pos_count": 0,
+                "neg_count": 1
+            },
+            {
+                "title": "爱朋医疗：章泓基金累计减持126万股",
+                "source": "财中社",
+                "time": "2026-03-03 21:02:35",
+                "sentiment": "negative",
+                "pos_count": 0,
+                "neg_count": 1
+            }
+        ],
+        "军工": [
+            {
+                "title": "军工领跌5%！单日超3800万元大举加仓军工ETF华宝（512810）",
+                "source": "每日经济新闻",
+                "time": "2026-03-03 11:06:16",
+                "sentiment": "negative",
+                "pos_count": 0,
+                "neg_count": 1
+            },
+            {
+                "title": "国际地缘冲突持续升级，军工板块催化不断，军工ETF（512660）近10日资金净流入超16亿元",
+                "source": "每日经济新闻",
+                "time": "2026-03-03 09:57:46",
+                "sentiment": "positive",
+                "pos_count": 1,
+                "neg_count": 0
+            },
+            {
+                "title": "美股油气军工股 大涨！白银 深夜直线跳水！",
+                "source": "大河财立方",
+                "time": "2026-03-03 07:22:38",
+                "sentiment": "positive",
+                "pos_count": 2,
+                "neg_count": 1
+            },
+            {
+                "title": "“三桶油”早盘全线涨停！军工股集体回调",
+                "source": "中新经纬",
+                "time": "2026-03-03 13:04:35",
+                "sentiment": "negative",
+                "pos_count": 0,
+                "neg_count": 1
+            },
+            {
+                "title": "银河证券：中东冲突升级 利好黄金与军工战略金属",
+                "source": "人民财讯",
+                "time": "2026-03-03 08:12:37",
+                "sentiment": "positive",
+                "pos_count": 2,
+                "neg_count": 0
+            }
+        ],
+        "科技": [
+            {
+                "title": "石头科技总裁全刚：科技深耕民生土壤 创新铸就品质未来",
+                "source": "每日经济新闻",
+                "time": "2026-03-03 23:16:48",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "银禧科技：追觅科技是公司重要客户之一，公司有为其提供相关产品",
+                "source": "每日经济新闻",
+                "time": "2026-03-04 00:10:56",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "畅想科技未来",
+                "source": "经济日报",
+                "time": "2026-03-03 06:02:52",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "四部门护航科技保险高质量发展 推万亿“耐心资本”涌向科技前沿",
+                "source": "21世纪经济报道",
+                "time": "2026-03-03 18:57:55",
+                "sentiment": "negative",
+                "pos_count": 0,
+                "neg_count": 1
+            },
+            {
+                "title": "美股大型科技股盘前普跌",
+                "source": "人民财讯",
+                "time": "2026-03-03 17:16:27",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            }
+        ],
+        "光伏": [
+            {
+                "title": "六部门力促光伏组件综合利用",
+                "source": "经济参考报",
+                "time": "2026-03-04 04:07:52",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "光伏设备有望修复，光伏ETF国泰（159864）盘中涨超2%",
+                "source": "每日经济新闻",
+                "time": "2026-03-03 14:42:50",
+                "sentiment": "positive",
+                "pos_count": 1,
+                "neg_count": 0
+            },
+            {
+                "title": "2026成光伏治理内卷关键年，光伏ETF嘉实(159123)有望持续受益",
+                "source": "界面新闻",
+                "time": "2026-03-03 11:01:08",
+                "sentiment": "positive",
+                "pos_count": 1,
+                "neg_count": 0
+            },
+            {
+                "title": "事关光伏组件 六部门联合印发",
+                "source": "上海证券报",
+                "time": "2026-03-03 22:39:02",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "光伏概念走强 协鑫集成涨停",
+                "source": "人民财讯",
+                "time": "2026-03-03 09:46:37",
+                "sentiment": "positive",
+                "pos_count": 1,
+                "neg_count": 0
+            }
+        ],
+        "AI": [
+            {
+                "title": "世运电路：产品可以应用于AI眼镜、AI耳机、AIPC、AI手机等",
+                "source": "证券日报",
+                "time": "2026-03-02 21:07:40",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "统一AI品牌“千问”  AI时代阿里巴巴的集权与野心",
+                "source": "中国经营报",
+                "time": "2026-03-03 16:06:52",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "AI Token的中国式出海",
+                "source": "21世纪经济报道",
+                "time": "2026-03-04 07:06:27",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "AI深度介入中东战局",
+                "source": "三里河",
+                "time": "2026-03-03 18:57:13",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "华为发布新一代绿色AI站点和GW级AIDC解决方案",
+                "source": "财联社",
+                "time": "2026-03-03 15:35:26",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            }
+        ],
+        "半导体": [
+            {
+                "title": "美股三大指数集体收跌 费城半导体指数跌4.58%",
+                "source": "东方财富Choice数据",
+                "time": "2026-03-04 05:01:04",
+                "sentiment": "neutral",
+                "pos_count": 1,
+                "neg_count": 1
+            },
+            {
+                "title": "美股三大指数集体收跌，费城半导体指数跌4.58%",
+                "source": "界面新闻",
+                "time": "2026-03-04 07:01:23",
+                "sentiment": "neutral",
+                "pos_count": 1,
+                "neg_count": 1
+            },
+            {
+                "title": "半导体设备板块高开低走，半导体设备ETF易方达（159558）逆势获超5000万份净申购",
+                "source": "每日经济新闻",
+                "time": "2026-03-03 18:54:38",
+                "sentiment": "positive",
+                "pos_count": 2,
+                "neg_count": 0
+            },
+            {
+                "title": "功率半导体涨价潮来袭 A股多企业密集调价",
+                "source": "中国经营报",
+                "time": "2026-03-03 17:09:36",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "富春染织：半导体注塑项目是利用注塑工艺为半导体制造提供超净高纯塑料部件",
+                "source": "证券日报",
+                "time": "2026-03-02 20:36:49",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            }
+        ],
+        "稀土": [
+            {
+                "title": "稀土永磁板块持续下挫，北方稀土跌停",
+                "source": "新京报",
+                "time": "2026-03-03 17:09:10",
+                "sentiment": "negative",
+                "pos_count": 0,
+                "neg_count": 1
+            },
+            {
+                "title": "稀土永磁概念持续下挫 北方稀土触及跌停",
+                "source": "人民财讯",
+                "time": "2026-03-03 14:37:18",
+                "sentiment": "negative",
+                "pos_count": 0,
+                "neg_count": 1
+            },
+            {
+                "title": "稀土永磁概念持续下挫 北方稀土触及跌停",
+                "source": "每日经济新闻",
+                "time": "2026-03-03 14:33:08",
+                "sentiment": "negative",
+                "pos_count": 0,
+                "neg_count": 1
+            },
+            {
+                "title": "稀土永磁板块持续下挫，北方稀土跌停",
+                "source": "南方财经网",
+                "time": "2026-03-03 14:30:37",
+                "sentiment": "negative",
+                "pos_count": 0,
+                "neg_count": 1
+            },
+            {
+                "title": "稀土永磁板块持续下挫，北方稀土触及跌停",
+                "source": "界面新闻",
+                "time": "2026-03-03 14:26:37",
+                "sentiment": "negative",
+                "pos_count": 0,
+                "neg_count": 1
+            }
+        ],
+        "黄金": [
+            {
+                "title": "黄金白银 急跌！",
+                "source": "央视财经",
+                "time": "2026-03-03 21:51:03",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "黄金：地缘风险或常态化 助推黄金确立核心资产定价权",
+                "source": "上海证券报",
+                "time": "2026-03-03 03:06:36",
+                "sentiment": "negative",
+                "pos_count": 0,
+                "neg_count": 1
+            },
+            {
+                "title": "黄金、白银，又大跌！",
+                "source": "中国基金报",
+                "time": "2026-03-03 14:58:13",
+                "sentiment": "negative",
+                "pos_count": 0,
+                "neg_count": 2
+            },
+            {
+                "title": "黄金谜题",
+                "source": "上海证券报",
+                "time": "2026-03-02 02:39:31",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "黄金白银重挫！美股三大指数全线下跌",
+                "source": "中国证券报",
+                "time": "2026-03-04 07:13:48",
+                "sentiment": "negative",
+                "pos_count": 0,
+                "neg_count": 1
+            }
+        ],
+        "航天": [
+            {
+                "title": "竞逐“大航天时代”",
+                "source": "中国经营报",
+                "time": "2026-03-03 20:58:28",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "全面覆盖航空航天产业链 航空航天ETF（563380）持续吸金",
+                "source": "中国证券报·中证网",
+                "time": "2026-03-02 15:12:05",
+                "sentiment": "positive",
+                "pos_count": 1,
+                "neg_count": 0
+            },
+            {
+                "title": "航天彩虹成交额创上市以来新高",
+                "source": "证券时报网",
+                "time": "2026-03-03 15:03:05",
+                "sentiment": "positive",
+                "pos_count": 2,
+                "neg_count": 0
+            },
+            {
+                "title": "险企护航 商业航天奔赴星辰大海",
+                "source": "证券日报",
+                "time": "2026-03-03 00:36:22",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "美股航空航天与国防股走高",
+                "source": "东方财富Choice数据",
+                "time": "2026-03-02 22:45:40",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            }
+        ],
+        "科创": [
+            {
+                "title": "诚通科创发起设立诚通科创嘉兴基金",
+                "source": "上海证券报·中国证券网",
+                "time": "2026-03-02 20:17:24",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "科创50日内跌幅达4.01%",
+                "source": "每日经济新闻",
+                "time": "2026-03-03 13:41:23",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "科创50日内跌幅达2.04%",
+                "source": "每日经济新闻",
+                "time": "2026-03-03 10:06:17",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "科创板收盘播报：科创综指跌5.38% 航空股和半导体股跌幅靠前",
+                "source": "新华财经",
+                "time": "2026-03-03 15:35:12",
+                "sentiment": "negative",
+                "pos_count": 0,
+                "neg_count": 1
+            },
+            {
+                "title": "北京丰台点亮科创人才走廊",
+                "source": "经济日报",
+                "time": "2026-03-03 06:01:46",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            }
+        ],
+        "通信": [
+            {
+                "title": "世界移动通信大会开启，聚焦AI与通信融合，通信ETF嘉实(159695)一键布局AI变革下光通信产业链机遇",
+                "source": "界面新闻",
+                "time": "2026-03-03 11:05:48",
+                "sentiment": "negative",
+                "pos_count": 0,
+                "neg_count": 1
+            },
+            {
+                "title": "英伟达大手笔布局光通信",
+                "source": "上海证券报",
+                "time": "2026-03-03 20:45:37",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "6G板块震荡走弱，三维通信跌停",
+                "source": "界面新闻",
+                "time": "2026-03-03 14:22:51",
+                "sentiment": "negative",
+                "pos_count": 0,
+                "neg_count": 2
+            },
+            {
+                "title": "通宇通讯亮相巴塞罗那世界移动通信大会",
+                "source": "证券时报网",
+                "time": "2026-03-03 18:42:30",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "烽火通信：低轨星载路由及星间激光通信业务对公司利润贡献较小",
+                "source": "上海证券报·中国证券网",
+                "time": "2026-03-02 21:48:59",
+                "sentiment": "negative",
+                "pos_count": 0,
+                "neg_count": 1
+            }
+        ],
+        "5G": [
+            {
+                "title": "新加坡电信与爱立信就5G Advanced达成合作",
+                "source": "界面新闻",
+                "time": "2026-03-03 11:52:09",
+                "sentiment": "positive",
+                "pos_count": 1,
+                "neg_count": 0
+            },
+            {
+                "title": "华为李鹏：以5G-A与AI融合为起点 持续探索价值场景",
+                "source": "中国证券报·中证网",
+                "time": "2026-03-03 22:18:31",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "华为杨超斌：携手产业在5G-A上围绕U6GHz等频段持续创新",
+                "source": "新京报",
+                "time": "2026-03-03 21:08:54",
+                "sentiment": "positive",
+                "pos_count": 1,
+                "neg_count": 0
+            },
+            {
+                "title": "华为杨超斌：5G-A已经成为必然选择，6G标准化工作已正式启动",
+                "source": "界面新闻",
+                "time": "2026-03-03 20:11:00",
+                "sentiment": "positive",
+                "pos_count": 1,
+                "neg_count": 0
+            },
+            {
+                "title": "华为发布U6GHz全系列产品 支撑5G-A向6G平滑演进",
+                "source": "科技日报",
+                "time": "2026-03-02 13:01:15",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            }
+        ],
+        "机器人": [
+            {
+                "title": "荣耀机器人亮相、小米机器人已进厂，手机厂商进入生态“卡位”战",
+                "source": "深圳商报·读创",
+                "time": "2026-03-03 19:56:19",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "全国人大代表、新松机器人总裁张进：打造机器人概念验证与中试基地 赋能东北全面振兴",
+                "source": "证券时报",
+                "time": "2026-03-04 03:29:43",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "我国发布首个人形机器人国家级标准体系，机器人ETF(562500)开盘走低",
+                "source": "每日经济新闻",
+                "time": "2026-03-03 10:26:49",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "机器人板块回调，指数跌逾5%，关注机器人ETF易方达（159530）等产品投资机会",
+                "source": "每日经济新闻",
+                "time": "2026-03-03 18:54:48",
+                "sentiment": "negative",
+                "pos_count": 0,
+                "neg_count": 2
+            },
+            {
+                "title": "去4S店不只为买车，还能逛机器人展厅？全球首个“双4S”机器人体验店落地北京",
+                "source": "大河财立方",
+                "time": "2026-03-03 20:15:55",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            }
+        ],
+        "电力": [
+            {
+                "title": "电力板块走强 涪陵电力涨停",
+                "source": "人民财讯",
+                "time": "2026-03-02 10:06:29",
+                "sentiment": "positive",
+                "pos_count": 1,
+                "neg_count": 0
+            },
+            {
+                "title": "电力板块反复活跃 涪陵电力涨停",
+                "source": "东方财富Choice数据",
+                "time": "2026-03-02 09:45:52",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "中超控股：公司电力电缆行业主要产品包括电力电缆等五大类产品",
+                "source": "证券日报",
+                "time": "2026-03-03 17:06:35",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "Token调用量催生“电力出海”新逻辑！电力ETF(561560)受资金青睐",
+                "source": "界面新闻",
+                "time": "2026-03-03 11:20:58",
+                "sentiment": "positive",
+                "pos_count": 1,
+                "neg_count": 0
+            },
+            {
+                "title": "韩国电力美股盘前跌超12%",
+                "source": "南方财经网",
+                "time": "2026-03-03 18:28:05",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            }
+        ],
+        "电网": [
+            {
+                "title": "美国电网将迎史诗级扩建 中国电网设备出口订单或持续受益",
+                "source": "财联社",
+                "time": "2026-03-04 08:07:47",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "电网设备行业迎重磅政策利好，国家电网发布“十项硬核举措”，电网设备ETF易方达(560390)将于3月4日正式上市",
+                "source": "界面新闻",
+                "time": "2026-03-03 14:10:40",
+                "sentiment": "positive",
+                "pos_count": 1,
+                "neg_count": 0
+            },
+            {
+                "title": "电网设备板块估值吸引力提升，一键布局优质标的——电网设备ETF易方达(560390)即将上市",
+                "source": "界面新闻",
+                "time": "2026-03-03 11:01:20",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "沈变公司承建 巴新国家电网二期项目实现移交",
+                "source": "上海证券报·中国证券网",
+                "time": "2026-03-03 10:36:16",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "通达股份预中标南方电网项目1.51亿元",
+                "source": "证券日报",
+                "time": "2026-03-02 21:32:54",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            }
+        ],
+        "新能源": [
+            {
+                "title": "中广核：用“新能源方式”解决新能源发展问题",
+                "source": "新华财经",
+                "time": "2026-03-03 17:09:27",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "新能源高质量发展启新程，把握新能源赛道结构性机遇",
+                "source": "时代周报",
+                "time": "2026-03-03 11:33:22",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "加码新能源业务 美的拟全额认购合康新能定增",
+                "source": "经济参考报",
+                "time": "2026-03-04 04:07:18",
+                "sentiment": "positive",
+                "pos_count": 1,
+                "neg_count": 0
+            },
+            {
+                "title": "鑫宏业：公司深耕新能源高压快充领域",
+                "source": "证券日报",
+                "time": "2026-03-03 20:07:32",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "国新能源涨停，沪股通净卖出476.16万元",
+                "source": "证券时报网",
+                "time": "2026-03-03 17:51:38",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            }
+        ],
+        "港股": [
+            {
+                "title": "港股异动 | 港股油气设备与服务板块大涨",
+                "source": "上海证券报·中国证券网",
+                "time": "2026-03-03 11:29:42",
+                "sentiment": "positive",
+                "pos_count": 1,
+                "neg_count": 0
+            },
+            {
+                "title": "港股康特隆今日复牌",
+                "source": "每日经济新闻",
+                "time": "2026-03-04 08:10:23",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "港股复盘 | 港股再创阶段新低 油气板块成短线热钱“避风港”",
+                "source": "每日经济新闻",
+                "time": "2026-03-03 18:57:18",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "这只港股，盘中翻倍",
+                "source": "上海证券报",
+                "time": "2026-03-03 20:45:26",
+                "sentiment": "positive",
+                "pos_count": 2,
+                "neg_count": 0
+            },
+            {
+                "title": "港股航运板块持续走强",
+                "source": "南方财经网",
+                "time": "2026-03-03 13:57:23",
+                "sentiment": "positive",
+                "pos_count": 1,
+                "neg_count": 0
+            }
+        ],
+        "恒生科技": [
+            {
+                "title": "恒生指数下跌1.12% 恒生科技指数下跌2.26%",
+                "source": "新华财经",
+                "time": "2026-03-03 18:21:09",
+                "sentiment": "negative",
+                "pos_count": 0,
+                "neg_count": 2
+            },
+            {
+                "title": "恒生指数收跌1.12% 恒生科技指数跌2.26%",
+                "source": "人民财讯",
+                "time": "2026-03-03 16:23:35",
+                "sentiment": "neutral",
+                "pos_count": 1,
+                "neg_count": 1
+            },
+            {
+                "title": "香港恒生指数收跌1.12% 恒生科技指数跌2.26%",
+                "source": "每日经济新闻",
+                "time": "2026-03-03 16:20:45",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "恒生指数高开0.50% 恒生科技指数涨0.58%",
+                "source": "上海证券报·中国证券网",
+                "time": "2026-03-03 09:39:36",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "港股收评：恒生指数收跌1.12% 恒生科技指数跌2.26%",
+                "source": "南方财经网",
+                "time": "2026-03-03 16:20:41",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            }
+        ],
+        "红利": [
+            {
+                "title": "红利资产走强，“三桶油”涨停，煤炭板块逆势拉升，红利ETF万家冲击三连涨",
+                "source": "东方财富证券",
+                "time": "2026-03-03 14:00:58",
+                "sentiment": "neutral",
+                "pos_count": 1,
+                "neg_count": 1
+            },
+            {
+                "title": "资源类板块延续涨势，关注红利ETF易方达（515180）、红利低波ETF易方达（563020）等产品投资价值",
+                "source": "每日经济新闻",
+                "time": "2026-03-03 18:54:39",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "地缘引发的风偏变化与资源涨价，重视红利防守价值",
+                "source": "界面新闻",
+                "time": "2026-03-03 15:37:06",
+                "sentiment": "negative",
+                "pos_count": 0,
+                "neg_count": 1
+            },
+            {
+                "title": "南方基金旗下港股通央企红利ETF南方(520660)涨超2%，冲击3连涨，港股红利资产配置价值愈发凸显",
+                "source": "界面新闻",
+                "time": "2026-03-03 14:10:26",
+                "sentiment": "positive",
+                "pos_count": 1,
+                "neg_count": 0
+            },
+            {
+                "title": "资源类板块表现强势，关注红利ETF易方达（515180）、红利低波ETF易方达（563020）等产品投资价值",
+                "source": "每日经济新闻",
+                "time": "2026-03-02 18:50:24",
+                "sentiment": "positive",
+                "pos_count": 1,
+                "neg_count": 0
+            }
+        ],
+        "化工": [
+            {
+                "title": "银川 跑出2000亿化工巨头",
+                "source": "21世纪经济报道",
+                "time": "2026-03-04 00:06:58",
+                "sentiment": "positive",
+                "pos_count": 2,
+                "neg_count": 0
+            },
+            {
+                "title": "资金逢低布局化工，化工ETF(159870)盘中净申购3.16亿份",
+                "source": "界面新闻",
+                "time": "2026-03-03 13:41:25",
+                "sentiment": "negative",
+                "pos_count": 0,
+                "neg_count": 1
+            },
+            {
+                "title": "化工板块走强 金牛化工11天5板",
+                "source": "人民财讯",
+                "time": "2026-03-02 09:45:52",
+                "sentiment": "positive",
+                "pos_count": 1,
+                "neg_count": 0
+            },
+            {
+                "title": "化工板块盘初走强，金牛化工等多股涨停",
+                "source": "界面新闻",
+                "time": "2026-03-02 09:41:11",
+                "sentiment": "positive",
+                "pos_count": 1,
+                "neg_count": 0
+            },
+            {
+                "title": "美伊冲突引爆能源化工行情，煤炭、煤化工板块掀起涨停潮",
+                "source": "澎湃新闻",
+                "time": "2026-03-03 09:17:09",
+                "sentiment": "positive",
+                "pos_count": 2,
+                "neg_count": 0
+            }
+        ],
+        "有色金属": [
+            {
+                "title": "有色金属震荡下挫 锡业股份逼近跌停",
+                "source": "每日经济新闻",
+                "time": "2026-03-03 10:15:08",
+                "sentiment": "negative",
+                "pos_count": 0,
+                "neg_count": 1
+            },
+            {
+                "title": "有色金属震荡下挫 锡业股份逼近跌停",
+                "source": "南方财经网",
+                "time": "2026-03-03 10:14:04",
+                "sentiment": "negative",
+                "pos_count": 0,
+                "neg_count": 2
+            },
+            {
+                "title": "供应链不稳或将支撑铝价，有色金属ETF天弘(159157)最新规模、份额均创新高，精准聚焦工业有色金属赛道",
+                "source": "界面新闻",
+                "time": "2026-03-03 14:42:49",
+                "sentiment": "positive",
+                "pos_count": 2,
+                "neg_count": 0
+            },
+            {
+                "title": "有色金属板块走弱，中稀有色跌停",
+                "source": "界面新闻",
+                "time": "2026-03-03 13:14:34",
+                "sentiment": "negative",
+                "pos_count": 0,
+                "neg_count": 2
+            },
+            {
+                "title": "有色金属板块大幅调整 中稀有色跌停",
+                "source": "东方财富Choice数据",
+                "time": "2026-03-03 13:07:08",
+                "sentiment": "negative",
+                "pos_count": 0,
+                "neg_count": 1
+            }
+        ],
+        "白银": [
+            {
+                "title": "现货黄金白银短线跳水 现货白银跌7%",
+                "source": "东方财富Choice数据",
+                "time": "2026-03-03 17:29:39",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "黄金白银 急跌！",
+                "source": "央视财经",
+                "time": "2026-03-03 21:51:03",
+                "sentiment": "neutral",
+                "pos_count": 1,
+                "neg_count": 1
+            },
+            {
+                "title": "黄金、白银，又大跌！",
+                "source": "中国基金报",
+                "time": "2026-03-03 14:58:13",
+                "sentiment": "negative",
+                "pos_count": 0,
+                "neg_count": 1
+            },
+            {
+                "title": "现货白银日内下跌6%",
+                "source": "界面新闻",
+                "time": "2026-03-03 14:42:30",
+                "sentiment": "negative",
+                "pos_count": 0,
+                "neg_count": 1
+            },
+            {
+                "title": "现货白银日内跌4%",
+                "source": "界面新闻",
+                "time": "2026-03-03 14:18:28",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            }
+        ],
+        "两会": [
+            {
+                "title": "AI hua 两会丨今年两会首场发布会要点来了",
+                "source": "第一财经",
+                "time": "2026-03-03 20:14:01",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "（全国两会）保加利亚记者看两会：来这里，看到真相、听到真相、传播真相",
+                "source": "中国新闻网",
+                "time": "2026-03-03 23:19:02",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "出席全国两会的代表委员已经报到",
+                "source": "中国证券报",
+                "time": "2026-03-03 22:38:24",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "开局之年 新的进发（两会今日谈）",
+                "source": "人民日报",
+                "time": "2026-03-04 06:40:14",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "两会现场速递丨掬一捧乡土 赴春天之约",
+                "source": "新华社",
+                "time": "2026-03-04 08:09:29",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            }
+        ],
+        "国防": [
+            {
+                "title": "以色列国防部官员会见国防工业高管 寻求加快国防生产速度",
+                "source": "财联社",
+                "time": "2026-03-03 16:36:16",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "韩国将与菲律宾在国防和造船领域开展合作",
+                "source": "财联社",
+                "time": "2026-03-03 19:15:40",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "美股航空航天与国防股走高",
+                "source": "东方财富Choice数据",
+                "time": "2026-03-02 22:45:40",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "伊朗国防部所在区域发生爆炸",
+                "source": "界面新闻",
+                "time": "2026-03-02 20:12:48",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "伊朗国防部所在区域发生爆炸",
+                "source": "央视新闻",
+                "time": "2026-03-02 20:03:43",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            }
+        ],
+        "卫星": [
+            {
+                "title": "卫星化学盘中创历史新高",
+                "source": "证券时报网",
+                "time": "2026-03-03 10:04:18",
+                "sentiment": "positive",
+                "pos_count": 2,
+                "neg_count": 0
+            },
+            {
+                "title": "雷电微力：公司不涉及卫星发电研发",
+                "source": "证券日报",
+                "time": "2026-03-03 20:39:25",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "卫星概念股走低，相关ETF跌约5%",
+                "source": "每日经济新闻",
+                "time": "2026-03-03 11:22:10",
+                "sentiment": "positive",
+                "pos_count": 2,
+                "neg_count": 0
+            },
+            {
+                "title": "港股亚太卫星早盘涨超8%",
+                "source": "每日经济新闻",
+                "time": "2026-03-02 10:59:10",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "卫星ETF易方达(563530)上涨3.8%，卫星产业将进入催化密集兑现的关键期",
+                "source": "界面新闻",
+                "time": "2026-03-02 11:38:40",
+                "sentiment": "positive",
+                "pos_count": 2,
+                "neg_count": 0
+            }
+        ],
+        "豆粕": [
+            {
+                "title": "3—4月份国内豆粕市场走势分析",
+                "source": "期货日报",
+                "time": "2026-03-02 14:33:51",
+                "sentiment": "negative",
+                "pos_count": 0,
+                "neg_count": 1
+            },
+            {
+                "title": "供应阶段性偏紧 豆粕价格走高",
+                "source": "期货日报",
+                "time": "2026-02-26 09:11:11",
+                "sentiment": "negative",
+                "pos_count": 1,
+                "neg_count": 2
+            },
+            {
+                "title": "大商所：2026年春节假期调整铁矿石、焦炭、焦煤、黄大豆1号、黄大豆2号、豆粕等相关品种期货合约涨跌停板幅度和交易保证金水平",
+                "source": "中国网财经",
+                "time": "2026-02-13 09:59:05",
+                "sentiment": "negative",
+                "pos_count": 0,
+                "neg_count": 1
+            },
+            {
+                "title": "豆粕菜粕“4连阴”！市场趋势已经转向？",
+                "source": "期货日报",
+                "time": "2026-02-05 08:09:13",
+                "sentiment": "neutral",
+                "pos_count": 1,
+                "neg_count": 1
+            },
+            {
+                "title": "美豆粕期货涨幅扩大至2% 报297.8美元/短吨",
+                "source": "财联社",
+                "time": "2026-02-05 00:02:21",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            }
+        ],
+        "矿业": [
+            {
+                "title": "金瑞矿业：股票交易异常波动",
+                "source": "南方财经网",
+                "time": "2026-03-03 17:03:11",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "金瑞矿业：股票交易异常波动公告",
+                "source": "证券日报",
+                "time": "2026-03-03 20:04:20",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "海南矿业：累计回购股份4891600股",
+                "source": "证券日报",
+                "time": "2026-03-03 20:38:12",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "杰富瑞：伊朗冲突为金属和矿业股带来良机",
+                "source": "财联社",
+                "time": "2026-03-03 15:34:24",
+                "sentiment": "neutral",
+                "pos_count": 1,
+                "neg_count": 1
+            },
+            {
+                "title": "金瑞矿业：碳酸锶生产线已恢复生产",
+                "source": "界面新闻",
+                "time": "2026-03-03 17:10:45",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            }
+        ],
+        "芯片": [
+            {
+                "title": "芯片股，大跌！",
+                "source": "中国基金报",
+                "time": "2026-03-04 08:21:31",
+                "sentiment": "neutral",
+                "pos_count": 1,
+                "neg_count": 1
+            },
+            {
+                "title": "美股芯片股重挫！",
+                "source": "证券时报",
+                "time": "2026-03-04 07:57:49",
+                "sentiment": "negative",
+                "pos_count": 0,
+                "neg_count": 1
+            },
+            {
+                "title": "美股芯片股跌幅扩大",
+                "source": "东方财富Choice数据",
+                "time": "2026-03-03 23:31:07",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "美股芯片存储板块盘前大跌",
+                "source": "界面新闻",
+                "time": "2026-03-03 17:15:11",
+                "sentiment": "negative",
+                "pos_count": 0,
+                "neg_count": 2
+            },
+            {
+                "title": "芯片设计概念股走低，科创芯片设计相关ETF跌约5%",
+                "source": "每日经济新闻",
+                "time": "2026-03-03 11:31:20",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            }
+        ],
+        "算力": [
+            {
+                "title": "ST汇洲：目前公司主业在算力租赁领域无布局",
+                "source": "每日经济新闻",
+                "time": "2026-03-04 00:11:04",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "AI席卷MWC：算力接管通信，终端厂商争夺入口",
+                "source": "21世纪经济报道",
+                "time": "2026-03-03 20:41:43",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "苹果发布新一代MacBook AI算力暴增 存储涨价逼出“库克刀法”",
+                "source": "财联社",
+                "time": "2026-03-04 00:46:36",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            },
+            {
+                "title": "市场延续放量分歧，能源与算力或成资金共识方向",
+                "source": "财联社",
+                "time": "2026-03-03 09:41:47",
+                "sentiment": "positive",
+                "pos_count": 1,
+                "neg_count": 0
+            },
+            {
+                "title": "上海加码布局本土算力设施 在下一盘什么“棋”？",
+                "source": "上观新闻",
+                "time": "2026-03-03 06:33:10",
+                "sentiment": "neutral",
+                "pos_count": 0,
+                "neg_count": 0
+            }
+        ]
+    },
+    "economic_news": [
+        {
+            "title": "2025-11-26",
+            "sentiment": "neutral"
+        },
+        {
+            "title": "2025-11-26",
+            "sentiment": "neutral"
+        },
+        {
+            "title": "2025-11-26",
+            "sentiment": "neutral"
+        },
+        {
+            "title": "2025-11-26",
+            "sentiment": "neutral"
+        },
+        {
+            "title": "2025-11-26",
+            "sentiment": "neutral"
+        },
+        {
+            "title": "2025-11-26",
+            "sentiment": "neutral"
+        },
+        {
+            "title": "2025-11-26",
+            "sentiment": "neutral"
+        },
+        {
+            "title": "2025-11-26",
+            "sentiment": "neutral"
+        },
+        {
+            "title": "2025-11-26",
+            "sentiment": "neutral"
+        },
+        {
+            "title": "2025-11-26",
+            "sentiment": "neutral"
+        },
+        {
+            "title": "2025-11-26",
+            "sentiment": "neutral"
+        },
+        {
+            "title": "2025-11-26",
+            "sentiment": "neutral"
+        },
+        {
+            "title": "2025-11-26",
+            "sentiment": "neutral"
+        },
+        {
+            "title": "2025-11-26",
+            "sentiment": "neutral"
+        },
+        {
+            "title": "2025-11-26",
+            "sentiment": "neutral"
+        }
+    ],
+    "cctv_news": [
+        {
+            "title": "习近平在重庆考察时强调 进一步全面深化改革开放 不断谱写中国式现代化重庆篇章"
+        },
+        {
+            "title": "【央视快评】奋力谱写西部大开发新篇章"
+        },
+        {
+            "title": "习近平向首届“中国－拉美和加勒比国家航天合作论坛”致贺信"
+        },
+        {
+            "title": "李强在贵州调研"
+        },
+        {
+            "title": "十四届全国人大常委会举行第二十四次委员长会议 听取有关草案和议案审议情况汇报 赵乐际主持"
+        },
+        {
+            "title": "赵乐际在墨西哥参议院成立200周年庆祝活动上发表视频致辞"
+        },
+        {
+            "title": "王沪宁会见哈萨克斯坦议会下院议长"
+        },
+        {
+            "title": "韩正会见哈萨克斯坦议会下院议长"
+        },
+        {
+            "title": "神舟十八号载人飞船发射窗口确定 航天员乘组亮相"
+        },
+        {
+            "title": "中央纪委国家监委公开通报八起违规吃喝典型问题"
+        }
+    ],
+    "summary": {
+        "消费": {
+            "overall": "🟢 偏多",
+            "positive": 1,
+            "negative": 0,
+            "neutral": 4,
+            "total": 5
+        },
+        "医疗": {
+            "overall": "🔴 偏空",
+            "positive": 0,
+            "negative": 2,
+            "neutral": 3,
+            "total": 5
+        },
+        "军工": {
+            "overall": "🟢 偏多",
+            "positive": 3,
+            "negative": 2,
+            "neutral": 0,
+            "total": 5
+        },
+        "科技": {
+            "overall": "🔴 偏空",
+            "positive": 0,
+            "negative": 1,
+            "neutral": 4,
+            "total": 5
+        },
+        "光伏": {
+            "overall": "🟢 偏多",
+            "positive": 3,
+            "negative": 0,
+            "neutral": 2,
+            "total": 5
+        },
+        "AI": {
+            "overall": "🟡 中性",
+            "positive": 0,
+            "negative": 0,
+            "neutral": 5,
+            "total": 5
+        },
+        "半导体": {
+            "overall": "🟢 偏多",
+            "positive": 1,
+            "negative": 0,
+            "neutral": 4,
+            "total": 5
+        },
+        "稀土": {
+            "overall": "🔴 偏空",
+            "positive": 0,
+            "negative": 5,
+            "neutral": 0,
+            "total": 5
+        },
+        "黄金": {
+            "overall": "🔴 偏空",
+            "positive": 0,
+            "negative": 3,
+            "neutral": 2,
+            "total": 5
+        },
+        "航天": {
+            "overall": "🟢 偏多",
+            "positive": 2,
+            "negative": 0,
+            "neutral": 3,
+            "total": 5
+        },
+        "科创": {
+            "overall": "🔴 偏空",
+            "positive": 0,
+            "negative": 1,
+            "neutral": 4,
+            "total": 5
+        },
+        "通信": {
+            "overall": "🔴 偏空",
+            "positive": 0,
+            "negative": 3,
+            "neutral": 2,
+            "total": 5
+        },
+        "5G": {
+            "overall": "🟢 偏多",
+            "positive": 3,
+            "negative": 0,
+            "neutral": 2,
+            "total": 5
+        },
+        "机器人": {
+            "overall": "🔴 偏空",
+            "positive": 0,
+            "negative": 1,
+            "neutral": 4,
+            "total": 5
+        },
+        "电力": {
+            "overall": "🟢 偏多",
+            "positive": 2,
+            "negative": 0,
+            "neutral": 3,
+            "total": 5
+        },
+        "电网": {
+            "overall": "🟢 偏多",
+            "positive": 1,
+            "negative": 0,
+            "neutral": 4,
+            "total": 5
+        },
+        "新能源": {
+            "overall": "🟢 偏多",
+            "positive": 1,
+            "negative": 0,
+            "neutral": 4,
+            "total": 5
+        },
+        "港股": {
+            "overall": "🟢 偏多",
+            "positive": 3,
+            "negative": 0,
+            "neutral": 2,
+            "total": 5
+        },
+        "恒生科技": {
+            "overall": "🔴 偏空",
+            "positive": 0,
+            "negative": 1,
+            "neutral": 4,
+            "total": 5
+        },
+        "红利": {
+            "overall": "🟢 偏多",
+            "positive": 2,
+            "negative": 1,
+            "neutral": 2,
+            "total": 5
+        },
+        "化工": {
+            "overall": "🟢 偏多",
+            "positive": 4,
+            "negative": 1,
+            "neutral": 0,
+            "total": 5
+        },
+        "有色金属": {
+            "overall": "🔴 偏空",
+            "positive": 1,
+            "negative": 4,
+            "neutral": 0,
+            "total": 5
+        },
+        "白银": {
+            "overall": "🔴 偏空",
+            "positive": 0,
+            "negative": 2,
+            "neutral": 3,
+            "total": 5
+        },
+        "两会": {
+            "overall": "🟡 中性",
+            "positive": 0,
+            "negative": 0,
+            "neutral": 5,
+            "total": 5
+        },
+        "国防": {
+            "overall": "🟡 中性",
+            "positive": 0,
+            "negative": 0,
+            "neutral": 5,
+            "total": 5
+        },
+        "卫星": {
+            "overall": "🟢 偏多",
+            "positive": 3,
+            "negative": 0,
+            "neutral": 2,
+            "total": 5
+        },
+        "豆粕": {
+            "overall": "🔴 偏空",
+            "positive": 0,
+            "negative": 3,
+            "neutral": 2,
+            "total": 5
+        },
+        "矿业": {
+            "overall": "🟡 中性",
+            "positive": 0,
+            "negative": 0,
+            "neutral": 5,
+            "total": 5
+        },
+        "芯片": {
+            "overall": "🔴 偏空",
+            "positive": 0,
+            "negative": 2,
+            "neutral": 3,
+            "total": 5
+        },
+        "算力": {
+            "overall": "🟢 偏多",
+            "positive": 1,
+            "negative": 0,
+            "neutral": 4,
+            "total": 5
+        }
+    }
+}

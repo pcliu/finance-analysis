@@ -1,0 +1,917 @@
+{
+    "消费": {
+        "overall": "偏多",
+        "positive": 3,
+        "negative": 0,
+        "neutral": 2,
+        "articles": [
+            {
+                "title": "政策组合拳下消费板块配置价值正逐步显现，消费ETF嘉实(512600)布局消费复苏行情",
+                "sentiment": "positive",
+                "source": "界面新闻"
+            },
+            {
+                "title": "拓场景降成本提振消费",
+                "sentiment": "positive",
+                "source": "经济日报"
+            },
+            {
+                "title": "中消协发布盲盒消费提示",
+                "sentiment": "neutral",
+                "source": "央视财经"
+            },
+            {
+                "title": "各显其能 激活消费“一池春水”",
+                "sentiment": "positive",
+                "source": "证券时报"
+            },
+            {
+                "title": "平台数据显示悦己消费显著升温",
+                "sentiment": "neutral",
+                "source": "新华财经"
+            }
+        ]
+    },
+    "医疗": {
+        "overall": "中性",
+        "positive": 0,
+        "negative": 0,
+        "neutral": 5,
+        "articles": [
+            {
+                "title": "万东医疗：职工董事廉世俊辞职",
+                "sentiment": "neutral",
+                "source": "证券日报"
+            },
+            {
+                "title": "英科医疗：公司不存在逾期担保",
+                "sentiment": "neutral",
+                "source": "证券日报"
+            },
+            {
+                "title": "架起医疗器械出海“通途”（在现场）",
+                "sentiment": "neutral",
+                "source": "人民日报"
+            },
+            {
+                "title": "三星医疗：股票交易异常波动",
+                "sentiment": "neutral",
+                "source": "南方财经网"
+            },
+            {
+                "title": "三星医疗：股票交易异常波动公告",
+                "sentiment": "neutral",
+                "source": "证券日报"
+            }
+        ]
+    },
+    "军工": {
+        "overall": "中性",
+        "positive": 1,
+        "negative": 1,
+        "neutral": 3,
+        "articles": [
+            {
+                "title": "同益中：超美斯暂无直接军工相关资质认证",
+                "sentiment": "neutral",
+                "source": "证券日报"
+            },
+            {
+                "title": "午评：沪指跌逾1%，半导体、军工等板块下挫，石油板块逆市活跃",
+                "sentiment": "negative",
+                "source": "证券时报网"
+            },
+            {
+                "title": "特朗普：美军工巨头同意全力扩产 “精良级”武器产量翻两番",
+                "sentiment": "neutral",
+                "source": "新华社"
+            },
+            {
+                "title": "军工赛道景气延续，航空航天ETF(159227) 大涨2.36%，全市场军工含量最高",
+                "sentiment": "positive",
+                "source": "每日经济新闻"
+            },
+            {
+                "title": "五角大楼承认对伊朗军事行动“准备不充分”，特朗普急会军工巨头补充库存",
+                "sentiment": "neutral",
+                "source": "上观新闻"
+            }
+        ]
+    },
+    "科技": {
+        "overall": "偏多",
+        "positive": 2,
+        "negative": 0,
+        "neutral": 3,
+        "articles": [
+            {
+                "title": "追觅科技在浙江成立智能科技公司",
+                "sentiment": "neutral",
+                "source": "南方财经网"
+            },
+            {
+                "title": "OpenClaw概念再度拉升 青云科技、顺网科技双双涨停",
+                "sentiment": "positive",
+                "source": "每日经济新闻"
+            },
+            {
+                "title": "OpenClaw概念再度拉升 青云科技、顺网科技双双涨停",
+                "sentiment": "positive",
+                "source": "南方财经网"
+            },
+            {
+                "title": "原子重塑科技（深圳）有限公司总裁尚积耿：推动优质科技资源向公众开放 让更多人接触前沿科技",
+                "sentiment": "neutral",
+                "source": "每日经济新闻"
+            },
+            {
+                "title": "港股科技板块盘整 恒生科技ETF（513130）交投活跃",
+                "sentiment": "neutral",
+                "source": "中国证券报·中证网"
+            }
+        ]
+    },
+    "光伏": {
+        "overall": "偏多",
+        "positive": 2,
+        "negative": 0,
+        "neutral": 3,
+        "articles": [
+            {
+                "title": "协鑫集成：公司主要产品覆盖高效光伏电池、大尺寸光伏组件、储能系统等",
+                "sentiment": "neutral",
+                "source": "证券日报"
+            },
+            {
+                "title": "沙漠“长”出光伏园，中国光伏出海再提速！光伏ETF华夏（515790）逆势上涨1.03%，首航新能涨超15%",
+                "sentiment": "positive",
+                "source": "每日经济新闻"
+            },
+            {
+                "title": "中国光伏加速“出海”！光伏ETF（159857）逆市拉升，换手率超6%居同标的第一",
+                "sentiment": "positive",
+                "source": "21世纪经济报道"
+            },
+            {
+                "title": "协鑫集成：目前“太空光伏”尚处技术探索阶段",
+                "sentiment": "neutral",
+                "source": "证券日报"
+            },
+            {
+                "title": "光伏ETF（159857）上一交易日获1800万份申购，成交额超1.6亿元居深市同标的第一，光伏组件百亿回收潮渐近",
+                "sentiment": "neutral",
+                "source": "21世纪经济报道"
+            }
+        ]
+    },
+    "AI": {
+        "overall": "中性",
+        "positive": 0,
+        "negative": 0,
+        "neutral": 5,
+        "articles": [
+            {
+                "title": "OpenAI将收购AI安防初创公司Promptfoo",
+                "sentiment": "neutral",
+                "source": "第一财经"
+            },
+            {
+                "title": "用AI训练AI？AI制药企业又在寻找新商机",
+                "sentiment": "neutral",
+                "source": "第一财经"
+            },
+            {
+                "title": "OpenAI聘请OpenClaw AI智能体开发者斯坦伯格",
+                "sentiment": "neutral",
+                "source": "财联社"
+            },
+            {
+                "title": "三星考虑与多家AI公司建立合作 押注“多AI模型”手机战略",
+                "sentiment": "neutral",
+                "source": "财联社"
+            },
+            {
+                "title": "数字认证：公司紧跟AI前沿研究AI的快速发展伴生的安全问题",
+                "sentiment": "neutral",
+                "source": "证券日报"
+            }
+        ]
+    },
+    "半导体": {
+        "overall": "偏空",
+        "positive": 1,
+        "negative": 2,
+        "neutral": 2,
+        "articles": [
+            {
+                "title": "1月全球半导体销售额同比增幅达46.1%，科创半导体ETF（588170）、半导体设备ETF华夏（562590）受资金青睐",
+                "sentiment": "neutral",
+                "source": "每日经济新闻"
+            },
+            {
+                "title": "半导体设备板块回暖，资金抢筹，半导体设备ETF（159516）盘中净流入近1.6亿份",
+                "sentiment": "positive",
+                "source": "每日经济新闻"
+            },
+            {
+                "title": "港股晶门半导体跌超6%",
+                "sentiment": "neutral",
+                "source": "每日经济新闻"
+            },
+            {
+                "title": "半导体板块震荡整理，资金逆势涌入，半导体设备ETF易方达(159558)全天净申购达6000万份",
+                "sentiment": "negative",
+                "source": "每日经济新闻"
+            },
+            {
+                "title": "半导体板块回调，半导体设备ETF（159516）跌超5%，供需格局预计将继续向好，回调或可布局",
+                "sentiment": "negative",
+                "source": "每日经济新闻"
+            }
+        ]
+    },
+    "稀土": {
+        "overall": "偏多",
+        "positive": 2,
+        "negative": 1,
+        "neutral": 2,
+        "articles": [
+            {
+                "title": "稀土供需共振逻辑正加速兑现，稀土ETF嘉实(516150)持续获资金积极布局",
+                "sentiment": "positive",
+                "source": "界面新闻"
+            },
+            {
+                "title": "战略价值持续凸显 借道稀土ETF（516780）一键布局稀土板块产业链",
+                "sentiment": "neutral",
+                "source": "中国证券报·中证网"
+            },
+            {
+                "title": "稀土磁材技术壁垒与不可替代性进一步凸显，稀土ETF嘉实(516150)一键布局国内稀土产业链",
+                "sentiment": "neutral",
+                "source": "界面新闻"
+            },
+            {
+                "title": "稀土ETF易方达(159715)盘中交投活跃，近5日“吸金”超7600万元，稀土供需共振可期",
+                "sentiment": "positive",
+                "source": "界面新闻"
+            },
+            {
+                "title": "稀土永磁板块持续下挫，北方稀土跌停",
+                "sentiment": "negative",
+                "source": "新京报"
+            }
+        ]
+    },
+    "黄金": {
+        "overall": "偏多",
+        "positive": 2,
+        "negative": 1,
+        "neutral": 2,
+        "articles": [
+            {
+                "title": "黄金概念震荡回升 四川黄金逼近涨停",
+                "sentiment": "positive",
+                "source": "每日经济新闻"
+            },
+            {
+                "title": "周大生：目前一口价黄金相比克重计价黄金占比还较低",
+                "sentiment": "neutral",
+                "source": "证券日报"
+            },
+            {
+                "title": "黄金白金大跌",
+                "sentiment": "negative",
+                "source": "大河财立方"
+            },
+            {
+                "title": "现货黄金向上触及5150美元",
+                "sentiment": "positive",
+                "source": "东方财富Choice数据"
+            },
+            {
+                "title": "1亿美元委内瑞拉黄金运抵美国",
+                "sentiment": "neutral",
+                "source": "央视财经"
+            }
+        ]
+    },
+    "航天": {
+        "overall": "中性",
+        "positive": 0,
+        "negative": 0,
+        "neutral": 5,
+        "articles": [
+            {
+                "title": "航天投资入股航天氢能 后者为燃料电池服务商",
+                "sentiment": "neutral",
+                "source": "人民财讯"
+            },
+            {
+                "title": "航天智装：董事梁俊辞职",
+                "sentiment": "neutral",
+                "source": "财中社"
+            },
+            {
+                "title": "航天智装：关于董事辞职的公告",
+                "sentiment": "neutral",
+                "source": "证券日报"
+            },
+            {
+                "title": "航空航天ETF(159227)盘中成交2.64亿，板块迎来商业航天和地缘局势双重共振",
+                "sentiment": "neutral",
+                "source": "界面新闻"
+            },
+            {
+                "title": "SpaceX宣布完成星舰V3低温测试！航空航天ETF（159227）深度覆盖商业航天，规模同类第一",
+                "sentiment": "neutral",
+                "source": "每日经济新闻"
+            }
+        ]
+    },
+    "科创": {
+        "overall": "偏多",
+        "positive": 2,
+        "negative": 0,
+        "neutral": 3,
+        "articles": [
+            {
+                "title": "俞浩获评福布斯中国科创人物，以科创远见定义中国智能时代新高度",
+                "sentiment": "positive",
+                "source": "财中社"
+            },
+            {
+                "title": "科创板收盘播报：科创综指跌1.41% 电网股涨幅靠前",
+                "sentiment": "neutral",
+                "source": "新华财经"
+            },
+            {
+                "title": "科创50日内跌幅达1.99%",
+                "sentiment": "neutral",
+                "source": "每日经济新闻"
+            },
+            {
+                "title": "煤炭板块拉升 兰花科创涨停",
+                "sentiment": "positive",
+                "source": "上海证券报·中国证券网"
+            },
+            {
+                "title": "科创50日内跌幅达3.13%",
+                "sentiment": "neutral",
+                "source": "每日经济新闻"
+            }
+        ]
+    },
+    "机器人": {
+        "overall": "中性",
+        "positive": 0,
+        "negative": 0,
+        "neutral": 5,
+        "articles": [
+            {
+                "title": "智元机器人人形机器人外观专利获授权 可用于家庭服务",
+                "sentiment": "neutral",
+                "source": "人民财讯"
+            },
+            {
+                "title": "杰克科技参设机器人新公司 加码AI缝纫与机器人应用赛道",
+                "sentiment": "neutral",
+                "source": "上海证券报·中国证券网"
+            },
+            {
+                "title": "机器人也需要一张保单",
+                "sentiment": "neutral",
+                "source": "经济日报"
+            },
+            {
+                "title": "智元机器人推出ACoT-VLA并开源",
+                "sentiment": "neutral",
+                "source": "北京商报"
+            },
+            {
+                "title": "浙江华远：目前没有产品在人形机器人、工业机器人领域应用",
+                "sentiment": "neutral",
+                "source": "证券日报"
+            }
+        ]
+    },
+    "5G": {
+        "overall": "偏多",
+        "positive": 1,
+        "negative": 0,
+        "neutral": 4,
+        "articles": [
+            {
+                "title": "通则康威亮相MWC 2026，以5G-A+AI布局全场景连接",
+                "sentiment": "neutral",
+                "source": "21世纪经济报道"
+            },
+            {
+                "title": "美国客运航空公司称 为适应5G频谱扩展而更换高度计的成本可能超过20亿美元",
+                "sentiment": "neutral",
+                "source": "财联社"
+            },
+            {
+                "title": "5G退潮后的中兴通讯：去年利润下滑三成，锚定算力能否破局",
+                "sentiment": "positive",
+                "source": "第一财经"
+            },
+            {
+                "title": "“十五五”规划纲要草案解读：提升算力设施、5G基站等新兴领域用能效率",
+                "sentiment": "neutral",
+                "source": "央广财经"
+            },
+            {
+                "title": "国家发展改革委秘书长袁达：加快产业“降碳增绿” 提升算力设施、5G基站等新兴领域用能效率",
+                "sentiment": "neutral",
+                "source": "上海证券报·中国证券网"
+            }
+        ]
+    },
+    "两会": {
+        "overall": "偏多",
+        "positive": 1,
+        "negative": 0,
+        "neutral": 4,
+        "articles": [
+            {
+                "title": "读懂两会关键词“政绩观”（两会笔记）",
+                "sentiment": "neutral",
+                "source": "人民日报"
+            },
+            {
+                "title": "两会好声音",
+                "sentiment": "positive",
+                "source": "人民日报"
+            },
+            {
+                "title": "两会深观察丨听 全国两会上的创新强音",
+                "sentiment": "neutral",
+                "source": "新华社"
+            },
+            {
+                "title": "两会好声音",
+                "sentiment": "neutral",
+                "source": "人民日报"
+            },
+            {
+                "title": "两会日程预告",
+                "sentiment": "neutral",
+                "source": "新华社"
+            }
+        ]
+    },
+    "电力": {
+        "overall": "偏多",
+        "positive": 3,
+        "negative": 0,
+        "neutral": 2,
+        "articles": [
+            {
+                "title": "电力板块震荡走强 协鑫能科涨停",
+                "sentiment": "positive",
+                "source": "人民财讯"
+            },
+            {
+                "title": "全国政协委员温枢刚：以新型电力系统建设提升电力安全水平",
+                "sentiment": "neutral",
+                "source": "证券时报网"
+            },
+            {
+                "title": "算电协同、Token出海助力电力产业预期向好，绿色电力ETF易方达(562960)备受关注",
+                "sentiment": "positive",
+                "source": "界面新闻"
+            },
+            {
+                "title": "蜂助手：公司暂无电力协同相关业务",
+                "sentiment": "neutral",
+                "source": "证券日报"
+            },
+            {
+                "title": "AI的尽头是电力 电力的优势靠什么（评论君开讲·两会）",
+                "sentiment": "positive",
+                "source": "人民日报"
+            }
+        ]
+    },
+    "化工": {
+        "overall": "偏多",
+        "positive": 5,
+        "negative": 0,
+        "neutral": 0,
+        "articles": [
+            {
+                "title": "化工行业新一轮补库存周期开启，化工ETF嘉实(159129)一键布局化工板块投资机遇",
+                "sentiment": "positive",
+                "source": "界面新闻"
+            },
+            {
+                "title": "煤化工概念股大幅高开 金牛化工2连板",
+                "sentiment": "positive",
+                "source": "东方财富Choice数据"
+            },
+            {
+                "title": "化工热度不减！华宝基金旗下化工ETF（516020）再创反弹新高",
+                "sentiment": "positive",
+                "source": "每日经济新闻"
+            },
+            {
+                "title": "煤化工概念股大幅高开，金牛化工2连板",
+                "sentiment": "positive",
+                "source": "南方财经网"
+            },
+            {
+                "title": "化工股开盘活跃，宝丰能源、金牛化工一字涨停",
+                "sentiment": "positive",
+                "source": "每日经济新闻"
+            }
+        ]
+    },
+    "红利": {
+        "overall": "偏多",
+        "positive": 2,
+        "negative": 1,
+        "neutral": 2,
+        "articles": [
+            {
+                "title": "从“政策红利”到“规则红利” 天津滨海新区开启营商环境治理新范式",
+                "sentiment": "positive",
+                "source": "中国新闻网"
+            },
+            {
+                "title": "红利资产再添优势，300红利低波ETF嘉实（515300）长期底舱价值凸显",
+                "sentiment": "negative",
+                "source": "每日经济新闻"
+            },
+            {
+                "title": "每经热评丨要“人才红利”不要“用工红利” 对异化的劳务派遣坚决说“不”",
+                "sentiment": "neutral",
+                "source": "每日经济新闻"
+            },
+            {
+                "title": "市场回调聚焦红利资产防御价值，红利国企ETF国泰（510720）逆市大涨超2.3%",
+                "sentiment": "positive",
+                "source": "每日经济新闻"
+            },
+            {
+                "title": "与爱为舞创始人、董事长兼CEO张怀亭：借助AI教育 推动“人口红利向人才红利”结构性升级",
+                "sentiment": "neutral",
+                "source": "每日经济新闻"
+            }
+        ]
+    },
+    "有色金属": {
+        "overall": "偏多",
+        "positive": 2,
+        "negative": 1,
+        "neutral": 2,
+        "articles": [
+            {
+                "title": "59.95亿元资金今日流出有色金属股",
+                "sentiment": "negative",
+                "source": "证券时报网"
+            },
+            {
+                "title": "苏宁环球：暂不涉及黄金、有色金属矿产业务",
+                "sentiment": "neutral",
+                "source": "界面新闻"
+            },
+            {
+                "title": "沪市有色金属上市公司“量价齐升”展资源优势",
+                "sentiment": "positive",
+                "source": "中国新闻网"
+            },
+            {
+                "title": "有色金属景气度持续提升 沪市公司量价齐升展现资源优势",
+                "sentiment": "neutral",
+                "source": "央广财经"
+            },
+            {
+                "title": "有色金属景气度持续提升 沪市上市公司量价齐升展现资源优势",
+                "sentiment": "positive",
+                "source": "证券时报网"
+            }
+        ]
+    },
+    "白银": {
+        "overall": "偏多",
+        "positive": 2,
+        "negative": 0,
+        "neutral": 3,
+        "articles": [
+            {
+                "title": "现货白银翻红",
+                "sentiment": "neutral",
+                "source": "人民财讯"
+            },
+            {
+                "title": "现货白银日内涨1%",
+                "sentiment": "neutral",
+                "source": "东方财富Choice数据"
+            },
+            {
+                "title": "现货白银突破86美元/盎司",
+                "sentiment": "positive",
+                "source": "东方财富Choice数据"
+            },
+            {
+                "title": "现货白银向上触及87美元/盎司",
+                "sentiment": "positive",
+                "source": "东方财富Choice数据"
+            },
+            {
+                "title": "现货白银涨超3%",
+                "sentiment": "neutral",
+                "source": "南方财经网"
+            }
+        ]
+    },
+    "航空": {
+        "overall": "偏空",
+        "positive": 2,
+        "negative": 3,
+        "neutral": 0,
+        "articles": [
+            {
+                "title": "港股航空股大幅下挫，中国东方航空股份跌超10%",
+                "sentiment": "negative",
+                "source": "每日经济新闻"
+            },
+            {
+                "title": "港股航空股大幅下挫，中国东方航空股份跌超10%",
+                "sentiment": "negative",
+                "source": "界面新闻"
+            },
+            {
+                "title": "港股航空股大幅下挫，中国东方航空股份跌超10%",
+                "sentiment": "negative",
+                "source": "南方财经网"
+            },
+            {
+                "title": "全国政协委员、春秋航空董事长王煜：航空航天产业正在多领域持续突破",
+                "sentiment": "positive",
+                "source": "证券日报"
+            },
+            {
+                "title": "油价暴涨 航空股集体大跌",
+                "sentiment": "positive",
+                "source": "第一财经"
+            }
+        ]
+    },
+    "国防": {
+        "overall": "偏空",
+        "positive": 0,
+        "negative": 2,
+        "neutral": 3,
+        "articles": [
+            {
+                "title": "Anthropic就被列为供应链风险起诉美国国防部",
+                "sentiment": "negative",
+                "source": "财联社"
+            },
+            {
+                "title": "Anthropic就“供应链风险”认定起诉美国国防部",
+                "sentiment": "negative",
+                "source": "界面新闻"
+            },
+            {
+                "title": "润禾材料：公司生产的电子级MM可用于电子、国防和航空工业精密设备领域",
+                "sentiment": "neutral",
+                "source": "证券日报"
+            },
+            {
+                "title": "以色列国防军：会毫不犹豫将哈梅内伊继任者作为目标",
+                "sentiment": "neutral",
+                "source": "每日经济新闻"
+            },
+            {
+                "title": "以色列国防部官员会见国防工业高管 寻求加快国防生产速度",
+                "sentiment": "neutral",
+                "source": "财联社"
+            }
+        ]
+    },
+    "恒生科技": {
+        "overall": "偏空",
+        "positive": 0,
+        "negative": 1,
+        "neutral": 4,
+        "articles": [
+            {
+                "title": "恒生指数收跌1.35% 恒生科技指数收跌0.12%",
+                "sentiment": "neutral",
+                "source": "人民财讯"
+            },
+            {
+                "title": "恒生指数收跌1.35% 恒生科技指数收跌0.12%",
+                "sentiment": "neutral",
+                "source": "每日经济新闻"
+            },
+            {
+                "title": "恒生指数低开2.65% 恒生科技指数低开3.79%",
+                "sentiment": "negative",
+                "source": "东方财富Choice数据"
+            },
+            {
+                "title": "港股收评：恒生指数收跌1.35% 恒生科技指数收跌0.12%",
+                "sentiment": "neutral",
+                "source": "南方财经网"
+            },
+            {
+                "title": "港股收评：恒生指数跌1.35%，恒生科技指数跌0.12%",
+                "sentiment": "neutral",
+                "source": "界面新闻"
+            }
+        ]
+    },
+    "港股": {
+        "overall": "中性",
+        "positive": 1,
+        "negative": 1,
+        "neutral": 3,
+        "articles": [
+            {
+                "title": "港股复盘 | 372亿港元创纪录 南向资金买“爆”港股",
+                "sentiment": "neutral",
+                "source": "每日经济新闻"
+            },
+            {
+                "title": "港股是否有“小龙虾”（OpenClaw）概念股？｜港股复盘",
+                "sentiment": "negative",
+                "source": "21世纪经济报道"
+            },
+            {
+                "title": "港股宜明昂科-B涨超6%",
+                "sentiment": "neutral",
+                "source": "每日经济新闻"
+            },
+            {
+                "title": "港股铜业股延续下行趋势",
+                "sentiment": "neutral",
+                "source": "每日经济新闻"
+            },
+            {
+                "title": "首日破发！港股，今年首次",
+                "sentiment": "positive",
+                "source": "证券时报"
+            }
+        ]
+    },
+    "通信": {
+        "overall": "偏多",
+        "positive": 1,
+        "negative": 0,
+        "neutral": 4,
+        "articles": [
+            {
+                "title": "AI与通信融合大势无可逆转 全球通信网络面临重构",
+                "sentiment": "positive",
+                "source": "中国经营报"
+            },
+            {
+                "title": "高澜股份：目前暂未涉及卫星通信领域",
+                "sentiment": "neutral",
+                "source": "每日经济新闻"
+            },
+            {
+                "title": "中贝通信：获签4.29亿元算力服务合同",
+                "sentiment": "neutral",
+                "source": "上海证券报·中国证券网"
+            },
+            {
+                "title": "盛路通信：公司不存在实控人挪用公司资金的情况",
+                "sentiment": "neutral",
+                "source": "证券日报"
+            },
+            {
+                "title": "中贝通信：签订4.29亿元服务采购合同",
+                "sentiment": "neutral",
+                "source": "界面新闻"
+            }
+        ]
+    },
+    "关税": {
+        "overall": "偏空",
+        "positive": 0,
+        "negative": 5,
+        "neutral": 0,
+        "articles": [
+            {
+                "title": "王毅：“零关税”为非洲提供机遇",
+                "sentiment": "negative",
+                "source": "南方财经网"
+            },
+            {
+                "title": "关税退款面临阻碍 美国海关称不能遵令停止计算紧急关税",
+                "sentiment": "negative",
+                "source": "财联社"
+            },
+            {
+                "title": "王毅：“零关税”为非洲提供机遇",
+                "sentiment": "negative",
+                "source": "界面新闻"
+            },
+            {
+                "title": "王毅：“零关税”为非洲提供机遇",
+                "sentiment": "negative",
+                "source": "财联社"
+            },
+            {
+                "title": "美国海关部门称目前尚无法退还关税",
+                "sentiment": "negative",
+                "source": "新华社"
+            }
+        ]
+    },
+    "贸易战": {
+        "overall": "偏空",
+        "positive": 0,
+        "negative": 5,
+        "neutral": 0,
+        "articles": [
+            {
+                "title": "或针对大型电池等行业，特朗普拟以“国家安全”为由再掀贸易战",
+                "sentiment": "negative",
+                "source": "界面新闻"
+            },
+            {
+                "title": "特朗普私下考虑“退群”、威胁“反叛”共和党人，北美贸易战狼烟四起？",
+                "sentiment": "negative",
+                "source": "第一财经"
+            },
+            {
+                "title": "去年贸易战被中国“杀手锏”打痛？特朗普急砸120亿美元建稀土战略储备",
+                "sentiment": "negative",
+                "source": "上观新闻"
+            },
+            {
+                "title": "时隔七年，中国石油重返A股“市值王”宝座",
+                "sentiment": "negative",
+                "source": "澎湃新闻"
+            },
+            {
+                "title": "这次“TACO”不再？华尔街警告：战争一旦打响，便超出特朗普掌控！",
+                "sentiment": "negative",
+                "source": "财联社"
+            }
+        ]
+    },
+    "特朗普": {
+        "overall": "中性",
+        "positive": 0,
+        "negative": 0,
+        "neutral": 5,
+        "articles": [
+            {
+                "title": "特朗普最新发声",
+                "sentiment": "neutral",
+                "source": "中国基金报"
+            },
+            {
+                "title": "特朗普称伊朗也有战斧导弹",
+                "sentiment": "neutral",
+                "source": "CCTV国际时讯"
+            },
+            {
+                "title": "特朗普：暂时免除部分石油相关制裁",
+                "sentiment": "neutral",
+                "source": "财联社"
+            },
+            {
+                "title": "特朗普称暂时免除部分石油相关制裁",
+                "sentiment": "neutral",
+                "source": "CCTV国际时讯"
+            },
+            {
+                "title": "特朗普称暂时免除部分石油相关制裁",
+                "sentiment": "neutral",
+                "source": "界面新闻"
+            }
+        ]
+    },
+    "_cctv_news": [
+        "十四届全国人大四次会议举行第二次全体会议",
+        "习近平向葡萄牙新任总统塞古罗致贺电",
+        "【凝心聚力 真抓实干 奋力实现“十五五”良好开局——代表委员议国是】履职尽责谋发展 坚定信心向未来",
+        "【凝心聚力 真抓实干 奋力实现“十五五”良好开局——代表委员议国是】协商议政 为推进中国式现代化凝聚共识",
+        "十四届全国人大四次会议“代表通道”再次开启",
+        "十四届全国人大四次会议第二场“部长通道”开启",
+        "外媒看两会：中国新发展 世界新机遇",
+        "2月份CPI同比上涨1.3%",
+        "国内联播快讯",
+        "伊朗再打击美反导系统雷达 美以称袭击伊数百个军事目标"
+    ],
+    "_economic_news": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+    ]
+}
