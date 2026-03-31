@@ -1,0 +1,2925 @@
+{
+  "消费": {
+    "keyword": "消费",
+    "overall_sentiment": "strong_positive",
+    "positive_count": 1,
+    "negative_count": 0,
+    "neutral_count": 7,
+    "total_articles": 8,
+    "top_headlines": [
+      "商务部：将开展“健康消费季”，提升健康消费发展水平",
+      "春假有望成为春季消费新引擎",
+      "宠物经济打开消费新场景",
+      "机构称未来消费或将逐步企稳，聚焦港股通消费ETF华夏（513230）布局机遇",
+      "春秋小假期撬动消费大市场"
+    ],
+    "articles": [
+      {
+        "title": "商务部：将开展“健康消费季”，提升健康消费发展水平",
+        "source": "澎湃新闻",
+        "date": "2026-03-30 12:17:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "春假有望成为春季消费新引擎",
+        "source": "证券日报",
+        "date": "2026-03-30 07:23:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "宠物经济打开消费新场景",
+        "source": "新华社",
+        "date": "2026-03-30 06:19:42",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "机构称未来消费或将逐步企稳，聚焦港股通消费ETF华夏（513230）布局机遇",
+        "source": "每日经济新闻",
+        "date": "2026-03-30 11:01:31",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "春秋小假期撬动消费大市场",
+        "source": "证券日报",
+        "date": "2026-03-29 23:58:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "春光正好，文旅消费暖意浓",
+        "source": "光明日报",
+        "date": "2026-03-29 05:46:46",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "体重管理引领健康消费风尚",
+        "source": "经济日报",
+        "date": "2026-03-29 05:44:23",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "第六届消博会将全力打造全球消费精品首发平台",
+        "source": "新华社",
+        "date": "2026-03-30 11:40:00",
+        "sentiment": "neutral",
+        "score": 0
+      }
+    ]
+  },
+  "医疗": {
+    "keyword": "医疗",
+    "overall_sentiment": "strong_positive",
+    "positive_count": 2,
+    "negative_count": 0,
+    "neutral_count": 6,
+    "total_articles": 8,
+    "top_headlines": [
+      "广东公布首批25家国际医疗服务试点医院 行业人士：中国医疗性价比高 跨境医疗还要在“服务”上下功夫",
+      "港股精锋医疗-B涨超6%",
+      "环球医疗公布2025年度业绩 医疗健康业务实现营收增长16.7%",
+      "普昂医疗上市首日获融资买入280.10万元",
+      "广东25家国际医疗服务试点医院出炉，满足外籍人士等就医需求"
+    ],
+    "articles": [
+      {
+        "title": "广东公布首批25家国际医疗服务试点医院 行业人士：中国医疗性价比高 跨境医疗还要在“服务”上下功夫",
+        "source": "每日经济新闻",
+        "date": "2026-03-29 21:39:47",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "港股精锋医疗-B涨超6%",
+        "source": "每日经济新闻",
+        "date": "2026-03-30 11:56:54",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "环球医疗公布2025年度业绩 医疗健康业务实现营收增长16.7%",
+        "source": "证券日报",
+        "date": "2026-03-29 16:02:00",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "普昂医疗上市首日获融资买入280.10万元",
+        "source": "证券时报",
+        "date": "2026-03-30 09:27:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "广东25家国际医疗服务试点医院出炉，满足外籍人士等就医需求",
+        "source": "21世纪经济报道",
+        "date": "2026-03-30 09:50:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "专家：数据成医疗产业发展关键支撑与增长动力",
+        "source": "中国新闻网",
+        "date": "2026-03-29 10:00:00",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "赛诺医疗：赛诺医疗是一家专注于高端介入医疗器械研发、生产、销售的国际化公司",
+        "source": "证券日报",
+        "date": "2026-03-26 18:55:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "广东首批25家国际医疗服务试点医院来了，如何吸引外籍患者",
+        "source": "第一财经",
+        "date": "2026-03-29 17:40:43",
+        "sentiment": "neutral",
+        "score": 0
+      }
+    ]
+  },
+  "军工": {
+    "keyword": "军工",
+    "overall_sentiment": "strong_positive",
+    "positive_count": 2,
+    "negative_count": 0,
+    "neutral_count": 6,
+    "total_articles": 8,
+    "top_headlines": [
+      "打新早报| 军工电子概念有研复材今日申购",
+      "伊朗称已打击与美军工有关联的两家企业",
+      "伊朗称已打击与美军工有关联的两家企业",
+      "以军称接近完成对伊朗约90%关键军工设施的打击",
+      "以军：未来几天将完成对伊朗几乎所有关键军工设施打击"
+    ],
+    "articles": [
+      {
+        "title": "打新早报| 军工电子概念有研复材今日申购",
+        "source": "界面新闻",
+        "date": "2026-03-30 09:18:13",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "伊朗称已打击与美军工有关联的两家企业",
+        "source": "新华社",
+        "date": "2026-03-29 19:12:16",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "伊朗称已打击与美军工有关联的两家企业",
+        "source": "界面新闻",
+        "date": "2026-03-29 19:09:44",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "以军称接近完成对伊朗约90%关键军工设施的打击",
+        "source": "央视新闻客户端",
+        "date": "2026-03-29 01:04:44",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "以军：未来几天将完成对伊朗几乎所有关键军工设施打击",
+        "source": "中国新闻网",
+        "date": "2026-03-29 10:09:56",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "军工板块持续走强 长城军工2连板",
+        "source": "人民财讯",
+        "date": "2026-03-25 14:25:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "军工板块盘初拉升 建设工业涨停",
+        "source": "东方财富Choice数据",
+        "date": "2026-03-27 09:36:58",
+        "sentiment": "positive",
+        "score": 3
+      },
+      {
+        "title": "军工板块表现活跃，长城军工触及涨停",
+        "source": "界面新闻",
+        "date": "2026-03-25 14:19:18",
+        "sentiment": "positive",
+        "score": 2
+      }
+    ]
+  },
+  "科技": {
+    "keyword": "科技",
+    "overall_sentiment": "unknown",
+    "positive_count": 0,
+    "negative_count": 0,
+    "neutral_count": 0,
+    "total_articles": 1,
+    "top_headlines": [],
+    "articles": [
+      {
+        "error": "Failed to perform, curl: (23) Failure writing output to destination, passed 15 returned 0. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+      }
+    ]
+  },
+  "光伏": {
+    "keyword": "光伏",
+    "overall_sentiment": "negative",
+    "positive_count": 1,
+    "negative_count": 2,
+    "neutral_count": 5,
+    "total_articles": 8,
+    "top_headlines": [
+      "光伏板块大幅回调，光伏ETF平安(516180)长期布局价值凸显",
+      "光伏概念下挫 迈为股份跌近14%",
+      "光伏概念集体下挫 迈为股份跌超14%",
+      "光伏概念集体下挫 迈为股份跌超14%",
+      "光伏概念集体下挫 迈为股份跌超14%"
+    ],
+    "articles": [
+      {
+        "title": "光伏板块大幅回调，光伏ETF平安(516180)长期布局价值凸显",
+        "source": "界面新闻",
+        "date": "2026-03-30 10:13:01",
+        "sentiment": "negative",
+        "score": -1
+      },
+      {
+        "title": "光伏概念下挫 迈为股份跌近14%",
+        "source": "上海证券报",
+        "date": "2026-03-30 10:14:01",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "光伏概念集体下挫 迈为股份跌超14%",
+        "source": "每日经济新闻",
+        "date": "2026-03-30 10:06:27",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "光伏概念集体下挫 迈为股份跌超14%",
+        "source": "南方财经网",
+        "date": "2026-03-30 09:57:51",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "光伏概念集体下挫 迈为股份跌超14%",
+        "source": "东方财富Choice数据",
+        "date": "2026-03-30 09:55:33",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "给风电和光伏配上巨型“充电宝”（创新故事）",
+        "source": "人民日报",
+        "date": "2026-03-30 05:49:21",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "上周五获4600万份申购，光伏ETF（159857）成交额超1.8亿元居深市同标的第一，机构：边际预期改善有望带来光伏估值修复与趋势反转",
+        "source": "21世纪经济报道",
+        "date": "2026-03-30 09:15:00",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "光伏出口退税取消还有两天！哪些企业能抢占行业洗牌先机？",
+        "source": "第一财经",
+        "date": "2026-03-30 01:40:31",
+        "sentiment": "negative",
+        "score": -3
+      }
+    ]
+  },
+  "AI": {
+    "keyword": "AI",
+    "overall_sentiment": "strong_positive",
+    "positive_count": 4,
+    "negative_count": 0,
+    "neutral_count": 4,
+    "total_articles": 8,
+    "top_headlines": [
+      "千问开启AI体验活动，邀用户评价反馈、推动AI进化",
+      "亮亮视野联合智谱AI推出AR+AI会议翻译系统",
+      "AI产业化进展加速，AI人工智能ETF平安(512930)备受关注",
+      "AI与机器人盘前速递丨云厂商迎盈利拐点，百度贴吧纯AI自治社区爆火",
+      "AI缺什么电？电力还是电网？"
+    ],
+    "articles": [
+      {
+        "title": "千问开启AI体验活动，邀用户评价反馈、推动AI进化",
+        "source": "上观新闻",
+        "date": "2026-03-30 10:39:06",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "亮亮视野联合智谱AI推出AR+AI会议翻译系统",
+        "source": "界面新闻",
+        "date": "2026-03-29 17:15:18",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "AI产业化进展加速，AI人工智能ETF平安(512930)备受关注",
+        "source": "界面新闻",
+        "date": "2026-03-30 10:02:05",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "AI与机器人盘前速递丨云厂商迎盈利拐点，百度贴吧纯AI自治社区爆火",
+        "source": "每日经济新闻",
+        "date": "2026-03-30 09:21:23",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "AI缺什么电？电力还是电网？",
+        "source": "天天基金",
+        "date": "2026-03-30 08:43:46",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "中信建投：头部企业持续加大AI领域资本投入，AI云服务行业有望维持高景气度",
+        "source": "每日经济新闻",
+        "date": "2026-03-30 08:30:01",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "中信建投：头部企业持续加大AI领域资本投入，AI云服务行业有望维持高景气度",
+        "source": "南方财经网",
+        "date": "2026-03-30 08:10:00",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "AI周报：OpenAI关停Sora 我国日均词元调用达140万亿次以上",
+        "source": "第一财经",
+        "date": "2026-03-29 08:35:16",
+        "sentiment": "neutral",
+        "score": 0
+      }
+    ]
+  },
+  "半导体": {
+    "keyword": "半导体",
+    "overall_sentiment": "negative",
+    "positive_count": 2,
+    "negative_count": 3,
+    "neutral_count": 3,
+    "total_articles": 8,
+    "top_headlines": [
+      "港股半导体板块下跌 华虹半导体、中芯国际跌超4%",
+      "港股半导体股集体下跌",
+      "港股半导体股集体下跌",
+      "智立方携核心半导体设备亮相上海国际半导体展",
+      "半导体设备板块跌幅持续收窄，关注半导体设备ETF易方达(159558)投资机遇"
+    ],
+    "articles": [
+      {
+        "title": "港股半导体板块下跌 华虹半导体、中芯国际跌超4%",
+        "source": "人民财讯",
+        "date": "2026-03-30 10:21:00",
+        "sentiment": "negative",
+        "score": -1
+      },
+      {
+        "title": "港股半导体股集体下跌",
+        "source": "南方财经网",
+        "date": "2026-03-30 10:25:06",
+        "sentiment": "negative",
+        "score": -1
+      },
+      {
+        "title": "港股半导体股集体下跌",
+        "source": "东方财富Choice数据",
+        "date": "2026-03-30 10:19:10",
+        "sentiment": "negative",
+        "score": -1
+      },
+      {
+        "title": "智立方携核心半导体设备亮相上海国际半导体展",
+        "source": "中国证券报·中证网",
+        "date": "2026-03-29 17:11:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "半导体设备板块跌幅持续收窄，关注半导体设备ETF易方达(159558)投资机遇",
+        "source": "每日经济新闻",
+        "date": "2026-03-30 11:21:16",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "中信证券：国内半导体产业将持续高景气 建议关注半导体设备头部平台型公司",
+        "source": "界面新闻",
+        "date": "2026-03-30 08:17:37",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "中信证券：国内半导体产业将持续高景气",
+        "source": "证券时报",
+        "date": "2026-03-30 09:46:00",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "智立方亮相全球半导体“嘉年华”",
+        "source": "证券日报",
+        "date": "2026-03-29 20:32:00",
+        "sentiment": "neutral",
+        "score": 0
+      }
+    ]
+  },
+  "稀土": {
+    "keyword": "稀土",
+    "overall_sentiment": "strong_positive",
+    "positive_count": 1,
+    "negative_count": 0,
+    "neutral_count": 7,
+    "total_articles": 8,
+    "top_headlines": [
+      "稀土安全属性与定价中枢有望迎系统性重估，稀土ETF嘉实(516150)一键布局稀土投资机遇",
+      "内蒙古又一稀土新矿物获国际认证",
+      "中国稀土：股票继续暂停买卖",
+      "北方稀土：稀土产品价格主要受市场供需、成本、预期等多方面影响",
+      "北方稀土：公司以绿色智造为抓手"
+    ],
+    "articles": [
+      {
+        "title": "稀土安全属性与定价中枢有望迎系统性重估，稀土ETF嘉实(516150)一键布局稀土投资机遇",
+        "source": "界面新闻",
+        "date": "2026-03-27 11:17:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "内蒙古又一稀土新矿物获国际认证",
+        "source": "人民财讯",
+        "date": "2026-03-29 08:15:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "中国稀土：股票继续暂停买卖",
+        "source": "南方财经网",
+        "date": "2026-03-27 22:52:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "北方稀土：稀土产品价格主要受市场供需、成本、预期等多方面影响",
+        "source": "证券日报",
+        "date": "2026-03-27 21:31:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "北方稀土：公司以绿色智造为抓手",
+        "source": "证券日报",
+        "date": "2026-03-27 21:12:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "北方稀土：公司加大镧、铈元素拓展研究",
+        "source": "证券日报",
+        "date": "2026-03-27 21:30:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "稀土指数盘中拉升，成分股普涨",
+        "source": "每日经济新闻",
+        "date": "2026-03-27 10:08:29",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "中科三环2025年净利润大增6.6倍，深耕稀土永磁主业谋划纵横发展",
+        "source": "证券时报",
+        "date": "2026-03-29 21:34:00",
+        "sentiment": "neutral",
+        "score": 0
+      }
+    ]
+  },
+  "黄金": {
+    "keyword": "黄金",
+    "overall_sentiment": "neutral",
+    "positive_count": 1,
+    "negative_count": 1,
+    "neutral_count": 6,
+    "total_articles": 8,
+    "top_headlines": [
+      "中国黄金集团与山东黄金集团举行工作会商",
+      "中国黄金集团与山东黄金集团举行工作会商",
+      "中国黄金集团与山东黄金集团举行工作会商",
+      "土耳其央行两周黄金储备减少60吨 最大黄金买家可能转向",
+      "中国黄金集团与山东黄金集团举行工作会商"
+    ],
+    "articles": [
+      {
+        "title": "中国黄金集团与山东黄金集团举行工作会商",
+        "source": "每日经济新闻",
+        "date": "2026-03-29 08:19:27",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "中国黄金集团与山东黄金集团举行工作会商",
+        "source": "财联社",
+        "date": "2026-03-29 08:08:25",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "中国黄金集团与山东黄金集团举行工作会商",
+        "source": "人民财讯",
+        "date": "2026-03-29 08:05:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "土耳其央行两周黄金储备减少60吨 最大黄金买家可能转向",
+        "source": "华夏时报",
+        "date": "2026-03-29 08:34:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "中国黄金集团与山东黄金集团举行工作会商",
+        "source": "界面新闻",
+        "date": "2026-03-28 11:19:47",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "外部冲击持续，黄金震荡，资金抢筹布局，黄金ETF国泰（518800）连续3日净流入超5亿元",
+        "source": "每日经济新闻",
+        "date": "2026-03-30 10:22:02",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "黄金创43年最大周跌幅！水贝黄金众生相：锁不住的料价 等不来的抄底",
+        "source": "华夏时报网",
+        "date": "2026-03-29 13:08:00",
+        "sentiment": "negative",
+        "score": -1
+      },
+      {
+        "title": "大唐黄金3月30日起短暂停牌",
+        "source": "证券时报网",
+        "date": "2026-03-30 09:21:00",
+        "sentiment": "neutral",
+        "score": 0
+      }
+    ]
+  },
+  "航天": {
+    "keyword": "航天",
+    "overall_sentiment": "strong_positive",
+    "positive_count": 8,
+    "negative_count": 0,
+    "neutral_count": 0,
+    "total_articles": 8,
+    "top_headlines": [
+      "商业航天概念活跃 航天动力一度涨停",
+      "商业航天概念表现活跃 航天动力涨停",
+      "商业航天概念表现活跃 航天动力涨停",
+      "商业航天概念表现活跃 航天动力涨停",
+      "商业航天板块震荡拉升，航天动力等多股涨停"
+    ],
+    "articles": [
+      {
+        "title": "商业航天概念活跃 航天动力一度涨停",
+        "source": "人民财讯",
+        "date": "2026-03-30 09:55:00",
+        "sentiment": "positive",
+        "score": 2
+      },
+      {
+        "title": "商业航天概念表现活跃 航天动力涨停",
+        "source": "南方财经网",
+        "date": "2026-03-30 09:52:36",
+        "sentiment": "positive",
+        "score": 2
+      },
+      {
+        "title": "商业航天概念表现活跃 航天动力涨停",
+        "source": "每日经济新闻",
+        "date": "2026-03-30 09:50:28",
+        "sentiment": "positive",
+        "score": 2
+      },
+      {
+        "title": "商业航天概念表现活跃 航天动力涨停",
+        "source": "东方财富Choice数据",
+        "date": "2026-03-30 09:48:46",
+        "sentiment": "positive",
+        "score": 2
+      },
+      {
+        "title": "商业航天板块震荡拉升，航天动力等多股涨停",
+        "source": "界面新闻",
+        "date": "2026-03-30 10:34:33",
+        "sentiment": "positive",
+        "score": 2
+      },
+      {
+        "title": "板块异动 | A股商业航天板块盘中走强",
+        "source": "上海证券报",
+        "date": "2026-03-30 12:14:20",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "商业航天概念持续走高 神剑股份3连板",
+        "source": "南方财经网",
+        "date": "2026-03-30 10:46:37",
+        "sentiment": "positive",
+        "score": 2
+      },
+      {
+        "title": "商业航天概念持续走高 神剑股份3连板",
+        "source": "每日经济新闻",
+        "date": "2026-03-30 10:41:47",
+        "sentiment": "positive",
+        "score": 2
+      }
+    ]
+  },
+  "科创": {
+    "keyword": "科创",
+    "overall_sentiment": "strong_negative",
+    "positive_count": 0,
+    "negative_count": 1,
+    "neutral_count": 7,
+    "total_articles": 8,
+    "top_headlines": [
+      "长进光子科创板IPO提交注册",
+      "长进光子科创板IPO提交注册",
+      "养老金持有科创板股名单",
+      "富国中证科创创业人工智能ETF今日起发售",
+      "2026中关村论坛年会释放科创孵化政策升级信号"
+    ],
+    "articles": [
+      {
+        "title": "长进光子科创板IPO提交注册",
+        "source": "证券时报",
+        "date": "2026-03-30 09:27:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "长进光子科创板IPO提交注册",
+        "source": "北京商报",
+        "date": "2026-03-29 21:32:11",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "养老金持有科创板股名单",
+        "source": "证券时报",
+        "date": "2026-03-30 09:27:00",
+        "sentiment": "negative",
+        "score": -1
+      },
+      {
+        "title": "富国中证科创创业人工智能ETF今日起发售",
+        "source": "证券时报网",
+        "date": "2026-03-30 09:27:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "2026中关村论坛年会释放科创孵化政策升级信号",
+        "source": "证券时报",
+        "date": "2026-03-29 13:18:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "新股提示：科创板有研复材、北交所赛英电子今日申购",
+        "source": "证券时报",
+        "date": "2026-03-30 07:22:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "科创链接中国东盟，人民币成区域贸易投资重要选择",
+        "source": "第一财经",
+        "date": "2026-03-29 16:40:11",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "四川发展科创股权投资基金成立 出资额约101.2亿元",
+        "source": "每日经济新闻",
+        "date": "2026-03-30 12:42:14",
+        "sentiment": "neutral",
+        "score": 0
+      }
+    ]
+  },
+  "电力": {
+    "keyword": "电力",
+    "overall_sentiment": "strong_negative",
+    "positive_count": 0,
+    "negative_count": 7,
+    "neutral_count": 1,
+    "total_articles": 8,
+    "top_headlines": [
+      "电力股调整 晋控电力跌停",
+      "电力板块持续下挫，晋控电力等多股跌停",
+      "电力板块持续下挫",
+      "港股电力股全线走低",
+      "伊朗电力设施遭袭"
+    ],
+    "articles": [
+      {
+        "title": "电力股调整 晋控电力跌停",
+        "source": "上海证券报",
+        "date": "2026-03-30 09:54:20",
+        "sentiment": "negative",
+        "score": -1
+      },
+      {
+        "title": "电力板块持续下挫，晋控电力等多股跌停",
+        "source": "界面新闻",
+        "date": "2026-03-30 09:40:58",
+        "sentiment": "negative",
+        "score": -1
+      },
+      {
+        "title": "电力板块持续下挫",
+        "source": "南方财经网",
+        "date": "2026-03-30 09:40:00",
+        "sentiment": "negative",
+        "score": -1
+      },
+      {
+        "title": "港股电力股全线走低",
+        "source": "每日经济新闻",
+        "date": "2026-03-30 11:11:23",
+        "sentiment": "negative",
+        "score": -1
+      },
+      {
+        "title": "伊朗电力设施遭袭",
+        "source": "CCTV国际时讯",
+        "date": "2026-03-30 02:35:46",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "电力板块走弱 多股触及跌停",
+        "source": "南方财经网",
+        "date": "2026-03-30 09:46:52",
+        "sentiment": "negative",
+        "score": -2
+      },
+      {
+        "title": "电力板块走弱 多股触及跌停",
+        "source": "每日经济新闻",
+        "date": "2026-03-30 09:46:34",
+        "sentiment": "negative",
+        "score": -2
+      },
+      {
+        "title": "电力板块持续下挫 华电辽能等跌停",
+        "source": "人民财讯",
+        "date": "2026-03-30 09:44:00",
+        "sentiment": "negative",
+        "score": -1
+      }
+    ]
+  },
+  "电网": {
+    "keyword": "电网",
+    "overall_sentiment": "strong_positive",
+    "positive_count": 3,
+    "negative_count": 0,
+    "neutral_count": 5,
+    "total_articles": 8,
+    "top_headlines": [
+      "AI缺什么电？电力还是电网？",
+      "能源安全推动电网设备需求，资金持续布局，电网设备ETF国泰（561380）连续3日净流入超2.5亿元",
+      "康斯特：发电及电网板块约占公司国内市场收入的20%",
+      "康斯特：发电及电网板块约占公司国内市场收入的20%",
+      "南都电源：公司储能产品在电网调峰、频率调节、电网稳定等关键领域均可应用"
+    ],
+    "articles": [
+      {
+        "title": "AI缺什么电？电力还是电网？",
+        "source": "天天基金",
+        "date": "2026-03-30 08:43:46",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "能源安全推动电网设备需求，资金持续布局，电网设备ETF国泰（561380）连续3日净流入超2.5亿元",
+        "source": "每日经济新闻",
+        "date": "2026-03-30 10:26:02",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "康斯特：发电及电网板块约占公司国内市场收入的20%",
+        "source": "每日经济新闻",
+        "date": "2026-03-29 21:50:52",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "康斯特：发电及电网板块约占公司国内市场收入的20%",
+        "source": "证券日报",
+        "date": "2026-03-29 21:47:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "南都电源：公司储能产品在电网调峰、频率调节、电网稳定等关键领域均可应用",
+        "source": "证券日报",
+        "date": "2026-03-27 16:18:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "电网设备概念震荡回升 长高电新涨停",
+        "source": "每日经济新闻",
+        "date": "2026-03-27 11:25:50",
+        "sentiment": "positive",
+        "score": 2
+      },
+      {
+        "title": "电网设备概念震荡回升 长高电新涨停",
+        "source": "南方财经网",
+        "date": "2026-03-27 11:24:00",
+        "sentiment": "positive",
+        "score": 3
+      },
+      {
+        "title": "电网设备概念盘中震荡回升 长高电新触及涨停",
+        "source": "东方财富Choice数据",
+        "date": "2026-03-27 11:20:36",
+        "sentiment": "positive",
+        "score": 3
+      }
+    ]
+  },
+  "5G": {
+    "keyword": "5G",
+    "overall_sentiment": "strong_positive",
+    "positive_count": 3,
+    "negative_count": 0,
+    "neutral_count": 5,
+    "total_articles": 8,
+    "top_headlines": [
+      "工信部：5G移动电话用户达12.35亿户",
+      "我国5G移动电话用户达12.35亿户",
+      "今年前两个月我国5G和千兆用户规模持续扩大",
+      "今年前两月中国5G和千兆用户规模持续扩大",
+      "我国5G移动电话用户达12.35亿户，占比67.6%"
+    ],
+    "articles": [
+      {
+        "title": "工信部：5G移动电话用户达12.35亿户",
+        "source": "人民网",
+        "date": "2026-03-26 15:53:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "我国5G移动电话用户达12.35亿户",
+        "source": "人民日报",
+        "date": "2026-03-26 05:53:53",
+        "sentiment": "positive",
+        "score": 2
+      },
+      {
+        "title": "今年前两个月我国5G和千兆用户规模持续扩大",
+        "source": "界面新闻",
+        "date": "2026-03-25 18:00:20",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "今年前两月中国5G和千兆用户规模持续扩大",
+        "source": "中国新闻网",
+        "date": "2026-03-25 20:10:05",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "我国5G移动电话用户达12.35亿户，占比67.6%",
+        "source": "南方都市报",
+        "date": "2026-03-25 20:05:26",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "优迅股份：公司产品广泛应用于光模组中，覆盖接入网、4G/5G/5G-A无线网络等场景",
+        "source": "证券日报",
+        "date": "2026-03-25 17:39:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "中瓷电子：公司光通信器件外壳传输速率已覆盖2.5Gbps、10Gbps、25Gbps等",
+        "source": "每日经济新闻",
+        "date": "2026-03-24 17:47:29",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "广州：建设推广人工智能辅助诊断、5G远程手术、AI影像筛查和智能家庭医生系统",
+        "source": "界面新闻",
+        "date": "2026-03-26 18:00:28",
+        "sentiment": "neutral",
+        "score": 0
+      }
+    ]
+  },
+  "新能源": {
+    "keyword": "新能源",
+    "overall_sentiment": "strong_positive",
+    "positive_count": 3,
+    "negative_count": 0,
+    "neutral_count": 5,
+    "total_articles": 8,
+    "top_headlines": [
+      "思格新能源通过港交所聆讯",
+      "风范股份：控股孙公司发生火灾事故；上海能源：拟承债式收购华尔晟新能源 | 新能源早参",
+      "宁德时代旗下云南新能源公司增资至20亿",
+      "装机规模超1.6亿千瓦 新疆新能源产业活力迸发",
+      "广发基金毛昆：新能源或将迎来配置窗口期"
+    ],
+    "articles": [
+      {
+        "title": "思格新能源通过港交所聆讯",
+        "source": "每日经济新闻",
+        "date": "2026-03-29 21:00:15",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "风范股份：控股孙公司发生火灾事故；上海能源：拟承债式收购华尔晟新能源 | 新能源早参",
+        "source": "每日经济新闻",
+        "date": "2026-03-30 07:00:04",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "宁德时代旗下云南新能源公司增资至20亿",
+        "source": "南方财经网",
+        "date": "2026-03-30 11:55:23",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "装机规模超1.6亿千瓦 新疆新能源产业活力迸发",
+        "source": "经济参考报",
+        "date": "2026-03-30 04:04:44",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "广发基金毛昆：新能源或将迎来配置窗口期",
+        "source": "上海证券报",
+        "date": "2026-03-30 02:32:00",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "持续发力扩大新能源供给",
+        "source": "经济日报",
+        "date": "2026-03-28 05:58:45",
+        "sentiment": "positive",
+        "score": 2
+      },
+      {
+        "title": "思格新能源通过港交所聆讯 中信证券与法国巴黎银行联席保荐",
+        "source": "证券时报网",
+        "date": "2026-03-30 08:10:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "中国车企销量全球第一 新能源技术迭代加速",
+        "source": "中国新闻网",
+        "date": "2026-03-28 14:12:42",
+        "sentiment": "positive",
+        "score": 1
+      }
+    ]
+  },
+  "化工": {
+    "keyword": "化工",
+    "overall_sentiment": "strong_positive",
+    "positive_count": 8,
+    "negative_count": 0,
+    "neutral_count": 0,
+    "total_articles": 8,
+    "top_headlines": [
+      "关键化工品价格显著上涨，化工板块反复活跃，煤化工方向领涨",
+      "关键化工品价格显著上涨，化工板块反复活跃，煤化工方向领涨",
+      "化工板块反复活跃 煤化工方向领涨",
+      "化工板块反复活跃 煤化工方向领涨",
+      "化工ETF(159870)冲击5连涨，关键化工品价格显著上涨"
+    ],
+    "articles": [
+      {
+        "title": "关键化工品价格显著上涨，化工板块反复活跃，煤化工方向领涨",
+        "source": "南方财经网",
+        "date": "2026-03-30 10:17:00",
+        "sentiment": "positive",
+        "score": 3
+      },
+      {
+        "title": "关键化工品价格显著上涨，化工板块反复活跃，煤化工方向领涨",
+        "source": "21世纪经济报道",
+        "date": "2026-03-30 10:17:00",
+        "sentiment": "positive",
+        "score": 3
+      },
+      {
+        "title": "化工板块反复活跃 煤化工方向领涨",
+        "source": "南方财经网",
+        "date": "2026-03-30 09:52:36",
+        "sentiment": "positive",
+        "score": 3
+      },
+      {
+        "title": "化工板块反复活跃 煤化工方向领涨",
+        "source": "每日经济新闻",
+        "date": "2026-03-30 09:50:26",
+        "sentiment": "positive",
+        "score": 3
+      },
+      {
+        "title": "化工ETF(159870)冲击5连涨，关键化工品价格显著上涨",
+        "source": "界面新闻",
+        "date": "2026-03-30 10:29:11",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "煤化工概念盘初走强 金煤科技涨停",
+        "source": "东方财富Choice数据",
+        "date": "2026-03-30 09:31:35",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "煤化工概念盘初走强，金煤科技涨停",
+        "source": "界面新闻",
+        "date": "2026-03-30 09:30:46",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "化工板块再度活跃 鲁北化工、滨海能源等涨停",
+        "source": "证券时报",
+        "date": "2026-03-27 10:55:00",
+        "sentiment": "positive",
+        "score": 3
+      }
+    ]
+  },
+  "矿业": {
+    "keyword": "矿业",
+    "overall_sentiment": "strong_positive",
+    "positive_count": 3,
+    "negative_count": 0,
+    "neutral_count": 5,
+    "total_articles": 8,
+    "top_headlines": [
+      "高能环境递表港交所 聚焦资源循环利用出海与上游矿业延伸",
+      "矿业ETF国泰（561330）盘中大涨超4%，地缘冲突持续发酵，矿业供需偏紧",
+      "大中矿业盘中创历史新高",
+      "海南矿业：目前公司产品未出口欧盟",
+      "海南矿业：目前公司产品未出口欧盟"
+    ],
+    "articles": [
+      {
+        "title": "高能环境递表港交所 聚焦资源循环利用出海与上游矿业延伸",
+        "source": "证券日报",
+        "date": "2026-03-29 21:53:00",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "矿业ETF国泰（561330）盘中大涨超4%，地缘冲突持续发酵，矿业供需偏紧",
+        "source": "每日经济新闻",
+        "date": "2026-03-27 14:11:44",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "大中矿业盘中创历史新高",
+        "source": "证券时报网",
+        "date": "2026-03-27 11:03:00",
+        "sentiment": "positive",
+        "score": 2
+      },
+      {
+        "title": "海南矿业：目前公司产品未出口欧盟",
+        "source": "证券日报",
+        "date": "2026-03-27 20:16:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "海南矿业：目前公司产品未出口欧盟",
+        "source": "每日经济新闻",
+        "date": "2026-03-27 17:15:32",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "有色金属资源民族主义与全球供需矛盾格局未变，关注矿业ETF（561330）、有色金属ETF（159881）",
+        "source": "每日经济新闻",
+        "date": "2026-03-30 10:16:19",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "对话｜力拓CEO：中国仍将是最大市场，矿业并购要基于明确价值",
+        "source": "澎湃新闻",
+        "date": "2026-03-29 07:49:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "聚焦川渝板块丨38.69%！国城矿业夺川股周涨幅冠军",
+        "source": "上游新闻",
+        "date": "2026-03-28 22:43:36",
+        "sentiment": "neutral",
+        "score": 0
+      }
+    ]
+  },
+  "有色": {
+    "keyword": "有色",
+    "overall_sentiment": "strong_positive",
+    "positive_count": 2,
+    "negative_count": 0,
+    "neutral_count": 6,
+    "total_articles": 8,
+    "top_headlines": [
+      "沪指转涨 有色板块涨幅居前",
+      "有色金属资源民族主义与全球供需矛盾格局未变，关注矿业ETF（561330）、有色金属ETF（159881）",
+      "港股有色金属股走强 中国宏桥涨超6%",
+      "有色 | 供给与宏观同步扰动 碳酸锂方向暂不明确",
+      "上周持续“吸金”近1.7亿元，有色ETF银华（159871）盘初上涨近1%，机构：深度回调的有色有望迎来结构性行情"
+    ],
+    "articles": [
+      {
+        "title": "沪指转涨 有色板块涨幅居前",
+        "source": "人民财讯",
+        "date": "2026-03-30 11:13:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "有色金属资源民族主义与全球供需矛盾格局未变，关注矿业ETF（561330）、有色金属ETF（159881）",
+        "source": "每日经济新闻",
+        "date": "2026-03-30 10:16:19",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "港股有色金属股走强 中国宏桥涨超6%",
+        "source": "南方财经网",
+        "date": "2026-03-30 09:26:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "有色 | 供给与宏观同步扰动 碳酸锂方向暂不明确",
+        "source": "安粮期货",
+        "date": "2026-03-30 10:42:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "上周持续“吸金”近1.7亿元，有色ETF银华（159871）盘初上涨近1%，机构：深度回调的有色有望迎来结构性行情",
+        "source": "21世纪经济报道",
+        "date": "2026-03-30 10:02:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "A股、港股大幅低开，油气、煤炭、有色金属走强",
+        "source": "大河财立方",
+        "date": "2026-03-30 09:37:37",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "有色·铝板块集体高开 天山铝业等多股一字涨停",
+        "source": "每日经济新闻",
+        "date": "2026-03-30 09:31:07",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "有色·铝板块集体高开 天山铝业等多股一字涨停",
+        "source": "东方财富Choice数据",
+        "date": "2026-03-30 09:26:42",
+        "sentiment": "positive",
+        "score": 2
+      }
+    ]
+  },
+  "钼": {
+    "keyword": "钼",
+    "overall_sentiment": "strong_positive",
+    "positive_count": 2,
+    "negative_count": 0,
+    "neutral_count": 6,
+    "total_articles": 8,
+    "top_headlines": [
+      "盛龙股份深耕钼主业 积极打造绿色智能生产体系",
+      "洛阳钼业：公司2025年钼金属产量13906吨",
+      "马年首只主板新股启动申购！盛龙股份卡位钼金属高景气赛道",
+      "盛龙股份：拟首发募资15.30亿元投向钼矿主业 打造一流矿业企业 3月20日申购",
+      "安泰科技：公司靶材类产品主要以平面显示用大尺寸钼板靶、大规格钼管靶、钨管靶等为主"
+    ],
+    "articles": [
+      {
+        "title": "盛龙股份深耕钼主业 积极打造绿色智能生产体系",
+        "source": "中国基金报",
+        "date": "2026-03-30 09:39:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "洛阳钼业：公司2025年钼金属产量13906吨",
+        "source": "每日经济新闻",
+        "date": "2026-03-23 18:16:09",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "马年首只主板新股启动申购！盛龙股份卡位钼金属高景气赛道",
+        "source": "证券时报网",
+        "date": "2026-03-20 09:15:44",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "盛龙股份：拟首发募资15.30亿元投向钼矿主业 打造一流矿业企业 3月20日申购",
+        "source": "中国证券报·中证网",
+        "date": "2026-03-12 18:37:44",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "安泰科技：公司靶材类产品主要以平面显示用大尺寸钼板靶、大规格钼管靶、钨管靶等为主",
+        "source": "证券日报",
+        "date": "2026-03-06 19:41:05",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "金钼股份17.31亿元增持金沙钼业股权至34%",
+        "source": "经济参考网",
+        "date": "2026-03-06 21:58:14",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "兴业银锡：目前，银漫矿业未有钼金属",
+        "source": "每日经济新闻",
+        "date": "2026-03-05 13:00:05",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "安泰科技：公司半导体靶材主要以高纯、大尺寸钨/钼靶材为主",
+        "source": "证券日报",
+        "date": "2026-03-06 19:02:40",
+        "sentiment": "neutral",
+        "score": 0
+      }
+    ]
+  },
+  "机器人": {
+    "keyword": "机器人",
+    "overall_sentiment": "strong_positive",
+    "positive_count": 2,
+    "negative_count": 0,
+    "neutral_count": 6,
+    "total_articles": 8,
+    "top_headlines": [
+      "智元机器人第10000台通用具身机器人正式下线",
+      "佛山“机器人第一股”华沿机器人登陆港交所 盘中突破百亿港元",
+      "智元机器人第10000台产品下线",
+      "跨国工业巨头盯上中国机器人",
+      "智元机器人、浙江国资等成立科技新公司"
+    ],
+    "articles": [
+      {
+        "title": "智元机器人第10000台通用具身机器人正式下线",
+        "source": "界面新闻",
+        "date": "2026-03-30 10:26:04",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "佛山“机器人第一股”华沿机器人登陆港交所 盘中突破百亿港元",
+        "source": "21世纪经济报道",
+        "date": "2026-03-30 12:33:00",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "智元机器人第10000台产品下线",
+        "source": "第一财经",
+        "date": "2026-03-30 09:52:27",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "跨国工业巨头盯上中国机器人",
+        "source": "第一财经",
+        "date": "2026-03-29 21:23:51",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "智元机器人、浙江国资等成立科技新公司",
+        "source": "人民财讯",
+        "date": "2026-03-30 11:35:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "松延动力公布仿生机器人表情控制相关专利",
+        "source": "人民财讯",
+        "date": "2026-03-30 10:56:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "京基智农成立智能科技公司 含AI及机器人业务",
+        "source": "人民财讯",
+        "date": "2026-03-30 09:13:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "质量技术能力提升 特种机器人产业“加速跑”",
+        "source": "经济参考报",
+        "date": "2026-03-30 04:04:41",
+        "sentiment": "positive",
+        "score": 1
+      }
+    ]
+  },
+  "红利": {
+    "keyword": "红利",
+    "overall_sentiment": "strong_negative",
+    "positive_count": 0,
+    "negative_count": 1,
+    "neutral_count": 7,
+    "total_articles": 8,
+    "top_headlines": [
+      "机构称红利资产防守成焦点，国企红利ETF鹏扬(159515)涨0.42%",
+      "央企分红比例上调预期夯实，港股通央企红利ETF华夏（513910）迎政策红利",
+      "油价震荡加剧市场波动 宽基、红利ETF迎资金布局",
+      "资金风险偏好回落 多只红利ETF规模增逾10亿元",
+      "中国石油拟每股派发现金红利0.25元"
+    ],
+    "articles": [
+      {
+        "title": "机构称红利资产防守成焦点，国企红利ETF鹏扬(159515)涨0.42%",
+        "source": "界面新闻",
+        "date": "2026-03-30 11:23:07",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "央企分红比例上调预期夯实，港股通央企红利ETF华夏（513910）迎政策红利",
+        "source": "每日经济新闻",
+        "date": "2026-03-30 11:17:15",
+        "sentiment": "negative",
+        "score": -1
+      },
+      {
+        "title": "油价震荡加剧市场波动 宽基、红利ETF迎资金布局",
+        "source": "中国证券报",
+        "date": "2026-03-30 08:32:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "资金风险偏好回落 多只红利ETF规模增逾10亿元",
+        "source": "证券时报",
+        "date": "2026-03-30 07:16:14",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "中国石油拟每股派发现金红利0.25元",
+        "source": "财中社",
+        "date": "2026-03-29 16:12:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "宁沪高速拟每股派发现金红利0.49元",
+        "source": "财中社",
+        "date": "2026-03-29 16:12:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "红利类基金年内分红超26亿元",
+        "source": "证券日报",
+        "date": "2026-03-28 00:09:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "东宝生物拟每10股派发现金红利0.12元",
+        "source": "财中社",
+        "date": "2026-03-29 16:12:00",
+        "sentiment": "neutral",
+        "score": 0
+      }
+    ]
+  },
+  "港股": {
+    "keyword": "港股",
+    "overall_sentiment": "strong_negative",
+    "positive_count": 1,
+    "negative_count": 5,
+    "neutral_count": 2,
+    "total_articles": 8,
+    "top_headlines": [
+      "港股铝业股集体走高",
+      "港股电力股全线走低",
+      "港股速报 | 港股早盘再度低开 恒科再创阶段新低 四只新股上市表现分化",
+      "港股半导体股集体下跌",
+      "港股半导体股集体下跌"
+    ],
+    "articles": [
+      {
+        "title": "港股铝业股集体走高",
+        "source": "每日经济新闻",
+        "date": "2026-03-30 09:40:50",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "港股电力股全线走低",
+        "source": "每日经济新闻",
+        "date": "2026-03-30 11:11:23",
+        "sentiment": "negative",
+        "score": -1
+      },
+      {
+        "title": "港股速报 | 港股早盘再度低开 恒科再创阶段新低 四只新股上市表现分化",
+        "source": "每日经济新闻",
+        "date": "2026-03-30 10:05:32",
+        "sentiment": "negative",
+        "score": -1
+      },
+      {
+        "title": "港股半导体股集体下跌",
+        "source": "南方财经网",
+        "date": "2026-03-30 10:25:06",
+        "sentiment": "negative",
+        "score": -1
+      },
+      {
+        "title": "港股半导体股集体下跌",
+        "source": "东方财富Choice数据",
+        "date": "2026-03-30 10:19:10",
+        "sentiment": "negative",
+        "score": -1
+      },
+      {
+        "title": "港股本周要闻前瞻｜智谱等明星公司将披露业绩 港股周五因假期休市",
+        "source": "财联社",
+        "date": "2026-03-30 07:05:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "港股异动 | 小马智行港股价格创新低 关键指标不及预期引发市场担忧",
+        "source": "上海证券报",
+        "date": "2026-03-30 12:12:46",
+        "sentiment": "negative",
+        "score": -3
+      },
+      {
+        "title": "港股荣昌生物涨超8%",
+        "source": "每日经济新闻",
+        "date": "2026-03-30 10:02:27",
+        "sentiment": "neutral",
+        "score": 0
+      }
+    ]
+  },
+  "恒生科技": {
+    "keyword": "恒生科技",
+    "overall_sentiment": "strong_negative",
+    "positive_count": 1,
+    "negative_count": 3,
+    "neutral_count": 4,
+    "total_articles": 8,
+    "top_headlines": [
+      "恒生指数低开1.68% 恒生科技指数跌2.78%",
+      "恒生科技指数下跌3%",
+      "港股开盘：恒生指数跌1.68% 恒生科技指数跌2.78%",
+      "港股午评：恒生指数跌0.90%，恒生科技指数跌1.66%",
+      "港股午评:恒生指数跌0.93%，恒生科技指数跌1.70%"
+    ],
+    "articles": [
+      {
+        "title": "恒生指数低开1.68% 恒生科技指数跌2.78%",
+        "source": "上海证券报·中国证券网",
+        "date": "2026-03-30 09:29:01",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "恒生科技指数下跌3%",
+        "source": "东方财富Choice数据",
+        "date": "2026-03-30 10:29:27",
+        "sentiment": "negative",
+        "score": -1
+      },
+      {
+        "title": "港股开盘：恒生指数跌1.68% 恒生科技指数跌2.78%",
+        "source": "东方财富Choice数据",
+        "date": "2026-03-30 09:21:39",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "港股午评：恒生指数跌0.90%，恒生科技指数跌1.66%",
+        "source": "证券时报",
+        "date": "2026-03-30 12:25:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "港股午评:恒生指数跌0.93%，恒生科技指数跌1.70%",
+        "source": "南方财经网",
+        "date": "2026-03-30 12:04:04",
+        "sentiment": "negative",
+        "score": -1
+      },
+      {
+        "title": "港股午评：恒生指数跌0.93%，恒生科技指数跌1.7%",
+        "source": "界面新闻",
+        "date": "2026-03-30 12:00:43",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "港股午间收盘，恒生指数跌0.93%，恒生科技指数跌1.70%",
+        "source": "每日经济新闻",
+        "date": "2026-03-30 12:02:52",
+        "sentiment": "negative",
+        "score": -1
+      },
+      {
+        "title": "恒生科技跌幅扩大至3%",
+        "source": "界面新闻",
+        "date": "2026-03-30 10:29:32",
+        "sentiment": "positive",
+        "score": 1
+      }
+    ]
+  },
+  "白银": {
+    "keyword": "白银",
+    "overall_sentiment": "neutral",
+    "positive_count": 3,
+    "negative_count": 3,
+    "neutral_count": 2,
+    "total_articles": 8,
+    "top_headlines": [
+      "现货白银涨近1%",
+      "现货白银震荡走弱 跌逾2%",
+      "现货白银向下跌破68美元/盎司",
+      "现货白银涨近1% 突破70美元/盎司",
+      "现货白银日内跌幅扩大至2%，报68.29美元/盎司"
+    ],
+    "articles": [
+      {
+        "title": "现货白银涨近1%",
+        "source": "界面新闻",
+        "date": "2026-03-30 11:14:26",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "现货白银震荡走弱 跌逾2%",
+        "source": "人民财讯",
+        "date": "2026-03-30 07:36:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "现货白银向下跌破68美元/盎司",
+        "source": "界面新闻",
+        "date": "2026-03-30 07:38:42",
+        "sentiment": "negative",
+        "score": -1
+      },
+      {
+        "title": "现货白银涨近1% 突破70美元/盎司",
+        "source": "人民财讯",
+        "date": "2026-03-30 11:11:00",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "现货白银日内跌幅扩大至2%，报68.29美元/盎司",
+        "source": "每日经济新闻",
+        "date": "2026-03-30 07:42:40",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "现货白银涨超4%",
+        "source": "东方财富Choice数据",
+        "date": "2026-03-27 23:13:17",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "现货白银向下跌破69美元/盎司，日内下跌1.21%",
+        "source": "每日经济新闻",
+        "date": "2026-03-30 06:08:30",
+        "sentiment": "negative",
+        "score": -1
+      },
+      {
+        "title": "黄金、白银跳水！中东突发：德黑兰10多分钟遭两轮大规模空袭！",
+        "source": "证券时报",
+        "date": "2026-03-30 08:02:12",
+        "sentiment": "negative",
+        "score": -1
+      }
+    ]
+  },
+  "豆粕": {
+    "keyword": "豆粕",
+    "overall_sentiment": "strong_negative",
+    "positive_count": 0,
+    "negative_count": 4,
+    "neutral_count": 4,
+    "total_articles": 8,
+    "top_headlines": [
+      "豆粕ETF华夏（159985）发布溢价风险提示",
+      "豆粕 偏强运行",
+      "豆粕ETF华夏（159985）发布溢价风险提示",
+      "ETF主力榜 | 豆粕ETF华夏(159985)主力资金净流入1.80亿元，居全市场第一梯队-20260324",
+      "豆粕 上行驱动力不足"
+    ],
+    "articles": [
+      {
+        "title": "豆粕ETF华夏（159985）发布溢价风险提示",
+        "source": "南方财经网",
+        "date": "2026-03-26 17:04:00",
+        "sentiment": "negative",
+        "score": -1
+      },
+      {
+        "title": "豆粕 偏强运行",
+        "source": "期货日报",
+        "date": "2026-03-24 21:38:36",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "豆粕ETF华夏（159985）发布溢价风险提示",
+        "source": "南方财经网",
+        "date": "2026-03-24 18:14:00",
+        "sentiment": "negative",
+        "score": -1
+      },
+      {
+        "title": "ETF主力榜 | 豆粕ETF华夏(159985)主力资金净流入1.80亿元，居全市场第一梯队-20260324",
+        "source": "界面新闻",
+        "date": "2026-03-24 16:41:02",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "豆粕 上行驱动力不足",
+        "source": "期货日报",
+        "date": "2026-03-20 10:07:57",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "豆粕ETF（159985）发布溢价风险提示",
+        "source": "南方财经网",
+        "date": "2026-03-20 17:07:12",
+        "sentiment": "negative",
+        "score": -1
+      },
+      {
+        "title": "豆粕ETF（159985）发布溢价风险提示",
+        "source": "南方财经网",
+        "date": "2026-03-18 17:21:52",
+        "sentiment": "negative",
+        "score": -1
+      },
+      {
+        "title": "芝加哥豆粕期货涨3.2%，玉米、小麦至多涨约2.7%",
+        "source": "每日经济新闻",
+        "date": "2026-03-19 05:48:40",
+        "sentiment": "neutral",
+        "score": 0
+      }
+    ]
+  },
+  "粮食": {
+    "keyword": "粮食",
+    "overall_sentiment": "strong_positive",
+    "positive_count": 3,
+    "negative_count": 0,
+    "neutral_count": 5,
+    "total_articles": 8,
+    "top_headlines": [
+      "中东局势波及全球粮食安全",
+      "粮食ETF(159698)涨超2.4%，盘中净申购5200万份，相关部门召开民营粮食企业座谈会",
+      "国家粮食和物资储备局召开民营粮食企业座谈会",
+      "国家粮食和储备局：“十五五”时期我国粮食产业高质量发展有良好条件",
+      "国家粮食和物资储备局召开民营粮食企业座谈会"
+    ],
+    "articles": [
+      {
+        "title": "中东局势波及全球粮食安全",
+        "source": "上观新闻",
+        "date": "2026-03-30 00:10:18",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "粮食ETF(159698)涨超2.4%，盘中净申购5200万份，相关部门召开民营粮食企业座谈会",
+        "source": "界面新闻",
+        "date": "2026-03-30 11:17:47",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "国家粮食和物资储备局召开民营粮食企业座谈会",
+        "source": "中国网财经",
+        "date": "2026-03-28 20:01:47",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "国家粮食和储备局：“十五五”时期我国粮食产业高质量发展有良好条件",
+        "source": "新华社",
+        "date": "2026-03-29 09:16:53",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "国家粮食和物资储备局召开民营粮食企业座谈会",
+        "source": "每日经济新闻",
+        "date": "2026-03-28 09:37:31",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "国家粮食和物资储备局召开民营粮食企业座谈会",
+        "source": "界面新闻",
+        "date": "2026-03-28 09:23:30",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "异动拉升！中东局势危及粮食安全 概念股早盘领涨",
+        "source": "东方财富研究中心",
+        "date": "2026-03-30 12:09:12",
+        "sentiment": "positive",
+        "score": 3
+      },
+      {
+        "title": "粮食概念涨势持续上扬 金健米业、北大荒涨停",
+        "source": "南方财经网",
+        "date": "2026-03-30 09:43:00",
+        "sentiment": "positive",
+        "score": 1
+      }
+    ]
+  },
+  "芯片": {
+    "keyword": "芯片",
+    "overall_sentiment": "strong_positive",
+    "positive_count": 2,
+    "negative_count": 0,
+    "neutral_count": 6,
+    "total_articles": 8,
+    "top_headlines": [
+      "英唐智控：自研芯片业务聚焦MEMS微振镜与车载显示芯片两大方向",
+      "景气持续扩散 机构看好存储芯片赛道",
+      "刚刚宣布！特斯拉芯片工厂，有新进展→",
+      "“香山”配“如意” 开辟开源芯片产业落地新路径",
+      "科创芯片设计ETF天弘（589070）近20日“吸金”累超1.2亿元居同标的第一，机构：芯片产能预计将持续释放"
+    ],
+    "articles": [
+      {
+        "title": "英唐智控：自研芯片业务聚焦MEMS微振镜与车载显示芯片两大方向",
+        "source": "证券日报",
+        "date": "2026-03-29 21:47:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "景气持续扩散 机构看好存储芯片赛道",
+        "source": "上海证券报",
+        "date": "2026-03-30 02:33:09",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "刚刚宣布！特斯拉芯片工厂，有新进展→",
+        "source": "大河财立方",
+        "date": "2026-03-30 11:46:34",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "“香山”配“如意” 开辟开源芯片产业落地新路径",
+        "source": "科技日报",
+        "date": "2026-03-30 08:11:16",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "科创芯片设计ETF天弘（589070）近20日“吸金”累超1.2亿元居同标的第一，机构：芯片产能预计将持续释放",
+        "source": "21世纪经济报道",
+        "date": "2026-03-30 10:37:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "中颖电子：公司一直有序推进车规芯片的研发及持续投入",
+        "source": "证券日报",
+        "date": "2026-03-29 20:18:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "开源芯片产业落地有了新路径",
+        "source": "经济日报",
+        "date": "2026-03-28 05:58:43",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "中颖电子：有序推进车规芯片研发 新产品预期今年推出",
+        "source": "财联社",
+        "date": "2026-03-29 11:05:12",
+        "sentiment": "neutral",
+        "score": 0
+      }
+    ]
+  },
+  "铜": {
+    "keyword": "铜",
+    "overall_sentiment": "negative",
+    "positive_count": 1,
+    "negative_count": 2,
+    "neutral_count": 5,
+    "total_articles": 8,
+    "top_headlines": [
+      "铜产品量价齐升叠加降本增效 洛阳钼业2025年实现净利超200亿元",
+      "中颖电子：铜涨价对家电企业“铜变芯”转型在逻辑上有促进作用",
+      "华菱线缆：拟不超1.2亿元开展铜铝期货套期保值业务 保值规模3.5万吨",
+      "20号胶期权和国际铜期权将于4月22日上市 同步向合格境外投资者开放",
+      "一场关于铜的科技突围战"
+    ],
+    "articles": [
+      {
+        "title": "铜产品量价齐升叠加降本增效 洛阳钼业2025年实现净利超200亿元",
+        "source": "证券日报",
+        "date": "2026-03-29 19:36:00",
+        "sentiment": "positive",
+        "score": 2
+      },
+      {
+        "title": "中颖电子：铜涨价对家电企业“铜变芯”转型在逻辑上有促进作用",
+        "source": "证券日报",
+        "date": "2026-03-26 16:54:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "华菱线缆：拟不超1.2亿元开展铜铝期货套期保值业务 保值规模3.5万吨",
+        "source": "中国证券报·中证网",
+        "date": "2026-03-29 23:06:14",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "20号胶期权和国际铜期权将于4月22日上市 同步向合格境外投资者开放",
+        "source": "期货日报网",
+        "date": "2026-03-29 22:44:29",
+        "sentiment": "negative",
+        "score": -1
+      },
+      {
+        "title": "一场关于铜的科技突围战",
+        "source": "科技日报",
+        "date": "2026-03-26 08:02:53",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "20号胶期权和国际铜期权将于4月22日挂牌交易",
+        "source": "国际金融报",
+        "date": "2026-03-27 23:05:05",
+        "sentiment": "negative",
+        "score": -1
+      },
+      {
+        "title": "中国有色矿业：“十五五”期间铜产量有望翻番 力争并购千万吨级矿山",
+        "source": "上海证券报·中国证券网",
+        "date": "2026-03-28 14:35:16",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "寒锐钴业：公司主营产品为铜、钴相关产品",
+        "source": "证券日报",
+        "date": "2026-03-25 19:01:00",
+        "sentiment": "neutral",
+        "score": 0
+      }
+    ]
+  },
+  "人工智能": {
+    "keyword": "人工智能",
+    "overall_sentiment": "strong_positive",
+    "positive_count": 1,
+    "negative_count": 0,
+    "neutral_count": 7,
+    "total_articles": 8,
+    "top_headlines": [
+      "全面实施“人工智能+”行动",
+      "富国中证科创创业人工智能ETF今日起发售",
+      "北京2025年人工智能产业规模达4500亿元",
+      "牢牢掌握人工智能发展和治理主动权",
+      "人工智能赋能监测监管，生态环境治理迈入智能化新阶段"
+    ],
+    "articles": [
+      {
+        "title": "全面实施“人工智能+”行动",
+        "source": "经济日报",
+        "date": "2026-03-29 05:44:23",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "富国中证科创创业人工智能ETF今日起发售",
+        "source": "证券时报网",
+        "date": "2026-03-30 09:27:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "北京2025年人工智能产业规模达4500亿元",
+        "source": "新京报",
+        "date": "2026-03-29 16:59:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "牢牢掌握人工智能发展和治理主动权",
+        "source": "经济日报",
+        "date": "2026-03-29 05:44:23",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "人工智能赋能监测监管，生态环境治理迈入智能化新阶段",
+        "source": "界面新闻",
+        "date": "2026-03-30 11:32:29",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "多只ETF募集成功 人工智能和机器人主题受青睐",
+        "source": "中国证券报",
+        "date": "2026-03-30 08:34:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "【环球财经】巴西拟投资1.04亿雷亚尔发展人工智能和6G技术",
+        "source": "新华财经",
+        "date": "2026-03-30 11:05:34",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "AI产业化进展加速，AI人工智能ETF平安(512930)备受关注",
+        "source": "界面新闻",
+        "date": "2026-03-30 10:02:05",
+        "sentiment": "positive",
+        "score": 1
+      }
+    ]
+  },
+  "通信": {
+    "keyword": "通信",
+    "overall_sentiment": "strong_positive",
+    "positive_count": 3,
+    "negative_count": 0,
+    "neutral_count": 5,
+    "total_articles": 8,
+    "top_headlines": [
+      "美股光通信股逆势上涨",
+      "推动“万物互联”迈向“万物智联” 6G擘画空天地一体通信新蓝图",
+      "洲明科技：Micro LED光通信是一种“宽而慢”的通信方式",
+      "“超智融合算力”平台启动，资金逢低布局通信ETF华夏（515050）",
+      "22.82亿元资金今日流出通信股"
+    ],
+    "articles": [
+      {
+        "title": "美股光通信股逆势上涨",
+        "source": "界面新闻",
+        "date": "2026-03-27 21:47:52",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "推动“万物互联”迈向“万物智联” 6G擘画空天地一体通信新蓝图",
+        "source": "经济参考报",
+        "date": "2026-03-30 04:04:07",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "洲明科技：Micro LED光通信是一种“宽而慢”的通信方式",
+        "source": "证券日报",
+        "date": "2026-03-27 20:51:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "“超智融合算力”平台启动，资金逢低布局通信ETF华夏（515050）",
+        "source": "每日经济新闻",
+        "date": "2026-03-30 10:26:04",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "22.82亿元资金今日流出通信股",
+        "source": "证券时报",
+        "date": "2026-03-27 16:33:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "通信ETF华夏(515050)盘中成交额超2.7亿元，低空通信成通信行业增长新引擎",
+        "source": "界面新闻",
+        "date": "2026-03-26 14:39:01",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "移远通信：目前公司整体订单情况良好",
+        "source": "证券日报",
+        "date": "2026-03-27 21:12:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "美股光通信股逆势上涨 Lumentum涨超4%",
+        "source": "东方财富Choice数据",
+        "date": "2026-03-27 21:47:32",
+        "sentiment": "positive",
+        "score": 1
+      }
+    ]
+  },
+  "伊朗": {
+    "keyword": "伊朗",
+    "overall_sentiment": "neutral",
+    "positive_count": 0,
+    "negative_count": 0,
+    "neutral_count": 8,
+    "total_articles": 8,
+    "top_headlines": [
+      "伊朗外长：美以无法摧毁伊朗人民对知识的渴求",
+      "伊朗高级将领：美军被迫撤离伊朗边境邻近地区",
+      "伊朗外长：美以无法摧毁伊朗人民对知识的渴求",
+      "伊朗最高领袖感谢伊拉克宗教领袖和人民对伊朗的支持",
+      "伊朗陆军发言人：核问题绝非美国与伊朗间核心问题"
+    ],
+    "articles": [
+      {
+        "title": "伊朗外长：美以无法摧毁伊朗人民对知识的渴求",
+        "source": "中国新闻网",
+        "date": "2026-03-30 06:54:45",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "伊朗高级将领：美军被迫撤离伊朗边境邻近地区",
+        "source": "新华社",
+        "date": "2026-03-30 00:43:15",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "伊朗外长：美以无法摧毁伊朗人民对知识的渴求",
+        "source": "新华社",
+        "date": "2026-03-30 06:30:10",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "伊朗最高领袖感谢伊拉克宗教领袖和人民对伊朗的支持",
+        "source": "新华网",
+        "date": "2026-03-30 05:18:03",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "伊朗陆军发言人：核问题绝非美国与伊朗间核心问题",
+        "source": "界面新闻",
+        "date": "2026-03-29 21:50:28",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "伊朗陆军发言人：核问题绝非美国与伊朗间核心问题",
+        "source": "新华社",
+        "date": "2026-03-29 21:43:19",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "伊朗电力设施遭袭",
+        "source": "CCTV国际时讯",
+        "date": "2026-03-30 02:35:46",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "伊朗最高领袖：感谢伊拉克宗教领袖和人民对伊朗的支持",
+        "source": "上观新闻",
+        "date": "2026-03-30 03:34:02",
+        "sentiment": "neutral",
+        "score": 0
+      }
+    ]
+  },
+  "特朗普": {
+    "keyword": "特朗普",
+    "overall_sentiment": "strong_negative",
+    "positive_count": 0,
+    "negative_count": 1,
+    "neutral_count": 7,
+    "total_articles": 8,
+    "top_headlines": [
+      "“特朗普海峡” ？特朗普再施压伊朗开放霍尔木兹海峡",
+      "特朗普：不反对向古巴供应石油",
+      "特朗普称霍尔木兹为特朗普海峡",
+      "日韩股市大跌，特朗普最新发声",
+      "特朗普：与伊朗“可能”很快达成停火协议"
+    ],
+    "articles": [
+      {
+        "title": "“特朗普海峡” ？特朗普再施压伊朗开放霍尔木兹海峡",
+        "source": "中国新闻网",
+        "date": "2026-03-29 13:40:34",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "特朗普：不反对向古巴供应石油",
+        "source": "央视新闻",
+        "date": "2026-03-30 09:50:29",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "特朗普称霍尔木兹为特朗普海峡",
+        "source": "CCTV国际时讯",
+        "date": "2026-03-28 09:33:43",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "日韩股市大跌，特朗普最新发声",
+        "source": "中国证券报",
+        "date": "2026-03-30 09:57:00",
+        "sentiment": "negative",
+        "score": -1
+      },
+      {
+        "title": "特朗普：与伊朗“可能”很快达成停火协议",
+        "source": "新华社",
+        "date": "2026-03-30 08:40:05",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "印度否认“马斯克参与特朗普与莫迪通话”",
+        "source": "第一财经",
+        "date": "2026-03-30 11:12:43",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "特朗普：最想做的是“夺取伊朗的石油”",
+        "source": "新华社",
+        "date": "2026-03-30 09:05:11",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "特朗普：已摧毁许多“觊觎已久”的伊朗境内目标",
+        "source": "南方财经网",
+        "date": "2026-03-30 10:55:10",
+        "sentiment": "neutral",
+        "score": 0
+      }
+    ]
+  },
+  "中东": {
+    "keyword": "中东",
+    "overall_sentiment": "strong_positive",
+    "positive_count": 4,
+    "negative_count": 0,
+    "neutral_count": 4,
+    "total_articles": 8,
+    "top_headlines": [
+      "中东资金进入香港的真相透视",
+      "中东铝业巨头 遭伊朗袭击",
+      "中东局势波及全球粮食安全",
+      "中东两大铝企遇袭，火线解读",
+      "以色列总理称已改变中东面貌"
+    ],
+    "articles": [
+      {
+        "title": "中东资金进入香港的真相透视",
+        "source": "东吴证券",
+        "date": "2026-03-30 09:02:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "中东铝业巨头 遭伊朗袭击",
+        "source": "央视财经",
+        "date": "2026-03-29 22:56:00",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "中东局势波及全球粮食安全",
+        "source": "上观新闻",
+        "date": "2026-03-30 00:10:18",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "中东两大铝企遇袭，火线解读",
+        "source": "上海证券报",
+        "date": "2026-03-29 16:51:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "以色列总理称已改变中东面貌",
+        "source": "CCTV国际时讯",
+        "date": "2026-03-30 02:17:01",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "中东铝业巨头遭袭 铝价怎么走？",
+        "source": "中国证券报",
+        "date": "2026-03-29 22:38:00",
+        "sentiment": "positive",
+        "score": 2
+      },
+      {
+        "title": "中东两大铝厂遇袭，铝板块多股涨停",
+        "source": "21世纪经济报道",
+        "date": "2026-03-30 09:52:00",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "中东两大铝厂遇袭，铝板块多股涨停",
+        "source": "南方财经网",
+        "date": "2026-03-30 09:52:00",
+        "sentiment": "positive",
+        "score": 1
+      }
+    ]
+  },
+  "原油": {
+    "keyword": "原油",
+    "overall_sentiment": "strong_positive",
+    "positive_count": 6,
+    "negative_count": 0,
+    "neutral_count": 2,
+    "total_articles": 8,
+    "top_headlines": [
+      "中东大消息！刚刚，原油又飙涨！",
+      "上期能源增加原油期货可交割油种",
+      "农产品 | 中东局势未平 油脂跟随原油高位盘整",
+      "全球普跌！原油高位巨震 | 大类资产周报",
+      "布伦特原油期货突破109美元/桶 日内上涨3.6%"
+    ],
+    "articles": [
+      {
+        "title": "中东大消息！刚刚，原油又飙涨！",
+        "source": "中国基金报",
+        "date": "2026-03-30 08:32:00",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "上期能源增加原油期货可交割油种",
+        "source": "期货日报网",
+        "date": "2026-03-29 22:45:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "农产品 | 中东局势未平 油脂跟随原油高位盘整",
+        "source": "中财期货",
+        "date": "2026-03-30 10:09:29",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "全球普跌！原油高位巨震 | 大类资产周报",
+        "source": "东方财富Choice数据",
+        "date": "2026-03-29 19:02:00",
+        "sentiment": "positive",
+        "score": 2
+      },
+      {
+        "title": "布伦特原油期货突破109美元/桶 日内上涨3.6%",
+        "source": "东方财富Choice数据",
+        "date": "2026-03-30 08:56:48",
+        "sentiment": "positive",
+        "score": 2
+      },
+      {
+        "title": "WTI原油期货涨幅扩大至3%，报102.641美元/桶",
+        "source": "每日经济新闻",
+        "date": "2026-03-30 06:08:59",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "菲律宾再次进口俄原油",
+        "source": "财联社",
+        "date": "2026-03-27 14:47:52",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "【环球财经】中东局势持续紧张 布伦特原油期价逼近冲突以来最高点",
+        "source": "新华社",
+        "date": "2026-03-30 10:58:04",
+        "sentiment": "positive",
+        "score": 2
+      }
+    ]
+  },
+  "战争": {
+    "keyword": "战争",
+    "overall_sentiment": "neutral",
+    "positive_count": 2,
+    "negative_count": 2,
+    "neutral_count": 4,
+    "total_articles": 8,
+    "top_headlines": [
+      "中东战争“加时” 恒生科技指数逼近“关税底”",
+      "全球多地爆发示威抗议 民众高呼“不要战争”",
+      "美军地面战“数周速决”方案曝光 想要复刻海湾战争！",
+      "战争短期内结束的前景暗淡，经济增长形势严峻",
+      "“不要国王”“不要战争”！全美900万人抗议特朗普内外政策"
+    ],
+    "articles": [
+      {
+        "title": "中东战争“加时” 恒生科技指数逼近“关税底”",
+        "source": "第一财经",
+        "date": "2026-03-30 12:44:14",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "全球多地爆发示威抗议 民众高呼“不要战争”",
+        "source": "新华社",
+        "date": "2026-03-29 16:58:54",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "美军地面战“数周速决”方案曝光 想要复刻海湾战争！",
+        "source": "每日经济新闻",
+        "date": "2026-03-30 01:26:51",
+        "sentiment": "negative",
+        "score": -1
+      },
+      {
+        "title": "战争短期内结束的前景暗淡，经济增长形势严峻",
+        "source": "上观新闻",
+        "date": "2026-03-29 06:54:27",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "“不要国王”“不要战争”！全美900万人抗议特朗普内外政策",
+        "source": "上观新闻",
+        "date": "2026-03-29 22:03:59",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "专家分析美可能对伊开展地面行动：疲态尽显，或延长战争长度",
+        "source": "南方都市报",
+        "date": "2026-03-29 21:08:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "美伊战争与历史上中东战事对比：股债油走势更像海湾战争时期？",
+        "source": "财联社",
+        "date": "2026-03-27 10:04:11",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "又一个“黑色星期一”？中东战争升级震动亚太市场 日韩股市双双重挫",
+        "source": "财联社",
+        "date": "2026-03-30 09:53:58",
+        "sentiment": "negative",
+        "score": -1
+      }
+    ]
+  },
+  "央行": {
+    "keyword": "央行",
+    "overall_sentiment": "strong_negative",
+    "positive_count": 0,
+    "negative_count": 2,
+    "neutral_count": 6,
+    "total_articles": 8,
+    "top_headlines": [
+      "欧洲央行管委VILLEROY称 欧洲央行准备在必要时采取行动应对通胀预期",
+      "央行开展2695亿元7天期逆回购操作",
+      "央行今日开展2695亿元7天期逆回购操作",
+      "3月30日央行开展2695亿元7天期逆回购操作",
+      "央行：积极稳妥处置重点领域金融风险"
+    ],
+    "articles": [
+      {
+        "title": "欧洲央行管委VILLEROY称 欧洲央行准备在必要时采取行动应对通胀预期",
+        "source": "财联社",
+        "date": "2026-03-30 07:10:51",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "央行开展2695亿元7天期逆回购操作",
+        "source": "人民网",
+        "date": "2026-03-30 10:06:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "央行今日开展2695亿元7天期逆回购操作",
+        "source": "人民财讯",
+        "date": "2026-03-30 09:28:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "3月30日央行开展2695亿元7天期逆回购操作",
+        "source": "中国新闻网",
+        "date": "2026-03-30 10:12:40",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "央行：积极稳妥处置重点领域金融风险",
+        "source": "中国网财经",
+        "date": "2026-03-28 11:06:30",
+        "sentiment": "negative",
+        "score": -1
+      },
+      {
+        "title": "欧洲央行管委维勒鲁瓦：讨论可能加息的日期还为时过早",
+        "source": "新华财经",
+        "date": "2026-03-30 09:12:51",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "评论丨中东局势或促日本央行加快加息",
+        "source": "21世纪经济报道",
+        "date": "2026-03-28 07:00:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "日本央行会议纪要揭示鹰派倾向 内部对“油价冲击”与加息时机分歧加剧",
+        "source": "新华财经",
+        "date": "2026-03-30 09:13:48",
+        "sentiment": "negative",
+        "score": -1
+      }
+    ]
+  },
+  "降息": {
+    "keyword": "降息",
+    "overall_sentiment": "strong_positive",
+    "positive_count": 2,
+    "negative_count": 0,
+    "neutral_count": 6,
+    "total_articles": 8,
+    "top_headlines": [
+      "又一国央行宣布，不降息！",
+      "美伊冲突成“降息梦”绝杀？美联储二把手再泼冷水",
+      "中国资产，大涨！美联储，降息大消息！",
+      "中东战火烧醒降息梦？美银：即便停火 美联储仍可能加息",
+      "美联储官员：中东战争或会推迟美国降息"
+    ],
+    "articles": [
+      {
+        "title": "又一国央行宣布，不降息！",
+        "source": "中国基金报",
+        "date": "2026-03-26 19:12:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "美伊冲突成“降息梦”绝杀？美联储二把手再泼冷水",
+        "source": "财联社",
+        "date": "2026-03-27 10:36:35",
+        "sentiment": "positive",
+        "score": 2
+      },
+      {
+        "title": "中国资产，大涨！美联储，降息大消息！",
+        "source": "中国基金报",
+        "date": "2026-03-26 08:17:00",
+        "sentiment": "positive",
+        "score": 2
+      },
+      {
+        "title": "中东战火烧醒降息梦？美银：即便停火 美联储仍可能加息",
+        "source": "财联社",
+        "date": "2026-03-26 09:01:42",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "美联储官员：中东战争或会推迟美国降息",
+        "source": "财联社",
+        "date": "2026-03-25 08:53:48",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "中东局势变化牵动海外债市普涨 通胀压力下仍有降息声音",
+        "source": "新华财经",
+        "date": "2026-03-26 00:00:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "华西证券：黄金新一轮行情启动 或要等到美联储降息预期重启",
+        "source": "第一财经",
+        "date": "2026-03-26 08:10:33",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "全球主要央行降息止步 金价为何大幅回调？",
+        "source": "中国经营报",
+        "date": "2026-03-24 00:00:00",
+        "sentiment": "neutral",
+        "score": 0
+      }
+    ]
+  },
+  "利率": {
+    "keyword": "利率",
+    "overall_sentiment": "strong_negative",
+    "positive_count": 0,
+    "negative_count": 3,
+    "neutral_count": 5,
+    "total_articles": 8,
+    "top_headlines": [
+      "美联储4月维持利率不变的概率为97.9%",
+      "巩义市新型城镇建设5亿元中票完成发行，利率2.58％",
+      "多家中小银行下调存款利率 注重优化存款结构",
+      "市值蒸发120亿港元！奥克斯电气毛利率和净利率连降两年，销售费用1.33倍于研发",
+      "美国总统特朗普表示 想要美国低利率 无通胀"
+    ],
+    "articles": [
+      {
+        "title": "美联储4月维持利率不变的概率为97.9%",
+        "source": "界面新闻",
+        "date": "2026-03-30 08:45:09",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "巩义市新型城镇建设5亿元中票完成发行，利率2.58％",
+        "source": "大河财立方",
+        "date": "2026-03-30 10:21:59",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "多家中小银行下调存款利率 注重优化存款结构",
+        "source": "中国证券报",
+        "date": "2026-03-29 08:06:00",
+        "sentiment": "negative",
+        "score": -1
+      },
+      {
+        "title": "市值蒸发120亿港元！奥克斯电气毛利率和净利率连降两年，销售费用1.33倍于研发",
+        "source": "深圳商报·读创",
+        "date": "2026-03-28 21:20:26",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "美国总统特朗普表示 想要美国低利率 无通胀",
+        "source": "财联社",
+        "date": "2026-03-28 06:04:39",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "央行公开市场开展2695亿元7天期逆回购操作，操作利率1.40%",
+        "source": "理财周刊-财事汇",
+        "date": "2026-03-30 12:01:46",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "康圣环球去年营收基本持平，传统行业承压，价格压力因素等致毛利率下滑",
+        "source": "深圳商报·读创",
+        "date": "2026-03-30 10:33:54",
+        "sentiment": "negative",
+        "score": -1
+      },
+      {
+        "title": "申洲国际2025年度净利润下滑约6.7% 毛利率降至26.3%",
+        "source": "财中社",
+        "date": "2026-03-30 12:37:00",
+        "sentiment": "negative",
+        "score": -1
+      }
+    ]
+  },
+  "贸易战": {
+    "keyword": "贸易战",
+    "overall_sentiment": "neutral",
+    "positive_count": 1,
+    "negative_count": 1,
+    "neutral_count": 6,
+    "total_articles": 8,
+    "top_headlines": [
+      "或针对大型电池等行业，特朗普拟以“国家安全”为由再掀贸易战",
+      "崔凡：中国在区域价值链中的核心地位依然稳固",
+      "什么信号？美伊冲突持续升级 华尔街却“嗅到了”TACO回归迹象",
+      "何超琼：国家的战略定力为华商发展筑牢稳定锚",
+      "共绘亚太合作新图景！北大深圳论坛2026举行"
+    ],
+    "articles": [
+      {
+        "title": "或针对大型电池等行业，特朗普拟以“国家安全”为由再掀贸易战",
+        "source": "界面新闻",
+        "date": "2026-02-24 09:41:10",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "崔凡：中国在区域价值链中的核心地位依然稳固",
+        "source": "第一财经",
+        "date": "2026-03-29 17:41:32",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "什么信号？美伊冲突持续升级 华尔街却“嗅到了”TACO回归迹象",
+        "source": "财联社",
+        "date": "2026-03-30 10:12:30",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "何超琼：国家的战略定力为华商发展筑牢稳定锚",
+        "source": "中国新闻网",
+        "date": "2026-03-25 10:33:29",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "共绘亚太合作新图景！北大深圳论坛2026举行",
+        "source": "证券时报",
+        "date": "2026-03-28 23:14:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "传音控股2025年Q4净利下滑七成，元器件供应渠道狭窄，价格飙升“吃掉”毛利",
+        "source": "深圳商报·读创",
+        "date": "2026-03-28 12:23:37",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "以强货币支撑强经济 IMF原副总裁朱民给出人民币国际化五大路径",
+        "source": "第一财经",
+        "date": "2026-03-24 13:31:28",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "在不确定的世界，中国正成为“确定性”的坐标",
+        "source": "三里河",
+        "date": "2026-03-26 09:29:55",
+        "sentiment": "negative",
+        "score": -1
+      }
+    ]
+  },
+  "关税": {
+    "keyword": "关税",
+    "overall_sentiment": "strong_positive",
+    "positive_count": 4,
+    "negative_count": 0,
+    "neutral_count": 4,
+    "total_articles": 8,
+    "top_headlines": [
+      "中东战争“加时” 恒生科技指数逼近“关税底”",
+      "对非零关税倒计时！非洲咖啡豆加速跑进中国市场，中企出海紧随其后",
+      "印度财政部长：今日开征燃油出口关税",
+      "海南超6600项商品实现零关税",
+      "一份声明草案显示：世贸组织（WTO）成员国们讨论对全球电商关税实施五年延期"
+    ],
+    "articles": [
+      {
+        "title": "中东战争“加时” 恒生科技指数逼近“关税底”",
+        "source": "第一财经",
+        "date": "2026-03-30 12:44:14",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "对非零关税倒计时！非洲咖啡豆加速跑进中国市场，中企出海紧随其后",
+        "source": "第一财经",
+        "date": "2026-03-29 17:43:31",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "印度财政部长：今日开征燃油出口关税",
+        "source": "财联社",
+        "date": "2026-03-27 20:18:55",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "海南超6600项商品实现零关税",
+        "source": "财联社",
+        "date": "2026-03-26 22:19:44",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "一份声明草案显示：世贸组织（WTO）成员国们讨论对全球电商关税实施五年延期",
+        "source": "财联社",
+        "date": "2026-03-29 21:44:56",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "关税战重塑全球贸易格局，亚洲迎接历史性机遇",
+        "source": "证券时报网",
+        "date": "2026-03-27 15:02:00",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "从一份关税清单看懂“风”向标",
+        "source": "经济日报",
+        "date": "2026-03-26 06:07:05",
+        "sentiment": "positive",
+        "score": 1
+      },
+      {
+        "title": "机器人有了专属“身份证”，海关税政“微调”撬动产业“大棋局”",
+        "source": "上观新闻",
+        "date": "2026-03-28 16:06:05",
+        "sentiment": "neutral",
+        "score": 0
+      }
+    ]
+  },
+  "_economic_general": {
+    "source": "baidu_economic",
+    "articles": [
+      {
+        "title": "",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "",
+        "sentiment": "neutral",
+        "score": 0
+      },
+      {
+        "title": "",
+        "sentiment": "neutral",
+        "score": 0
+      }
+    ],
+    "headlines": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  }
+}
