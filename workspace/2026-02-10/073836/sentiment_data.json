@@ -1,0 +1,934 @@
+{
+  "消费": {
+    "overall": "positive",
+    "positive": 3,
+    "negative": 0,
+    "neutral": 2,
+    "total": 5,
+    "headlines": [
+      "万亿消费之城 首提“兴趣消费”",
+      "中原消费金融转让5443.22万元不良贷款，均为个人消费贷",
+      "消费板块局部活跃，关注消费ETF易方达（159798）、港股通消费ETF易方达（513070）投资价值"
+    ],
+    "details": [
+      {
+        "title": "万亿消费之城 首提“兴趣消费”",
+        "sentiment": "neutral",
+        "source": "21世纪经济报道",
+        "time": "2026-02-09 15:03:50"
+      },
+      {
+        "title": "中原消费金融转让5443.22万元不良贷款，均为个人消费贷",
+        "sentiment": "neutral",
+        "source": "北京商报",
+        "time": "2026-02-09 20:22:24"
+      },
+      {
+        "title": "消费板块局部活跃，关注消费ETF易方达（159798）、港股通消费ETF易方达（513070）投资价值",
+        "sentiment": "positive",
+        "source": "每日经济新闻",
+        "time": "2026-02-09 19:14:33"
+      },
+      {
+        "title": "春节旺季催化叠加促消费政策发力，消费ETF嘉实(512600)有望持续受益",
+        "sentiment": "positive",
+        "source": "界面新闻",
+        "time": "2026-02-09 10:35:22"
+      },
+      {
+        "title": "持续上新 上海新春文旅消费蓄势待发",
+        "sentiment": "positive",
+        "source": "上海证券报",
+        "time": "2026-02-10 02:15:13"
+      }
+    ]
+  },
+  "医疗": {
+    "overall": "positive",
+    "positive": 3,
+    "negative": 0,
+    "neutral": 2,
+    "total": 5,
+    "headlines": [
+      "医疗创新ETF(516820)多股飘红，机构称医疗器械板块拐点已至",
+      "明略科技(2718.HK)携手卓正医疗，以RaaS模式驱动医疗营销数智化、确定性增长",
+      "医药医疗保健板块多股飘红 机构持较乐观态度"
+    ],
+    "details": [
+      {
+        "title": "医疗创新ETF(516820)多股飘红，机构称医疗器械板块拐点已至",
+        "sentiment": "neutral",
+        "source": "界面新闻",
+        "time": "2026-02-09 14:27:42"
+      },
+      {
+        "title": "明略科技(2718.HK)携手卓正医疗，以RaaS模式驱动医疗营销数智化、确定性增长",
+        "sentiment": "positive",
+        "source": "界面新闻",
+        "time": "2026-02-09 15:57:09"
+      },
+      {
+        "title": "医药医疗保健板块多股飘红 机构持较乐观态度",
+        "sentiment": "positive",
+        "source": "上游新闻",
+        "time": "2026-02-09 16:52:13"
+      },
+      {
+        "title": "港股华检医疗盘中涨超18%",
+        "sentiment": "neutral",
+        "source": "每日经济新闻",
+        "time": "2026-02-09 15:20:12"
+      },
+      {
+        "title": "朱铭来：大力发展 团体医疗补充保险",
+        "sentiment": "positive",
+        "source": "经济参考报",
+        "time": "2026-02-09 04:04:19"
+      }
+    ]
+  },
+  "军工": {
+    "overall": "neutral",
+    "positive": 1,
+    "negative": 1,
+    "neutral": 3,
+    "total": 5,
+    "headlines": [
+      "军工行业迎三轮驱动新发展格局，军工ETF（512660）上涨1.6%，连续2日资金净流入超1亿元",
+      "常友科技：公司高度重视并持续推进在军工领域的布局与发展",
+      "常友科技：全资子公司江苏常卓拥有武器装备质量管理体系认证证书和军工二级保密资质"
+    ],
+    "details": [
+      {
+        "title": "军工行业迎三轮驱动新发展格局，军工ETF（512660）上涨1.6%，连续2日资金净流入超1亿元",
+        "sentiment": "positive",
+        "source": "每日经济新闻",
+        "time": "2026-02-09 13:09:48"
+      },
+      {
+        "title": "常友科技：公司高度重视并持续推进在军工领域的布局与发展",
+        "sentiment": "neutral",
+        "source": "证券日报",
+        "time": "2026-02-09 20:34:42"
+      },
+      {
+        "title": "常友科技：全资子公司江苏常卓拥有武器装备质量管理体系认证证书和军工二级保密资质",
+        "sentiment": "negative",
+        "source": "证券日报",
+        "time": "2026-02-09 17:05:13"
+      },
+      {
+        "title": "国科军工：董事罗汉辞任",
+        "sentiment": "neutral",
+        "source": "每日经济新闻",
+        "time": "2026-02-06 16:42:58"
+      },
+      {
+        "title": "国科军工：董事罗汉辞任",
+        "sentiment": "neutral",
+        "source": "南方财经网",
+        "time": "2026-02-06 16:21:07"
+      }
+    ]
+  },
+  "科技": {
+    "overall": "neutral",
+    "positive": 0,
+    "negative": 0,
+    "neutral": 5,
+    "total": 5,
+    "headlines": [
+      "农业农村部：大力培育农业科技领军企业 畅通农业科技成果转化渠道",
+      "农业农村部：大力培育农业科技领军企业 畅通农业科技成果转化渠道",
+      "追觅科技重磅亮相超级碗 中国高端智能科技品牌首次刷屏全美"
+    ],
+    "details": [
+      {
+        "title": "农业农村部：大力培育农业科技领军企业 畅通农业科技成果转化渠道",
+        "sentiment": "neutral",
+        "source": "农业农村部",
+        "time": "2026-02-09 21:46:50"
+      },
+      {
+        "title": "农业农村部：大力培育农业科技领军企业 畅通农业科技成果转化渠道",
+        "sentiment": "neutral",
+        "source": "财联社",
+        "time": "2026-02-09 21:42:25"
+      },
+      {
+        "title": "追觅科技重磅亮相超级碗 中国高端智能科技品牌首次刷屏全美",
+        "sentiment": "neutral",
+        "source": "每日经济新闻",
+        "time": "2026-02-09 11:20:25"
+      },
+      {
+        "title": "农业农村部：大力培育农业科技领军企业 加快实施“百千万”农业科技企业培育工程",
+        "sentiment": "neutral",
+        "source": "人民财讯",
+        "time": "2026-02-09 22:13:54"
+      },
+      {
+        "title": "独董现场履职时间不足，德马科技和正帆科技遭监管警示",
+        "sentiment": "neutral",
+        "source": "深圳商报·读创",
+        "time": "2026-02-09 19:28:21"
+      }
+    ]
+  },
+  "光伏": {
+    "overall": "positive",
+    "positive": 1,
+    "negative": 0,
+    "neutral": 4,
+    "total": 5,
+    "headlines": [
+      "中利集团：公司光伏业务暂未涉及太空光伏领域",
+      "马斯克引爆光伏 产业链市值“回血”！太空光伏前景几何",
+      "中利集团：公司光伏业务暂未涉及太空光伏领域"
+    ],
+    "details": [
+      {
+        "title": "中利集团：公司光伏业务暂未涉及太空光伏领域",
+        "sentiment": "neutral",
+        "source": "证券日报",
+        "time": "2026-02-09 21:08:56"
+      },
+      {
+        "title": "马斯克引爆光伏 产业链市值“回血”！太空光伏前景几何",
+        "sentiment": "positive",
+        "source": "北京商报",
+        "time": "2026-02-10 00:57:52"
+      },
+      {
+        "title": "中利集团：公司光伏业务暂未涉及太空光伏领域",
+        "sentiment": "neutral",
+        "source": "南方财经网",
+        "time": "2026-02-09 16:11:03"
+      },
+      {
+        "title": "中利集团：公司光伏业务暂未涉及太空光伏领域",
+        "sentiment": "neutral",
+        "source": "每日经济新闻",
+        "time": "2026-02-09 16:08:35"
+      },
+      {
+        "title": "中利集团：公司光伏业务暂未涉及太空光伏领域",
+        "sentiment": "neutral",
+        "source": "人民财讯",
+        "time": "2026-02-09 16:01:34"
+      }
+    ]
+  },
+  "AI": {
+    "overall": "positive",
+    "positive": 4,
+    "negative": 0,
+    "neutral": 1,
+    "total": 5,
+    "headlines": [
+      "王炸级AI爆款！AI语料方向迎涨停潮",
+      "AI春晚催化AIGC，影视ETF（516620）大涨7.5%，关注AI应用与板块估值",
+      "AI业务爆发驱使人才需求激增 百度升级AIDU计划"
+    ],
+    "details": [
+      {
+        "title": "王炸级AI爆款！AI语料方向迎涨停潮",
+        "sentiment": "positive",
+        "source": "东方财富研究中心",
+        "time": "2026-02-09 18:44:02"
+      },
+      {
+        "title": "AI春晚催化AIGC，影视ETF（516620）大涨7.5%，关注AI应用与板块估值",
+        "sentiment": "positive",
+        "source": "每日经济新闻",
+        "time": "2026-02-09 15:20:25"
+      },
+      {
+        "title": "AI业务爆发驱使人才需求激增 百度升级AIDU计划",
+        "sentiment": "positive",
+        "source": "上海证券报·中国证券网",
+        "time": "2026-02-09 12:01:17"
+      },
+      {
+        "title": "Xmax AI发布全球首个虚实融合实时交互视频模型 开启AI视频交互新范式",
+        "sentiment": "neutral",
+        "source": "证券日报",
+        "time": "2026-02-09 20:09:24"
+      },
+      {
+        "title": "AI需求激增 MLCC接棒内存上涨",
+        "sentiment": "positive",
+        "source": "中国证券报",
+        "time": "2026-02-10 04:58:27"
+      }
+    ]
+  },
+  "半导体": {
+    "overall": "positive",
+    "positive": 1,
+    "negative": 0,
+    "neutral": 4,
+    "total": 5,
+    "headlines": [
+      "中国互联网投资基金入股半导体封测公司华进半导体",
+      "半导体早参 | 半导体行业今年有望首次迈入万亿美元时代 第三代半导体厂商长飞先进完成超10亿元A+轮融资",
+      "港股半导体股持续走强"
+    ],
+    "details": [
+      {
+        "title": "中国互联网投资基金入股半导体封测公司华进半导体",
+        "sentiment": "neutral",
+        "source": "人民财讯",
+        "time": "2026-02-09 13:34:36"
+      },
+      {
+        "title": "半导体早参 | 半导体行业今年有望首次迈入万亿美元时代 第三代半导体厂商长飞先进完成超10亿元A+轮融资",
+        "sentiment": "neutral",
+        "source": "每日经济新闻",
+        "time": "2026-02-09 09:32:37"
+      },
+      {
+        "title": "港股半导体股持续走强",
+        "sentiment": "positive",
+        "source": "南方财经网",
+        "time": "2026-02-09 10:17:07"
+      },
+      {
+        "title": "近8000亿美元！2025全球半导体销售额创纪录！国产半导体迎历史性机遇",
+        "sentiment": "neutral",
+        "source": "界面新闻",
+        "time": "2026-02-09 13:13:45"
+      },
+      {
+        "title": "飞凯材料：公司半导体材料下游客户主要为国内大型半导体制造和封装厂商",
+        "sentiment": "neutral",
+        "source": "证券日报",
+        "time": "2026-02-09 20:09:03"
+      }
+    ]
+  },
+  "稀土": {
+    "overall": "positive",
+    "positive": 3,
+    "negative": 0,
+    "neutral": 2,
+    "total": 5,
+    "headlines": [
+      "稀土“科技底座”属性正被市场重新定价，稀土ETF嘉实(516150)聚焦稀土投资机遇",
+      "稀土概念股走高，稀土相关ETF涨超3%",
+      "稀土板块强势领涨，稀土ETF（159713）盘中涨幅一度超过3.6%！"
+    ],
+    "details": [
+      {
+        "title": "稀土“科技底座”属性正被市场重新定价，稀土ETF嘉实(516150)聚焦稀土投资机遇",
+        "sentiment": "positive",
+        "source": "界面新闻",
+        "time": "2026-02-09 13:12:55"
+      },
+      {
+        "title": "稀土概念股走高，稀土相关ETF涨超3%",
+        "sentiment": "neutral",
+        "source": "每日经济新闻",
+        "time": "2026-02-09 14:07:33"
+      },
+      {
+        "title": "稀土板块强势领涨，稀土ETF（159713）盘中涨幅一度超过3.6%！",
+        "sentiment": "positive",
+        "source": "每日经济新闻",
+        "time": "2026-02-09 14:15:36"
+      },
+      {
+        "title": "国内轻稀土价格上涨动能强劲，稀土ETF易方达（159715）助力低成本布局产业龙头",
+        "sentiment": "positive",
+        "source": "每日经济新闻",
+        "time": "2026-02-09 15:27:36"
+      },
+      {
+        "title": "包头稀土产品交易所：今日稀土主流产品价格整体上行",
+        "sentiment": "neutral",
+        "source": "人民财讯",
+        "time": "2026-02-09 17:18:55"
+      }
+    ]
+  },
+  "黄金": {
+    "overall": "positive",
+    "positive": 5,
+    "negative": 0,
+    "neutral": 0,
+    "total": 5,
+    "headlines": [
+      "港股黄金股走强 珠峰黄金涨近6%",
+      "港股黄金股走强 珠峰黄金涨近6%",
+      "港股黄金股走强 紫金矿业、潼关黄金涨逾4%"
+    ],
+    "details": [
+      {
+        "title": "港股黄金股走强 珠峰黄金涨近6%",
+        "sentiment": "positive",
+        "source": "南方财经网",
+        "time": "2026-02-09 09:35:58"
+      },
+      {
+        "title": "港股黄金股走强 珠峰黄金涨近6%",
+        "sentiment": "positive",
+        "source": "每日经济新闻",
+        "time": "2026-02-09 09:32:09"
+      },
+      {
+        "title": "港股黄金股走强 紫金矿业、潼关黄金涨逾4%",
+        "sentiment": "positive",
+        "source": "南方财经网",
+        "time": "2026-02-09 09:43:58"
+      },
+      {
+        "title": "黄金股票ETF基金(159322)涨超2.6%，现货黄金强势拉升",
+        "sentiment": "positive",
+        "source": "界面新闻",
+        "time": "2026-02-09 14:27:36"
+      },
+      {
+        "title": "港股黄金股走强，紫金矿业、潼关黄金涨逾4%",
+        "sentiment": "positive",
+        "source": "每日经济新闻",
+        "time": "2026-02-09 09:49:39"
+      }
+    ]
+  },
+  "航天": {
+    "overall": "positive",
+    "positive": 2,
+    "negative": 0,
+    "neutral": 3,
+    "total": 5,
+    "headlines": [
+      "航天科技集团召开2026年数字航天建设推进会",
+      "商业航天板块震荡拉升 航天动力涨停",
+      "商业航天概念再度走强 航天动力涨停"
+    ],
+    "details": [
+      {
+        "title": "航天科技集团召开2026年数字航天建设推进会",
+        "sentiment": "neutral",
+        "source": "人民财讯",
+        "time": "2026-02-09 21:28:38"
+      },
+      {
+        "title": "商业航天板块震荡拉升 航天动力涨停",
+        "sentiment": "neutral",
+        "source": "界面新闻",
+        "time": "2026-02-09 14:04:15"
+      },
+      {
+        "title": "商业航天概念再度走强 航天动力涨停",
+        "sentiment": "positive",
+        "source": "每日经济新闻",
+        "time": "2026-02-09 14:07:24"
+      },
+      {
+        "title": "商业航天概念再度走强 航天动力涨停",
+        "sentiment": "positive",
+        "source": "南方财经网",
+        "time": "2026-02-09 14:04:15"
+      },
+      {
+        "title": "商业航天概念再度拉升 航天动力涨停",
+        "sentiment": "neutral",
+        "source": "东方财富Choice数据",
+        "time": "2026-02-09 13:58:30"
+      }
+    ]
+  },
+  "科创": {
+    "overall": "positive",
+    "positive": 5,
+    "negative": 0,
+    "neutral": 0,
+    "total": 5,
+    "headlines": [
+      "科创板收盘播报：科创综指涨2.47% 近九成个股收涨",
+      "科创板系列指数集体走强，科创50ETF易方达(588080)上周净流入近10亿元",
+      "“硬科技”回归，科创板系列指数单边走强，科创50ETF易方达（588080）等产品受市场关注"
+    ],
+    "details": [
+      {
+        "title": "科创板收盘播报：科创综指涨2.47% 近九成个股收涨",
+        "sentiment": "positive",
+        "source": "新华财经",
+        "time": "2026-02-09 15:51:23"
+      },
+      {
+        "title": "科创板系列指数集体走强，科创50ETF易方达(588080)上周净流入近10亿元",
+        "sentiment": "positive",
+        "source": "每日经济新闻",
+        "time": "2026-02-09 13:09:39"
+      },
+      {
+        "title": "“硬科技”回归，科创板系列指数单边走强，科创50ETF易方达（588080）等产品受市场关注",
+        "sentiment": "positive",
+        "source": "每日经济新闻",
+        "time": "2026-02-09 19:14:43"
+      },
+      {
+        "title": "芯片股集体走强，科创芯片设计ETF易方达（589030）、科创芯片ETF易方达（589130）助力布局板块龙头",
+        "sentiment": "positive",
+        "source": "每日经济新闻",
+        "time": "2026-02-09 19:14:48"
+      },
+      {
+        "title": "资本市场加力支持科创企业成长",
+        "sentiment": "positive",
+        "source": "经济日报",
+        "time": "2026-02-09 05:45:57"
+      }
+    ]
+  },
+  "机器人": {
+    "overall": "neutral",
+    "positive": 0,
+    "negative": 0,
+    "neutral": 5,
+    "total": 5,
+    "headlines": [
+      "智元机器人举办“机器人奇妙夜” 晚会 同步启动“全民机器人体验计划”",
+      "众擎机器人发起全球首个人形机器人自由格斗联赛",
+      "《机器人奇妙夜》成功首秀 智元将打造中国机器人文化名片"
+    ],
+    "details": [
+      {
+        "title": "智元机器人举办“机器人奇妙夜” 晚会 同步启动“全民机器人体验计划”",
+        "sentiment": "neutral",
+        "source": "新华财经",
+        "time": "2026-02-09 11:17:23"
+      },
+      {
+        "title": "众擎机器人发起全球首个人形机器人自由格斗联赛",
+        "sentiment": "neutral",
+        "source": "上海证券报·中国证券网",
+        "time": "2026-02-09 16:20:31"
+      },
+      {
+        "title": "《机器人奇妙夜》成功首秀 智元将打造中国机器人文化名片",
+        "sentiment": "neutral",
+        "source": "证券日报",
+        "time": "2026-02-09 21:09:21"
+      },
+      {
+        "title": "众擎机器人发起全球首个人形机器人格斗联赛",
+        "sentiment": "neutral",
+        "source": "科创板日报",
+        "time": "2026-02-09 12:57:22"
+      },
+      {
+        "title": "乐聚机器人与上海机器人产业技术研究院战略合作",
+        "sentiment": "neutral",
+        "source": "南方财经网",
+        "time": "2026-02-09 09:58:53"
+      }
+    ]
+  },
+  "5G": {
+    "overall": "positive",
+    "positive": 2,
+    "negative": 0,
+    "neutral": 3,
+    "total": 5,
+    "headlines": [
+      "福建：持续强化5G、5G-A、千兆光网的深度覆盖 统筹算力基础设施和物联感知设施建设",
+      "翱捷科技-U：第一颗5G智能SoC芯片正在测试 5G实网电话已打通",
+      "翱捷科技：第一颗5G智能SoC芯片正在测试中"
+    ],
+    "details": [
+      {
+        "title": "福建：持续强化5G、5G-A、千兆光网的深度覆盖 统筹算力基础设施和物联感知设施建设",
+        "sentiment": "neutral",
+        "source": "财联社",
+        "time": "2026-02-08 08:29:51"
+      },
+      {
+        "title": "翱捷科技-U：第一颗5G智能SoC芯片正在测试 5G实网电话已打通",
+        "sentiment": "positive",
+        "source": "南方财经网",
+        "time": "2026-02-06 19:38:50"
+      },
+      {
+        "title": "翱捷科技：第一颗5G智能SoC芯片正在测试中",
+        "sentiment": "neutral",
+        "source": "证券日报",
+        "time": "2026-02-06 19:39:40"
+      },
+      {
+        "title": "广货行天下｜一城一链，5G+AI解锁纺织新赛道",
+        "sentiment": "neutral",
+        "source": "广州日报新花城",
+        "time": "2026-02-06 01:14:39"
+      },
+      {
+        "title": "释放5G赋能效应",
+        "sentiment": "positive",
+        "source": "经济日报",
+        "time": "2026-02-02 05:58:49"
+      }
+    ]
+  },
+  "通信": {
+    "overall": "positive",
+    "positive": 1,
+    "negative": 0,
+    "neutral": 4,
+    "total": 5,
+    "headlines": [
+      "通信行业资金流入榜：新易盛、天孚通信等净流入资金居前",
+      "指数贡献榜：天孚通信贡献19.62点",
+      "今日沪指涨1.17% 通信行业涨幅最大"
+    ],
+    "details": [
+      {
+        "title": "通信行业资金流入榜：新易盛、天孚通信等净流入资金居前",
+        "sentiment": "positive",
+        "source": "证券时报网",
+        "time": "2026-02-09 16:42:14"
+      },
+      {
+        "title": "指数贡献榜：天孚通信贡献19.62点",
+        "sentiment": "neutral",
+        "source": "东方财富研究中心",
+        "time": "2026-02-09 17:18:00"
+      },
+      {
+        "title": "今日沪指涨1.17% 通信行业涨幅最大",
+        "sentiment": "neutral",
+        "source": "证券时报网",
+        "time": "2026-02-09 12:24:49"
+      },
+      {
+        "title": "移远通信：公司目前的治理结构运行稳定且高效",
+        "sentiment": "neutral",
+        "source": "证券日报",
+        "time": "2026-02-09 22:04:37"
+      },
+      {
+        "title": "天孚通信成交额超100亿元",
+        "sentiment": "neutral",
+        "source": "证券时报网",
+        "time": "2026-02-09 11:10:38"
+      }
+    ]
+  },
+  "红利": {
+    "overall": "positive",
+    "positive": 2,
+    "negative": 0,
+    "neutral": 3,
+    "total": 5,
+    "headlines": [
+      "乘势而上｜专访史晋川：要让民营经济的发展，从政策红利转到法治红利",
+      "红利板块震荡上行，恒生红利低波ETF易方达（159545）最新规模突破80亿元，创历史新高",
+      "机构：煤炭板块具备周期与红利的双重属性"
+    ],
+    "details": [
+      {
+        "title": "乘势而上｜专访史晋川：要让民营经济的发展，从政策红利转到法治红利",
+        "sentiment": "neutral",
+        "source": "澎湃新闻",
+        "time": "2026-02-09 07:51:13"
+      },
+      {
+        "title": "红利板块震荡上行，恒生红利低波ETF易方达（159545）最新规模突破80亿元，创历史新高",
+        "sentiment": "positive",
+        "source": "每日经济新闻",
+        "time": "2026-02-09 19:14:31"
+      },
+      {
+        "title": "机构：煤炭板块具备周期与红利的双重属性",
+        "sentiment": "neutral",
+        "source": "证券时报网",
+        "time": "2026-02-09 08:59:39"
+      },
+      {
+        "title": "雅戈尔拟每股派发现金红利0.08元",
+        "sentiment": "neutral",
+        "source": "财中社",
+        "time": "2026-02-09 18:23:00"
+      },
+      {
+        "title": "海南产经新观察：离岛免税新政落地百日红利惠及多方",
+        "sentiment": "positive",
+        "source": "中国新闻网",
+        "time": "2026-02-09 17:00:37"
+      }
+    ]
+  },
+  "电网": {
+    "overall": "positive",
+    "positive": 3,
+    "negative": 0,
+    "neutral": 2,
+    "total": 5,
+    "headlines": [
+      "国家电网1月固投增超35%，重大工程加速推进，电网设备主题指数强势涨超3%",
+      "全球电网投资提速 基金抢筹出海概念股",
+      "AI持续引爆“电力焦虑”，A股电网板块开年大涨21%"
+    ],
+    "details": [
+      {
+        "title": "国家电网1月固投增超35%，重大工程加速推进，电网设备主题指数强势涨超3%",
+        "sentiment": "positive",
+        "source": "界面新闻",
+        "time": "2026-02-09 15:05:30"
+      },
+      {
+        "title": "全球电网投资提速 基金抢筹出海概念股",
+        "sentiment": "positive",
+        "source": "证券时报",
+        "time": "2026-02-09 01:30:35"
+      },
+      {
+        "title": "AI持续引爆“电力焦虑”，A股电网板块开年大涨21%",
+        "sentiment": "positive",
+        "source": "第一财经",
+        "time": "2026-02-09 18:59:21"
+      },
+      {
+        "title": "南方电网报案",
+        "sentiment": "neutral",
+        "source": "券商中国",
+        "time": "2026-02-06 17:07:47"
+      },
+      {
+        "title": "宏盛华源：预中标国家电网共约8.35亿元采购项目",
+        "sentiment": "neutral",
+        "source": "人民财讯",
+        "time": "2026-02-09 17:48:15"
+      }
+    ]
+  },
+  "化工": {
+    "overall": "neutral",
+    "positive": 0,
+    "negative": 0,
+    "neutral": 5,
+    "total": 5,
+    "headlines": [
+      "化工涨价有利条件持续巩固，化工行业ETF易方达(516570)等产品持续获资金布局",
+      "大洋生物：公司拥有多年氟化工生产经验",
+      "德美化工：股票交易异常波动"
+    ],
+    "details": [
+      {
+        "title": "化工涨价有利条件持续巩固，化工行业ETF易方达(516570)等产品持续获资金布局",
+        "sentiment": "neutral",
+        "source": "每日经济新闻",
+        "time": "2026-02-09 13:09:54"
+      },
+      {
+        "title": "大洋生物：公司拥有多年氟化工生产经验",
+        "sentiment": "neutral",
+        "source": "证券日报",
+        "time": "2026-02-09 17:05:16"
+      },
+      {
+        "title": "德美化工：股票交易异常波动",
+        "sentiment": "neutral",
+        "source": "南方财经网",
+        "time": "2026-02-09 16:36:50"
+      },
+      {
+        "title": "德美化工：股票交易异常波动公告",
+        "sentiment": "neutral",
+        "source": "证券日报",
+        "time": "2026-02-09 20:08:39"
+      },
+      {
+        "title": "江淮汽车：公司正在有序推进财经数字化工作",
+        "sentiment": "neutral",
+        "source": "每日经济新闻",
+        "time": "2026-02-09 17:37:52"
+      }
+    ]
+  },
+  "新能源": {
+    "overall": "positive",
+    "positive": 1,
+    "negative": 0,
+    "neutral": 4,
+    "total": 5,
+    "headlines": [
+      "楚能新能源80GWh二期新能源电池项目完成签约",
+      "港股光伏板块走强 协鑫新能源涨超25%",
+      "A股高开高走 新能源与人工智能板块领涨"
+    ],
+    "details": [
+      {
+        "title": "楚能新能源80GWh二期新能源电池项目完成签约",
+        "sentiment": "neutral",
+        "source": "科创板日报",
+        "time": "2026-02-09 16:25:19"
+      },
+      {
+        "title": "港股光伏板块走强 协鑫新能源涨超25%",
+        "sentiment": "positive",
+        "source": "上海证券报·中国证券网",
+        "time": "2026-02-09 18:13:00"
+      },
+      {
+        "title": "A股高开高走 新能源与人工智能板块领涨",
+        "sentiment": "neutral",
+        "source": "上游新闻",
+        "time": "2026-02-09 16:52:29"
+      },
+      {
+        "title": "港股光伏板块拉升 协鑫新能源涨超11%",
+        "sentiment": "neutral",
+        "source": "南方财经网",
+        "time": "2026-02-09 10:07:17"
+      },
+      {
+        "title": "港股光伏板块拉升 协鑫新能源涨超11%",
+        "sentiment": "neutral",
+        "source": "人民财讯",
+        "time": "2026-02-09 09:58:46"
+      }
+    ]
+  },
+  "港股": {
+    "overall": "positive",
+    "positive": 3,
+    "negative": 0,
+    "neutral": 2,
+    "total": 5,
+    "headlines": [
+      "港股三大指数收涨 港股市场春节效应明显",
+      "港股速报 | 港股强劲反弹 澜起科技上市涨超57%",
+      "港股复盘 | 港股反弹 泡泡玛特创三个月新高 南向资金小规模撤离"
+    ],
+    "details": [
+      {
+        "title": "港股三大指数收涨 港股市场春节效应明显",
+        "sentiment": "neutral",
+        "source": "上海证券报·中国证券网",
+        "time": "2026-02-09 16:51:01"
+      },
+      {
+        "title": "港股速报 | 港股强劲反弹 澜起科技上市涨超57%",
+        "sentiment": "positive",
+        "source": "每日经济新闻",
+        "time": "2026-02-09 10:16:33"
+      },
+      {
+        "title": "港股复盘 | 港股反弹 泡泡玛特创三个月新高 南向资金小规模撤离",
+        "sentiment": "positive",
+        "source": "每日经济新闻",
+        "time": "2026-02-09 17:18:55"
+      },
+      {
+        "title": "港股风电股午后拉升",
+        "sentiment": "neutral",
+        "source": "南方财经网",
+        "time": "2026-02-09 14:13:38"
+      },
+      {
+        "title": "港股有望延续结构性上涨，港股通50ETF国泰（159712）涨超1.8%",
+        "sentiment": "positive",
+        "source": "每日经济新闻",
+        "time": "2026-02-09 14:40:26"
+      }
+    ]
+  },
+  "DeepSeek": {
+    "overall": "positive",
+    "positive": 1,
+    "negative": 0,
+    "neutral": 4,
+    "total": 5,
+    "headlines": [
+      "投资机构预见2026“DeepSeek时刻” 这些现象级爆款正在酝酿",
+      "大模型能否取代保险代理人？实测千问、元宝、DeepSeek",
+      "从“反超DeepSeek”到“硬件被狙击”：复盘豆包的2025 字节跳动还缺什么？"
+    ],
+    "details": [
+      {
+        "title": "投资机构预见2026“DeepSeek时刻” 这些现象级爆款正在酝酿",
+        "sentiment": "positive",
+        "source": "中国证券报",
+        "time": "2026-02-09 08:44:45"
+      },
+      {
+        "title": "大模型能否取代保险代理人？实测千问、元宝、DeepSeek",
+        "sentiment": "neutral",
+        "source": "21世纪经济报道",
+        "time": "2026-02-09 17:24:51"
+      },
+      {
+        "title": "从“反超DeepSeek”到“硬件被狙击”：复盘豆包的2025 字节跳动还缺什么？",
+        "sentiment": "neutral",
+        "source": "每日经济新闻",
+        "time": "2026-02-09 18:30:31"
+      },
+      {
+        "title": "山寨DeepSeek，蹭流量诱导消费，北京、杭州公司被罚",
+        "sentiment": "neutral",
+        "source": "南方都市报",
+        "time": "2026-02-06 18:06:03"
+      },
+      {
+        "title": "比DeepSeek风暴还惨烈！一文读懂：华尔街“抛AI”妖风祸从何来？",
+        "sentiment": "neutral",
+        "source": "财联社",
+        "time": "2026-02-05 15:10:16"
+      }
+    ]
+  },
+  "_macro_economic": {
+    "overall": "neutral",
+    "headlines": [
+      "2025-11-26",
+      "2025-11-26",
+      "2025-11-26",
+      "2025-11-26",
+      "2025-11-26"
+    ],
+    "details": [
+      {
+        "title": "2025-11-26",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "2025-11-26",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "2025-11-26",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "2025-11-26",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "2025-11-26",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "2025-11-26",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "2025-11-26",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "2025-11-26",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "2025-11-26",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "2025-11-26",
+        "sentiment": "neutral"
+      }
+    ]
+  }
+}

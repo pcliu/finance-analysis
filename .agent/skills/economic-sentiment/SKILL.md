@@ -142,8 +142,8 @@ for item in news.itertuples():
 ## Environment Setup
 
 ```bash
-ENV_PYTHON=/opt/homebrew/Caskroom/miniforge/base/envs/finance-analysis/bin/python
-ENV_PIP=/opt/homebrew/Caskroom/miniforge/base/envs/finance-analysis/bin/pip
+ENV_PYTHON=/usr/local/Caskroom/miniforge/base/envs/finance-analysis/bin/python
+ENV_PIP=/usr/local/Caskroom/miniforge/base/envs/finance-analysis/bin/pip
 
 $ENV_PIP install akshare
 ```

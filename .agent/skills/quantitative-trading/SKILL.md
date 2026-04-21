@@ -134,8 +134,8 @@ print(make_serializable(results))
 **Use `finance-analysis` environment:**
 
 ```bash
-ENV_PYTHON=/opt/homebrew/Caskroom/miniforge/base/envs/finance-analysis/bin/python
-ENV_PIP=/opt/homebrew/Caskroom/miniforge/base/envs/finance-analysis/bin/pip
+ENV_PYTHON=/usr/local/Caskroom/miniforge/base/envs/finance-analysis/bin/python
+ENV_PIP=/usr/local/Caskroom/miniforge/base/envs/finance-analysis/bin/pip
 
 $ENV_PIP install yfinance tushare pandas numpy matplotlib scipy
 $ENV_PYTHON your_script.py
