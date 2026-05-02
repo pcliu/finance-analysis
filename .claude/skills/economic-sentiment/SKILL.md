@@ -9,10 +9,7 @@ description: >
   - Industry-specific news monitoring
   - Social media sentiment tracking
   - Risk events and geopolitical updates
-version: 1.0.0
-dependencies:
-  - python>=3.8
-  - akshare>=1.12.0
+user-invocable: false
 ---
 
 # Economic Sentiment & News Monitoring Skill

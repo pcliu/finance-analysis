@@ -1,36 +1,6 @@
 # Workflow Guide
 
-Advanced usage patterns and workflows for the quantitative-trading skill.
-
-> **⚠️ IMPORTANT: All generated files go to `workspace/` in the PROJECT ROOT**
-> 
-> - Scripts: `workspace/analyze_*.py`
-> - Output: `workspace/*.json`, `workspace/*.csv`, `workspace/*.png`
-> - **NEVER** create files in `examples/` (read-only reference)
-
-## Environment Setup
-
-### Runtime Environment
-
-This skill requires the `finance-analysis` conda environment.
-
-**Claude Code / Hosted environment:**
-```bash
-ENV_PYTHON=/opt/homebrew/Caskroom/miniforge/base/envs/finance-analysis/bin/python
-ENV_PIP=/opt/homebrew/Caskroom/miniforge/base/envs/finance-analysis/bin/pip
-
-$ENV_PIP install -U yfinance tushare pandas numpy matplotlib scipy
-$ENV_PYTHON your_script.py
-```
-
-**Local machine with conda:**
-```bash
-conda activate finance-analysis
-pip install -U yfinance tushare pandas numpy matplotlib scipy
-python your_script.py
-```
-
----
+Advanced usage patterns for the quantitative-trading skill.
 
 ## Analysis Workflow Pattern
 
@@ -47,7 +17,7 @@ python your_script.py
 ```python
 # File: analyze_stock.py
 import sys
-sys.path.append('.agent/skills/quantitative-trading')
+sys.path.append('.claude/skills/quantitative-trading')
 
 from scripts import fetch_stock_data
 from scripts.indicators import TechnicalIndicators
@@ -122,35 +92,11 @@ with open('workspace/analysis_AAPL.json', 'w') as f:
 
 ---
 
-## Reusable Workflows
-
-### analyze_and_save
-
-```python
-from workflows import analyze_and_save
-
-# Analyze and auto-save to workspace
-result = analyze_and_save('AAPL', period='1y')
-# Saved to: workspace/analysis_AAPL.json
-```
-
-### compare_stocks
-
-```python
-from workflows import compare_stocks
-
-# Compare multiple stocks
-comparison = compare_stocks(['AAPL', 'GOOGL', 'MSFT'])
-# Saved to: workspace/comparison_AAPL_GOOGL_MSFT.json
-```
-
----
-
 ## Multi-Stock Analysis Pattern
 
 ```python
 import sys
-sys.path.append('.agent/skills/quantitative-trading')
+sys.path.append('.claude/skills/quantitative-trading')
 
 from scripts import fetch_stock_data
 from scripts.indicators import TechnicalIndicators
@@ -244,4 +190,3 @@ risk_contrib = rm.portfolio_risk_contribution(returns_df, weights)
 stress_results = rm.stress_testing(portfolio_returns)
 ```
 
-> **👉 Tip:** Use the [Risk Assessment](./report_templates/risk_assessment.md) template for documenting these findings.

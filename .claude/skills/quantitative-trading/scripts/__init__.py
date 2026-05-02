@@ -8,19 +8,12 @@ This package provides unified exports for all core functionality.
 # Import core classes
 from .data_fetcher import DataFetcher
 from .indicators import TechnicalIndicators
-from .strategies import TradingStrategy
-from .backtester import Backtester
 from .portfolio_optimization import PortfolioAnalyzer
 from .risk_manager import RiskManager
-
-# Aliases for backward compatibility
-TradingStrategies = TradingStrategy
 
 # Create default instances for convenience functions
 _data_fetcher = DataFetcher()
 _indicators = TechnicalIndicators()
-_strategies = TradingStrategy()
-_backtester = Backtester()
 _portfolio_analyzer = PortfolioAnalyzer()
 _risk_manager = RiskManager()
 
@@ -147,16 +140,6 @@ def calculate_obv(data):
 # Convenience Functions - Strategies
 # ============================================================
 
-def moving_average_crossover(data, fast_window=20, slow_window=50):
-    """Generate MA crossover signals."""
-    return _strategies.moving_average_crossover(data, fast_window, slow_window)
-
-
-def rsi_mean_reversion(data, oversold=30, overbought=70):
-    """Generate RSI mean reversion signals."""
-    return _strategies.rsi_mean_reversion(data, oversold, overbought)
-
-
 # ============================================================
 # Convenience Functions - Risk
 # ============================================================
@@ -197,8 +180,6 @@ __all__ = [
     # Classes
     'DataFetcher',
     'TechnicalIndicators',
-    'TradingStrategies',
-    'Backtester',
     'PortfolioAnalyzer',
     'RiskManager',
     # Data functions
@@ -219,9 +200,6 @@ __all__ = [
     'calculate_williams_r',
     'calculate_cci',
     'calculate_obv',
-    # Strategy functions
-    'moving_average_crossover',
-    'rsi_mean_reversion',
     # Risk functions
     'calculate_var',
     'calculate_cvar',

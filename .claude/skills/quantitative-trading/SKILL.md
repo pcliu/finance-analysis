@@ -6,20 +6,9 @@ description: >
   - Stock data fetching (historical prices, volume, dividends)
   - Real-time quotes for A-share, ETF, and Index (via AKShare/Sina Finance)
   - Technical indicators (RSI, MACD, SMA, EMA, Bollinger Bands, ATR, Stochastic)
-  - Trading strategies (moving average crossover, mean reversion, momentum)
   - Portfolio optimization, correlation analysis, and efficient frontier
-  - Backtesting trading strategies with historical data
   - Risk assessment (Sharpe ratio, VaR, CVaR, maximum drawdown, Sortino ratio)
-version: 1.0.0
-dependencies:
-  - python>=3.8
-  - yfinance
-  - tushare
-  - akshare>=1.12.0
-  - pandas>=1.5.0
-  - numpy>=1.20.0
-  - matplotlib>=3.5.0
-  - scipy>=1.8.0
+user-invocable: false
 ---
 
 # Quantitative Trading Skill
@@ -109,7 +98,7 @@ import os
 
 # Robust Import: Use absolute path relative to this script
 # Assuming script is in workspace/YYYY-MM-DD/HHMMSS/
-SKILL_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../.agent/skills/quantitative-trading'))
+SKILL_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../.claude/skills/quantitative-trading'))
 sys.path.append(SKILL_DIR)
 
 from scripts import fetch_stock_data, calculate_rsi, calculate_sma, calculate_atr
@@ -157,8 +146,6 @@ $ENV_PYTHON your_script.py
 │   ├── utils.py          # 🛠 Utilities (serialization, etc.)
 │   ├── data_fetcher.py
 │   ├── indicators.py
-│   ├── strategies.py
-│   ├── backtester.py
 │   ├── portfolio_optimization.py
 │   └── risk_manager.py
 └── examples/             # 📝 READ-ONLY reference examples (do NOT modify)
@@ -195,8 +182,9 @@ quotes = fetch_realtime_quote(['510150', 'AAPL', '512660'])        # Mixed
 
 ```python
 from scripts import (
-    calculate_rsi, calculate_sma, calculate_macd, calculate_bollinger_bands,
-    calculate_atr, calculate_adx, calculate_stochastic, calculate_williams_r
+    calculate_rsi, calculate_sma, calculate_ema, calculate_macd,
+    calculate_bollinger_bands, calculate_atr, calculate_adx,
+    calculate_stochastic, calculate_williams_r
 )
 
 rsi = calculate_rsi(data, window=14)        # Returns DataFrame with column 'RSI'
@@ -209,14 +197,6 @@ stoch = calculate_stochastic(data)          # Returns DataFrame with columns 'K'
 # Access values:
 current_rsi = rsi['RSI'].iloc[-1]
 macd_line = macd['MACD'].iloc[-1]
-```
-
-### Trading Strategies
-```python
-from scripts import moving_average_crossover, rsi_mean_reversion
-
-signals = moving_average_crossover(data, fast_window=20, slow_window=50)
-signals = rsi_mean_reversion(data, oversold=30, overbought=70)
 ```
 
 ### Risk Analysis
@@ -260,5 +240,4 @@ corr = returns.corr()
 
 - [API Reference](references/api_reference.md) - Function documentation
 - [Workflow Guide](references/workflow_guide.md) - Advanced patterns
-- [Report Templates](references/report_templates/README.md) - Report formats
 - [Troubleshooting](references/troubleshooting.md) - Common issues

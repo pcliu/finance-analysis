@@ -1,5 +1,13 @@
 ---
-description: 持仓调整
+name: analyze-portfolio
+description: >
+  Daily portfolio adjustment workflow for A-share/ETF trading.
+  Use when user requests:
+  - 持仓调整 / 调仓分析 / 每日调仓
+  - Portfolio rebalancing or position review
+  - 技术面 + 舆情面综合分析
+  - ETF screening against watchlist (ETFs.csv)
+user-invocable: true
 ---
 
 基于昨日收盘后的持仓结构和盈利情况，对各标的给出今日明确的继续持有或调整建议，由于部分金额用于了购买货币基金，但可以实时赎回购买股票，所以可用金额实际是总资产减去持仓市值；同时，对 ETFs.csv 中尚未纳入组合的品种进行系统评估，分析其在当前市场环境下的即时建仓可行性。
@@ -16,8 +24,8 @@ description: 持仓调整
 2.  **自由推理 (Flexible Reasoning)**：不要使用硬编码的阈值（如 >80）。结合市场环境（震荡/趋势）、板块性质（蓝筹/高弹性）与实时舆情做综合判断。
 3.  **全量覆盖 (Comprehensive Coverage)**：**必须对所有关注标的（包括当前持仓 + ETFs.csv 中的所有品种）进行逐一技术+舆情诊断**。
     - 即使没有交易建议，也必须详细记录其当前的技术状态（RSI值、布林带位置、趋势看法等）。
-    - 对每个标的补充一句舆情结论（如“舆情中性/偏多/偏空；主要驱动：xxx”）。
-    - *理由*：这些记录将作为未来复盘的重要依据，用于验证“当初没买/没卖”的决策是否正确。
+    - 对每个标的补充一句舆情结论（如"舆情中性/偏多/偏空；主要驱动：xxx"）。
+    - *理由*：这些记录将作为未来复盘的重要依据，用于验证"当初没买/没卖"的决策是否正确。
 
 ## 建议分析维度 (Analysis Dimensions)
 
@@ -36,6 +44,6 @@ description: 持仓调整
 ## 报告形式 (Reporting)
 
 - **不使用预定义模板**。请根据分析结果的丰富程度，自由构建结构清晰、逻辑严密的 Markdown 报告。
-- 报告结构中必须包含一个**“全市场扫描 (Market Scan)”**或类似章节，对那些“未入选/未交易”的品种进行详尽点评，解释“为何落选”。
-- 报告中单独列出“舆情快照”章节：列出关键词情绪结论和重要新闻标题。
+- 报告结构中必须包含一个**"全市场扫描 (Market Scan)"**或类似章节，对那些"未入选/未交易"的品种进行详尽点评，解释"为何落选"。
+- 报告中单独列出"舆情快照"章节：列出关键词情绪结论和重要新闻标题。
 - 输出位置：在项目 `workspace/YYYY-MM-DD/HHMMSS/` 目录保存 `portfolio_adjustment_report.md`，并将原始指标/舆情 JSON 一并存档，便于次日复盘。
