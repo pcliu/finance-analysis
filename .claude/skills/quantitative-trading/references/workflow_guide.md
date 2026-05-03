@@ -1,141 +1,87 @@
 # Workflow Guide
 
-Advanced usage patterns for the quantitative-trading skill.
+quantitative-trading skill 的常用模式。
 
-## Analysis Workflow Pattern
-
-### Step-by-Step
-
-1. **Create a Python script file** (e.g., `analysis.py`)
-2. **Add path setup** at the top of your script
-3. **Import from scripts** module
-4. **Write control flow logic** (loops, conditionals, error handling)
-5. **Execute** with the finance-analysis interpreter
-
-### Example Script
+## 基本分析流程
 
 ```python
-# File: analyze_stock.py
-import sys
-sys.path.append('.claude/skills/quantitative-trading')
+import sys, os
+SKILL_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../.claude/skills/quantitative-trading'))
+sys.path.append(SKILL_DIR)
 
 from scripts import fetch_stock_data
 from scripts.indicators import TechnicalIndicators
 
-def analyze(ticker, period='1y'):
-    # Fetch data
+def analyze(ticker, period='6mo'):
     data = fetch_stock_data(ticker, period=period)
     if data is None or data.empty:
-        print(f"Error: No data for {ticker}")
         return None
-    
-    # Calculate indicators
+
     ti = TechnicalIndicators()
-    rsi = ti.calculate_rsi(data)
+    rsi    = ti.calculate_rsi(data)
     sma_20 = ti.calculate_sma(data, window=20)
-    sma_50 = ti.calculate_sma(data, window=50)
-    
-    # Return summary (context efficient)
+    sma_60 = ti.calculate_sma(data, window=60)
+
     return {
         'ticker': ticker,
-        'price': float(data['Close'].iloc[-1]),
-        'rsi': float(rsi.iloc[-1]),
-        'trend': 'Bullish' if sma_20.iloc[-1] > sma_50.iloc[-1] else 'Bearish'
+        'price':  float(data['Close'].iloc[-1]),
+        'rsi':    float(rsi.iloc[-1]),
+        'trend':  'Bullish' if sma_20.iloc[-1] > sma_60.iloc[-1] else 'Bearish',
     }
 
-if __name__ == "__main__":
-    result = analyze('AAPL')
-    print(result)
+print(analyze('510300.SH'))   # 沪深300 ETF
+print(analyze('600519.SH'))   # 贵州茅台
 ```
 
 ---
 
-## Context Efficiency Tips
-
-### Import Only What You Need
+## 多标的批量扫描
 
 ```python
-# ✅ Good
-from scripts import fetch_stock_data
-
-# ❌ Avoid
-from scripts import *
-```
-
-### Filter Data Early
-
-```python
-# ✅ Good - filter and summarize
-data = fetch_stock_data('AAPL', period='2y')
-recent = data.tail(60)  # Only last 60 days
-summary = {
-    'price': recent['Close'].iloc[-1],
-    'return': (recent['Close'].iloc[-1] / recent['Close'].iloc[0] - 1) * 100
-}
-print(summary)
-
-# ❌ Avoid - returning full datasets
-print(data)  # Too much data for context window
-```
-
-### Save Large Results to Workspace
-
-```python
-import json
-
-result = {'ticker': 'AAPL', 'data': large_analysis}
-
-# Save to workspace
-with open('workspace/analysis_AAPL.json', 'w') as f:
-    json.dump(result, f, indent=2)
-```
-
----
-
-## Multi-Stock Analysis Pattern
-
-```python
-import sys
-sys.path.append('.claude/skills/quantitative-trading')
-
 from scripts import fetch_stock_data
 from scripts.indicators import TechnicalIndicators
 
-tickers = ['AAPL', 'GOOGL', 'MSFT', 'AMZN']
+tickers = ['510300.SH', '510500.SH', '159915.SZ', '512660.SH']
+ti = TechnicalIndicators()
 results = {}
 
-ti = TechnicalIndicators()
-
 for ticker in tickers:
-    try:
-        data = fetch_stock_data(ticker, period='1y')
-        rsi = ti.calculate_rsi(data)
-        
-        results[ticker] = {
-            'price': data['Close'].iloc[-1],
-            'rsi': rsi.iloc[-1]
-        }
-    except Exception as e:
-        results[ticker] = {'error': str(e)}
-
-# Find best performer
-best = max([(k, v) for k, v in results.items() if 'error' not in v], 
-          key=lambda x: x[1]['rsi'])
-print(f"Highest RSI: {best[0]} = {best[1]['rsi']:.2f}")
+    data = fetch_stock_data(ticker, period='6mo')
+    if data is None:
+        continue
+    bb = ti.calculate_bollinger_bands(data)
+    results[ticker] = {
+        'price':    data['Close'].iloc[-1],
+        'rsi':      ti.calculate_rsi(data).iloc[-1],
+        'bb_pct_b': bb['Percent_B'].iloc[-1],
+    }
 ```
 
 ---
 
-## Correlation Analysis Pattern
-
-When analyzing correlations between assets, use pandas directly:
+## 相关性分析
 
 ```python
 from scripts import fetch_multiple_stocks
-
-data = fetch_multiple_stocks(['510300.SH', '510500.SH', '159830.SZ'], period='1y')
-returns = {k: v['Close'].pct_change().dropna() for k, v in data.items()}
 import pandas as pd
+
+data = fetch_multiple_stocks(['510300.SH', '510500.SH', '159915.SZ'], period='1y')
+returns = {k: v['Close'].pct_change().dropna() for k, v in data.items()}
 corr_matrix = pd.DataFrame(returns).corr()
 ```
 
+---
+
+## Context 效率建议
+
+```python
+# ✅ 只导入需要的函数
+from scripts import fetch_stock_data, calculate_rsi
+
+# ✅ 提前过滤，减少数据量
+data = fetch_stock_data('510300.SH', period='6mo')
+recent = data.tail(60)
+
+# ✅ 返回摘要而非完整 DataFrame
+summary = {'price': recent['Close'].iloc[-1], 'rsi': calculate_rsi(recent)['RSI'].iloc[-1]}
+```

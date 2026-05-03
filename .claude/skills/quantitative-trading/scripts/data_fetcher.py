@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
 Data Fetcher Script for Quantitative Trading
-Fetches and preprocesses market data using yfinance (global) and tushare (China/HK)
+Fetches and preprocesses market data for A-share and HK markets.
+Historical data via tushare; real-time quotes via akshare (Sina Finance).
 """
 
 import os
 import sys
-import yfinance as yf
 import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
@@ -64,8 +64,6 @@ class DataFetcher:
     # ------------------------------------------------------------------
     def _resolve_provider(self, ticker: str, provider: Optional[str], market: Optional[str]) -> str:
         provider = (provider or self.default_provider or 'auto').lower()
-        if provider in ('yfinance', 'yahoo'):
-            return 'yfinance'
         if provider == 'tushare':
             return 'tushare'
 
@@ -80,7 +78,7 @@ class DataFetcher:
         if ticker.isdigit() and len(ticker) in (5, 6):
             return 'tushare'
 
-        return 'yfinance'
+        raise ValueError(f"不支持的 ticker 格式，quantitative-trading 仅支持 A 股和港股: {ticker}")
 
     def _normalize_ts_code(self, ticker: str, market: Optional[str]) -> Optional[str]:
         ticker = ticker.upper()
@@ -187,20 +185,6 @@ class DataFetcher:
         data['Cumulative_Returns'] = (1 + data['Returns']).cumprod()
         return data
 
-    def _fetch_with_yfinance(self, ticker, start_date=None, end_date=None, period='1y'):
-        if start_date and end_date:
-            data = yf.download(ticker, start=start_date, end=end_date, auto_adjust=False)
-        else:
-            data = yf.download(ticker, period=period, auto_adjust=False)
-
-        if data.empty:
-            print(f"No data found for ticker {ticker}")
-            return None
-
-        if isinstance(data.columns, pd.MultiIndex):
-            data.columns = data.columns.get_level_values(0)
-        return data
-
     def _fetch_with_tushare(self, ticker, start_date=None, end_date=None, period='1y', market: Optional[str] = None):
         ts_code = self._normalize_ts_code(ticker, market)
         if not ts_code:
@@ -257,22 +241,6 @@ class DataFetcher:
             data['Volume'] = 0.0
             
         return data
-
-    def _fetch_company_info_yfinance(self, ticker: str) -> dict:
-        stock = yf.Ticker(ticker)
-        info = stock.info
-        return {
-            'Name': info.get('longName', 'N/A'),
-            'Sector': info.get('sector', 'N/A'),
-            'Industry': info.get('industry', 'N/A'),
-            'Market Cap': info.get('marketCap', 'N/A'),
-            'P/E Ratio': info.get('forwardPE', 'N/A'),
-            'Dividend Yield': info.get('dividendYield', 'N/A'),
-            'Beta': info.get('beta', 'N/A'),
-            'EPS': info.get('trailingEps', 'N/A'),
-            'Revenue': info.get('totalRevenue', 'N/A'),
-            'Debt to Equity': info.get('debtToEquity', 'N/A')
-        }
 
     def _fetch_company_info_tushare(self, ticker: str, market: Optional[str]) -> dict:
         ts_code = self._normalize_ts_code(ticker, market)
@@ -332,15 +300,15 @@ class DataFetcher:
 
     def fetch_stock_data(self, ticker, start_date=None, end_date=None, period='1y', provider: Optional[str] = None, market: Optional[str] = None):
         """
-        Fetch stock data for a given ticker
+        Fetch stock data for a given A-share or HK ticker via tushare.
 
         Args:
-            ticker (str): Stock ticker symbol
+            ticker (str): Stock ticker symbol (A-share or HK)
             start_date (str): Start date in 'YYYY-MM-DD' format
             end_date (str): End date in 'YYYY-MM-DD' format
             period (str): Period if start_date and end_date not specified ('1d', '5d', '1mo', '3mo', '6mo', '1y', '2y', '5y', '10y', 'ytd', 'max')
-            provider (str): 'yfinance', 'tushare', or 'auto'
-            market (str): Market hint for provider resolution
+            provider (str): 'tushare' or 'auto'
+            market (str): Market hint for provider resolution ('cn', 'hk')
 
         Returns:
             pd.DataFrame: Stock data with OHLCV
@@ -349,10 +317,7 @@ class DataFetcher:
         cache_key = f"{ticker}:{source}"
 
         try:
-            if source == 'tushare':
-                data = self._fetch_with_tushare(ticker, start_date, end_date, period, market)
-            else:
-                data = self._fetch_with_yfinance(ticker, start_date, end_date, period)
+            data = self._fetch_with_tushare(ticker, start_date, end_date, period, market)
         except Exception as e:
             print(f"Error fetching data for {ticker} via {source}: {str(e)}")
             return None
@@ -389,19 +354,19 @@ class DataFetcher:
 
     def get_company_info(self, ticker, provider: Optional[str] = None, market: Optional[str] = None):
         """
-        Get company information and fundamentals
+        Get company information and fundamentals for A-share or HK stocks via tushare.
 
         Args:
-            ticker (str): Stock ticker symbol
+            ticker (str): Stock ticker symbol (A-share or HK)
+            provider (str): 'tushare' or 'auto'
+            market (str): Market hint ('cn', 'hk')
 
         Returns:
             dict: Company information
         """
         try:
-            source = self._resolve_provider(ticker, provider, market)
-            if source == 'tushare':
-                return self._fetch_company_info_tushare(ticker, market)
-            return self._fetch_company_info_yfinance(ticker)
+            self._resolve_provider(ticker, provider, market)
+            return self._fetch_company_info_tushare(ticker, market)
 
         except Exception as e:
             print(f"Error fetching company info for {ticker}: {str(e)}")
@@ -409,17 +374,19 @@ class DataFetcher:
 
     def fetch_market_indices(self, indices=None, period='1y', provider: Optional[str] = None, market: Optional[str] = None):
         """
-        Fetch major market indices data
+        Fetch major A-share market indices data via tushare.
 
         Args:
-            indices (list): List of index symbols
+            indices (list): List of index tushare codes (default: major A-share indices)
             period (str): Period for data fetching
+            provider (str): 'tushare' or 'auto'
+            market (str): Market hint
 
         Returns:
             dict: Dictionary with index data
         """
         if indices is None:
-            indices = ['^GSPC', '^DJI', '^IXIC', '^RUT']  # S&P 500, Dow Jones, NASDAQ, Russell 2000
+            indices = ['000001.SH', '399001.SZ', '000300.SH', '000905.SH']  # 上证指数, 深证成指, 沪深300, 中证500
 
         return self.fetch_multiple_stocks(indices, period=period, provider=provider, market=market)
 
@@ -518,15 +485,14 @@ class DataFetcher:
 
     def fetch_realtime_quote(self, tickers, market: Optional[str] = None) -> Optional[pd.DataFrame]:
         """
-        Unified real-time quote entry point for all markets.
+        Real-time quote entry point for A-share and HK markets via AKShare (Sina Finance).
 
         - CN A-share / ETF / Index → AKShare (Sina Finance), free, no permission needed.
-        - US / Global stocks → yfinance (fast_info), ~15-min delay.
 
         Args:
             tickers: Single ticker string or list of tickers
-                     (e.g., '510150', 'AAPL', ['510150', 'AAPL', '510880'])
-            market: Market hint ('cn', 'hk', 'us'). If None, auto-detect.
+                     (e.g., '510150', '000001', ['510150', '000300', '510880'])
+            market: Market hint ('cn', 'hk'). If None, auto-detect.
 
         Returns:
             pd.DataFrame with columns:
@@ -536,33 +502,25 @@ class DataFetcher:
         if isinstance(tickers, str):
             tickers = [tickers]
 
-        # --- Classify tickers into CN vs Global ---
+        # --- Classify tickers into CN asset types ---
         cn_etf_codes = []
         cn_index_codes = []
         cn_stock_codes = []
-        global_tickers = []
 
         for t in tickers:
-            original = t
             code = t.upper().split('.')[0]
-
-            # Use provider resolution to decide CN vs Global
-            provider = self._resolve_provider(original, None, market)
-            if provider == 'tushare':
-                ts_code = self._normalize_ts_code(code, market)
-                if ts_code:
-                    asset_type = self._determine_asset_type(ts_code)
-                else:
-                    asset_type = 'E'
-
-                if asset_type == 'FD':
-                    cn_etf_codes.append(code)
-                elif asset_type == 'I':
-                    cn_index_codes.append(code)
-                else:
-                    cn_stock_codes.append(code)
+            ts_code = self._normalize_ts_code(code, market)
+            if ts_code:
+                asset_type = self._determine_asset_type(ts_code)
             else:
-                global_tickers.append(original)
+                asset_type = 'E'
+
+            if asset_type == 'FD':
+                cn_etf_codes.append(code)
+            elif asset_type == 'I':
+                cn_index_codes.append(code)
+            else:
+                cn_stock_codes.append(code)
 
         results = []
 
@@ -601,34 +559,6 @@ class DataFetcher:
                         if not matched.empty:
                             results.append(matched)
 
-        # --- Global: yfinance fast_info ---
-        if global_tickers:
-            for ticker_str in global_tickers:
-                try:
-                    stock = yf.Ticker(ticker_str)
-                    fi = stock.fast_info
-                    last_price = fi.last_price
-                    prev_close = fi.previous_close
-                    change = round(last_price - prev_close, 4) if last_price and prev_close else None
-                    change_pct = round(change / prev_close * 100, 2) if change and prev_close else None
-
-                    row = pd.DataFrame([{
-                        '代码': ticker_str.upper(),
-                        '名称': ticker_str.upper(),
-                        '最新价': last_price,
-                        '涨跌额': change,
-                        '涨跌幅': change_pct,
-                        '昨收': prev_close,
-                        '今开': fi.open,
-                        '最高': fi.day_high,
-                        '最低': fi.day_low,
-                        '成交量': fi.last_volume,
-                        '成交额': None,  # yfinance doesn't provide turnover directly
-                    }])
-                    results.append(row)
-                except Exception as e:
-                    print(f"Error fetching real-time data for {ticker_str} via yfinance: {e}")
-
         if not results:
             print(f"No real-time data found for {tickers}")
             return None
@@ -645,13 +575,13 @@ class DataFetcher:
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Fetch market data using yfinance (global) or tushare (CN/HK)')
-    parser.add_argument('--ticker', '-t', type=str, help='Single ticker symbol')
+    parser = argparse.ArgumentParser(description='Fetch A-share and HK market data using tushare (historical) and akshare (real-time)')
+    parser.add_argument('--ticker', '-t', type=str, help='Single ticker symbol (A-share or HK)')
     parser.add_argument('--tickers', type=str, help='Comma-separated list of tickers')
     parser.add_argument('--start', type=str, help='Start date (YYYY-MM-DD)')
     parser.add_argument('--end', type=str, help='End date (YYYY-MM-DD)')
     parser.add_argument('--period', type=str, default='1y', help='Period (1y, 6mo, 3mo, etc.)')
-    parser.add_argument('--provider', type=str, choices=['auto', 'yfinance', 'tushare'], default='auto',
+    parser.add_argument('--provider', type=str, choices=['auto', 'tushare'], default='auto',
                         help='Select data provider (default auto-detect).')
     parser.add_argument('--market', type=str, help='Market hint (cn, hk, us, etc.)')
     parser.add_argument('--info', action='store_true', help='Get company information')

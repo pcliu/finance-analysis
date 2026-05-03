@@ -1,92 +1,84 @@
 # API Reference
 
-Complete API documentation for the quantitative-trading skill.
+A 股 / 港股行情获取与技术指标的完整 API 文档。
 
 ## Data Fetcher Module
 
 ### `scripts.data_fetcher.DataFetcher`
 
-Core class for fetching market data from yfinance (global) or tushare (China/HK).
+A 股、港股、ETF、指数历史与实时行情获取。数据源：tushare（历史）+ akshare（实时）。
 
 ```python
 from scripts.data_fetcher import DataFetcher
 
-fetcher = DataFetcher(default_provider='auto', tushare_token=None)
+fetcher = DataFetcher(tushare_token=None)  # Token 从 TUSHARE_TOKEN 环境变量读取
 ```
 
 #### Methods
 
-##### `fetch_stock_data(ticker, start_date=None, end_date=None, period='1y', provider=None, market=None)`
+##### `fetch_stock_data(ticker, start_date=None, end_date=None, period='1y', market=None)`
 
-Fetch historical stock data.
+获取历史 K 线数据（tushare）。
 
 **Parameters:**
-- `ticker` (str): Stock symbol (e.g., 'AAPL', '000001.SZ')
-- `start_date` (str): Start date 'YYYY-MM-DD' (optional)
-- `end_date` (str): End date 'YYYY-MM-DD' (optional)
-- `period` (str): '1d', '5d', '1mo', '3mo', '6mo', '1y', '2y', '5y', '10y', 'ytd', 'max'
-- `provider` (str): 'yfinance', 'tushare', or 'auto'
-- `market` (str): Market hint ('cn', 'hk', 'us')
+- `ticker` (str): 代码，如 `'510300.SH'`、`'000001.SH'`、`'600519'`、`'00700.HK'`
+- `start_date` (str): 开始日期 `'YYYY-MM-DD'`（可选）
+- `end_date` (str): 结束日期 `'YYYY-MM-DD'`（可选）
+- `period` (str): `'1d'`、`'5d'`、`'1mo'`、`'3mo'`、`'6mo'`、`'1y'`、`'2y'`、`'5y'`、`'max'`
+- `market` (str): 市场提示 `'cn'`、`'hk'`（可选，自动识别）
 
-**Returns:** `pd.DataFrame` with OHLCV and calculated fields (Returns, Volatility, etc.)
+**Returns:** `pd.DataFrame` — OHLCV + Returns / Volatility / Cumulative_Returns
 
 ```python
-data = fetcher.fetch_stock_data('AAPL', period='1y')
-print(f"Current Price: ${data['Close'].iloc[-1]:.2f}")
+data = fetcher.fetch_stock_data('510300.SH', period='1y')   # 沪深300 ETF
+data = fetcher.fetch_stock_data('000001.SH', period='6mo')  # 上证指数
+data = fetcher.fetch_stock_data('00700', market='hk')       # 腾讯（港股）
 ```
 
-##### `fetch_multiple_stocks(tickers, start_date=None, end_date=None, period='1y')`
+##### `fetch_multiple_stocks(tickers, start_date=None, end_date=None, period='1y', market=None)`
 
-Fetch data for multiple stocks.
+批量获取历史数据。
 
 ```python
-data_dict = fetcher.fetch_multiple_stocks(['AAPL', 'GOOGL', 'MSFT'], period='1y')
+data_dict = fetcher.fetch_multiple_stocks(['510300.SH', '510500.SH', '159915.SZ'], period='1y')
 ```
 
-##### `get_company_info(ticker, provider=None, market=None)`
+##### `get_company_info(ticker, market=None)`
 
-Get company fundamentals.
+获取公司/基金基本信息（tushare）。
 
 ```python
-info = fetcher.get_company_info('AAPL')
-# Returns: Name, Sector, Industry, Market Cap, P/E Ratio, etc.
+info = fetcher.get_company_info('600519.SH')  # 贵州茅台
+# Returns: Name, Sector, Industry, Market, Market Cap, P/E Ratio, P/B Ratio, EPS, etc.
 ```
 
-##### `calculate_correlation_matrix(tickers, period='1y')`
+##### `calculate_correlation_matrix(tickers, period='1y', market=None)`
 
-Calculate return correlation between stocks.
+计算多标的收益率相关矩阵。
 
 ```python
-corr = fetcher.calculate_correlation_matrix(['AAPL', 'GOOGL', 'MSFT'])
+corr = fetcher.calculate_correlation_matrix(['510300.SH', '510500.SH', '159915.SZ'])
 ```
 
 ##### `fetch_realtime_quote(tickers, market=None)`
 
-Unified real-time quote entry point for all markets. No Tushare permission needed.
+A 股 / ETF / 指数实时行情（AKShare/Sina，无需 Token）。
 
 **Parameters:**
-- `tickers` (str or list): Single ticker or list (e.g., `'510150'`, `'AAPL'`, `['510150', 'AAPL']`)
-- `market` (str): Market hint (`'cn'`, `'hk'`, `'us'`). Auto-detect if None.
+- `tickers` (str or list): 单个或多个代码，如 `'510150'`、`['510150', '510300', '000001']`
+- `market` (str): 市场提示 `'cn'`（可选）
 
-**Returns:** `pd.DataFrame` with columns: 代码, 名称, 最新价, 涨跌额, 涨跌幅, 昨收, 今开, 最高, 最低, 成交量, 成交额
+**Returns:** `pd.DataFrame` — 代码, 名称, 最新价, 涨跌额, 涨跌幅, 昨收, 今开, 最高, 最低, 成交量, 成交额
 
-**Data Sources (auto-routed):**
-- CN ETF → `ak.fund_etf_category_sina()` (AKShare/Sina Finance)
-- CN Index → `ak.stock_zh_index_spot_sina()` (AKShare/Sina Finance)
-- CN A-share → `ak.stock_zh_a_spot()` (AKShare/Sina Finance)
-- US/Global → `yf.Ticker.fast_info` (yfinance, ~15-min delay)
+**数据路由：**
+- ETF → `ak.fund_etf_category_sina()`
+- 指数 → `ak.stock_zh_index_spot_sina()`
+- A 股 → `ak.stock_zh_a_spot()`
 
 ```python
-# Single ETF
-quote = fetcher.fetch_realtime_quote('510150')
-print(f"Latest: {quote['最新价'].iloc[0]}")
-
-# US stock
-quote_us = fetcher.fetch_realtime_quote('AAPL')
-
-# Mixed: CN + US
-quotes = fetcher.fetch_realtime_quote(['510150', 'AAPL', '512660'])
-print(quotes)
+quote  = fetcher.fetch_realtime_quote('510150')                        # 单个 ETF
+quotes = fetcher.fetch_realtime_quote(['510150', '510300', '000001'])   # 批量
+print(quotes[['代码', '名称', '最新价', '涨跌幅']])
 ```
 
 ---
@@ -95,11 +87,10 @@ print(quotes)
 
 ### `scripts.indicators.TechnicalIndicators`
 
-Technical analysis indicator calculations.
+技术指标计算，所有方法通过 `__init__.py` 的 convenience 函数暴露。
 
 ```python
 from scripts.indicators import TechnicalIndicators
-
 ti = TechnicalIndicators()
 ```
 
@@ -107,93 +98,28 @@ ti = TechnicalIndicators()
 
 ##### Moving Averages
 ```python
-sma = ti.calculate_sma(data, window=20)      # Returns pd.Series
-ema = ti.calculate_ema(data, window=20)      # Returns pd.Series
+sma = ti.calculate_sma(data, window=20)   # Returns pd.Series
+ema = ti.calculate_ema(data, window=20)   # Returns pd.Series
 ```
 
 ##### Momentum Indicators
 
-> **⚠️ IMPORTANT:** These functions return `dict`, NOT DataFrame!
+> **⚠️** `calculate_macd` 和 `calculate_stochastic` 返回 `dict`，不是 DataFrame。
 
 ```python
-# RSI - Returns pd.Series
-rsi = ti.calculate_rsi(data, window=14)      # ⚠️ Parameter is 'window', NOT 'period'!
-
-# MACD - Returns dict with 'MACD', 'Signal', 'Histogram' keys
-macd = ti.calculate_macd(data)               # Returns dict, NOT DataFrame!
-macd_line = macd['MACD'].iloc[-1]            # Access via dict keys
-signal = macd['Signal'].iloc[-1]
-
-# Stochastic - Returns dict with '%K', '%D' keys  
-stoch = ti.calculate_stochastic(data)        # Returns dict
-k_value = stoch['%K'].iloc[-1]
+rsi  = ti.calculate_rsi(data, window=14)   # pd.Series
+macd = ti.calculate_macd(data)             # dict: 'MACD', 'Signal', 'Histogram'
+stoch = ti.calculate_stochastic(data)      # dict: '%K', '%D'
 ```
 
 ##### Volatility Indicators
 
-> **⚠️ IMPORTANT:** Bollinger Bands returns `dict`, NOT DataFrame!
+> **⚠️** `calculate_bollinger_bands` 返回 `dict`，不是 DataFrame。
 
 ```python
-# Bollinger Bands - Returns dict with 'Upper', 'Middle', 'Lower', 'Bandwidth', 'Percent_B' keys
-bb = ti.calculate_bollinger_bands(data, window=20, num_std=2)
-bb_upper = bb['Upper'].iloc[-1]              # Access via dict keys
-bb_lower = bb['Lower'].iloc[-1]
+bb  = ti.calculate_bollinger_bands(data, window=20, num_std=2)
+# dict: 'Upper', 'Middle', 'Lower', 'Bandwidth', 'Percent_B'
 
-# ATR - Returns pd.Series
-atr = ti.calculate_atr(data, window=14)      # ⚠️ Parameter is 'window', NOT 'period'!
+atr = ti.calculate_atr(data, window=14)    # pd.Series
+adx = ti.calculate_adx(data, window=14)    # pd.Series
 ```
-
----
-
-## Strategies Module
-
-### `scripts.strategies.TradingStrategies`
-
-Pre-built trading strategy signals.
-
-```python
-from scripts.strategies import TradingStrategies
-
-ts = TradingStrategies()
-```
-
-#### Methods
-
-##### `moving_average_crossover(data, fast_window=20, slow_window=50)`
-
-Generate signals on MA crossovers.
-
-```python
-signals = ts.moving_average_crossover(data, fast_window=20, slow_window=50)
-# Returns DataFrame with Buy_Signal, Sell_Signal columns
-```
-
-##### `rsi_mean_reversion(data, oversold=30, overbought=70)`
-
-Generate signals on RSI extremes.
-
-```python
-signals = ts.rsi_mean_reversion(data, oversold=30, overbought=70)
-```
-
----
-
-## Backtester Module
-
-### `scripts.backtester.Backtester`
-
-Backtest trading strategies with historical data.
-
-```python
-from scripts.backtester import Backtester
-
-bt = Backtester(initial_capital=100000)
-results = bt.backtest(data, signals)
-```
-
-**Results include:**
-- Total Return (%)
-- Sharpe Ratio
-- Max Drawdown (%)
-- Win Rate (%)
-- Number of Trades

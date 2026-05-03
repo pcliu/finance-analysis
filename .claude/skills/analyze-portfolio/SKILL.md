@@ -12,9 +12,23 @@ user-invocable: true
 
 基于昨日收盘后的持仓结构和盈利情况，对各标的给出今日明确的继续持有或调整建议，由于部分金额用于了购买货币基金，但可以实时赎回购买股票，所以可用金额实际是总资产减去持仓市值；同时，对 ETFs.csv 中尚未纳入组合的品种进行系统评估，分析其在当前市场环境下的即时建仓可行性。
 
+## 底层 Skill 分工
+
+| 场景 | 使用 Skill |
+|------|-----------|
+| A 股、ETF、指数历史行情 + 技术指标 | `quantitative-trading`（tushare + akshare） |
+| A 股 / ETF 实时行情 | `quantitative-trading` → `fetch_realtime_quote` |
+| 美股、港股历史 K 线 + 技术指标 | `moomoo-trading`（Moomoo OpenD） |
+| 美股、港股实时行情 | `moomoo-trading` → `get_realtime_quote` |
+| 美股、港股下单 / 账户管理 | `moomoo-trading` |
+| 宏观/行业新闻、舆情打分 | `economic-sentiment` |
+
+> 两个行情 skill 的指标函数 API 完全兼容，均接受相同结构的 OHLCV DataFrame，可直接互换。
+
 ## 数据源与工具
-- 技术面：使用 `quantitative-trading` 技能获取 6 个月以上日线，计算 RSI、布林%B、MACD、成交量/20 日均量等。
-- 舆情面：使用 `economic-sentiment` 技能（AkShare / 新闻抓取）获取最新行业/主题新闻，简单情绪打分（positive/neutral/negative），并在决策中注明。
+- **A 股技术面**：使用 `quantitative-trading` 获取 6 个月以上日线，计算 RSI、布林%B、MACD、成交量/20 日均量等。
+- **美股/港股技术面**：使用 `moomoo-trading` 获取 K 线，调用相同指标函数。
+- **舆情面**：使用 `economic-sentiment`（AkShare / 新闻抓取）获取最新行业/主题新闻，简单情绪打分（positive/neutral/negative），并在决策中注明。
 - 伊朗战争，需要阅读下战争的实时信息，来丰富舆情面信息。信息源：https://www.elperiodico.com/es/internacional/20260323/guerra-iran-directo-ultima-hora-128198283
 
 
