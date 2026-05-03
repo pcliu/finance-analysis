@@ -6,11 +6,11 @@ description: >
   - 美股持仓调整 / 调仓分析 / 每日调仓
   - Moomoo 账户组合再平衡或持仓审视
   - 技术面 + 舆情面综合分析（美股）
-  - 对 USStocks.csv 观察池进行筛查
+  - 对 Moomoo「USStocks」关注列表观察池进行筛查
 user-invocable: true
 ---
 
-通过 Moomoo OpenD API 自动获取账户持仓、资金和订单状态，结合技术指标和舆情分析，对各标的给出今日明确的继续持有或调整建议，并对 USStocks.csv 观察池中尚未纳入组合的品种评估即时建仓可行性。
+通过 Moomoo OpenD API 自动获取账户持仓、资金、订单状态和关注列表，结合技术指标和舆情分析，对各标的给出今日明确的继续持有或调整建议，并对「USStocks」关注分组中尚未纳入组合的品种评估即时建仓可行性。
 
 ## 账户数据获取（自动化）
 
@@ -28,6 +28,12 @@ positions = get_positions(trading_env='REAL')
 
 # 今日订单状态（用于复盘）
 orders = get_order_list(trading_env='REAL')
+
+# 关注列表观察池（动态读取，与 moomoo App 同步）
+ctx = ft.OpenQuoteContext(host='127.0.0.1', port=11111)
+ret, watchlist = ctx.get_user_security(group_name='USStocks')
+ctx.close()
+# watchlist 包含列：code, name, stock_type
 ```
 
 > **注意：** 交易密码从项目根目录 `.env.local` 的 `MOOMOO_TRADE_PASSWORD` 读取，连接参数同样来自该文件。
@@ -43,10 +49,9 @@ orders = get_order_list(trading_env='REAL')
 
 ## 观察池
 
-- **文件**：项目根目录 `USStocks.csv`
-- **格式**：与 `ETFs.csv` 相同结构（代码、名称、板块、备注）
-- **要求**：每次分析必须对观察池中所有品种逐一评估建仓可行性
-- **代码格式**：Moomoo 格式，如 `US.NVDA`、`US.AAPL`
+- **来源**：Moomoo App 中名为 `USStocks` 的自定义关注分组，通过 API 动态读取，无需维护本地文件
+- **更新方式**：直接在 moomoo App 中增减关注列表，下次分析自动同步
+- **要求**：每次分析必须对观察池中所有品种（排除当前已持仓）逐一评估建仓可行性
 
 ## 输出目录
 
@@ -68,7 +73,7 @@ workspace/us/YYYY-MM-DD/HHMMSS/
 
 1. **数据驱动**：必须计算并引用 RSI、布林带 (%B)、MACD、成交量/20 日均量等核心指标。
 2. **自由推理**：不使用硬编码阈值。结合美股市场环境、板块轮动与实时舆情综合判断。
-3. **全量覆盖**：必须对所有关注标的（当前持仓 + USStocks.csv 全部品种）逐一进行技术 + 舆情诊断。
+3. **全量覆盖**：必须对所有关注标的（当前持仓 + USStocks 关注列表全部品种）逐一进行技术 + 舆情诊断。
 4. **订单安全**：下单前必须打印完整订单摘要（标的、方向、数量、价格、预估金额），并在 chat 中获得用户明确确认后方可执行。
 
 ## 分析维度
