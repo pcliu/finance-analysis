@@ -8,25 +8,21 @@ This package provides unified exports for all core functionality.
 # Import core classes
 from .data_fetcher import DataFetcher
 from .indicators import TechnicalIndicators
-from .portfolio_optimization import PortfolioAnalyzer
-from .risk_manager import RiskManager
 
 # Create default instances for convenience functions
 _data_fetcher = DataFetcher()
 _indicators = TechnicalIndicators()
-_portfolio_analyzer = PortfolioAnalyzer()
-_risk_manager = RiskManager()
 
 
 # ============================================================
 # Convenience Functions - Data Fetching
 # ============================================================
 
-def fetch_stock_data(ticker, start_date=None, end_date=None, period='1y', 
+def fetch_stock_data(ticker, start_date=None, end_date=None, period='1y',
                      provider=None, market=None):
     """
     Fetch stock data for a ticker.
-    
+
     Args:
         ticker: Stock symbol (e.g., 'AAPL', '000001.SZ')
         start_date: Start date 'YYYY-MM-DD'
@@ -34,16 +30,16 @@ def fetch_stock_data(ticker, start_date=None, end_date=None, period='1y',
         period: '1d', '5d', '1mo', '3mo', '6mo', '1y', '2y', '5y', '10y', 'ytd', 'max'
         provider: 'yfinance', 'tushare', or None (auto)
         market: Market hint ('cn', 'hk', 'us')
-    
+
     Returns:
         pd.DataFrame with OHLCV and calculated fields
     """
-    return _data_fetcher.fetch_stock_data(ticker, start_date, end_date, period, 
+    return _data_fetcher.fetch_stock_data(ticker, start_date, end_date, period,
                                           provider=provider, market=market)
 
 
 def fetch_multiple_stocks(tickers, start_date=None, end_date=None, period='1y',
-                         provider=None, market=None):
+                          provider=None, market=None):
     """Fetch data for multiple stocks."""
     return _data_fetcher.fetch_multiple_stocks(tickers, start_date, end_date, period,
                                                provider=provider, market=market)
@@ -56,17 +52,17 @@ def get_company_info(ticker, provider=None, market=None):
 
 def calculate_correlation_matrix(tickers, period='1y', provider=None, market=None):
     """Calculate return correlation between stocks."""
-    return _data_fetcher.calculate_correlation_matrix(tickers, period, 
+    return _data_fetcher.calculate_correlation_matrix(tickers, period,
                                                       provider=provider, market=market)
 
 
 def fetch_realtime_quote(tickers, market=None):
     """Unified real-time quotes: CN (AKShare/Sina) + US/Global (yfinance).
-    
+
     Args:
         tickers: Single ticker or list (e.g., '510150', 'AAPL', ['510150', 'AAPL'])
         market: Market hint ('cn', 'hk', 'us'). Auto-detect if None.
-    
+
     Returns:
         pd.DataFrame with columns: 代码, 名称, 最新价, 涨跌额, 涨跌幅, etc.
     """
@@ -82,17 +78,13 @@ def calculate_sma(data, window=20):
     return _indicators.calculate_sma(data, window)
 
 
-
 def calculate_ema(data, window=20):
     """Exponential Moving Average."""
     return _indicators.calculate_ema(data, window=window)
 
 
 def calculate_rsi(data, window=14):
-    """Relative Strength Index.
-    
-    Note: Uses 'window' parameter to match underlying RSI calculation.
-    """
+    """Relative Strength Index."""
     return _indicators.calculate_rsi(data, window=window)
 
 
@@ -137,42 +129,6 @@ def calculate_obv(data):
 
 
 # ============================================================
-# Convenience Functions - Strategies
-# ============================================================
-
-# ============================================================
-# Convenience Functions - Risk
-# ============================================================
-
-def calculate_var(returns, confidence_level=0.95):
-    """Value at Risk."""
-    return _risk_manager.calculate_var(returns, method='historical', confidence_level=confidence_level)
-
-
-def calculate_cvar(returns, confidence_level=0.95):
-    """Conditional Value at Risk (Expected Shortfall)."""
-    return _risk_manager.calculate_cvar(returns, confidence_level=confidence_level)
-
-
-def calculate_max_drawdown(data):
-    """Maximum drawdown."""
-    metrics = _risk_manager.calculate_drawdown_metrics(data, is_returns=False)
-    return metrics['max_drawdown']
-
-
-def calculate_sharpe_ratio(returns, risk_free_rate=0.02):
-    """Calculate Sharpe Ratio."""
-    metrics = _risk_manager.calculate_risk_adjusted_metrics(returns, risk_free_rate=risk_free_rate)
-    return metrics['sharpe_ratio']
-
-
-def calculate_sortino_ratio(returns, risk_free_rate=0.02):
-    """Calculate Sortino Ratio."""
-    metrics = _risk_manager.calculate_risk_adjusted_metrics(returns, risk_free_rate=risk_free_rate)
-    return metrics['sortino_ratio']
-
-
-# ============================================================
 # Exports
 # ============================================================
 
@@ -180,8 +136,6 @@ __all__ = [
     # Classes
     'DataFetcher',
     'TechnicalIndicators',
-    'PortfolioAnalyzer',
-    'RiskManager',
     # Data functions
     'fetch_stock_data',
     'fetch_multiple_stocks',
@@ -200,10 +154,4 @@ __all__ = [
     'calculate_williams_r',
     'calculate_cci',
     'calculate_obv',
-    # Risk functions
-    'calculate_var',
-    'calculate_cvar',
-    'calculate_max_drawdown',
-    'calculate_sharpe_ratio',
-    'calculate_sortino_ratio',
 ]

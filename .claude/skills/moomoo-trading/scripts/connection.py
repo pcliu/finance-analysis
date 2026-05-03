@@ -75,7 +75,7 @@ class MoomooConnection:
             filter_trdmarket=market,
             host=host,
             port=port,
-            security_firm=ft.SecurityFirm.FUTUSECURITIES
+            security_firm=ft.SecurityFirm.FUTUSG
         )
         try:
             yield ctx

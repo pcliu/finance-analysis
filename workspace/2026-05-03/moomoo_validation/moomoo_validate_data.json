@@ -1,0 +1,56 @@
+{
+  "timestamp": "2026-05-03T20:03:22.617833",
+  "opend": "127.0.0.1:11111",
+  "tests": {
+    "import": {
+      "status": "✅ PASS",
+      "detail": "moomoo-api version loaded"
+    },
+    "QuoteCtx": {
+      "status": "✅ PASS",
+      "detail": "connected"
+    },
+    "snapshot": {
+      "status": "✅ PASS",
+      "detail": "3 tickers"
+    },
+    "kline": {
+      "status": "✅ PASS",
+      "detail": "5 bars"
+    },
+    "TradeCtx": {
+      "status": "✅ PASS",
+      "detail": "connected"
+    },
+    "account_info": {
+      "status": "✅ PASS",
+      "detail": "OK"
+    },
+    "positions": {
+      "status": "✅ PASS",
+      "detail": "0 position(s)"
+    }
+  },
+  "snapshot": [
+    {
+      "ticker": "US.NVDA",
+      "last_price": 198.45,
+      "change": "N/A"
+    },
+    {
+      "ticker": "US.AMD",
+      "last_price": 360.54,
+      "change": "N/A"
+    },
+    {
+      "ticker": "US.GOOG",
+      "last_price": 383.22,
+      "change": "N/A"
+    }
+  ],
+  "account": {
+    "total_assets": "1000000.0",
+    "cash": "1000000.0",
+    "market_val": "0.0"
+  }
+}
