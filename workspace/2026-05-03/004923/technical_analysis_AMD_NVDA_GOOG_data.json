@@ -1,0 +1,138 @@
+{
+  "analysis_date": "2026-05-03",
+  "total_capital": 8454.0,
+  "tickers": [
+    "AMD",
+    "NVDA",
+    "GOOG"
+  ],
+  "data_source": "web-confirmed prices (yfinance fallback)",
+  "technical_indicators": {
+    "AMD": {
+      "current_price": 328.0,
+      "rsi_14": 43.75579658771078,
+      "macd": 0.542230661303222,
+      "macd_signal": 4.189808903056323,
+      "macd_histogram": -3.6475782417531013,
+      "bb_upper": 360.9926164949192,
+      "bb_middle": 342.9657085367783,
+      "bb_lower": 324.9388005786374,
+      "bb_pct_b": 0.08490639183577085,
+      "sma_20": 342.9657085367783,
+      "sma_60": 319.76411180249727,
+      "price_vs_sma20_pct": -4.363616584476537,
+      "price_vs_sma60_pct": 2.575613676931212,
+      "atr_14": 10.673893020079634,
+      "atr_pct": 3.2542356768535465,
+      "volume_ratio": 1.5627799630049195,
+      "max_drawdown": -0.08881342391803829,
+      "sharpe_ratio": 5.337432564052596,
+      "annualized_return": null,
+      "annualized_vol": null,
+      "rsi_14_web_confirmed": 81.7
+    },
+    "NVDA": {
+      "current_price": 198.45,
+      "rsi_14": 44.69223815646251,
+      "macd": -1.8422122811136887,
+      "macd_signal": -0.3274776249016974,
+      "macd_histogram": -1.5147346562119912,
+      "bb_upper": 218.29580082565448,
+      "bb_middle": 205.84871096739192,
+      "bb_lower": 193.40162110912937,
+      "bb_pct_b": 0.20279354244074313,
+      "sma_20": 205.84871096739192,
+      "sma_60": 199.46520799716137,
+      "price_vs_sma20_pct": -3.5942469266003565,
+      "price_vs_sma60_pct": -0.5089649505069729,
+      "atr_14": 8.156238545811343,
+      "atr_pct": 4.1099715524370595,
+      "volume_ratio": 0.8084028241739025,
+      "max_drawdown": -0.1379260786029963,
+      "sharpe_ratio": 1.9944985231469174,
+      "annualized_return": null,
+      "annualized_vol": null,
+      "rsi_14_web_confirmed": 62.0
+    },
+    "GOOG": {
+      "current_price": 383.22,
+      "rsi_14": 81.47934472901196,
+      "macd": 17.585617406555286,
+      "macd_signal": 9.944761640939898,
+      "macd_histogram": 7.640855765615388,
+      "bb_upper": 381.3653895621858,
+      "bb_middle": 325.03652901879553,
+      "bb_lower": 268.7076684754053,
+      "bb_pct_b": 1.016462346476773,
+      "sma_20": 325.03652901879553,
+      "sma_60": 316.45029939331,
+      "price_vs_sma20_pct": 17.90059448297886,
+      "price_vs_sma60_pct": 21.09958522229213,
+      "atr_14": 10.932613947969616,
+      "atr_pct": 2.852829692596841,
+      "volume_ratio": 0.9195044571814965,
+      "max_drawdown": -0.1649339232469116,
+      "sharpe_ratio": 3.708109915559802,
+      "annualized_return": null,
+      "annualized_vol": null,
+      "rsi_14_web_confirmed": 68.0
+    }
+  },
+  "correlation_matrix": {
+    "AMD": {
+      "AMD": 1.0,
+      "NVDA": -0.0914213868697129,
+      "GOOG": -0.009907892134018811
+    },
+    "NVDA": {
+      "AMD": -0.0914213868697129,
+      "NVDA": 1.0,
+      "GOOG": -0.19025201359687283
+    },
+    "GOOG": {
+      "AMD": -0.009907892134018811,
+      "NVDA": -0.19025201359687283,
+      "GOOG": 1.0
+    }
+  },
+  "portfolio_optimization": {
+    "method": "max_sharpe",
+    "weights": {
+      "AMD": 0.3745917089466977,
+      "NVDA": 0.3040151802541373,
+      "GOOG": 0.32139311079916494
+    },
+    "position_sizes": {
+      "AMD": {
+        "weight": 0.3745917089466977,
+        "dollar_amount": 3166.8,
+        "shares": 9,
+        "actual_cost": 2952.0,
+        "entry_price": 328.0
+      },
+      "NVDA": {
+        "weight": 0.3040151802541373,
+        "dollar_amount": 2570.14,
+        "shares": 12,
+        "actual_cost": 2381.4,
+        "entry_price": 198.45
+      },
+      "GOOG": {
+        "weight": 0.32139311079916494,
+        "dollar_amount": 2717.06,
+        "shares": 7,
+        "actual_cost": 2682.54,
+        "entry_price": 383.22
+      }
+    },
+    "cash_remaining": 438.06,
+    "opt_details": {
+      "weights": {
+        "AMD": 0.3745917089466977,
+        "NVDA": 0.3040151802541373,
+        "GOOG": 0.32139311079916494
+      },
+      "method": "risk_parity_fallback"
+    }
+  }
+}
