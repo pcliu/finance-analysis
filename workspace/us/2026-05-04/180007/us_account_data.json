@@ -1,0 +1,77 @@
+{
+  "snapshot_time": "2026-05-04 18:00:07",
+  "total_assets_usd": 8456.54,
+  "cash_available_usd": 2048.37,
+  "market_val_usd": 0.0,
+  "frozen_cash": 0.0,
+  "currency": "USD",
+  "trading_env": "REAL",
+  "positions": [],
+  "orders_today": [],
+  "watchlist_realtime": {
+    "RKLB": {
+      "name": "Rocket Lab",
+      "last": 78.81,
+      "prev_close": 82.51,
+      "change_pct": -4.48,
+      "volume": 16378755,
+      "type": "STOCK"
+    },
+    "AMD": {
+      "name": "Advanced Micro Devices",
+      "last": 360.54,
+      "prev_close": 354.49,
+      "change_pct": 1.71,
+      "volume": 34279169,
+      "type": "STOCK"
+    },
+    "TSLA": {
+      "name": "Tesla",
+      "last": 390.82,
+      "prev_close": 381.63,
+      "change_pct": 2.41,
+      "volume": 65338257,
+      "type": "STOCK"
+    },
+    "SLV": {
+      "name": "iShares Silver Trust",
+      "last": 68.29,
+      "prev_close": 66.66,
+      "change_pct": 2.44,
+      "volume": 20237187,
+      "type": "ETF"
+    },
+    "GOOG": {
+      "name": "Alphabet-C",
+      "last": 383.22,
+      "prev_close": 381.94,
+      "change_pct": 0.34,
+      "volume": 28047873,
+      "type": "STOCK"
+    },
+    "IAU": {
+      "name": "iShares Gold Trust",
+      "last": 86.72,
+      "prev_close": 86.85,
+      "change_pct": -0.15,
+      "volume": 9814938,
+      "type": "ETF"
+    },
+    "TSM": {
+      "name": "Taiwan Semiconductor",
+      "last": 397.67,
+      "prev_close": 396.06,
+      "change_pct": 0.41,
+      "volume": 9926401,
+      "type": "STOCK"
+    },
+    "NVDA": {
+      "name": "NVIDIA",
+      "last": 198.45,
+      "prev_close": 199.57,
+      "change_pct": -0.56,
+      "volume": 128646996,
+      "type": "STOCK"
+    }
+  }
+}

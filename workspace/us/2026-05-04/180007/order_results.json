@@ -1,0 +1,42 @@
+[
+  {
+    "order": {
+      "ticker": "US.NVDA",
+      "direction": "BUY",
+      "qty": 5,
+      "price": 198.45
+    },
+    "result": {
+      "success": 1,
+      "order_id": "FS1C775F6A9F127000",
+      "status": "submitted",
+      "ticker": "US.NVDA",
+      "direction": "BUY",
+      "qty": 5,
+      "price": 198.45,
+      "order_type": "LIMIT",
+      "trading_env": "REAL",
+      "message": "Order submitted successfully. order_id=FS1C775F6A9F127000"
+    }
+  },
+  {
+    "order": {
+      "ticker": "US.IAU",
+      "direction": "BUY",
+      "qty": 5,
+      "price": 86.72
+    },
+    "result": {
+      "success": 1,
+      "order_id": "FS1C775F6AFED27000",
+      "status": "submitted",
+      "ticker": "US.IAU",
+      "direction": "BUY",
+      "qty": 5,
+      "price": 86.72,
+      "order_type": "LIMIT",
+      "trading_env": "REAL",
+      "message": "Order submitted successfully. order_id=FS1C775F6AFED27000"
+    }
+  }
+]

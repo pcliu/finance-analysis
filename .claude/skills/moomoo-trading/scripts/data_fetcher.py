@@ -77,7 +77,7 @@ def get_kline_data(
     ticker: str,
     ktype=ft.KLType.K_DAY,
     count: int = 120,
-    adjust_type=ft.AdjustType.FORWARD,
+    adjust_type=ft.AuType.QFQ,
     start: str = None,
     end: str = None
 ) -> pd.DataFrame:
@@ -145,7 +145,7 @@ def get_multiple_klines(
     tickers: list,
     ktype=ft.KLType.K_DAY,
     count: int = 120,
-    adjust_type=ft.AdjustType.FORWARD
+    adjust_type=ft.AuType.QFQ
 ) -> dict:
     """
     Fetch K-line data for multiple tickers.

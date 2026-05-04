@@ -1,0 +1,36 @@
+{
+  "cancelled": [
+    {
+      "success": true,
+      "order_id": "FS1C775F6A9F127000",
+      "action": "cancel",
+      "message": "Cancelled",
+      "trading_env": "REAL"
+    },
+    {
+      "success": true,
+      "order_id": "FS1C775F6AFED27000",
+      "action": "cancel",
+      "message": "Cancelled",
+      "trading_env": "REAL"
+    }
+  ],
+  "resubmitted": [
+    {
+      "success": true,
+      "ticker": "US.NVDA",
+      "qty": 5,
+      "price": 198.45,
+      "order_id": "FS1C7760D87C7A1000",
+      "fill_outside_rth": true
+    },
+    {
+      "success": true,
+      "ticker": "US.IAU",
+      "qty": 5,
+      "price": 86.72,
+      "order_id": "FS1C7760D8F4927000",
+      "fill_outside_rth": true
+    }
+  ]
+}
