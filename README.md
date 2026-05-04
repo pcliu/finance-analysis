@@ -1,156 +1,195 @@
-# Quantitative Trading Skills
+# Finance Analysis Skills
 
-量化交易智能体技能包 - 基于 Claude Code Skills 规范实现，通过 AI 智能体进行股票分析与投资建议。
+面向 AI Agent 的个人投研与交易辅助技能库。项目通过 Claude Code Skills 组织能力，由 Agent 按任务读取对应 `SKILL.md`，生成一次性分析脚本，拉取行情/账户/舆情数据，并把报告与原始数据沉淀到 `workspace/`。
 
-## 项目简介
+本项目用于研究、复盘和辅助决策，不构成投资建议。
 
-本项目是一个 **Claude Code Skills** 规范的量化交易技能包，设计用于通过 AI 智能体（如 Claude/Gemini）进行交互式量化分析。核心功能包括：
+## 核心能力
 
-- 📊 **数据获取**: 支持全球市场 (yfinance) 和中国/香港市场 (tushare)
-- 📈 **技术指标**: RSI、MACD、布林带、移动平均线、ATR 等
-- 🎯 **交易策略**: 均线交叉、RSI 均值回归、动量策略
-- 💼 **组合分析**: 投资组合优化、有效前沿、相关性分析
-- ⚠️ **风险管理**: VaR、CVaR、最大回撤、夏普比率
-- 🔄 **回测框架**: 历史策略回测
+- A 股 / ETF / 港股历史行情与实时行情获取
+- 美股 / 港股 / 新加坡市场 Moomoo OpenD 行情、账户和订单查询
+- RSI、MACD、SMA/EMA、布林带、ATR、Stochastic 等技术指标
+- A 股账户每日调仓分析工作流
+- Moomoo 美股账户每日调仓分析工作流
+- 宏观、行业、个股新闻和简单舆情辅助分析
+- 每次分析生成可追溯的脚本、JSON 数据和 Markdown 报告
 
-## 环境部署
+## 目录结构
 
-### 1. 创建 Conda 环境
+```text
+finance-analysis/
+├── README.md
+├── .claude/
+│   └── skills/
+│       ├── analyze-astock-portfolio/   # A 股每日持仓调整工作流
+│       ├── analyze-us-portfolio/       # Moomoo 美股账户调仓工作流
+│       ├── economic-sentiment/         # 新闻/舆情信息采集
+│       ├── moomoo-trading/             # Moomoo OpenD 行情、账户、下单工具
+│       └── quantitative-trading/       # A 股/港股行情与技术指标原语
+├── workspace/
+│   ├── ETFs.csv                        # A 股 ETF 观察池
+│   ├── YYYY-MM-DD/HHMMSS/              # A 股/专题分析历史产物
+│   └── us/YYYY-MM-DD/HHMMSS/           # 美股账户分析历史产物
+├── test_akshare.py
+└── test_economic_sentiment.py
+```
+
+`.claude/skills` 是当前技能主目录。`workspace/` 是运行产物目录，里面的脚本和报告是一次分析的快照，便于复盘当时使用的数据、指标和结论。
+
+## 技能分工
+
+| 技能 | 用途 | 主要数据源 |
+| --- | --- | --- |
+| `quantitative-trading` | A 股 / 港股历史行情、A 股实时行情、技术指标计算 | Tushare、AkShare |
+| `moomoo-trading` | Moomoo 行情、K 线、账户、订单、下单工具 | Moomoo OpenD |
+| `economic-sentiment` | 市场新闻、热点、宏观事件、简单情绪判断 | AkShare、Web 搜索 |
+| `analyze-astock-portfolio` | A 股账户每日持仓诊断与调仓建议 | 用户截图、`workspace/ETFs.csv`、行情和舆情技能 |
+| `analyze-us-portfolio` | Moomoo 美股账户自动调仓分析 | Moomoo 账户、`USStocks` 关注列表、行情和舆情技能 |
+
+## 环境准备
+
+推荐使用独立 Conda 环境：
 
 ```bash
-# 创建名为 finance-analysis 的 Python 环境
 conda create -n finance-analysis python=3.10 -y
-
-# 激活环境
 conda activate finance-analysis
+pip install pandas numpy matplotlib scipy tushare akshare moomoo-api python-dotenv
 ```
 
-### 2. 安装依赖
-
-```bash
-# 安装核心依赖包
-pip install yfinance tushare pandas numpy matplotlib scipy
-```
-
-### 3. 配置 Tushare（中国/香港市场）
-
-如需分析中国/香港市场数据，请先在 [tushare.pro](https://tushare.pro/register) 注册并获取 Token，然后设置环境变量：
+A 股 / 港股历史行情需要 Tushare Token：
 
 ```bash
 export TUSHARE_TOKEN="your-token-here"
 ```
 
-## 快速开始
+也可以放在本地 `.env.local`，但不要提交到 Git。
 
-本项目设计为通过 AI 智能体进行交互。以下是一些示例问题：
+Moomoo 相关能力需要本机启动 OpenD，默认连接：
 
-### 📊 技术分析类
-
-```
-帮我分析一下 510150 消费ETF 的技术指标
-```
-
-```
-请用 RSI 和 MACD 分析贵州茅台（600519）的买卖信号
+```text
+host: 127.0.0.1
+port: 11111
 ```
 
-### 💼 投资组合类
+`.env.local` 可包含：
 
-```
-我目前持有以下 ETF，请帮我优化投资组合：
-- 510150 消费ETF: 10000元
-- 159915 创业板ETF: 8000元  
-- 512660 军工ETF: 5000元
-```
-
-```
-请分析我的持仓，给出具体的调仓建议，增量资金不超过 10000 元
+```bash
+TUSHARE_TOKEN="your-token-here"
+MOOMOO_HOST="127.0.0.1"
+MOOMOO_PORT="11111"
+MOOMOO_TRADE_PASSWORD="your-trade-password"
 ```
 
-### ⚠️ 风险评估类
+## 使用方式
 
-```
-请评估我当前投资组合的风险，计算 VaR 和最大回撤
-```
+这个仓库主要由 AI Agent 调用，不是命令行应用。典型请求示例：
 
-### 🔄 策略回测类
-
-```
-帮我回测一下均线交叉策略在 510300 沪深300ETF 上的表现
+```text
+帮我分析一下 510150 消费 ETF 的技术指标
 ```
 
-### 🆚 对比分析类
-
-```
-对比分析 510150、159915、512660 这三只 ETF 的相关性和收益风险特征
+```text
+根据我的 A 股持仓截图做一次今日调仓分析
 ```
 
-## 目录结构
-
-```
-quantitative-trading-skills/
-├── README.md                     # 本文件
-└── quantitative-trading/         # Skills 核心目录
-    ├── SKILL.md                  # 技能定义文件（Agent 入口）
-    ├── scripts/                  # 核心 Python 模块
-    │   ├── __init__.py           # 统一导出接口
-    │   ├── data_fetcher.py       # 数据获取模块
-    │   ├── indicators.py         # 技术指标计算
-    │   ├── strategies.py         # 交易策略实现
-    │   ├── backtester.py         # 回测框架
-    │   ├── portfolio_analyzer.py # 投资组合分析
-    │   └── risk_manager.py       # 风险管理工具
-    ├── references/               # 参考文档
-    │   ├── api_reference.md      # API 参考手册
-    │   ├── workflow_guide.md     # 工作流指南
-    │   ├── troubleshooting.md    # 问题排查
-    │   └── report_templates/     # 分析报告模板
-    ├── examples/                 # 示例代码（只读参考）
-    └── workspace/                # 输出目录（自动生成）
+```text
+帮我做一次 Moomoo 美股账户调仓分析
 ```
 
-## 工作原理
+```text
+查询 US.NVDA、US.AMD、US.GOOG 的实时行情和 RSI/MACD
+```
 
-1. **技能发现**: AI 智能体通过读取 `quantitative-trading/SKILL.md` 了解可用能力
-2. **任务理解**: 根据用户问题，智能体选择合适的分析模块
-3. **脚本生成**: 智能体编写分析脚本并保存到 `workspace/YYYY-MM-DD/HHMMSS/`
-4. **执行分析**: 运行脚本获取数据、计算指标、生成图表
-5. **报告生成**: 基于预设模板生成结构化分析报告
+Agent 会按任务选择对应技能，生成脚本到 `workspace/YYYY-MM-DD/HHMMSS/` 或 `workspace/us/YYYY-MM-DD/HHMMSS/`，运行后保存数据与报告。
 
-## 核心模块说明
+## 工作流说明
 
-| 模块                    | 功能                                       |
-| ----------------------- | ------------------------------------------ |
-| `data_fetcher.py`       | 获取股票/ETF 历史数据、实时价格、公司信息  |
-| `indicators.py`         | 计算 RSI、MACD、SMA、EMA、布林带等技术指标 |
-| `strategies.py`         | 实现均线交叉、RSI 均值回归等交易策略       |
-| `backtester.py`         | 策略历史回测与绩效分析                     |
-| `portfolio_analyzer.py` | 投资组合优化、有效前沿计算                 |
-| `risk_manager.py`       | VaR、CVaR、最大回撤、夏普比率等风险指标    |
+### A 股账户分析
 
-## 分析报告类型
+`analyze-astock-portfolio` 需要用户提供账户截图，因为当前没有 A 股券商账户 API。分析时会读取：
 
-根据不同分析任务，智能体会自动选择相应的报告模板：
+- 截图中的持仓、成本、市值、盈亏、总资产和可用资金
+- `workspace/ETFs.csv` 中的 ETF 观察池
+- Tushare / AkShare 的历史行情、实时行情和技术指标
+- AkShare / Web 搜索得到的宏观与行业舆情
 
-- **技术分析报告** - 单只股票/ETF 的技术指标分析
-- **持仓调整报告** - 现有持仓的调仓建议
-- **策略信号报告** - 交易策略信号分析
-- **组合分析报告** - 投资组合优化建议
-- **风险评估报告** - 风险指标评估与预警
+输出目录：
 
-## 注意事项
+```text
+workspace/YYYY-MM-DD/HHMMSS/
+```
 
-> ⚠️ **投资风险提示**
-> 
-> 本工具仅供学习和研究使用，分析结果不构成投资建议。投资有风险，入市需谨慎。
+或技能要求的新格式：
+
+```text
+workspace/astock/YYYY-MM-DD/HHMMSS/
+```
+
+### 美股账户分析
+
+`analyze-us-portfolio` 通过 Moomoo OpenD 自动获取：
+
+- 账户资产、现金、持仓
+- 今日订单记录
+- Moomoo App 中 `USStocks` 分组的关注列表
+- 实时行情和历史 K 线
+
+输出目录：
+
+```text
+workspace/us/YYYY-MM-DD/HHMMSS/
+```
+
+常见文件：
+
+```text
+us_adjustment_report.md
+us_account_data.json
+us_indicators_data.json
+us_sentiment_data.json
+order_results.json
+```
+
+## 交易安全规则
+
+`moomoo-trading` 支持订单相关操作，但默认应优先用于查询和模拟。真实交易必须遵守：
+
+1. 下单前先展示完整订单摘要：标的、方向、数量、价格、订单类型、预估金额。
+2. 必须在聊天中获得用户明确确认后，才能调用真实交易接口。
+3. 默认使用 `trading_env='SIMULATE'`；真实交易才使用 `trading_env='REAL'`。
+4. 每次订单尝试都应保存到 `workspace/` 的 JSON 文件，便于审计和复盘。
+
+## 数据与密钥
+
+- `.env.local` 已被 `.gitignore` 忽略，用于保存本地密钥和连接参数。
+- 不要把 Tushare Token、Moomoo 交易密码、账户快照或订单明细提交到公共仓库。
+- `workspace/` 中可能包含账户资产、订单结果和持仓信息，提交前请确认是否适合入库。
+
+## 快速自检
+
+语法检查：
+
+```bash
+python3 -m compileall -q .claude/skills test_akshare.py test_economic_sentiment.py
+```
+
+测试 AkShare 新闻接口：
+
+```bash
+python test_economic_sentiment.py
+```
+
+Moomoo 能力依赖 OpenD，运行前请确认 OpenD 已启动并登录。
 
 ## 详细文档
 
-- [SKILL.md](quantitative-trading/SKILL.md) - 技能定义与 Agent 使用指南
-- [API 参考](quantitative-trading/references/api_reference.md) - 完整函数文档
-- [工作流指南](quantitative-trading/references/workflow_guide.md) - 高级用法
-- [报告模板](quantitative-trading/references/report_templates/README.md) - 报告格式说明
-- [问题排查](quantitative-trading/references/troubleshooting.md) - 常见问题解决
+- [A 股调仓工作流](.claude/skills/analyze-astock-portfolio/SKILL.md)
+- [美股调仓工作流](.claude/skills/analyze-us-portfolio/SKILL.md)
+- [Moomoo 交易工具](.claude/skills/moomoo-trading/SKILL.md)
+- [Moomoo API 参考](.claude/skills/moomoo-trading/references/api_reference.md)
+- [A 股/港股量化工具](.claude/skills/quantitative-trading/SKILL.md)
+- [量化工具 API 参考](.claude/skills/quantitative-trading/references/api_reference.md)
+- [新闻舆情工具](.claude/skills/economic-sentiment/SKILL.md)
 
 ## License
 
