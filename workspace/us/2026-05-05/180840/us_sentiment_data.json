@@ -1,0 +1,111 @@
+{
+  "date": "2026-05-05",
+  "macro": {
+    "fed_rate": "3.75%",
+    "sp500_ytd": "+4.17%",
+    "sp500_level": "~7100",
+    "sentiment": "volatile_but_bullish",
+    "key_risks": ["tariff_uncertainty", "geopolitical_iran", "sticky_inflation"],
+    "ai_capex_cycle": "accelerating"
+  },
+  "stocks": {
+    "NVDA": {
+      "sentiment": "strong_positive",
+      "score": 8,
+      "key_events": [
+        "Q1 FY2027 earnings May 20 (guided +77% revenue growth)",
+        "All-time high $216 on Apr 27, now 8% below ATH",
+        "China market share dropped to zero (export restrictions)",
+        "FY2026 revenue $215.94B (+65.47% YoY)",
+        "37 analysts Strong Buy, $270 avg target"
+      ],
+      "catalyst_type": "earnings",
+      "catalyst_date": "2026-05-20"
+    },
+    "AMD": {
+      "sentiment": "positive",
+      "score": 7,
+      "key_events": [
+        "EARNINGS TONIGHT after close (May 5)",
+        "+74.3% in April, +68.4% YTD (21st best S&P 500)",
+        "Expected: revenue +33% YoY to $9.89B, EPS +34% to $1.29",
+        "AI partnership with France deepened",
+        "Stock -5.3% today (profit-taking pre-earnings)"
+      ],
+      "catalyst_type": "earnings_today",
+      "catalyst_date": "2026-05-05"
+    },
+    "TSLA": {
+      "sentiment": "mixed",
+      "score": 4,
+      "key_events": [
+        "Q1 2026 beat both revenue and EPS estimates",
+        "Stock fell 3.56% post-earnings (Apr 23)",
+        "Negative FCF guidance for remaining 3 quarters of 2026",
+        "Optimus factory preparations begin Q2 (long-term positive)",
+        "Capex raised from $20B to $25B+"
+      ],
+      "catalyst_type": "post_earnings",
+      "catalyst_date": "2026-04-23"
+    },
+    "GOOG": {
+      "sentiment": "positive",
+      "score": 6,
+      "key_events": [
+        "Google Cloud backlog nearly doubled to $462B",
+        "New AI chips TPU 8t and TPU 8i debuted at Cloud Next 2026",
+        "Supply-constrained growth (would be higher without supply limits)",
+        "Direct competition with NVDA/AMD on AI infrastructure"
+      ],
+      "catalyst_type": "product_launch",
+      "catalyst_date": "2026-04-30"
+    },
+    "TSM": {
+      "sentiment": "positive",
+      "score": 7,
+      "key_events": [
+        "Q1 2026: +58% profit increase, 4th consecutive record quarter",
+        "Revenue growth expected >30% in 2026",
+        "AI chip demand exceeds capacity",
+        "Geopolitical risk (Taiwan) remains a discount factor"
+      ],
+      "catalyst_type": "earnings_beat",
+      "catalyst_date": "2026-04-16"
+    },
+    "RKLB": {
+      "sentiment": "positive",
+      "score": 6,
+      "key_events": [
+        "EARNINGS May 7 (Thursday, 2 days away)",
+        "+28.5% in April, +252% over past 12 months",
+        "Neutron rocket full test expected Q4 2026",
+        "Expanding into orbital infrastructure and defense contracts"
+      ],
+      "catalyst_type": "earnings_imminent",
+      "catalyst_date": "2026-05-07"
+    },
+    "IAU": {
+      "sentiment": "neutral",
+      "score": 5,
+      "key_events": [
+        "Gold surpassed $5,000 in early 2026",
+        "IAU up 16% YTD, -2% today (pullback)",
+        "Gold-silver ratio narrowed from 104:1 to 64:1",
+        "SLV significantly outperforming IAU (132% vs 66% 12M)"
+      ],
+      "catalyst_type": "macro_driven"
+    },
+    "SLV": {
+      "sentiment": "positive",
+      "score": 7,
+      "key_events": [
+        "SLV +132% over past 12 months (vs IAU +66%)",
+        "Silver down 3.44% today (short-term pullback)",
+        "Strong industrial demand: solar, AI data centers, electronics",
+        "Gold-silver ratio narrowing favors silver outperformance",
+        "Dual safe-haven + industrial demand story"
+      ],
+      "catalyst_type": "macro_industrial"
+    }
+  }
+}

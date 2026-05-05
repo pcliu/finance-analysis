@@ -34,6 +34,26 @@ Real-time market data, technical analysis, and order execution via Moomoo OpenAP
 > 4. **Always ask for confirmation** before calling `place_order()` in real mode
 > 5. Log every order attempt (success or failure) to the workspace JSON
 
+> **🕐 交易时段默认规则**
+>
+> 除非用户明确指定交易时段，所有美股订单默认覆盖**盘前 + 盘中 + 盘后**：
+> - 订单类型：`ft.OrderType.NORMAL`（限价单）
+> - 必须设置：`fill_outside_rth=True`
+> - **禁止**在盘前/盘后使用 `ft.OrderType.MARKET`（API 不支持）
+>
+> ```python
+> ret, data = ctx.place_order(
+>     price=price,
+>     qty=qty,
+>     code=ticker,
+>     trd_side=ft.TrdSide.BUY,
+>     order_type=ft.OrderType.NORMAL,
+>     trd_env=ft.TrdEnv.REAL,
+>     time_in_force=ft.TimeInForce.DAY,
+>     fill_outside_rth=True,   # 默认开启，覆盖盘前+盘中+盘后
+> )
+> ```
+
 > **📁 File Generation Rules**
 >
 > - ALL generated scripts and output files → `workspace/YYYY-MM-DD/HHMMSS/`
