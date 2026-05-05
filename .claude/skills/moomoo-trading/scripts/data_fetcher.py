@@ -79,7 +79,7 @@ def get_kline_data(
     count: int = 120,
     adjust_type=ft.AuType.QFQ,
     start: str = None,
-    end: str = None
+    end: str = None,
 ) -> pd.DataFrame:
     """
     Fetch historical K-line (OHLCV) data from Moomoo.
@@ -99,23 +99,25 @@ def get_kline_data(
         pd.DataFrame indexed by datetime with columns:
             Open, High, Low, Close, Volume, Turnover, pe_ratio, turnover_rate
     """
+    # Without an explicit end date, OpenD returns only its local cache (may be months stale).
+    # Always pass end=today so the request goes to the server and returns current data.
+    from datetime import date, timedelta
+    if end is None:
+        end = date.today().strftime('%Y-%m-%d')
+    if start is None:
+        # calendar days buffer: 120 trading days ≈ 170 calendar days
+        buffer_days = max(int(count * 1.5), 180)
+        start = (date.today() - timedelta(days=buffer_days)).strftime('%Y-%m-%d')
+
     with MoomooConnection.quote_ctx() as ctx:
-        if start and end:
-            ret, data, _ = ctx.request_history_kline(
-                ticker,
-                start=start,
-                end=end,
-                ktype=ktype,
-                autype=adjust_type,
-                max_count=count
-            )
-        else:
-            ret, data, _ = ctx.request_history_kline(
-                ticker,
-                ktype=ktype,
-                autype=adjust_type,
-                max_count=count
-            )
+        ret, data, _ = ctx.request_history_kline(
+            ticker,
+            start=start,
+            end=end,
+            ktype=ktype,
+            autype=adjust_type,
+            max_count=count,
+        )
 
         if ret != ft.RET_OK:
             raise RuntimeError(f'request_history_kline failed for {ticker}: {data}')
