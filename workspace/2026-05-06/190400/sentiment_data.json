@@ -1,0 +1,277 @@
+{
+    "消费": {
+        "overall": "positive",
+        "news": [
+            {
+                "title": "服务消费创新升级 商品消费扩容提速 “五一”消费账单彰显内需活力",
+                "sentiment": "positive"
+            },
+            {
+                "title": "同比增长14.3% “五一”假期消费活力足 服务消费热度攀升",
+                "sentiment": "positive"
+            },
+            {
+                "title": "“五一”消费市场热度攀升 品质化体验型消费成亮点",
+                "sentiment": "neutral"
+            },
+            {
+                "title": "“五一”假期服务消费旺 商品消费稳",
+                "sentiment": "neutral"
+            },
+            {
+                "title": "增值税发票数据显示：五一假期消费活力足 服务消费热度攀升",
+                "sentiment": "positive"
+            }
+        ]
+    },
+    "医疗": {
+        "overall": "positive",
+        "news": [
+            {
+                "title": "紧盯“关键少数”，医疗反腐再亮剑",
+                "sentiment": "neutral"
+            },
+            {
+                "title": "爱朋医疗：公司ADHD产品已经量产和市场推广落地中，产品已亮相第93届中国国际医疗器械博览会",
+                "sentiment": "neutral"
+            },
+            {
+                "title": "“智慧医疗”扩容升级 中国高端医疗器械亮相广交会",
+                "sentiment": "positive"
+            },
+            {
+                "title": "开立医疗已回购666万股 金额1.71亿元",
+                "sentiment": "neutral"
+            },
+            {
+                "title": "联影医疗首次回购30万股 金额3306万元",
+                "sentiment": "neutral"
+            }
+        ]
+    },
+    "军工": {
+        "overall": "positive",
+        "news": [
+            {
+                "title": "美军推动军工厂商开放武器软件 打通系统兼容并接入AI",
+                "sentiment": "neutral"
+            },
+            {
+                "title": "商业航天已成军工企业拓展新增长极核心方向，航空航天ETF华夏(159227)冲击3连涨",
+                "sentiment": "positive"
+            },
+            {
+                "title": "【调研快报】国科军工接待投资者调研",
+                "sentiment": "neutral"
+            },
+            {
+                "title": "国科军工：2026年一季度净利润1974.62万元",
+                "sentiment": "neutral"
+            },
+            {
+                "title": "2025年报排行榜：国防军工行业增速领跑",
+                "sentiment": "positive"
+            }
+        ]
+    },
+    "科技": {
+        "overall": "negative",
+        "news": [
+            {
+                "title": "箭元科技等在山东成立航天科技新公司",
+                "sentiment": "neutral"
+            },
+            {
+                "title": "掌阅科技：北京量子跃动科技有限公司已减持0.98%股份",
+                "sentiment": "neutral"
+            },
+            {
+                "title": "麒盛科技等成立智能科技公司，含多项AI业务",
+                "sentiment": "neutral"
+            },
+            {
+                "title": "算力租赁概念盘中持续走高 大位科技、晶科科技涨停",
+                "sentiment": "neutral"
+            },
+            {
+                "title": "高景气驱动全球科技股共振 机构：5月A股科技主线有望延续",
+                "sentiment": "negative"
+            }
+        ]
+    },
+    "光伏": {
+        "overall": "neutral",
+        "news": [
+            {
+                "title": "涨超2%，光伏ETF平安冲击3连涨",
+                "sentiment": "neutral"
+            },
+            {
+                "title": "美国ITC发布对光伏干线总线电缆部件及其组件的337部分终裁",
+                "sentiment": "neutral"
+            },
+            {
+                "title": "2025年A股光伏行业“冰火两重天”：储能业务已成为企业破局关键",
+                "sentiment": "neutral"
+            },
+            {
+                "title": "英威腾：公司光伏储能业务还处于战略调整期，当前阶段侧重致力于产品力提升",
+                "sentiment": "neutral"
+            },
+            {
+                "title": "光伏ETF天弘(159857)成交额已超6500万元，标的指数强势上涨1.82%",
+                "sentiment": "neutral"
+            }
+        ]
+    },
+    "AI": {
+        "overall": "neutral",
+        "news": [
+            {
+                "title": "AI硬件股大涨 AI应用50强出炉",
+                "sentiment": "neutral"
+            },
+            {
+                "title": "AI早报 | 中国移动将推出AI-eSIM产品；OpenAI 首款 AI Agent 手机目标最快2027年上半年量产",
+                "sentiment": "neutral"
+            },
+            {
+                "title": "AI硬件史诗级暴涨！AI应用50强出炉（附名单）",
+                "sentiment": "neutral"
+            },
+            {
+                "title": "银行春招 考官是AI 作弊的也是AI",
+                "sentiment": "neutral"
+            },
+            {
+                "title": "AI进化速递丨中国移动将推出AI-eSIM产品",
+                "sentiment": "neutral"
+            }
+        ]
+    },
+    "半导体": {
+        "overall": "neutral",
+        "news": [
+            {
+                "title": "美股半导体股盘前走强",
+                "sentiment": "neutral"
+            },
+            {
+                "title": "美股半导体股盘前走强",
+                "sentiment": "neutral"
+            },
+            {
+                "title": "港股半导体股盘中持续上攻",
+                "sentiment": "neutral"
+            },
+            {
+                "title": "半导体产业链开盘强势",
+                "sentiment": "neutral"
+            },
+            {
+                "title": "半导体含量100%的指数再创新高 半导体设备ETF广发（560780）交投活跃",
+                "sentiment": "neutral"
+            }
+        ]
+    },
+    "稀土": {
+        "overall": "positive",
+        "news": [
+            {
+                "title": "莫迪：将在关键矿产、稀土及能源合作方面与越南开展合作",
+                "sentiment": "neutral"
+            },
+            {
+                "title": "稀有金属ETF华富(561800)盘中涨近3%冲击3连涨！锂价上行趋势明确，稀土、钨等战略金属正迎来价值重估",
+                "sentiment": "positive"
+            },
+            {
+                "title": "稀有金属ETF华富(561800)盘中涨近3%冲击3连涨！锂价上行趋势明确，稀土、钨等战略金属正迎来价值重估",
+                "sentiment": "positive"
+            },
+            {
+                "title": "稀土企业业绩集体高增！北方稀土、中国稀土涨停，有色ETF泰康(159163)强势大涨3.32%",
+                "sentiment": "positive"
+            },
+            {
+                "title": "稀土龙头，最新研判",
+                "sentiment": "positive"
+            }
+        ]
+    },
+    "黄金": {
+        "overall": "negative",
+        "news": [
+            {
+                "title": "港股黄金股午后震荡走高，山东黄金、灵宝黄金涨5%",
+                "sentiment": "neutral"
+            },
+            {
+                "title": "港股黄金板块走强，赤峰黄金涨超9%",
+                "sentiment": "neutral"
+            },
+            {
+                "title": "港股黄金股午后震荡走高 山东黄金涨超5%",
+                "sentiment": "neutral"
+            },
+            {
+                "title": "黄金需求趋势出炉！一季度全球黄金ETF净流入62吨",
+                "sentiment": "negative"
+            },
+            {
+                "title": "黄金中长期支撑逻辑持续强化，黄金股ETF平安涨超2%",
+                "sentiment": "neutral"
+            }
+        ]
+    },
+    "航天": {
+        "overall": "neutral",
+        "news": [
+            {
+                "title": "航天智装：公司没有航天器太阳能帆板产品",
+                "sentiment": "neutral"
+            },
+            {
+                "title": "商业航天标准体系发布，现存航天相关企业超1.1万家",
+                "sentiment": "neutral"
+            },
+            {
+                "title": "跨界商业航天！金利华电筹划收购中科西光｜航天早参",
+                "sentiment": "neutral"
+            },
+            {
+                "title": "公司参与航天五院柔性太阳翼项目了吗？航天智装：公司未参与上述项目",
+                "sentiment": "neutral"
+            },
+            {
+                "title": "商业航天概念震荡走强",
+                "sentiment": "neutral"
+            }
+        ]
+    },
+    "科创": {
+        "overall": "positive",
+        "news": [
+            {
+                "title": "科创板走强，多只科创50相关ETF涨超8%",
+                "sentiment": "neutral"
+            },
+            {
+                "title": "芯片产业链助推科创板爆发，科创100ETF富国（589950）、科创200ETF富国（589780）上涨约3%",
+                "sentiment": "positive"
+            },
+            {
+                "title": "科创50涨超7%",
+                "sentiment": "neutral"
+            },
+            {
+                "title": "科创板收盘播报：科创50指数涨5.47% 半导体股表现强势",
+                "sentiment": "neutral"
+            },
+            {
+                "title": "科创综指ETF鹏华涨超4%，半导体AI双轮驱动科创行情",
+                "sentiment": "neutral"
+            }
+        ]
+    }
+}
