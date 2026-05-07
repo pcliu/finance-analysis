@@ -1,0 +1,224 @@
+{
+  "macro": [],
+  "US.PLTR": {
+    "news": [
+      {
+        "title": "Palantir美股盘前跌超2%",
+        "date": "2026-05-05 16:12:37",
+        "source": "eastmoney"
+      },
+      {
+        "title": "Palantir美股盘前跌超2%",
+        "date": "2026-05-05 16:11:25",
+        "source": "eastmoney"
+      },
+      {
+        "title": "Palantir一季度营收16.3亿美元 高于市场预期",
+        "date": "2026-05-05 04:08:51",
+        "source": "eastmoney"
+      }
+    ],
+    "sentiment": "neutral",
+    "pos_count": 0,
+    "neg_count": 0
+  },
+  "US.CRCL": {
+    "news": [
+      {
+        "title": "加密货币概念股Circle美股盘前涨超6%",
+        "date": "2026-05-05 16:23:01",
+        "source": "eastmoney"
+      },
+      {
+        "title": "加密货币概念股Circle美股盘前上涨6.1%，此前两个交易日该股已累计上涨31.5%",
+        "date": "2026-05-05 16:17:48",
+        "source": "eastmoney"
+      },
+      {
+        "title": "美股加密货币概念股盘前走低，Coinbase跌超2%，Strategy跌超3%，Circle跌超2%",
+        "date": "2026-04-20 16:01:55",
+        "source": "eastmoney"
+      }
+    ],
+    "sentiment": "positive",
+    "pos_count": 1,
+    "neg_count": 0
+  },
+  "US.RKLB": {
+    "news": [
+      {
+        "title": "静安Lab812青年引力场探索“零成本试错、快闪式孵化”模式",
+        "date": "2026-05-04 17:11:19",
+        "source": "eastmoney"
+      },
+      {
+        "title": "从快闪到扎根，上海Lab812如何孵化“青春经济”引力场",
+        "date": "2026-05-04 13:47:08",
+        "source": "eastmoney"
+      },
+      {
+        "title": "软银将开发无稀有金属的锌电池",
+        "date": "2026-05-06 12:51:16",
+        "source": "eastmoney"
+      }
+    ],
+    "sentiment": "neutral",
+    "pos_count": 0,
+    "neg_count": 0
+  },
+  "US.AMD": {
+    "news": [
+      {
+        "title": "AMD苏姿丰：CPU地位正不断抬升 AMD已进入新一轮高增长通道",
+        "date": "2026-05-06 14:25:59",
+        "source": "eastmoney"
+      },
+      {
+        "title": "韦德布什上调AMD目标股价",
+        "date": "2026-05-06 19:24:48",
+        "source": "eastmoney"
+      },
+      {
+        "title": "AMD盘前涨超16%",
+        "date": "2026-05-06 16:06:24",
+        "source": "eastmoney"
+      }
+    ],
+    "sentiment": "neutral",
+    "pos_count": 0,
+    "neg_count": 0
+  },
+  "US.TSLA": {
+    "news": [
+      {
+        "title": "深读曹操出行的叙事框架：“Tesla+Waymo”，Robotaxi迎来中国时刻",
+        "date": "2026-04-28 19:56:00",
+        "source": "eastmoney"
+      },
+      {
+        "title": "特斯拉国内超充站向非特斯拉车主开放超1000站",
+        "date": "2026-05-07 10:39:34",
+        "source": "eastmoney"
+      },
+      {
+        "title": "美股科技龙头市值再创新高 前五位总市值正式站上20万亿美元大关",
+        "date": "2026-05-06 23:23:15",
+        "source": "eastmoney"
+      }
+    ],
+    "sentiment": "neutral",
+    "pos_count": 0,
+    "neg_count": 0
+  },
+  "US.SLV": {
+    "news": [
+      {
+        "title": "全球最大的白银ETF iShares Silver Trust持仓量较前日增加42.24吨",
+        "date": "2026-04-20 07:10:20",
+        "source": "eastmoney"
+      },
+      {
+        "title": "银矿公司SILVER BOW MINING首次公开募股价格为每股10-13美元，参考价格为每股12-15美元",
+        "date": "2026-04-21 18:44:07",
+        "source": "eastmoney"
+      },
+      {
+        "title": "全球最大的白银ETF iShares Silver Trust持仓量较前日持平",
+        "date": "2026-04-08 07:41:04",
+        "source": "eastmoney"
+      }
+    ],
+    "sentiment": "neutral",
+    "pos_count": 0,
+    "neg_count": 0
+  },
+  "US.GOOG": {
+    "news": [
+      {
+        "title": "大普微：公司已实现对海外客户Google等客户的产品销售",
+        "date": "2026-04-21 21:02:26",
+        "source": "eastmoney"
+      },
+      {
+        "title": "C大普微：已实现对海外客户Google等客户的产品销售 已通过Nvidia、xAI两家全球AI头部公司测试导入",
+        "date": "2026-04-21 21:19:24",
+        "source": "eastmoney"
+      },
+      {
+        "title": "C大普微：已实现对海外客户Google等客户的产品销售 已通过Nvidia、xAI两家全球AI头部公司测试导入",
+        "date": "2026-04-21 21:17:49",
+        "source": "eastmoney"
+      }
+    ],
+    "sentiment": "neutral",
+    "pos_count": 0,
+    "neg_count": 0
+  },
+  "US.IAU": {
+    "news": [
+      {
+        "title": "全球最大的黄金ETF SPDR Gold Trust持仓较前日增加7.71吨",
+        "date": "2026-04-20 07:10:15",
+        "source": "eastmoney"
+      },
+      {
+        "title": "全球最大的黄金ETF SPDR Gold Trust持仓量为1049.48吨，较前一个交易日增加2.29吨",
+        "date": "2026-04-15 06:12:36",
+        "source": "eastmoney"
+      },
+      {
+        "title": "超微电脑表示：金系列（Gold Series）服务器准备好三个工作日内发货",
+        "date": "2026-04-10 04:09:05",
+        "source": "eastmoney"
+      }
+    ],
+    "sentiment": "neutral",
+    "pos_count": 0,
+    "neg_count": 0
+  },
+  "US.TSM": {
+    "news": [
+      {
+        "title": "台积电子公司卖出2.31亿美元Arm Holdings股份",
+        "date": "2026-04-29 07:41:57",
+        "source": "eastmoney"
+      },
+      {
+        "title": "台积电2029年将量产1.3纳米半导体",
+        "date": "2026-04-23 18:03:49",
+        "source": "eastmoney"
+      },
+      {
+        "title": "美股爆了！道指涨近八百点，英特尔4月累涨114.09%，热门中概股普涨",
+        "date": "2026-05-01 07:20:31",
+        "source": "eastmoney"
+      }
+    ],
+    "sentiment": "neutral",
+    "pos_count": 0,
+    "neg_count": 0
+  },
+  "US.NVDA": {
+    "news": [
+      {
+        "title": "与NVIDIA合作开发，小马智行发布新一代自动驾驶域控制器",
+        "date": "2026-04-25 16:40:25",
+        "source": "eastmoney"
+      },
+      {
+        "title": "小马智行发布新一代自动驾驶域控制器，基于集成NVLink的NVIDIA DRIVE Hyperion打造",
+        "date": "2026-04-25 15:40:48",
+        "source": "eastmoney"
+      },
+      {
+        "title": "德赛西威与NVIDIA合作发布全新智驾解决方案",
+        "date": "2026-04-22 21:26:00",
+        "source": "eastmoney"
+      }
+    ],
+    "sentiment": "neutral",
+    "pos_count": 0,
+    "neg_count": 0
+  },
+  "fetch_time": "2026-05-07T19:41:27.363077"
+}

@@ -55,17 +55,19 @@ def place_order(
     order_type: str = 'LIMIT',
     trading_env: str = 'SIMULATE',
     trd_side: str = None,
+    fill_outside_rth: bool = True,
 ) -> dict:
     """
     Place an order. Always prints summary. Defaults to SIMULATE mode.
 
     Args:
-        ticker:       Moomoo code, e.g. 'US.NVDA'
-        direction:    'BUY' or 'SELL'
-        qty:          Number of shares (must be positive integer)
-        price:        Limit price (ignored for MARKET orders)
-        order_type:   'LIMIT' (default) | 'MARKET' | 'STOP' | 'STOP_LIMIT'
-        trading_env:  'SIMULATE' (default) | 'REAL'
+        ticker:           Moomoo code, e.g. 'US.NVDA'
+        direction:        'BUY' or 'SELL'
+        qty:              Number of shares (must be positive integer)
+        price:            Limit price (ignored for MARKET orders)
+        order_type:       'LIMIT' (default) | 'MARKET' | 'STOP' | 'STOP_LIMIT'
+        trading_env:      'SIMULATE' (default) | 'REAL'
+        fill_outside_rth: True (default) — allow fills in pre/after-hours sessions
 
     Returns:
         dict with order_id, status, message, ticker, direction, qty, price, trading_env
@@ -106,7 +108,9 @@ def place_order(
             code=ticker,
             trd_side=side,
             order_type=otype,
-            trd_env=env
+            trd_env=env,
+            time_in_force=ft.TimeInForce.DAY,
+            fill_outside_rth=fill_outside_rth,
         )
 
     if ret == ft.RET_OK:
