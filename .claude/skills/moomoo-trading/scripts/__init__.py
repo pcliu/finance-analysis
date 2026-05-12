@@ -16,6 +16,7 @@ from .connection import MoomooConnection, require_opend
 # Data
 from .data_fetcher import (
     get_realtime_quote,
+    get_us_session,
     get_order_book,
     get_kline_data,
     get_multiple_klines,
@@ -68,7 +69,7 @@ __all__ = [
     # Connection
     'MoomooConnection', 'require_opend',
     # Data
-    'get_realtime_quote', 'get_order_book', 'get_kline_data',
+    'get_realtime_quote', 'get_us_session', 'get_order_book', 'get_kline_data',
     'get_multiple_klines', 'get_stock_basicinfo',
     # Indicators
     'calculate_rsi', 'calculate_sma', 'calculate_ema', 'calculate_macd',

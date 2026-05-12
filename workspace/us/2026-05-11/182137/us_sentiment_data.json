@@ -1,0 +1,113 @@
+{
+  "fetch_time": "2026-05-11T18:24:00",
+  "market_macro": {
+    "sp500_close_may8": 7398.93,
+    "nasdaq_close_may8": 26247,
+    "weekly_streak": "6-week winning streak (longest since 2024)",
+    "sentiment": "cautiously bullish",
+    "key_event_this_week": "April CPI release May 12 (Tuesday) — single biggest catalyst",
+    "jobs_data": "April nonfarm payrolls +115K (beat), unemployment 4.3%",
+    "sp500_earnings_growth_2026": "18.6% expected (up from 15% Jan forecast)",
+    "us_china_tariff": "145%→30% large reduction, risk appetite supported"
+  },
+  "stocks": {
+    "US.NVDA": {
+      "sentiment": "bullish_medium",
+      "key_points": [
+        "YTD +5%, +14% past month, near 52-week high $216.83",
+        "Earnings scheduled May 20 — 9 trading days away, major binary event",
+        "Announced investment $3.2B Corning (glass substrates), $2.1B IREN (data center)",
+        "AMD beat validates AI GPU demand remains strong — indirect tailwind",
+        "Export restrictions to China remain overhang"
+      ],
+      "near_term_catalyst": "May 20 earnings — avoid adding position before then"
+    },
+    "US.IAU": {
+      "sentiment": "neutral_to_bearish",
+      "key_points": [
+        "Gold under pressure as risk-on sentiment dominates 6-week equity rally",
+        "US-China tariff relief reduces safe-haven demand",
+        "CPI tomorrow creates two-way risk: hotter CPI could push gold up (stagflation fear) or down (tightening expectations)"
+      ]
+    },
+    "US.AMD": {
+      "sentiment": "very_bullish_but_overbought",
+      "key_points": [
+        "Q1 2026 earnings: massive beat, stock surged ~17% post-earnings",
+        "Q2 revenue guidance $11.2B (+46% YoY), CEO called it structural shift",
+        "Meta deploying 6 gigawatts of AMD Instinct GPUs",
+        "RSI already 80+ before post-earnings surge — now extremely overbought",
+        "Fundamentally excellent but entry timing very poor at current levels"
+      ]
+    },
+    "US.TSLA": {
+      "sentiment": "neutral_to_bullish",
+      "key_points": [
+        "Q1 automotive gross margin 21.1% (vs 16.2% prior year) — strong margin recovery",
+        "Operating income +135.84% YoY",
+        "Stock up ~7.4% since 5/6 close, now $428",
+        "Musk Golden Dome association a political/sentiment factor",
+        "Stock trading above SMA20, not ideal entry point"
+      ]
+    },
+    "US.PLTR": {
+      "sentiment": "neutral_post_earnings",
+      "key_points": [
+        "Q1 revenue +85% YoY — crushed expectations",
+        "Stock DECLINED after earnings (sell-the-news pattern)",
+        "RSI 40.8 shows technical weakness",
+        "Analysts still bullish long-term (trillion-dollar target by 2030)",
+        "Wait for consolidation and new momentum before entry"
+      ]
+    },
+    "US.RKLB": {
+      "sentiment": "bullish_but_extremely_extended",
+      "key_points": [
+        "Q1 2026 revenue $200.35M +63.5% YoY — record quarter",
+        "Backlog $2.2B, largest contract ever (confidential customer, Neutron+Electron through 2029)",
+        "Also signed $190M deal for 20 hypersonic test flights",
+        "Stock surged 34% on earnings day — best day ever",
+        "Acquired Motiv Space Systems (Mars robotics)",
+        "Golden Dome defense spending tailwind",
+        "Current $105.47 vs 5/6 close $84.65 (+24.6%) — chasing here is very risky",
+        "Wall Street avg PT $87.56 — stock already way above consensus"
+      ]
+    },
+    "US.GOOG": {
+      "sentiment": "extended_near_highs",
+      "key_points": [
+        "RSI 84.7 — very overbought",
+        "Near upper Bollinger Band",
+        "AI search / cloud revenue remains strong",
+        "Limited new catalysts this week"
+      ]
+    },
+    "US.TSM": {
+      "sentiment": "bullish_medium_term_extended",
+      "key_points": [
+        "Q1 2026 revenue $35.9B +35% YoY, HPC 61% of revenue, profits +58%",
+        "Up 30% YTD, at extended levels",
+        "AMD beat + NVDA AI spending confirm wafer demand extremely strong",
+        "Current $411.68 slightly below 5/6 close $419.5 (-1.9%)"
+      ]
+    },
+    "US.CRCL": {
+      "sentiment": "avoid",
+      "key_points": [
+        "Implied volatility 130 (May contracts) — extremely high",
+        "Crypto/stablecoin adjacent, regulatory risk",
+        "Current $113.67 vs 5/6 close $121.8 (-6.7% gap down)",
+        "%B = 1.02 based on 5/6 data — was already above upper BB and has since fallen"
+      ]
+    },
+    "US.SLV": {
+      "sentiment": "neutral_underperforming",
+      "key_points": [
+        "Silver underperforming in risk-on rally",
+        "Current $73.01 (+4.1% from 5/6 close $70.13) — recovered somewhat",
+        "RSI 47.8 neutral, MACD slightly recovering",
+        "Not a high priority in current risk-on environment"
+      ]
+    }
+  }
+}

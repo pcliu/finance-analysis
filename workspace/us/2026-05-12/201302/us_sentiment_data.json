@@ -1,0 +1,121 @@
+{
+  "fetch_time": "2026-05-12T20:14:50",
+  "macro": {
+    "sp500_level": 7398.93,
+    "sp500_trend": "6周连涨，打破7300历史新高",
+    "fed_policy": "预期再降50bp；Powell任期5月到期，候任Warsh偏鸽派",
+    "trade_war": "Trump-Xi峰会5/14-15，议题含AI护栏，结果将大幅影响半导体/科技股",
+    "key_events_this_week": [
+      "5/13 - 4月CPI数据发布（关键！）",
+      "5/14-15 - Trump-Xi峰会，AI监管讨论",
+      "5/20 - NVDA Q1 FY2027财报"
+    ],
+    "ai_theme": "AI为2026年主导叙事，Meta capex指引$145B，微软$190B",
+    "sentiment": "整体偏多，但高估值+事件密集，本周是近期多头的第一个重大考验"
+  },
+  "tickers": {
+    "US.NVDA": {
+      "headline": "5/20财报预期收入$78B(+77% YoY)，客户大幅上调capex；分析师目标价$270",
+      "sentiment": "positive",
+      "event_risk": "high - 5/20财报 + 5/14-15 Trump-Xi峰会AI护栏讨论",
+      "key_news": [
+        "Meta capex上调至$135-145B",
+        "微软宣布2026年资本支出$190B",
+        "分析师平均目标价$270.73，Strong Buy评级（37位分析师）",
+        "5/20发布FY2027 Q1财报，是本季度最重要催化剂"
+      ]
+    },
+    "US.AMD": {
+      "headline": "AI芯片需求旺盛，与NVDA同为核心AI受益者；近期强势但估值不便宜",
+      "sentiment": "positive",
+      "event_risk": "medium - Trump-Xi峰会可能影响芯片出口管制",
+      "key_news": [
+        "过去20个交易日股价上涨72%，AI数据中心需求驱动",
+        "今日盘前+12%，技术面极度超买"
+      ]
+    },
+    "US.TSLA": {
+      "headline": "自动驾驶/Optimus叙事，估值178x forward PE；Musk宣布对NVDA利好消息",
+      "sentiment": "neutral",
+      "event_risk": "medium - 高度依赖Optimus/Robotaxi执行",
+      "key_news": [
+        "Elon Musk宣布与NVDA合作相关利好",
+        "估值178x远期PE，高度依赖AI/机器人执行",
+        "今日盘前+8%"
+      ]
+    },
+    "US.GOOG": {
+      "headline": "AI+Cloud+Gemini驱动，市值$4.7T有望超越NVDA；RSI 83.5极度超买",
+      "sentiment": "positive",
+      "event_risk": "medium - Trump-Xi峰会 + 反垄断监管",
+      "key_news": [
+        "Alphabet或超越Nvidia成全球最大市值公司",
+        "AI、Cloud、Gemini三引擎驱动增长",
+        "20天涨幅25%，RSI极度超买"
+      ]
+    },
+    "US.TSM": {
+      "headline": "4月营收$13.08B(+17.5% YoY)；台海地缘政治是主要风险",
+      "sentiment": "neutral",
+      "event_risk": "high - Trump-Xi峰会台海讨论 + AI芯片出口管制",
+      "key_news": [
+        "2026年4月营收NT$410.73B，同比+17.5%",
+        "AI芯片需求持续强劲",
+        "Trump-Xi峰会可能讨论台海安全问题"
+      ]
+    },
+    "US.PLTR": {
+      "headline": "Q1 2026营收$1.63B(+85% YoY)超预期，全年指引上调至$7.66B；但股价过去6月跌23%，估值97x forward PE",
+      "sentiment": "mixed",
+      "event_risk": "low - 财报已发布",
+      "key_news": [
+        "Q1 2026营收$1.63B，同比+85%",
+        "全年指引上调至$7.66B（同比+71%）",
+        "股价过去6个月累计下跌23%，高估值压制",
+        "今日历史创新高（根据Motley Fool 5/11报道）"
+      ]
+    },
+    "US.RKLB": {
+      "headline": "Q1财报超预期后暴涨24%（上周）；今日盘前再涨~49%，可能有新催化剂",
+      "sentiment": "positive",
+      "event_risk": "medium - 高度投机，财报后追高风险",
+      "key_news": [
+        "Q1营收超过华尔街预期，股价暴涨24.4%",
+        "今日盘前$117.35 vs 上一收盘$78.58（+49%）",
+        "商业航天赛道，Rocket Lab Neutron研发进展"
+      ]
+    },
+    "US.CRCL": {
+      "headline": "稳定币/加密IPO新股，call/put比2.2:1看涨；高波动高投机",
+      "sentiment": "positive",
+      "event_risk": "high - IPO后高波动，Q1财报刚发布，加密监管不确定性",
+      "key_news": [
+        "Q1财报发布后高波动",
+        "5月call IV=130，June IV=93，call/put=2.2:1",
+        "今日盘前$131.76 vs 上一收盘$113.25（+16%）"
+      ]
+    },
+    "US.IAU": {
+      "headline": "黄金ETF；金价$4720历史高位；美联储换届偏鸽+通胀对冲需求；过去1年回报41.3%",
+      "sentiment": "positive",
+      "event_risk": "low - 防御性资产，主要受宏观驱动",
+      "key_news": [
+        "金价$4720+历史最高位",
+        "美联储主席换届Powell→Warsh，偏鸽派预期",
+        "中东地缘政治紧张支撑避险需求",
+        "过去1年回报41.3%"
+      ]
+    },
+    "US.SLV": {
+      "headline": "银价$85.5/oz近两个月高位；工业+避险双重需求；过去1年回报127.4%",
+      "sentiment": "positive",
+      "event_risk": "medium - 高波动，对利率和美元敏感",
+      "key_news": [
+        "银价暴涨6%+至$85.5/oz，两个月高点",
+        "工业用途+避险需求双重驱动",
+        "过去1年SLV回报127.4%，远超IAU(41.3%)",
+        "美伊谈判进展影响贵金属"
+      ]
+    }
+  }
+}

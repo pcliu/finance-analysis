@@ -1,0 +1,226 @@
+{
+  "fetch_time": "2026-05-11T18:23:29.155211",
+  "account": {
+    "total_assets": 8514.7866,
+    "cash": 0.0,
+    "market_val": 1774.93,
+    "frozen_cash": 0.0,
+    "available_funds": "N/A",
+    "unrealized_pl": "N/A",
+    "realized_pl": "N/A",
+    "currency": "USD",
+    "trading_env": "REAL"
+  },
+  "investable_amount": 6739.856599999999,
+  "positions": [
+    {
+      "code": "US.NVDA",
+      "stock_name": "NVIDIA",
+      "qty": 5.0,
+      "can_sell_qty": 5.0,
+      "cost_price": 208.85,
+      "market_val": 1071.25,
+      "nominal_price": 214.25,
+      "pl_ratio": 2.59,
+      "pl_val": 27.0015,
+      "currency": "USD"
+    },
+    {
+      "code": "US.IAU",
+      "stock_name": "Gold Trust Ishares",
+      "qty": 8.0,
+      "can_sell_qty": 8.0,
+      "cost_price": 89.11,
+      "market_val": 703.68,
+      "nominal_price": 87.96,
+      "pl_ratio": -1.29,
+      "pl_val": -9.2,
+      "currency": "USD"
+    }
+  ],
+  "orders": [],
+  "watchlist": [
+    {
+      "code": "US.PLTR",
+      "name": "Palantir",
+      "stock_type": "STOCK"
+    },
+    {
+      "code": "US.CRCL",
+      "name": "Circle",
+      "stock_type": "STOCK"
+    },
+    {
+      "code": "US.RKLB",
+      "name": "Rocket Lab",
+      "stock_type": "STOCK"
+    },
+    {
+      "code": "US.AMD",
+      "name": "Advanced Micro Devices",
+      "stock_type": "STOCK"
+    },
+    {
+      "code": "US.TSLA",
+      "name": "Tesla",
+      "stock_type": "STOCK"
+    },
+    {
+      "code": "US.SLV",
+      "name": "iShares Silver Trust",
+      "stock_type": "ETF"
+    },
+    {
+      "code": "US.GOOG",
+      "name": "Alphabet-C",
+      "stock_type": "STOCK"
+    },
+    {
+      "code": "US.IAU",
+      "name": "Gold Trust Ishares",
+      "stock_type": "ETF"
+    },
+    {
+      "code": "US.TSM",
+      "name": "Taiwan Semiconductor",
+      "stock_type": "STOCK"
+    },
+    {
+      "code": "US.NVDA",
+      "name": "NVIDIA",
+      "stock_type": "STOCK"
+    }
+  ],
+  "quotes": [
+    {
+      "code": "US.NVDA",
+      "name": "NVIDIA",
+      "last_price": 215.2,
+      "open_price": 213.03,
+      "high_price": 217.8,
+      "low_price": 212.89,
+      "prev_close_price": 211.5,
+      "volume": 136421361,
+      "turnover": 29406902542.0,
+      "price_spread": 0.01,
+      "update_time": "2026-05-11 04:23:18.133"
+    },
+    {
+      "code": "US.IAU",
+      "name": "Gold Trust Ishares",
+      "last_price": 88.87,
+      "open_price": 88.935,
+      "high_price": 89.37,
+      "low_price": 88.47,
+      "prev_close_price": 88.46,
+      "volume": 2861416,
+      "turnover": 254211729.0,
+      "price_spread": 0.01,
+      "update_time": "2026-05-11 04:23:03.325"
+    },
+    {
+      "code": "US.PLTR",
+      "name": "Palantir",
+      "last_price": 137.8,
+      "open_price": 135.865,
+      "high_price": 137.88,
+      "low_price": 133.02,
+      "prev_close_price": 137.05,
+      "volume": 41745393,
+      "turnover": 5673128383.0,
+      "price_spread": 0.01,
+      "update_time": "2026-05-11 04:23:24.766"
+    },
+    {
+      "code": "US.CRCL",
+      "name": "Circle",
+      "last_price": 113.67,
+      "open_price": 114.26,
+      "high_price": 115.0,
+      "low_price": 108.91,
+      "prev_close_price": 113.25,
+      "volume": 16763713,
+      "turnover": 1891966875.0,
+      "price_spread": 0.01,
+      "update_time": "2026-05-11 04:23:24.384"
+    },
+    {
+      "code": "US.RKLB",
+      "name": "Rocket Lab",
+      "last_price": 105.47,
+      "open_price": 86.035,
+      "high_price": 105.62,
+      "low_price": 85.87,
+      "prev_close_price": 78.58,
+      "volume": 79927310,
+      "turnover": 7853275384.0,
+      "price_spread": 0.01,
+      "update_time": "2026-05-11 04:23:24.809"
+    },
+    {
+      "code": "US.AMD",
+      "name": "Advanced Micro Devices",
+      "last_price": 455.19,
+      "open_price": 418.59,
+      "high_price": 456.29,
+      "low_price": 418.29,
+      "prev_close_price": 408.46,
+      "volume": 58134868,
+      "turnover": 25678294883.0,
+      "price_spread": 0.01,
+      "update_time": "2026-05-11 04:23:25.766"
+    },
+    {
+      "code": "US.TSLA",
+      "name": "Tesla",
+      "last_price": 428.35,
+      "open_price": 416.475,
+      "high_price": 431.2,
+      "low_price": 416.39,
+      "prev_close_price": 411.79,
+      "volume": 65049970,
+      "turnover": 27722214370.0,
+      "price_spread": 0.01,
+      "update_time": "2026-05-11 04:23:24.136"
+    },
+    {
+      "code": "US.SLV",
+      "name": "iShares Silver Trust",
+      "last_price": 73.01,
+      "open_price": 73.29,
+      "high_price": 73.83,
+      "low_price": 72.28,
+      "prev_close_price": 71.6,
+      "volume": 19125978,
+      "turnover": 1396854408.0,
+      "price_spread": 0.01,
+      "update_time": "2026-05-11 04:23:18.630"
+    },
+    {
+      "code": "US.GOOG",
+      "name": "Alphabet-C",
+      "last_price": 397.05,
+      "open_price": 394.27,
+      "high_price": 398.37,
+      "low_price": 393.67,
+      "prev_close_price": 395.3,
+      "volume": 13762461,
+      "turnover": 5453604592.0,
+      "price_spread": 0.01,
+      "update_time": "2026-05-11 04:23:25.514"
+    },
+    {
+      "code": "US.TSM",
+      "name": "Taiwan Semiconductor",
+      "last_price": 411.68,
+      "open_price": 416.95,
+      "high_price": 417.0,
+      "low_price": 400.88,
+      "prev_close_price": 414.15,
+      "volume": 18531181,
+      "turnover": 7603200708.0,
+      "price_spread": 0.01,
+      "update_time": "2026-05-11 04:23:18.749"
+    }
+  ]
+}

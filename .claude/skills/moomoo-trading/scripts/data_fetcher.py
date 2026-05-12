@@ -8,8 +8,68 @@ the quantitative-trading indicators module (same column names).
 
 import pandas as pd
 import moomoo as ft
+from datetime import datetime, time
+import pytz
 from .connection import MoomooConnection, require_opend
 from .utils import to_moomoo_code, parse_market_from_code
+
+
+# ── US Session Detection ──────────────────────────────────────────────────────
+
+_ET = pytz.timezone('America/New_York')
+
+# Session boundaries in ET (hour, minute)
+_SESSION_BOUNDS = [
+    (time(4, 0),  time(9, 30),  'Pre-Market'),
+    (time(9, 30),  time(16, 0),  'RTH'),
+    (time(16, 0),  time(20, 0),  'After-Hours'),
+]
+
+
+def get_us_session(dt_utc: datetime = None) -> dict:
+    """
+    Return the current US equity trading session based on ET time.
+
+    Args:
+        dt_utc: UTC datetime to evaluate (defaults to now).
+
+    Returns:
+        dict with keys:
+            session      – 'Pre-Market' | 'RTH' | 'After-Hours' | 'Overnight'
+            et_time      – current ET datetime string (HH:MM:SS)
+            is_weekday   – bool, False on Saturday/Sunday
+            note         – human-readable label for reports
+    """
+    if dt_utc is None:
+        dt_utc = datetime.now(pytz.utc)
+    elif dt_utc.tzinfo is None:
+        dt_utc = pytz.utc.localize(dt_utc)
+
+    et_now = dt_utc.astimezone(_ET)
+    et_t = et_now.time()
+    weekday = et_now.weekday()  # 0=Mon … 6=Sun
+
+    is_weekday = weekday < 5
+
+    session = 'Overnight'
+    for start, end, name in _SESSION_BOUNDS:
+        if start <= et_t < end:
+            session = name
+            break
+
+    labels = {
+        'Pre-Market':  '盘前 (Pre-Market 04:00–09:30 ET)',
+        'RTH':         '盘中 (RTH 09:30–16:00 ET)',
+        'After-Hours': '盘后 (After-Hours 16:00–20:00 ET)',
+        'Overnight':   '夜盘 (Overnight 20:00–04:00 ET)',
+    }
+
+    return {
+        'session':    session,
+        'et_time':    et_now.strftime('%Y-%m-%d %H:%M:%S ET'),
+        'is_weekday': is_weekday,
+        'note':       labels[session] if is_weekday else f'非交易日 ({et_now.strftime("%A")}) — 价格为最近一个夜盘/盘后延续',
+    }
 
 
 # ── Real-time Data ────────────────────────────────────────────────────────────
@@ -19,17 +79,24 @@ def get_realtime_quote(tickers) -> pd.DataFrame:
     """
     Get real-time market snapshot for one or more tickers.
 
+    Automatically detects the current US session (Pre-Market / RTH /
+    After-Hours / Overnight) and annotates every row so callers always
+    know which session the price belongs to.
+
     Args:
-        tickers: str or list of Moomoo-format codes, e.g. 'US.NVDA' or ['US.NVDA', 'HK.00700']
+        tickers: str or list of Moomoo-format codes, e.g. 'US.NVDA'
 
     Returns:
         pd.DataFrame with columns:
             code, name, last_price, open_price, high_price, low_price,
             prev_close_price, volume, turnover, price_spread,
-            change_val, change_rate (%), update_time
+            change_val, change_rate (%), update_time,
+            session, et_time, session_note
     """
     if isinstance(tickers, str):
         tickers = [tickers]
+
+    session_info = get_us_session()
 
     with MoomooConnection.quote_ctx() as ctx:
         ret, data = ctx.get_market_snapshot(tickers)
@@ -42,7 +109,13 @@ def get_realtime_quote(tickers) -> pd.DataFrame:
         'change_val', 'change_rate', 'update_time'
     ]
     available = [c for c in cols if c in data.columns]
-    return data[available].reset_index(drop=True)
+    df = data[available].reset_index(drop=True)
+
+    df['session']      = session_info['session']
+    df['et_time']      = session_info['et_time']
+    df['session_note'] = session_info['note']
+
+    return df
 
 
 @require_opend
@@ -105,8 +178,11 @@ def get_kline_data(
     if end is None:
         end = date.today().strftime('%Y-%m-%d')
     if start is None:
-        # calendar days buffer: 120 trading days ≈ 170 calendar days
-        buffer_days = max(int(count * 1.5), 180)
+        # Use 2x buffer to ensure recent days are not truncated by max_count.
+        # count=120 trading days needs ~170 cal days, but a tight window risks
+        # the API filling max_count from the start and cutting off recent bars.
+        # Use 2.5x to guarantee the last bars are always the most recent ones.
+        buffer_days = max(int(count * 2.5), 250)
         start = (date.today() - timedelta(days=buffer_days)).strftime('%Y-%m-%d')
 
     with MoomooConnection.quote_ctx() as ctx:
