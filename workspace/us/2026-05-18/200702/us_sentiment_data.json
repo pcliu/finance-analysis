@@ -1,0 +1,78 @@
+{
+  "fetch_time": "2026-05-18T20:11:00+10:00",
+  "session": "Pre-Market (US/Eastern 06:10 Mon 2026-05-18)",
+  "data_caveat": "Moomoo realtime feed has not yet refreshed pre-market quotes; last_price across all tickers equals Friday 2026-05-15 RTH close. Analysis is anchored on Friday close + Thursday→Friday move.",
+  "macro": {
+    "headline": "5/15 PCE 数据落地后的第一个交易日；上周 5/14 CPI/PPI 超预期 + 5/15 PCE 共同把 2026 降息预期清零，市场从 '通胀冲击-第一日反弹（Thu）-第二日抛售（Fri）' 进入定价利率路径上调的延伸阶段",
+    "key_dates_next_7d": [
+      "5/18（今天）— 周一开盘前先消化 Friday 抛售（多数 AI/高估值 -4% ~ -8%）",
+      "5/20（周二）— NVDA Q1 财报，AI 算力链条最大事件，TSM/AMD/NVDA 重定价点",
+      "5/21–5/22（周三/周四）— FOMC 会议纪要 + 联储官员讲话窗口，对实际利率敏感的贵金属(IAU/SLV) 关键",
+      "5/23（周五）— 5 月 PMI 初值",
+      "本周整体：财报+宏观双密集窗口，盘前不是新建仓的高赔率时点"
+    ],
+    "implications": "高估值科技股 Friday 已实现 -4%~-8% 抛售，但 RSI 仍未进入超卖；NVDA 财报前事件溢价高 → 新增 AI 风险敞口性价比差。贵金属在实际利率上行下持续承压（SLV -8.6%，IAU -2.3%），尚未止跌信号。",
+    "vol_environment": "5/15 OPEX 已过 + NVDA 财报临近 → 本周隐含波动率会重新攀升"
+  },
+  "tickers": {
+    "US.TSM": {
+      "headline": "Friday RTH 收 $404.35（vs Thu $417.72，-3.20%），跟随 AI 板块回吐",
+      "tone": "neutral_consolidation",
+      "catalysts": ["5/20 NVDA 财报传导（最关键）", "AI 资本开支叙事中长期仍在", "AMAT 财报后供应链信号"],
+      "risk": "NVDA 财报二日后，作为 2 股小仓位无需为对冲而调整；RSI 49.7 中性、%B 0.62 中轨上方、MACD hist 翻负 (-0.99) → 短期动能转弱"
+    },
+    "US.IAU": {
+      "headline": "Friday RTH 收 $85.51（vs Thu $87.54，-2.32%），SLV -8.6% 拖累板块",
+      "tone": "weak_oversold_building",
+      "risk": "RSI 40.4 偏弱、%B 0.13 接近布林下轨、双均线下方；FOMC 纪要本周 + 实际利率仍在压制贵金属"
+    },
+    "US.NVDA": {
+      "headline": "Friday $225.32（vs Thu $235.74，-4.42%），从超买区显著回吐",
+      "tone": "pre_earnings_neutral",
+      "catalysts": ["5/20 财报 = 唯一关键事件"],
+      "risk": "RSI 从 70 降至 56、%B 仍 0.84 接近上轨；财报前 2 日加仓 = 纯赌方向，不是高赔率交易"
+    },
+    "US.TSLA": {
+      "headline": "Friday $422.24（vs Thu $443.30，-4.75%），极度超买被压力测试",
+      "tone": "cooling_from_extreme",
+      "risk": "RSI 从 79.9 降至 66.7、%B 0.70；动能仍在但已过度透支，赔率一般"
+    },
+    "US.AMD": {
+      "headline": "Friday $424.10（vs Thu $449.70，-5.69%），半导体板块联动下跌",
+      "tone": "cooling_but_still_extended",
+      "risk": "RSI 67.6、%B 0.71、vol_ratio 0.62x 缩量；需要回到 SMA20 $371.71 附近才有性价比，距当前还有 -12.5% 空间"
+    },
+    "US.GOOG": {
+      "headline": "Friday $393.32（vs Thu $397.17，-0.97%），相对抗跌",
+      "tone": "overbought_resilient",
+      "risk": "RSI 74.3 仍超买、%B 0.73；抗跌说明 AI 龙头资金锚定效应，但不构成加仓理由"
+    },
+    "US.RKLB": {
+      "headline": "Friday $124.77（vs Thu $132.55，-5.87%），blow-off top 风险开始兑现",
+      "tone": "still_extended",
+      "risk": "RSI 73.3、%B 0.91 仍位于上轨；典型超买 → 第一波回调 → 但 SMA20 $93.69 还在 -25% 以下，仍非加仓区"
+    },
+    "US.CRCL": {
+      "headline": "Friday $114.00（vs Thu $123.88，-7.97%），明显放量破位",
+      "tone": "breakdown_caution",
+      "risk": "RSI 59.4、%B 0.60 中轨上方但 -8% 单日跌幅说明短期叙事被挑战；等待至少回到 SMA20 $109.23 上方稳定再考虑"
+    },
+    "US.PLTR": {
+      "headline": "Friday $133.99（vs Thu $133.73，+0.19%），抗跌但仍在双均线下方",
+      "tone": "no_reversal_yet",
+      "risk": "RSI 38.9 偏弱、MACD hist 仍 -0.56、距离 SMA50 $144.40 还有 -7.2%；技术面破位尚未修复"
+    },
+    "US.HIMS": {
+      "headline": "Friday $25.05（vs Thu $24.24，+3.34%），从超卖反弹",
+      "tone": "oversold_bounce_unconfirmed",
+      "catalysts": ["GLP-1 / Novo Nordisk 合作叙事"],
+      "risk": "RSI 36.8 仍偏弱、%B 0.20 仍接近下轨、vol_ratio 0.67x 反弹缩量 → 反弹但未确认底部"
+    },
+    "US.SLV": {
+      "headline": "Friday $69.04（vs Thu $75.51，-8.57%），放量大跌（vol 1.91x）",
+      "tone": "capitulation_or_continuation",
+      "risk": "RSI 51.1、%B 0.42、双均线下方；放量下跌可能是阶段性恐慌底，但确认信号需要 2-3 日盘整。与 IAU 同向暴露，组合层面不需重复加仓"
+    }
+  },
+  "summary": "Friday 通胀冲击的二次抛售把多数高估值标的 RSI 从超买带回中性，但没有任何标的进入清晰的超卖加仓区。当前账户股票仓位仅 19.6%（$1,667 / $8,525），现金/基金缓冲 80.4%。本周事件密度极高：周二 NVDA 财报 + 周中 FOMC 纪要 + 周五 PMI。今日（周一盘前）正确动作是不交易，保留现金，让 NVDA 财报后市场重新定价 AI 板块再决定。"
+}

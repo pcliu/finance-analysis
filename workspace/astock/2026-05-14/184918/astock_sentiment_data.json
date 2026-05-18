@@ -1,0 +1,741 @@
+{
+  "macro_astock": {
+    "query": "A股市场",
+    "sentiment_score": 0.4,
+    "sentiment_label": "positive",
+    "news": [
+      {
+        "title": "中金：坚定看好A股市场延续震荡上行趋势",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "资金聚焦科技股 A股市场低开高走",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "A股收盘丨沪指跌1.52%，全市场逾4300股下跌",
+        "sentiment": "negative",
+        "score": -1.0
+      },
+      {
+        "title": "中金：坚定看好A股市场延续震荡上行趋势 关注景气成长与周期改善主线",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "A股收评：沪指跌超1.52%失守4200点 全市场超4300股下挫",
+        "sentiment": "neutral",
+        "score": 0.0
+      }
+    ]
+  },
+  "macro_trade": {
+    "query": "中美贸易",
+    "sentiment_score": -0.2,
+    "sentiment_label": "negative",
+    "news": [
+      {
+        "title": "金河生物：金霉素产品约60%-70%销往海外市场",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "金河生物：公司金霉素产品约60%-70%销往海外市场，其中外销部分约2/3销往美国市场",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "【调研快报】众望布艺接待投资者调研",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "集运 | 运力总量投放有一定进展 长协价格签订略低于预期",
+        "sentiment": "negative",
+        "score": -1.0
+      },
+      {
+        "title": "农产品 | 油脂价格震荡整理 国内基本面宽松 油脂供应稳定",
+        "sentiment": "neutral",
+        "score": 0.0
+      }
+    ]
+  },
+  "sector_consumer": {
+    "query": "消费ETF",
+    "sentiment_score": 0.67,
+    "sentiment_label": "positive",
+    "news": [
+      {
+        "title": "ETF开盘：线上消费ETF涨4.02% 疫苗ETF跌1.48%",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "谷歌发布全新AI笔记本电脑平台，智能消费ETF博时(515920)盘中涨超1%",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "白酒股午后拉升，贵州茅台一度涨近2%！消费ETF汇添富(159928)涨近1%，此前2日“吸金”超1.2亿元！",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "2026Q1全球手机营收同比增长8%，消费电子高端化转型提速，智能消费ETF博时(515920)近1周累计上涨超6%",
+        "sentiment": "positive",
+        "score": 0.33
+      },
+      {
+        "title": "沪指刷新11年新高！消费ETF汇添富(159928)全天再获6600万份净申购！泡泡玛特Q1基数效应下国内外市场延续高增，白酒筑底信号渐显！",
+        "sentiment": "neutral",
+        "score": 0.0
+      }
+    ]
+  },
+  "sector_dividend": {
+    "query": "红利ETF",
+    "sentiment_score": 0.4,
+    "sentiment_label": "positive",
+    "news": [
+      {
+        "title": "ETF融资榜 | 港股通央企红利ETF华夏(513910)融资净买入621.63万元，居可比基金第一-20260512",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "高股息资产配置价值凸显，红利ETF易方达（515180）、红利低波ETF易方达（563020）获资金连续布局",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "万家基金：万家中证红利ETF联接5月12日起暂停大额申购",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "港股央企红利ETF天弘(159281)盘中成交额已超3700万元，红利低波ETF天弘(159549)近4日“吸金”超2900万元",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "港股央企红利ETF天弘(159281)标的指数逆市上涨、股息率高达5.43%，机构：高股息资产的确定性与避险属性具备长期配置价值",
+        "sentiment": "positive",
+        "score": 1.0
+      }
+    ]
+  },
+  "sector_healthcare": {
+    "query": "医疗ETF",
+    "sentiment_score": 0.6,
+    "sentiment_label": "positive",
+    "news": [
+      {
+        "title": "医疗ETF国泰（159828）逆市吸金，盘中流入超4000万份",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "ETF资金榜 | 港股通医疗ETF汇添富(526010)：净流出584.10万元，居可比基金第一-20260507",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "ETF资金榜 | 港股通医疗ETF汇添富(526010)：净流出1245.79万元，居可比基金第一-20260506",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "CXO板块大涨！药明康德涨超15%，港股通医疗ETF华夏（520510）涨超3%",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "史上最佳一季报！药明康德A股5分钟封死涨停，H股一度暴拉17%！华宝基金医疗ETF逆市大涨2.41%",
+        "sentiment": "positive",
+        "score": 1.0
+      }
+    ]
+  },
+  "sector_defense": {
+    "query": "军工ETF",
+    "sentiment_score": 0.8,
+    "sentiment_label": "positive",
+    "news": [
+      {
+        "title": "军工ETF国泰（512660）回调超3%，“十五五”订单可期叠加产业格局升级，订单落地驱动景气回暖",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "军工ETF国泰（512660）收涨超1.2%，装备研发突破叠加大国博弈加剧，军工板块上行",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "军工ETF国泰（512660）涨超1%，估值中枢回归合理区间",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "重启升势？华宝基金军工ETF(512810)周线五连阳！商业航天领涨，业绩线活跃，15股翻倍暴增，最高超512%！",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "商业航天板块大爆发，军工ETF国泰（512660）领涨近3%",
+        "sentiment": "positive",
+        "score": 1.0
+      }
+    ]
+  },
+  "sector_hk_tech": {
+    "query": "港股科技",
+    "sentiment_score": 0.67,
+    "sentiment_label": "positive",
+    "news": [
+      {
+        "title": "港股科技ETF国泰（513020）开盘大涨超2.6%，AI基建投入加码叠加全球流动性环境宽松，港股科技估值修复预期升温",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "港股科技互联网板块走强，相关ETF涨超2%",
+        "sentiment": "positive",
+        "score": 0.33
+      },
+      {
+        "title": "港股科技ETF国泰（513020）早盘涨超2%，科技主线高歌猛进",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "估值低位叠加AI浪潮，借道港股通科技(987008)布局港股科技修复机遇",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "阿里AI正式迈入商业化回报周期，港股科技ETF银华（513160）涨超1.6%",
+        "sentiment": "positive",
+        "score": 1.0
+      }
+    ]
+  },
+  "sector_5g": {
+    "query": "5G通信",
+    "sentiment_score": 0.0,
+    "sentiment_label": "neutral",
+    "news": [
+      {
+        "title": "光通信概念持续拉升，AI算力产业链迎红利周期，5GETF博时盘中涨近2%，冲击6连涨",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "光通信概念持续拉升，AI算力产业链迎红利周期，5GETF博时(159811)盘中涨超2%，冲击6连涨",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "科信技术：公司现有通信产品主要应用于5G场景",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "外资一季度大手笔加仓通信行业，5GETF博时盘中涨近4%，权重股兆易创新涨停",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "移远通信：公司SC200E、SC668S、SG560D、SG855G等模组均已用于机器人行业",
+        "sentiment": "neutral",
+        "score": 0.0
+      }
+    ]
+  },
+  "sector_ai": {
+    "query": "AI人工智能",
+    "sentiment_score": 0.2,
+    "sentiment_label": "positive",
+    "news": [
+      {
+        "title": "腾讯阿里同步加码AI基建投入，可持续关注AI人工智能ETF配置价值",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "AI驱动全球算力基建持续加速，科创创业人工智能ETF景顺(159142)场内精准覆盖AI产业应用全链条",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "人工智能初创企业Anthropic寻求300亿美元融资，AI人工智能ETF平安(512930)交投活跃",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "AI产业链方向高开回落，人工智能ETF易方达（159819）、科创创业人工智能ETF易方达（159140）受资金关注",
+        "sentiment": "negative",
+        "score": -1.0
+      },
+      {
+        "title": "涨超2%，AI人工智能ETF平安冲击3连涨",
+        "sentiment": "neutral",
+        "score": 0.0
+      }
+    ]
+  },
+  "sector_solar": {
+    "query": "光伏ETF",
+    "sentiment_score": 0.8,
+    "sentiment_label": "positive",
+    "news": [
+      {
+        "title": "涨超2.2%，光伏ETF华夏(515370)冲击3连涨",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "政策强化新能源主体地位，光伏ETF国泰（159864）盘中上涨1.6%",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "光伏ETF银华（516880）逆市上涨，机构称行业全产业链呈现复苏向好态势",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "光伏ETF鹏华(159863)交投活跃，太空光伏催化不断",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "光伏ETF（159864）交投热度持续升温，板块基本面出现积极信号",
+        "sentiment": "positive",
+        "score": 1.0
+      }
+    ]
+  },
+  "sector_power": {
+    "query": "电力ETF",
+    "sentiment_score": 0.6,
+    "sentiment_label": "positive",
+    "news": [
+      {
+        "title": "电力ETF易方达(560930)今日上市，关注与AI高度共振的典型HALO资产",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "买盘活跃！电力ETF华安（512140）溢价0.57%，高居同指数第一",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "四部委新政落地，绿色电力ETF（159669）大涨超2%",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "绿色电力ETF易方达(562960)延续强势，实现三连阳",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "电力行业新一轮量价双升周期有望加速，绿色电力ETF嘉实(159625)备受关注",
+        "sentiment": "positive",
+        "score": 1.0
+      }
+    ]
+  },
+  "sector_semicon": {
+    "query": "半导体设备",
+    "sentiment_score": 0.0,
+    "sentiment_label": "neutral",
+    "news": [
+      {
+        "title": "半导体设备占比较高的半导体设备ETF易方达(159558)午后急升涨近4%，全球AI基建浪潮强力拉动半导体设备需求",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "半导体设备占比较高的半导体设备ETF易方达(159558)午后急升涨近4%，全球AI基建浪潮强力拉动半导体设备需求",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "长江存储IPO有望推进，半导体设备厂商订单饱满，半导体设备ETF万家午后涨超3%冲击3连涨",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "美股芯片与半导体设备板块周二普遍回落",
+        "sentiment": "negative",
+        "score": -1.0
+      },
+      {
+        "title": "半导体设备股震荡拉升",
+        "sentiment": "neutral",
+        "score": 0.0
+      }
+    ]
+  },
+  "sector_robot": {
+    "query": "机器人AI",
+    "sentiment_score": 0.6,
+    "sentiment_label": "positive",
+    "news": [
+      {
+        "title": "发那科与谷歌达成实体AI合作 机构看好其机器人业务",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "香港特区政府资助AI与机器人实验室建立，全市场规模最大的机器人ETF华夏（562500）盘中震荡，快克智能领涨超10%",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "大家都在看AI时 机器人悄悄发生了哪些变化？",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "AI与机器人盘前速递丨腾讯、阿里被传洽谈投资DeepSeek，中泰完成首例跨国机器人手术",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "AI与机器人盘前速递丨F.04机器人已完全锁定设计，emini Intelligence将实现跨应用运行",
+        "sentiment": "positive",
+        "score": 1.0
+      }
+    ]
+  },
+  "sector_chem": {
+    "query": "化工ETF",
+    "sentiment_score": 0.6,
+    "sentiment_label": "positive",
+    "news": [
+      {
+        "title": "化工ETF鹏华(159870)成交额近14亿元，化工景气拐点逐渐明朗",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "化工ETF鹏华(159870)成交额超3亿元，工信部发布关于组织开展2026年度工业节能监察工作的通知",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "化工ETF鹏华(159870)成交额超8亿元，高纯磷迎国产替代机遇",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "ETF主力榜 | 化工ETF华宝(516020)主力资金净流入3372.00万元，居可比基金首位-20260512",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "ETF主力榜 | 能源化工ETF建信(159981)主力资金净流入2059.12万元，居全市场第一梯队-20260513",
+        "sentiment": "neutral",
+        "score": 0.0
+      }
+    ]
+  },
+  "sector_soybean": {
+    "query": "豆粕ETF",
+    "sentiment_score": -0.6,
+    "sentiment_label": "negative",
+    "news": [
+      {
+        "title": "豆粕ETF华夏（159985）发布溢价风险提示",
+        "sentiment": "negative",
+        "score": -1.0
+      },
+      {
+        "title": "豆粕ETF华夏（159985）发布溢价风险提示",
+        "sentiment": "negative",
+        "score": -1.0
+      },
+      {
+        "title": "豆粕ETF华夏发布溢价风险提示",
+        "sentiment": "negative",
+        "score": -1.0
+      },
+      {
+        "title": "豆粕ETF华夏（159985）发布溢价风险提示",
+        "sentiment": "negative",
+        "score": -1.0
+      },
+      {
+        "title": "ETF主力榜 | 豆粕ETF华夏(159985)主力资金净流入7593.86万元，居全市场第一梯队-20260422",
+        "sentiment": "positive",
+        "score": 1.0
+      }
+    ]
+  },
+  "sector_grain": {
+    "query": "粮食ETF",
+    "sentiment_score": 0.8,
+    "sentiment_label": "positive",
+    "news": [
+      {
+        "title": "粮食ETF鹏华(159698)红盘向上，钾肥供应持续偏紧",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "粮食ETF鹏华(159698)盘中净申购1800万份，霍尔木兹海峡危机或导致全球粮食供应趋紧",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "粮食ETF鹏华(159698)获1150万份净申购，极端天气+政策导向有望利好粮食产业发展",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "粮食ETF鹏华(159698)早盘净申购650万份，政策强调提升粮食产购储加销协同保障能力",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "粮食ETF鹏华(159698)逆市上涨，食用菌方向领涨",
+        "sentiment": "positive",
+        "score": 1.0
+      }
+    ]
+  },
+  "sector_mining": {
+    "query": "矿业ETF",
+    "sentiment_score": 0.4,
+    "sentiment_label": "positive",
+    "news": [
+      {
+        "title": "地缘扰动加剧，矿业逆市上扬，矿业ETF国泰（561330）逆市飘红",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "矿业ETF国泰（561330）盘中涨超1%，金属基本面支撑价格上行",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "矿业ETF国泰（561330）跌超3.7%，全球矿产供应扰动叠加下游新兴产业需求增长，回调或可布局",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "工业金属供需向好，矿业ETF国泰（561330）盘中涨超1.3%",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "ETF融资榜 | 矿业ETF国泰(561330)融资净买入501.53万元，居可比基金首位-20260508",
+        "sentiment": "neutral",
+        "score": 0.0
+      }
+    ]
+  },
+  "sector_grid": {
+    "query": "电网设备",
+    "sentiment_score": 0.6,
+    "sentiment_label": "positive",
+    "news": [
+      {
+        "title": "电网设备板块走低",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "电网设备板块持续走弱 通达股份触及跌停",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "电网设备板块掀涨停潮，电网设备ETF易方达（560390）标的指数六连涨",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "电网设备板块持续活跃，电网设备ETF易方达(560390)标的指数涨超2%冲击六连阳",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "电网设备需求放量，电网设备ETF国泰（561380）大涨超2%，连续3日迎资金净流入",
+        "sentiment": "positive",
+        "score": 1.0
+      }
+    ]
+  },
+  "sector_machinery": {
+    "query": "工程机械",
+    "sentiment_score": 0.4,
+    "sentiment_label": "positive",
+    "news": [
+      {
+        "title": "一季度我国工程机械产品出口额同比增长24.3%",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "徐工机械在成都成立工程机械公司",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "港股工程机械股表现亮眼",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "工程机械板块震荡走强 徐工机械涨停",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "工程机械板块震荡走强 徐工机械涨停",
+        "sentiment": "positive",
+        "score": 1.0
+      }
+    ]
+  },
+  "sector_aerospace": {
+    "query": "航空航天",
+    "sentiment_score": -0.2,
+    "sentiment_label": "negative",
+    "news": [
+      {
+        "title": "博云新材：公司经营板块分为硬质合金板块和航空航天板块",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "长盈通20CM涨停！2025年净利增近30%，特种光纤器件适配航空航天多场景",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "敏芯股份：公司暂不涉及航空航天相关领域",
+        "sentiment": "negative",
+        "score": -1.0
+      },
+      {
+        "title": "广钢气体：半导体与航空航天将成为国内氦气需求的核心增长引擎",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "欧洲航空航天与国防指数继续下跌，最新下跌2.1%",
+        "sentiment": "negative",
+        "score": -1.0
+      }
+    ]
+  },
+  "sector_gold": {
+    "query": "黄金",
+    "sentiment_score": 0.0,
+    "sentiment_label": "neutral",
+    "news": [
+      {
+        "title": "黄金ETF国泰（518800）逆市显韧性，黄金战略性配置价值持续强化",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "事关黄金业务，工行最新调整！什么信号？",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "黄金“猴市” 谁主沉浮？",
+        "sentiment": "positive",
+        "score": 1.0
+      },
+      {
+        "title": "美国上市的黄金矿业公司股票下跌，安哥拉黄金跌5.3%",
+        "sentiment": "negative",
+        "score": -1.0
+      },
+      {
+        "title": "现货黄金失守4700美元 银行下调风险投资等级",
+        "sentiment": "negative",
+        "score": -1.0
+      }
+    ]
+  },
+  "sector_silver": {
+    "query": "白银",
+    "sentiment_score": -0.2,
+    "sentiment_label": "negative",
+    "news": [
+      {
+        "title": "汇丰银行上调白银均价预期",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "现货白银日内涨超3%",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "国投白银LOF发布溢价风险提示",
+        "sentiment": "negative",
+        "score": -1.0
+      },
+      {
+        "title": "汇丰银行：预计今年白银供应缺口收窄至7300万盎司",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "上期所调整白银期货相关合约风控参数",
+        "sentiment": "neutral",
+        "score": 0.0
+      }
+    ]
+  },
+  "sector_kcb50": {
+    "query": "科创50",
+    "sentiment_score": -0.2,
+    "sentiment_label": "negative",
+    "news": [
+      {
+        "title": "科创50日内跌幅达1.06%",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "科创50日内涨幅达2.03%",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "科创50指数震荡下跌，现跌超1%",
+        "sentiment": "negative",
+        "score": -1.0
+      },
+      {
+        "title": "科创50日内跌幅达1.01%",
+        "sentiment": "neutral",
+        "score": 0.0
+      },
+      {
+        "title": "科创50指数续创历史新高",
+        "sentiment": "neutral",
+        "score": 0.0
+      }
+    ]
+  },
+  "baidu_macro_news": {
+    "error": "Failed to obtain Baidu cookies: Missing BAIDUID cookies in first response"
+  }
+}

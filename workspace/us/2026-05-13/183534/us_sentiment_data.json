@@ -1,0 +1,112 @@
+{
+  "fetch_time": "2026-05-13T18:40:00",
+  "macro": {
+    "sp500_recent": "S&P 500 +13% since Mar 30, six consecutive weekly gains",
+    "vix_sentiment": "VIX drifting low, CNN Fear & Greed = 'Greed'（一个月前极度恐惧）",
+    "volume_warning": "涨势成交量偏低，市场广度差，仅大市值科技股参与",
+    "fed": "Fed 4月持息 3.50-3.75%，鸽派与鹰派分歧加大（8-4投票），近期降息概率低",
+    "china_tariffs": "美中90天贸易暂停协议，关税预计稳定在~20%（历史仍高位）",
+    "nvidia_event": "NVDA 5月20日财报，Jensen Huang随Trump访华——双重事件风险"
+  },
+  "stocks": {
+    "US.AMD": {
+      "sentiment": "bullish",
+      "score": 8,
+      "news": [
+        "AMD Q1财报大超预期，盘前涨17%；CEO称AI需求'清晰拐点'",
+        "Q2指引收入$11.2B，同比+46%；数据中心业务加速",
+        "AMD股价过去一年上涨320%，估值已部分反映增长"
+      ]
+    },
+    "US.NVDA": {
+      "sentiment": "bullish_with_risk",
+      "score": 7,
+      "news": [
+        "NVDA Q4 FY2026数据中心收入+73%至$62B，Blackwell驱动",
+        "5月20日财报——关键事件风险窗口",
+        "Jensen Huang随Trump访华，地缘政治变量"
+      ]
+    },
+    "US.TSM": {
+      "sentiment": "bullish",
+      "score": 8,
+      "news": [
+        "TSM Q1营收$35.9B，同比+35%；HPC（AI）占营收61%",
+        "净利润同比+58%；全年指引维持强劲",
+        "年初至今涨约30%；AI半导体核心受益标的"
+      ]
+    },
+    "US.GOOG": {
+      "sentiment": "bullish",
+      "score": 6,
+      "news": [
+        "Google I/O产品发布带动情绪；AI整合加速",
+        "广告收入韧性超预期",
+        "RSI 78超买，已充分定价近期利好"
+      ]
+    },
+    "US.TSLA": {
+      "sentiment": "neutral",
+      "score": 5,
+      "news": [
+        "TSLA召回218,868辆——倒车摄像头软件故障，OTA修复",
+        "涨至$433附近，RSI 70超买区域",
+        "Musk投入政府事务持续降低市场关注度"
+      ]
+    },
+    "US.PLTR": {
+      "sentiment": "neutral_recovering",
+      "score": 5,
+      "news": [
+        "PLTR Q1财报超预期，但股价反应不强，技术面仍偏弱",
+        "RSI 31严重超卖，下方支撑需要验证",
+        "政府AI合同仍是核心催化剂"
+      ]
+    },
+    "US.RKLB": {
+      "sentiment": "bullish_extended",
+      "score": 6,
+      "news": [
+        "RKLB Q1营收大超预期，股价单日涨+24%",
+        "%B=1.12，突破布林上轨——极度超买",
+        "航天商业化叙事强烈，但高波动高估值"
+      ]
+    },
+    "US.CRCL": {
+      "sentiment": "bullish",
+      "score": 6,
+      "news": [
+        "Circle Internet Group（USDC发行商）Q1财报前期权看涨比2.2:1",
+        "稳定币监管利好预期，美国稳定币立法进展",
+        "成交量1.83x异常放大——机构建仓or事件驱动"
+      ]
+    },
+    "US.HIMS": {
+      "sentiment": "uncertain",
+      "score": 4,
+      "news": [
+        "HIMS Q1财报5月11日收盘后发布——技术面已超卖",
+        "期权看涨比3.4:1，隐波138（高）",
+        "GLP-1药物竞争压力持续，FDA复合药规定是关键变量"
+      ]
+    },
+    "US.SLV": {
+      "sentiment": "bullish",
+      "score": 7,
+      "news": [
+        "银价约$79-80/oz，SLV ETF年内涨11%，12个月涨132%",
+        "JP Morgan预期2026年均价$81/oz；年末$95-106目标",
+        "工业需求（太阳能/EV/AI数据中心）+连续六年供应赤字"
+      ]
+    },
+    "US.IAU": {
+      "sentiment": "neutral_hold",
+      "score": 6,
+      "news": [
+        "黄金在美中关税缓和后从高位回撤，但宏观不确定性支撑",
+        "Fed持息、实际利率平稳；金价技术面中性整理",
+        "作为防御性仓位持有合理；短期无强烈方向性信号"
+      ]
+    }
+  }
+}

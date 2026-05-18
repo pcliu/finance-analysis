@@ -1,0 +1,89 @@
+{
+  "snapshot_time": "2026-05-18T20:10:01.192657",
+  "account": {
+    "total_assets": 8524.5666,
+    "cash": -0.01,
+    "market_val": 1666.56,
+    "frozen_cash": 0.0,
+    "available_funds": "N/A",
+    "unrealized_pl": "N/A",
+    "realized_pl": "N/A",
+    "currency": "USD",
+    "trading_env": "REAL",
+    "investable_amount": 6858.006600000001
+  },
+  "positions": [
+    {
+      "code": "US.TSM",
+      "stock_name": "Taiwan Semiconductor",
+      "qty": 2.0,
+      "can_sell_qty": 2.0,
+      "cost_price": 401.44,
+      "market_val": 812.46,
+      "nominal_price": 406.23,
+      "pl_ratio": 1.1900000000000002,
+      "pl_val": 9.58,
+      "currency": "USD"
+    },
+    {
+      "code": "US.IAU",
+      "stock_name": "iShares Gold Trust",
+      "qty": 10.0,
+      "can_sell_qty": 10.0,
+      "cost_price": 88.34,
+      "market_val": 854.1,
+      "nominal_price": 85.41,
+      "pl_ratio": -3.32,
+      "pl_val": -29.3,
+      "currency": "USD"
+    }
+  ],
+  "orders": [],
+  "watchlist": [
+    {
+      "code": "US.HIMS",
+      "name": "Hims & Hers Health"
+    },
+    {
+      "code": "US.PLTR",
+      "name": "Palantir"
+    },
+    {
+      "code": "US.CRCL",
+      "name": "Circle"
+    },
+    {
+      "code": "US.RKLB",
+      "name": "Rocket Lab"
+    },
+    {
+      "code": "US.AMD",
+      "name": "Advanced Micro Devices"
+    },
+    {
+      "code": "US.TSLA",
+      "name": "Tesla"
+    },
+    {
+      "code": "US.SLV",
+      "name": "iShares Silver Trust"
+    },
+    {
+      "code": "US.GOOG",
+      "name": "Alphabet-C"
+    },
+    {
+      "code": "US.IAU",
+      "name": "iShares Gold Trust"
+    },
+    {
+      "code": "US.TSM",
+      "name": "Taiwan Semiconductor"
+    },
+    {
+      "code": "US.NVDA",
+      "name": "NVIDIA"
+    }
+  ],
+  "investable_amount": 6858.006600000001
+}

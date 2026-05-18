@@ -91,7 +91,12 @@ from scripts import (
 import moomoo as ft
 
 # 1. Real-time quote
+# ⚠️ Use `current_price` (session-aware), NOT `last_price` (RTH-only, stale in extended hours).
+# `current_price` automatically picks pre_price / last_price / after_price / overnight_price
+# based on the current US session. `current_price_source` reports which field was used.
 quote = get_realtime_quote(['US.NVDA', 'US.AMD', 'US.GOOG'])
+# quote columns include: current_price, current_change_rate, current_price_source,
+#                        last_price, pre_price, after_price, overnight_price, session, et_time
 
 # 2. Historical K-line → technical indicators
 kline = get_kline_data('US.NVDA', ktype=ft.KLType.K_DAY, count=120)

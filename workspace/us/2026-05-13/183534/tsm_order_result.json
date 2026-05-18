@@ -1,0 +1,10 @@
+{
+  "status": "success",
+  "order_id": "FS1C8308A604927000",
+  "ticker": "US.TSM",
+  "side": "BUY",
+  "qty": 2,
+  "price": 397.28,
+  "estimated_cost": 794.56,
+  "time": "2026-05-13T19:34:00.534680"
+}

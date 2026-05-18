@@ -1,0 +1,76 @@
+{
+  "fetch_time": "2026-05-15T19:30:00+10:00",
+  "session": "Pre-Market (US/Eastern 05:27 Fri)",
+  "macro": {
+    "headline": "通胀冲击后第二日：5/14 CPI/PPI 超预期后市场重新定价利率路径；2026 降息预期消失，36% 加息概率仍在",
+    "key_dates_next_7d": [
+      "5/15（今日）— PCE 通胀数据（08:30 ET），关键通胀指标确认",
+      "5/20（周二）— NVDA Q1 财报，AI 算力链条最大事件",
+      "5/15 — 多家半导体/科技公司期权到期日（OPEX）波动放大",
+      "AMAT（5/14 盘后）财报结果将传导到 TSM/NVDA 估值"
+    ],
+    "implications": "PCE 若再超预期 → 高估值科技股进一步压力；若回落 → 超买标的短暂反弹但难改估值压力",
+    "vol_environment": "今天是 5 月 OPEX 日，gamma squeeze 解除后下周一波动率可能放大"
+  },
+  "tickers": {
+    "US.TSM": {
+      "headline": "盘前价 $417.72（vs 昨日 $399.80，+4.48%），AI 半导体板块隔夜走强",
+      "tone": "bullish",
+      "catalysts": ["AMAT 财报传导", "5/20 NVDA 财报临近的板块联动", "黄仁勋访华消息延续"],
+      "risk": "RSI 升至 57.7 仍在健康区，但 %B 0.85 接近上轨；MACD Hist 仍微负"
+    },
+    "US.IAU": {
+      "headline": "实时价 $87.54（vs 昨日 $88.19，-0.74%），SLV -4.8% 拖累贵金属板块",
+      "tone": "neutral_weak",
+      "risk": "RSI 45 偏弱；跌破 SMA20 和 SMA50（双下方）；防御逻辑被高利率压制"
+    },
+    "US.NVDA": {
+      "headline": "$235.74（+4.4% 隔夜），RSI 70.3，%B 1.13 突破布林上轨",
+      "tone": "bullish_overbought",
+      "catalysts": ["5/20 财报 3 个交易日后"],
+      "risk": "财报前事件密集 + 估值已 price-in 黄仁勋访华消息"
+    },
+    "US.TSLA": {
+      "headline": "$443.30（基本持平），RSI 79.9 仍极度超买",
+      "tone": "neutral_overbought",
+      "risk": "估值对利率敏感，PCE 数据风险"
+    },
+    "US.AMD": {
+      "headline": "$449.70（+0.94%），RSI 71.1，量能 0.56x 缩量",
+      "tone": "bullish_but_extended",
+      "risk": "缩量上涨延续，短期回调风险加大"
+    },
+    "US.GOOG": {
+      "headline": "$397.17（-0.47%），RSI 仍 79，开始小幅回落",
+      "tone": "neutral_overbought_cooling",
+      "risk": "极度超买未实质消化"
+    },
+    "US.RKLB": {
+      "headline": "$132.55（+6.77% 隔夜大涨），RSI 80.7，%B 1.09",
+      "tone": "bullish_blowoff_risk",
+      "risk": "blow-off top 风险显著上升，回撤幅度可能大"
+    },
+    "US.CRCL": {
+      "headline": "$123.88（-2.13% 回落），RSI 62.9，%B 0.80",
+      "tone": "neutral_consolidation",
+      "catalysts": ["稳定币叙事独立 of AI/半导体"]
+    },
+    "US.PLTR": {
+      "headline": "$133.73（+2.83% 反弹），RSI 38.6，仍位于双均线下方",
+      "tone": "bearish_dead_cat_bounce",
+      "risk": "技术面破位，尚未确认底部"
+    },
+    "US.HIMS": {
+      "headline": "$24.24（基本横盘），RSI 31.1 接近超卖，%B 0.07",
+      "tone": "bearish_oversold",
+      "catalysts": ["GLP-1 Novo Nordisk 合作"],
+      "risk": "趋势破位，未见明确底部反转信号"
+    },
+    "US.SLV": {
+      "headline": "$75.51（-4.8% 大幅回调），RSI 从 73 降至 62.4",
+      "tone": "consolidating_from_overbought",
+      "risk": "回调中，但仍未到加仓窗口；与 IAU 同向暴露"
+    }
+  },
+  "summary": "通胀冲击后市场分化：AI 半导体 (TSM/NVDA/AMD) 隔夜反弹但仍超买，TSLA/GOOG/RKLB 维持极度超买，PLTR/HIMS 趋势破位，SLV 大跌回调中。盘前不是新建仓窗口，重点是评估 TSM 是否需要止盈一部分（已浮盈 +4%）。今日 PCE 是关键变量。"
+}

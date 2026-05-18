@@ -1,0 +1,70 @@
+{
+  "fetch_time": "2026-05-14T18:40:00+10:00",
+  "macro": {
+    "headline": "CPI/PPI 双双超预期，6% 同比 PPI 是 2022 年以来最大涨幅；2026 年降息预期基本消失，36% 概率加息。",
+    "implications": "对成长股/高估值标的负面，对黄金/白银偏中性（通胀对冲，但高利率压制），对半导体/AI 板块属于估值压力测试。",
+    "key_dates_next_7d": [
+      "今日 5/14 美东 08:30 — 4 月零售销售",
+      "今日 5/14 — Applied Materials (AMAT) 财报，预计 EPS $2.68",
+      "5/20 NVDA 财报"
+    ],
+    "fear_greed": "由前期 Greed 因通胀数据回落（参考 5/13 SPX 下跌）",
+    "session": "Pre-market (美东 04:38)"
+  },
+  "tickers": {
+    "US.NVDA": {
+      "headline": "NVDA 盘前涨约 2%，Bloomberg 报道黄仁勋将随特朗普访华",
+      "tone": "bullish_short_term",
+      "catalysts": ["5/20 财报临近", "中美 AI 芯片政策"],
+      "risk": "财报前事件密集，估值已偏高"
+    },
+    "US.PLTR": {
+      "headline": "5/13 -4.31%，财报后估值压力（42x 2026 销售）+ NHS 数据隐私争议 + 内部人减持",
+      "tone": "bearish",
+      "catalysts": ["AI 竞争加剧（Anthropic / OpenAI）"],
+      "risk": "技术面已跌破 SMA20/50，RSI 35"
+    },
+    "US.HIMS": {
+      "headline": "5/12 因 Q1 亏损 $92M、营收 $608M 不及预期暴跌 13%；FY 指引上修至 $2.8–3.0B，与 Novo Nordisk 合作 GLP-1",
+      "tone": "mixed",
+      "catalysts": ["GLP-1 战略 / 月新增 10 万+ 减重订户"],
+      "risk": "技术面跌破布林下轨 %B=0，趋势破位"
+    },
+    "US.TSLA": {
+      "headline": "近期连续大涨，RSI 81.8 极度超买",
+      "tone": "neutral_overbought",
+      "risk": "高估值在 CPI 后承压"
+    },
+    "US.AMD": {
+      "headline": "财报后 +17% 强势，RSI 75 超买且缩量",
+      "tone": "bullish_but_extended",
+      "risk": "短期回调风险"
+    },
+    "US.GOOG": {
+      "headline": "RSI 81.5 极度超买",
+      "tone": "neutral_overbought"
+    },
+    "US.TSM": {
+      "headline": "AI 半导体核心代工，技术面健康整理（RSI 58.5）",
+      "tone": "bullish",
+      "risk": "受中美芯片政策牵动；Q1 营收 +35%"
+    },
+    "US.RKLB": {
+      "headline": "近期 +24%，RSI 73.9 接近超买，已突破布林上轨",
+      "tone": "bullish_but_extended"
+    },
+    "US.SLV": {
+      "headline": "白银 RSI 73.2，%B 1.02，放量上涨；通胀数据形成支撑",
+      "tone": "bullish_overbought",
+      "risk": "高利率长期偏空"
+    },
+    "US.IAU": {
+      "headline": "黄金高位整理，RSI 49.4 中性",
+      "tone": "neutral_defensive"
+    },
+    "US.CRCL": {
+      "headline": "稳定币 / Circle 持续走强，RSI 64.6 健康上行",
+      "tone": "bullish"
+    }
+  }
+}

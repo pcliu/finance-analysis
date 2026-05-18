@@ -79,19 +79,25 @@ def get_realtime_quote(tickers) -> pd.DataFrame:
     """
     Get real-time market snapshot for one or more tickers.
 
-    Automatically detects the current US session (Pre-Market / RTH /
-    After-Hours / Overnight) and annotates every row so callers always
-    know which session the price belongs to.
+    ⚠️ IMPORTANT — `last_price` semantics for US equities:
+        Moomoo's `last_price` field reflects the most recent **RTH** trade only.
+        During Pre-Market / After-Hours / Overnight, `last_price` does NOT change
+        and is NOT the current tradeable price. Always use `current_price`
+        (added below) for decision-making — it picks the right session's price
+        automatically.
 
-    Args:
-        tickers: str or list of Moomoo-format codes, e.g. 'US.NVDA'
-
-    Returns:
-        pd.DataFrame with columns:
-            code, name, last_price, open_price, high_price, low_price,
-            prev_close_price, volume, turnover, price_spread,
-            change_val, change_rate (%), update_time,
-            session, et_time, session_note
+    Returns (US equities) augmented columns:
+        - last_price         : last RTH trade (stale outside RTH)
+        - pre_price          : Pre-Market last trade
+        - after_price        : After-Hours last trade
+        - overnight_price    : Overnight last trade
+        - pre_change_rate / after_change_rate / overnight_change_rate
+        - current_price      : ⭐ session-aware "use this" price
+                               (pre_price in Pre-Market, last_price in RTH,
+                                after_price in After-Hours, overnight_price in Overnight)
+        - current_change_rate: change_rate matching current_price
+        - current_price_source: which field current_price came from
+        - session, et_time, session_note: from get_us_session()
     """
     if isinstance(tickers, str):
         tickers = [tickers]
@@ -106,7 +112,14 @@ def get_realtime_quote(tickers) -> pd.DataFrame:
     cols = [
         'code', 'name', 'last_price', 'open_price', 'high_price', 'low_price',
         'prev_close_price', 'volume', 'turnover', 'price_spread',
-        'change_val', 'change_rate', 'update_time'
+        'change_val', 'change_rate', 'update_time',
+        # Extended-hours fields (US equities)
+        'pre_price', 'pre_change_val', 'pre_change_rate', 'pre_volume',
+        'pre_high_price', 'pre_low_price',
+        'after_price', 'after_change_val', 'after_change_rate',
+        'after_high_price', 'after_low_price', 'after_volume', 'after_turnover',
+        'overnight_price', 'overnight_change_val', 'overnight_change_rate',
+        'overnight_high_price', 'overnight_low_price', 'overnight_volume',
     ]
     available = [c for c in cols if c in data.columns]
     df = data[available].reset_index(drop=True)
@@ -114,6 +127,38 @@ def get_realtime_quote(tickers) -> pd.DataFrame:
     df['session']      = session_info['session']
     df['et_time']      = session_info['et_time']
     df['session_note'] = session_info['note']
+
+    # ── Session-aware current price selection ────────────────────────
+    # Maps the current ET session to the correct price field.
+    session_to_field = {
+        'Pre-Market':  ('pre_price',       'pre_change_rate'),
+        'RTH':         ('last_price',      'change_rate'),
+        'After-Hours': ('after_price',     'after_change_rate'),
+        'Overnight':   ('overnight_price', 'overnight_change_rate'),
+    }
+    price_field, change_field = session_to_field.get(
+        session_info['session'], ('last_price', 'change_rate')
+    )
+
+    def _pick_current(row):
+        # Prefer the session's price; fall back to last_price if missing/zero
+        # (e.g. illiquid tickers with no extended-hours trades).
+        if price_field in row.index:
+            v = row[price_field]
+            if v is not None and not pd.isna(v) and float(v) > 0:
+                return pd.Series({
+                    'current_price':         float(v),
+                    'current_change_rate':   float(row[change_field]) if change_field in row.index and not pd.isna(row[change_field]) else 0.0,
+                    'current_price_source':  price_field,
+                })
+        return pd.Series({
+            'current_price':         float(row['last_price']) if 'last_price' in row.index else 0.0,
+            'current_change_rate':   float(row['change_rate']) if 'change_rate' in row.index else 0.0,
+            'current_price_source':  'last_price (fallback)',
+        })
+
+    if not df.empty:
+        df = pd.concat([df, df.apply(_pick_current, axis=1)], axis=1)
 
     return df
 
