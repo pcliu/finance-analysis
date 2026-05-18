@@ -1,6 +1,6 @@
 # Finance Analysis Skills
 
-面向 AI Agent 的个人投研与交易辅助技能库。项目通过 Claude Code Skills 组织能力，由 Agent 按任务读取对应 `SKILL.md`，生成一次性分析脚本，拉取行情/账户/舆情数据，并把报告与原始数据沉淀到 `workspace/`。
+面向 AI Agent 的个人投研与交易辅助技能库。项目通过 Codex Skills 组织能力，由 Agent 按任务读取对应 `SKILL.md`，生成一次性分析脚本，拉取行情/账户/舆情数据，并把报告与原始数据沉淀到 `workspace/`。
 
 本项目用于研究、复盘和辅助决策，不构成投资建议。
 
@@ -19,7 +19,8 @@
 ```text
 finance-analysis/
 ├── README.md
-├── .claude/
+├── AGENTS.md
+├── .codex/
 │   └── skills/
 │       ├── analyze-astock-portfolio/   # A 股每日持仓调整工作流
 │       ├── analyze-us-portfolio/       # Moomoo 美股账户调仓工作流
@@ -34,7 +35,7 @@ finance-analysis/
 └── test_economic_sentiment.py
 ```
 
-`.claude/skills` 是当前技能主目录。`workspace/` 是运行产物目录，里面的脚本和报告是一次分析的快照，便于复盘当时使用的数据、指标和结论。
+`.codex/skills` 是当前技能主目录。`AGENTS.md` 是 Codex 进入项目时的项目级指令。`workspace/` 是运行产物目录，里面的脚本和报告是一次分析的快照，便于复盘当时使用的数据、指标和结论。
 
 ## 技能分工
 
@@ -170,7 +171,7 @@ order_results.json
 语法检查：
 
 ```bash
-python3 -m compileall -q .claude/skills test_akshare.py test_economic_sentiment.py
+python3 -m compileall -q .codex/skills test_akshare.py test_economic_sentiment.py
 ```
 
 测试 AkShare 新闻接口：
@@ -183,13 +184,13 @@ Moomoo 能力依赖 OpenD，运行前请确认 OpenD 已启动并登录。
 
 ## 详细文档
 
-- [A 股调仓工作流](.claude/skills/analyze-astock-portfolio/SKILL.md)
-- [美股调仓工作流](.claude/skills/analyze-us-portfolio/SKILL.md)
-- [Moomoo 交易工具](.claude/skills/moomoo-trading/SKILL.md)
-- [Moomoo API 参考](.claude/skills/moomoo-trading/references/api_reference.md)
-- [A 股/港股量化工具](.claude/skills/quantitative-trading/SKILL.md)
-- [量化工具 API 参考](.claude/skills/quantitative-trading/references/api_reference.md)
-- [新闻舆情工具](.claude/skills/economic-sentiment/SKILL.md)
+- [A 股调仓工作流](.codex/skills/analyze-astock-portfolio/SKILL.md)
+- [美股调仓工作流](.codex/skills/analyze-us-portfolio/SKILL.md)
+- [Moomoo 交易工具](.codex/skills/moomoo-trading/SKILL.md)
+- [Moomoo API 参考](.codex/skills/moomoo-trading/references/api_reference.md)
+- [A 股/港股量化工具](.codex/skills/quantitative-trading/SKILL.md)
+- [量化工具 API 参考](.codex/skills/quantitative-trading/references/api_reference.md)
+- [新闻舆情工具](.codex/skills/economic-sentiment/SKILL.md)
 
 ## License
 

@@ -57,7 +57,6 @@ Before `json.dump`, pass data through `make_serializable` to handle NumPy and pa
 - `references/api_reference.md`: function-level API details.
 - `references/workflow_guide.md`: recommended analysis workflow.
 - `references/troubleshooting.md`: common dependency and data-source issues.
-- `references/legacy-anthropic-skill.md`: full legacy instructions migrated from `.claude/skills/quantitative-trading/SKILL.md`.
 
 ## Output Convention
 

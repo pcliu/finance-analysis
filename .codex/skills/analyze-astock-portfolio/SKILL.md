@@ -39,7 +39,3 @@ Save outputs under `workspace/astock/YYYY-MM-DD/HHMMSS/`:
 - `astock_sentiment_data.json`
 
 Use `SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))` inside generated scripts.
-
-## Resources
-
-- `references/legacy-anthropic-skill.md`: full migrated legacy workflow; read if detailed report requirements or edge cases are needed.

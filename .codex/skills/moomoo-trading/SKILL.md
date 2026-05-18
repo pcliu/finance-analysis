@@ -56,7 +56,6 @@ from scripts import (
 
 - `scripts/`: reusable Moomoo connection, account, market data, indicator, and order helpers.
 - `references/api_reference.md`: detailed API reference.
-- `references/legacy-anthropic-skill.md`: full legacy instructions migrated from `.claude/skills/moomoo-trading/SKILL.md`; read when a workflow needs details not covered here.
 
 ## Output Convention
 

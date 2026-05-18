@@ -7,7 +7,7 @@ When a user asks for finance analysis, portfolio review, Moomoo account data, ma
 1. Inspect the relevant `.codex/skills/*/SKILL.md` before acting.
 2. Select skills by their frontmatter `name` and `description`.
 3. Load bundled `scripts/` and `references/` only when needed.
-4. Prefer `.codex/skills` over legacy `.claude/skills`.
+4. Treat `.codex/skills` as the canonical skill source for this branch.
 5. Keep generated scripts and outputs under the workspace paths required by each skill.
 6. Never place real orders without explicit user confirmation in the chat.
 

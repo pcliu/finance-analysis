@@ -6,7 +6,7 @@ quantitative-trading skill 的常用模式。
 
 ```python
 import sys, os
-SKILL_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../.claude/skills/quantitative-trading'))
+SKILL_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../.codex/skills/quantitative-trading'))
 sys.path.append(SKILL_DIR)
 
 from scripts import fetch_stock_data

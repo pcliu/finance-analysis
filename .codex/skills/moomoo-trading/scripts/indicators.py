@@ -18,7 +18,7 @@ import numpy as np
 def _load_qt_indicators():
     """Try to import from quantitative-trading skill (same repo)."""
     skill_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../..'))
-    qt_path = os.path.join(skill_root, '.claude/skills/quantitative-trading')
+    qt_path = os.path.join(skill_root, '.codex/skills/quantitative-trading')
     if os.path.isdir(qt_path) and qt_path not in sys.path:
         sys.path.insert(0, qt_path)
     try:

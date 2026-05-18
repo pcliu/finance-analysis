@@ -41,4 +41,3 @@ When browsing, cite sources and compare dates because news and market context ar
 ## Resources
 
 - `references/examples.md`: migrated examples for common news and sentiment workflows.
-- `references/legacy-anthropic-skill.md`: full migrated legacy instructions; read if a workflow needs more source-specific detail.

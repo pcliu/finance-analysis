@@ -5,7 +5,7 @@ All public functions are importable directly from `scripts`.
 
 Quick import pattern (from a workspace script):
     import sys, os
-    SKILL_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../.claude/skills/moomoo-trading'))
+    SKILL_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../.codex/skills/moomoo-trading'))
     sys.path.append(SKILL_DIR)
     from scripts import get_realtime_quote, get_kline_data, place_order, ...
 """
