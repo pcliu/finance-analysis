@@ -1,0 +1,4 @@
+interface:
+  display_name: "Moomoo Trading"
+  short_description: "Moomoo account, market data, and orders"
+  default_prompt: "Use $moomoo-trading to query my Moomoo US account and positions."

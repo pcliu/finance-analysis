@@ -1,0 +1,4 @@
+interface:
+  display_name: "Economic Sentiment"
+  short_description: "Finance news and sentiment monitoring"
+  default_prompt: "Use $economic-sentiment to summarize current market news and sentiment."

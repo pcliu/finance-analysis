@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analyze US Portfolio"
+  short_description: "Daily Moomoo US portfolio review"
+  default_prompt: "Use $analyze-us-portfolio to produce today's US portfolio adjustment report."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Quantitative Trading"
+  short_description: "Market data and technical indicators"
+  default_prompt: "Use $quantitative-trading to analyze A-share or ETF technical signals."

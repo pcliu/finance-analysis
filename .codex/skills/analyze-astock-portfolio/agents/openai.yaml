@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analyze A-Stock Portfolio"
+  short_description: "Daily A-share ETF portfolio review"
+  default_prompt: "Use $analyze-astock-portfolio to review my A-share ETF portfolio."
